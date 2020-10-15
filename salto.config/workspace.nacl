@@ -1,0 +1,5 @@
+workspace {
+  uid = "91fa2ee5-d280-45d8-b555-332eddbadc7c"
+  name = "Salesforce-demo"
+  staleStateThresholdMinutes = undefined
+}

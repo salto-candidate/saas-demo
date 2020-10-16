@@ -1,0 +1,29 @@
+salesforce.AssignmentRules Lead {
+  attr_xmlns = "http://soap.sforce.com/2006/04/metadata"
+  assignmentRule = [
+    {
+      fullName = "Leads assignment to sales"
+      active = false
+      ruleEntry = {
+        assignedTo = "training+user1@salto.io"
+        assignedToType = "User"
+        criteriaItems = [
+          {
+            field = salesforce.Lead.field.AnnualRevenue
+            operation = "greaterThan"
+            value = "5000000"
+          },
+          {
+            field = salesforce.Lead.field.Rating
+            operation = "equals"
+            value = "Hot"
+          },
+        ]
+      }
+    },
+  ]
+  fullName = "Lead"
+  _parent = [
+    salesforce.Lead,
+  ]
+}

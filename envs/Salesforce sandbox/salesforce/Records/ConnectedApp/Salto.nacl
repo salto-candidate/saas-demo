@@ -1,0 +1,16 @@
+salesforce.ConnectedApp Salto {
+  fullName = "Salto"
+  contactEmail = "info@salto.io"
+  label = "Salto"
+  oauthConfig = {
+    callbackUrl = "http://localhost:8080"
+    consumerKey = "3MVG9buXpECUESHjc2FV0VPof9.vGUQESI_0Uk9K9IB_Z9ngWqlKhZ.TzhL7by7GV7klK57W8H9d31OlIFN4G"
+    isAdminApproved = false
+    scopes = [
+      "Api",
+      "Web",
+      "Full",
+      "RefreshToken",
+    ]
+  }
+}

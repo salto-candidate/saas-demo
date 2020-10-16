@@ -1,4 +1,8 @@
 envs {
   envs = [
+    {
+      uuid = "2b546d71-4c15-41d9-86f9-efb08576ab10"
+      folderName = "Salesforce sandbox"
+    },
   ]
 }

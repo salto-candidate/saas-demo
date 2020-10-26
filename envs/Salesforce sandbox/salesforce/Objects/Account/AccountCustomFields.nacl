@@ -64,7 +64,7 @@ type salesforce.Account {
         label = "Active"
       },
       {
-        fullName = "Churned"
+        fullName = "Cancelled"
         default = false
         label = "Churned"
       },

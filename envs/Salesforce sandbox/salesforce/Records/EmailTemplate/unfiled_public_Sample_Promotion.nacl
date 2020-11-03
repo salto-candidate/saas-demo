@@ -1,5 +1,5 @@
 salesforce.EmailTemplate unfiled_public_Sample_Promotion {
-  attr_xmlns = "http://soap.sforce.com/2006/04/metadata"
+  
   available = true
   description = "Reaching out to someone after they have been promoted about the opportunity to do business with them"
   encodingKey = "UTF-8"

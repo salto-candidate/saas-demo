@@ -302,7 +302,7 @@ type salesforce.EmailMessage {
     updateable = true
     unique = false
     caseSensitive = false
-    length = 255
+    length = 765
     queryable = true
   }
   salesforce.Text ThreadIdentifier {
@@ -313,7 +313,7 @@ type salesforce.EmailMessage {
     updateable = true
     unique = false
     caseSensitive = false
-    length = 255
+    length = 765
     queryable = true
   }
   salesforce.Checkbox IsClientManaged {

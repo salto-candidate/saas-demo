@@ -1,5 +1,5 @@
 salesforce.EmailTemplate unfiled_public_Sample_DealClosed {
-  attr_xmlns = "http://soap.sforce.com/2006/04/metadata"
+  
   available = true
   description = "Thank you note to customer"
   encodingKey = "UTF-8"

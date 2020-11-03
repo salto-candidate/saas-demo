@@ -3,7 +3,7 @@ type salesforce.Yariv__c {
     apiName = "Yariv__c.Yariv_Auto__c"
     label = "Yariv Auto"
     _required = false
-    inlineHelpText = "bla help text"
+    inlineHelpText = "new help text"
     createable = false
     updateable = false
     queryable = true
@@ -79,7 +79,7 @@ type salesforce.Yariv__c {
     description = "Bla description"
     externalId = false
   }
-  salesforce.Location Yariv_Geolocation__c {
+  salesforce.Geolocation Yariv_Geolocation__c {
     apiName = "Yariv__c.Yariv_Geolocation__c"
     label = "Yariv Geolocation"
     _required = false

@@ -1,0 +1,36 @@
+type salesforce.Geolocation {
+  annotations {
+    boolean displayLocationInDecimal {
+    }
+    number scale {
+    }
+    serviceid apiName {
+    }
+    string description {
+    }
+    string inlineHelpText {
+    }
+    string label {
+    }
+    string businessOwnerUser {
+    }
+    string businessOwnerGroup {
+    }
+    salesforce.businessStatus businessStatus {
+    }
+    salesforce.securityClassification securityClassification {
+    }
+    string complianceGroup {
+    }
+    boolean createable {
+    }
+    boolean updateable {
+    }
+    boolean queryable {
+    }
+  }
+  number latitude {
+  }
+  number longitude {
+  }
+}

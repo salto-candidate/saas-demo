@@ -1,5 +1,5 @@
 salesforce.EmailTemplate unfiled_public_SUPPORTCaseResponsewithSolutionSAMPLE {
-  attr_xmlns = "http://soap.sforce.com/2006/04/metadata"
+  
   available = true
   description = "Standard template for responses to customer inquiries."
   encodingKey = "ISO-8859-1"

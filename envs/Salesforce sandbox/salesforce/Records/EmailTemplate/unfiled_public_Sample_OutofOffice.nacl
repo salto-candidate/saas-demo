@@ -1,5 +1,5 @@
 salesforce.EmailTemplate unfiled_public_Sample_OutofOffice {
-  attr_xmlns = "http://soap.sforce.com/2006/04/metadata"
+  
   available = true
   description = "Out of Office notification"
   encodingKey = "UTF-8"

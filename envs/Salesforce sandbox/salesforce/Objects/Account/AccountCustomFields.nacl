@@ -65,13 +65,14 @@ type salesforce.Account {
       },
       {
         default = false
-        fullName = "INACTIVE"
-        label = "Inactive"
+        fullName = "Churned"
+        isActive = false
+        label = "Churned"
       },
       {
         default = false
-        fullName = "Churned"
-        label = "Churned"
+        fullName = "INACTIVE"
+        label = "Inactive"
         isActive = false
       },
     ]

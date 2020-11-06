@@ -59,14 +59,20 @@ type salesforce.Account {
     _required = false
     valueSet = [
       {
-        fullName = "Active"
         default = false
+        fullName = "Active"
         label = "Active"
       },
       {
-        fullName = "CHURNED"
         default = false
+        fullName = "INACTIVE"
+        label = "Inactive"
+      },
+      {
+        default = false
+        fullName = "Churned"
         label = "Churned"
+        isActive = false
       },
     ]
     restricted = true

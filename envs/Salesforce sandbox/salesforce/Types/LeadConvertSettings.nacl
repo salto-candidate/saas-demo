@@ -35,13 +35,12 @@ type salesforce.LeadConvertSettings {
     _hidden = true
     localOnly = true
   }
-  string inputField {
-  }
-  string outputField {
-  }
-  string outputObject {
-  }
+  
+  
+  
   suffix = "LeadConvertSetting"
   dirName = "LeadConvertSettings"
   metadataType = "LeadConvertSettings"
+  "List<salesforce.ObjectMapping>" objectMapping {
+  }
 }

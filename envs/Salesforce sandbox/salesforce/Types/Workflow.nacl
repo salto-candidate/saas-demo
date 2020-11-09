@@ -16,7 +16,7 @@ type salesforce.Workflow {
   serviceid fullName {
     _required = false
   }
-  "List<string>" rules {
+  "List<salesforce.WorkflowRule>" rules {
     _required = false
   }
   string internalId {
@@ -24,17 +24,17 @@ type salesforce.Workflow {
     _hidden = true
     localOnly = true
   }
-  "List<string>" alerts {
+  "List<salesforce.WorkflowAlert>" alerts {
   }
-  "List<string>" fieldUpdates {
+  "List<salesforce.WorkflowFieldUpdate>" fieldUpdates {
   }
-  "List<string>" flowActions {
+  "List<salesforce.WorkflowFlowAction>" flowActions {
   }
-  "List<string>" knowledgePublishes {
+  "List<salesforce.WorkflowKnowledgePublish>" knowledgePublishes {
   }
-  "List<string>" outboundMessages {
+  "List<salesforce.WorkflowOutboundMessage>" outboundMessages {
   }
-  "List<string>" tasks {
+  "List<salesforce.WorkflowTask>" tasks {
   }
   suffix = "workflow"
   dirName = "workflows"

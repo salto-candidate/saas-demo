@@ -31,7 +31,7 @@ type salesforce.Account {
       {
         fullName = "Key Accounts"
         default = false
-        label = "Key Accounts"
+        label = "Key Accounts 1235"
       },
       {
         fullName = "Medium Business"
@@ -43,7 +43,7 @@ type salesforce.Account {
         fullName = "NewTierOnlyInEnv2"
         default = false
         isActive = false
-        label = "Test new tier"
+        label = "Test new tier345asdfasdfads"
       },
     ]
     restricted = true
@@ -72,7 +72,7 @@ type salesforce.Account {
       {
         default = false
         fullName = "INACTIVE"
-        label = "Inactive"
+        label = "INACTIVE"
         isActive = false
       },
     ]

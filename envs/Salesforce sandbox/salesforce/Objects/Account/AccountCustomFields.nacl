@@ -71,9 +71,15 @@ type salesforce.Account {
       },
       {
         default = false
-        fullName = "INACTIVE"
-        label = "INACTIVE"
+        fullName = "Inactive"
         isActive = false
+        label = "Inactive"
+      },
+      {
+        default = false
+        fullName = "INACTIVE"
+        isActive = false
+        label = "INACTIVE"
       },
     ]
     restricted = true

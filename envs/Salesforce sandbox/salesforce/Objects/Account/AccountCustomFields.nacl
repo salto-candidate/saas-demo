@@ -67,7 +67,7 @@ type salesforce.Account {
         default = false
         fullName = "Churned"
         isActive = false
-        label = "Churned"
+        label = "Churn_never_happens"
       },
       {
         default = false

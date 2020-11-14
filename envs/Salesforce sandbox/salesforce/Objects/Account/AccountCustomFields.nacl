@@ -79,7 +79,7 @@ type salesforce.Account {
         default = false
         fullName = "INACTIVE"
         isActive = false
-        label = "INACTIVE"
+        label = "INACTIVE!!"
       },
     ]
     restricted = true

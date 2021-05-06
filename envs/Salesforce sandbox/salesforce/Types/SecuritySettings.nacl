@@ -30,22 +30,32 @@ settings salesforce.SecuritySettings {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   boolean canUsersGrantLoginAccess {
+    _required = false
   }
   boolean enableAdminLoginAsAnyUser {
+    _required = false
   }
   boolean enableAuditFieldsInactiveOwner {
+    _required = false
   }
   boolean enableAuraSecureEvalPref {
+    _required = false
   }
   boolean enableRequireHttpsConnection {
+    _required = false
   }
   boolean isTLSv12Required {
+    _required = false
   }
   boolean isTLSv12RequiredCommunities {
+    _required = false
   }
   metadataType = "SecuritySettings"
+  suffix = "settings"
+  dirName = "settings"
 }

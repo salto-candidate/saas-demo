@@ -4,9 +4,10 @@ type salesforce.WorkThanks {
     label = "Thanks ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Lookup OwnerId {
     apiName = "WorkThanks.OwnerId"
@@ -20,7 +21,9 @@ type salesforce.WorkThanks {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "Owner"
+    _hidden_value = true
   }
   salesforce.Checkbox IsDeleted {
     apiName = "WorkThanks.IsDeleted"
@@ -29,8 +32,9 @@ type salesforce.WorkThanks {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
     _required = false
+    _hidden_value = true
   }
   salesforce.DateTime CreatedDate {
     apiName = "WorkThanks.CreatedDate"
@@ -39,7 +43,8 @@ type salesforce.WorkThanks {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "WorkThanks.CreatedById"
@@ -52,7 +57,9 @@ type salesforce.WorkThanks {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "CreatedBy"
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "WorkThanks.LastModifiedDate"
@@ -61,7 +68,8 @@ type salesforce.WorkThanks {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "WorkThanks.LastModifiedById"
@@ -74,7 +82,9 @@ type salesforce.WorkThanks {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "WorkThanks.SystemModstamp"
@@ -83,7 +93,8 @@ type salesforce.WorkThanks {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup GiverId {
     apiName = "WorkThanks.GiverId"
@@ -96,6 +107,7 @@ type salesforce.WorkThanks {
     createable = true
     updateable = false
     queryable = true
+    relationshipName = "Giver"
   }
   salesforce.LongTextArea Message {
     apiName = "WorkThanks.Message"
@@ -117,5 +129,6 @@ type salesforce.WorkThanks {
     createable = false
     updateable = false
     queryable = true
+    relationshipName = "FeedItem"
   }
 }

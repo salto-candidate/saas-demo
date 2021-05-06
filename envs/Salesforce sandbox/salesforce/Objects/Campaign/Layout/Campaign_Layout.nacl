@@ -317,9 +317,10 @@ salesforce.Layout Campaign_Layout {
       fields = [
         "MEMBER_TYPE",
         "STATUS",
+        "FULL_NAME",
+        "TITLE",
         "FIRST_NAME",
         "LAST_NAME",
-        "TITLE",
         "COMPANY",
       ]
       relatedList = "RelatedCampaignMemberList"

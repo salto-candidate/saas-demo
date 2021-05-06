@@ -4,9 +4,10 @@ type salesforce.Contact {
     label = "Contact ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Checkbox IsDeleted {
     apiName = "Contact.IsDeleted"
@@ -15,8 +16,9 @@ type salesforce.Contact {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
     _required = false
+    _hidden_value = true
   }
   salesforce.Lookup MasterRecordId {
     apiName = "Contact.MasterRecordId"
@@ -29,6 +31,7 @@ type salesforce.Contact {
     createable = false
     updateable = false
     queryable = true
+    relationshipName = "MasterRecord"
   }
   salesforce.Lookup AccountId {
     apiName = "Contact.AccountId"
@@ -41,6 +44,7 @@ type salesforce.Contact {
     createable = true
     updateable = true
     queryable = true
+    relationshipName = "Account"
   }
   salesforce.Name Name {
     apiName = "Contact.Name"
@@ -93,6 +97,7 @@ type salesforce.Contact {
     createable = true
     updateable = true
     queryable = true
+    relationshipName = "ReportsTo"
   }
   salesforce.Email Email {
     apiName = "Contact.Email"
@@ -136,7 +141,9 @@ type salesforce.Contact {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "Owner"
+    _hidden_value = true
   }
   salesforce.DateTime CreatedDate {
     apiName = "Contact.CreatedDate"
@@ -145,7 +152,8 @@ type salesforce.Contact {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "Contact.CreatedById"
@@ -158,7 +166,9 @@ type salesforce.Contact {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "CreatedBy"
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "Contact.LastModifiedDate"
@@ -167,7 +177,8 @@ type salesforce.Contact {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "Contact.LastModifiedById"
@@ -180,7 +191,9 @@ type salesforce.Contact {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "Contact.SystemModstamp"
@@ -189,7 +202,8 @@ type salesforce.Contact {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Date LastActivityDate {
     apiName = "Contact.LastActivityDate"
@@ -198,7 +212,8 @@ type salesforce.Contact {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime LastCURequestDate {
     apiName = "Contact.LastCURequestDate"
@@ -284,6 +299,7 @@ type salesforce.Contact {
     createable = true
     updateable = true
     queryable = true
+    relationshipName = "Individual"
   }
   salesforce.Unknown AssistantName {
     apiName = "Contact.AssistantName"

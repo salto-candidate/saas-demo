@@ -4,9 +4,10 @@ type salesforce.Contract {
     label = "Contract ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Lookup AccountId {
     apiName = "Contract.AccountId"
@@ -19,6 +20,7 @@ type salesforce.Contract {
     createable = true
     updateable = true
     queryable = true
+    relationshipName = "Account"
   }
   salesforce.Lookup Pricebook2Id {
     apiName = "Contract.Pricebook2Id"
@@ -31,6 +33,7 @@ type salesforce.Contract {
     createable = true
     updateable = true
     queryable = true
+    relationshipName = "Pricebook2"
   }
   salesforce.Picklist OwnerExpirationNotice {
     apiName = "Contract.OwnerExpirationNotice"
@@ -133,7 +136,9 @@ type salesforce.Contract {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "Owner"
+    _hidden_value = true
   }
   salesforce.Picklist Status {
     apiName = "Contract.Status"
@@ -156,6 +161,7 @@ type salesforce.Contract {
     createable = true
     updateable = true
     queryable = true
+    relationshipName = "CompanySigned"
   }
   salesforce.Date CompanySignedDate {
     apiName = "Contract.CompanySignedDate"
@@ -176,6 +182,7 @@ type salesforce.Contract {
     createable = true
     updateable = true
     queryable = true
+    relationshipName = "CustomerSigned"
   }
   salesforce.Text CustomerSignedTitle {
     apiName = "Contract.CustomerSignedTitle"
@@ -216,6 +223,7 @@ type salesforce.Contract {
     createable = false
     updateable = true
     queryable = true
+    relationshipName = "ActivatedBy"
   }
   salesforce.DateTime ActivatedDate {
     apiName = "Contract.ActivatedDate"
@@ -282,8 +290,9 @@ type salesforce.Contract {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
     _required = false
+    _hidden_value = true
   }
   salesforce.AutoNumber ContractNumber {
     apiName = "Contract.ContractNumber"
@@ -292,7 +301,8 @@ type salesforce.Contract {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime LastApprovedDate {
     apiName = "Contract.LastApprovedDate"
@@ -309,7 +319,8 @@ type salesforce.Contract {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "Contract.CreatedById"
@@ -322,7 +333,9 @@ type salesforce.Contract {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "CreatedBy"
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "Contract.LastModifiedDate"
@@ -331,7 +344,8 @@ type salesforce.Contract {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "Contract.LastModifiedById"
@@ -344,7 +358,9 @@ type salesforce.Contract {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "Contract.SystemModstamp"
@@ -353,7 +369,8 @@ type salesforce.Contract {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Date LastActivityDate {
     apiName = "Contract.LastActivityDate"
@@ -362,7 +379,8 @@ type salesforce.Contract {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Unknown Name {
     apiName = "Contract.Name"

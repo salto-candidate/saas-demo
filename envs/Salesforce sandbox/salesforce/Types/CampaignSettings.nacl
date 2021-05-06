@@ -18,20 +18,32 @@ settings salesforce.CampaignSettings {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   boolean enableAutoCampInfluenceDisabled {
+    _required = false
   }
   boolean enableB2bmaCampaignInfluence2 {
+    _required = false
   }
   boolean enableCampaignHistoryTrackEnabled {
+    _required = false
   }
   boolean enableCampaignInfluence2 {
+    _required = false
   }
   boolean enableCampaignMemberTWCF {
+    _required = false
   }
   boolean enableSuppressNoValueCI2 {
+    _required = false
   }
   metadataType = "CampaignSettings"
+  number aiAttributionTimeframe {
+    _required = false
+  }
+  suffix = "settings"
+  dirName = "settings"
 }

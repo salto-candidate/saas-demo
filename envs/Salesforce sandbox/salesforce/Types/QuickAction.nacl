@@ -87,6 +87,7 @@ type salesforce.QuickAction {
         "OfferFeedback",
         "Quick",
         "QuickRecordType",
+        "Quip",
         "Reply",
         "ReplyAll",
         "RequestFeedback",
@@ -133,6 +134,7 @@ type salesforce.QuickAction {
         "MobileExtension",
         "MobileSmartActions",
         "Post",
+        "Quip",
         "SendEmail",
         "SocialPost",
         "Update",
@@ -145,10 +147,24 @@ type salesforce.QuickAction {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   suffix = "quickAction"
   dirName = "quickActions"
   metadataType = "QuickAction"
+  string actionSubtype {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "Action",
+        "ScreenAction",
+      ]
+    }
+  }
+  string lightningWebComponent {
+    _required = false
+  }
 }

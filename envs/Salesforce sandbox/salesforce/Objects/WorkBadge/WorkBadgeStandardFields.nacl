@@ -4,9 +4,10 @@ type salesforce.WorkBadge {
     label = "Badge Received ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Checkbox IsDeleted {
     apiName = "WorkBadge.IsDeleted"
@@ -15,8 +16,9 @@ type salesforce.WorkBadge {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
     _required = false
+    _hidden_value = true
   }
   salesforce.DateTime CreatedDate {
     apiName = "WorkBadge.CreatedDate"
@@ -25,7 +27,8 @@ type salesforce.WorkBadge {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "WorkBadge.CreatedById"
@@ -38,7 +41,9 @@ type salesforce.WorkBadge {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "CreatedBy"
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "WorkBadge.LastModifiedDate"
@@ -47,7 +52,8 @@ type salesforce.WorkBadge {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "WorkBadge.LastModifiedById"
@@ -60,7 +66,9 @@ type salesforce.WorkBadge {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "WorkBadge.SystemModstamp"
@@ -69,7 +77,8 @@ type salesforce.WorkBadge {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup SourceId {
     apiName = "WorkBadge.SourceId"
@@ -82,6 +91,7 @@ type salesforce.WorkBadge {
     createable = true
     updateable = false
     queryable = true
+    relationshipName = "Source"
   }
   salesforce.Lookup DefinitionId {
     apiName = "WorkBadge.DefinitionId"
@@ -94,6 +104,7 @@ type salesforce.WorkBadge {
     createable = true
     updateable = false
     queryable = true
+    relationshipName = "Definition"
   }
   salesforce.Lookup RecipientId {
     apiName = "WorkBadge.RecipientId"
@@ -106,6 +117,7 @@ type salesforce.WorkBadge {
     createable = true
     updateable = false
     queryable = true
+    relationshipName = "Recipient"
   }
   salesforce.Lookup GiverId {
     apiName = "WorkBadge.GiverId"
@@ -118,6 +130,7 @@ type salesforce.WorkBadge {
     createable = false
     updateable = false
     queryable = true
+    relationshipName = "Giver"
   }
   salesforce.Url ImageUrl {
     apiName = "WorkBadge.ImageUrl"

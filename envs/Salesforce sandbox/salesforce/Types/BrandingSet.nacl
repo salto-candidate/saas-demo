@@ -45,6 +45,7 @@ type salesforce.BrandingSet {
         "kokua:branding-kokua",
         "login:branding-login",
         "login:branding-login2",
+        "loyalty:branding-loyalty",
         "lpi:branding-lpi",
         "mfg:branding-mfg",
         "mortgage:branding-mortgage",
@@ -65,8 +66,9 @@ type salesforce.BrandingSet {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   suffix = "brandingSet"
   dirName = "brandingSets"

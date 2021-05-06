@@ -21,8 +21,9 @@ type salesforce.EmbeddedServiceFlowConfig {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   suffix = "EmbeddedServiceFlowConfig"
   dirName = "EmbeddedServiceFlowConfig"

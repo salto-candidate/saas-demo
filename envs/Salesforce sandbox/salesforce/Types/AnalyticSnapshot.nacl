@@ -39,8 +39,9 @@ type salesforce.AnalyticSnapshot {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   suffix = "snapshot"
   dirName = "analyticSnapshots"

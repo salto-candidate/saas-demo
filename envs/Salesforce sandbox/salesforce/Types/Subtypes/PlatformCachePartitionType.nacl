@@ -33,4 +33,7 @@ type salesforce.PlatformCachePartitionType {
     }
   }
   metadataType = "PlatformCachePartitionType"
+  number allocatedPartnerCapacity {
+    _required = false
+  }
 }

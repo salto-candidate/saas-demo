@@ -35,4 +35,13 @@ type salesforce.ConnectedAppOauthConfig {
     _required = false
   }
   metadataType = "ConnectedAppOauthConfig"
+  salesforce.ConnectedAppOauthAssetToken assetTokenConfig {
+    _required = false
+  }
+  boolean isConsumerSecretOptional {
+    _required = false
+  }
+  boolean isIntrospectAllTokens {
+    _required = false
+  }
 }

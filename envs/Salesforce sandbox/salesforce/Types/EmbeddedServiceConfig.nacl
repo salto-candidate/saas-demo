@@ -61,10 +61,14 @@ type salesforce.EmbeddedServiceConfig {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   suffix = "EmbeddedServiceConfig"
   dirName = "EmbeddedServiceConfig"
   metadataType = "EmbeddedServiceConfig"
+  salesforce.EmbeddedServiceCustomization embeddedServiceCustomizations {
+    _required = false
+  }
 }

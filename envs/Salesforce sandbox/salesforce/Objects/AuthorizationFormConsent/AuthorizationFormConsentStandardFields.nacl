@@ -4,9 +4,10 @@ type salesforce.AuthorizationFormConsent {
     label = "Authorization Form Consent ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Lookup OwnerId {
     apiName = "AuthorizationFormConsent.OwnerId"
@@ -20,7 +21,9 @@ type salesforce.AuthorizationFormConsent {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "Owner"
+    _hidden_value = true
   }
   salesforce.Checkbox IsDeleted {
     apiName = "AuthorizationFormConsent.IsDeleted"
@@ -29,8 +32,9 @@ type salesforce.AuthorizationFormConsent {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
     _required = false
+    _hidden_value = true
   }
   salesforce.Text Name {
     apiName = "AuthorizationFormConsent.Name"
@@ -50,7 +54,8 @@ type salesforce.AuthorizationFormConsent {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "AuthorizationFormConsent.CreatedById"
@@ -63,7 +68,9 @@ type salesforce.AuthorizationFormConsent {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "CreatedBy"
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "AuthorizationFormConsent.LastModifiedDate"
@@ -72,7 +79,8 @@ type salesforce.AuthorizationFormConsent {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "AuthorizationFormConsent.LastModifiedById"
@@ -85,7 +93,9 @@ type salesforce.AuthorizationFormConsent {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "AuthorizationFormConsent.SystemModstamp"
@@ -94,7 +104,8 @@ type salesforce.AuthorizationFormConsent {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup ConsentGiverId {
     apiName = "AuthorizationFormConsent.ConsentGiverId"
@@ -110,6 +121,7 @@ type salesforce.AuthorizationFormConsent {
     createable = true
     updateable = true
     queryable = true
+    relationshipName = "ConsentGiver"
   }
   salesforce.Lookup AuthorizationFormTextId {
     apiName = "AuthorizationFormConsent.AuthorizationFormTextId"
@@ -122,6 +134,7 @@ type salesforce.AuthorizationFormConsent {
     createable = true
     updateable = true
     queryable = true
+    relationshipName = "AuthorizationFormText"
   }
   salesforce.Text ConsentCapturedSource {
     apiName = "AuthorizationFormConsent.ConsentCapturedSource"
@@ -217,11 +230,19 @@ type salesforce.AuthorizationFormConsent {
     createable = true
     updateable = true
     queryable = true
+    relationshipName = "DocumentVersion"
   }
   salesforce.Lookup RelatedRecordId {
     apiName = "AuthorizationFormConsent.RelatedRecordId"
-    queryable = false
-    updateable = false
-    createable = false
+    queryable = true
+    updateable = true
+    createable = true
+    label = "Related Record ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      salesforce.Account,
+    ]
+    relationshipName = "RelatedRecord"
   }
 }

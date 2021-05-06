@@ -13,9 +13,7 @@ type salesforce.PlatformActionList {
     string dirName {
     }
   }
-  serviceid fullName {
-    _required = false
-  }
+  
   string actionListContext {
     _required = false
     _restriction = {

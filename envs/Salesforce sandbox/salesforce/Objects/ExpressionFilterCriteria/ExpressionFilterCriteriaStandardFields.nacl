@@ -4,9 +4,10 @@ type salesforce.ExpressionFilterCriteria {
     label = "ExpressionFilterCriteria ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Checkbox IsDeleted {
     apiName = "ExpressionFilterCriteria.IsDeleted"
@@ -15,8 +16,9 @@ type salesforce.ExpressionFilterCriteria {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
     _required = false
+    _hidden_value = true
   }
   salesforce.AutoNumber Name {
     apiName = "ExpressionFilterCriteria.Name"
@@ -25,7 +27,8 @@ type salesforce.ExpressionFilterCriteria {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime CreatedDate {
     apiName = "ExpressionFilterCriteria.CreatedDate"
@@ -34,7 +37,8 @@ type salesforce.ExpressionFilterCriteria {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "ExpressionFilterCriteria.CreatedById"
@@ -47,7 +51,9 @@ type salesforce.ExpressionFilterCriteria {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "CreatedBy"
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "ExpressionFilterCriteria.LastModifiedDate"
@@ -56,7 +62,8 @@ type salesforce.ExpressionFilterCriteria {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "ExpressionFilterCriteria.LastModifiedById"
@@ -69,7 +76,9 @@ type salesforce.ExpressionFilterCriteria {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "ExpressionFilterCriteria.SystemModstamp"
@@ -78,7 +87,8 @@ type salesforce.ExpressionFilterCriteria {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Text FilterTarget {
     apiName = "ExpressionFilterCriteria.FilterTarget"
@@ -132,5 +142,6 @@ type salesforce.ExpressionFilterCriteria {
     createable = true
     updateable = false
     queryable = true
+    relationshipName = "ExpressionFilter"
   }
 }

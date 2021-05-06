@@ -18,8 +18,11 @@ settings salesforce.FormulaSettings {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   metadataType = "FormulaSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

@@ -18,28 +18,41 @@ settings salesforce.IndustriesSettings {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   boolean allowMultipleProducersToWorkOnSamePolicy {
+    _required = false
   }
   boolean enableAccessToMasterListOfCoverageTypes {
+    _required = false
   }
   boolean enableBlockResourceAvailabilityOrgPref {
+    _required = false
   }
   boolean enableEventManagementOrgPref {
+    _required = false
   }
   boolean enableFSCInsuranceReport {
+    _required = false
   }
   boolean enableManyToManyRelationships {
+    _required = false
   }
   boolean enableMortgageRlaTotalsOrgPref {
+    _required = false
   }
   boolean enableMultiResourceOrgPref {
+    _required = false
   }
   boolean enableOverbookingOrgPref {
+    _required = false
   }
   boolean enableReferralScoring {
+    _required = false
   }
   metadataType = "IndustriesSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

@@ -4,9 +4,10 @@ type salesforce.PricebookEntry {
     label = "Price Book Entry ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Text Name {
     apiName = "PricebookEntry.Name"
@@ -30,6 +31,7 @@ type salesforce.PricebookEntry {
     createable = true
     updateable = false
     queryable = true
+    relationshipName = "Pricebook2"
   }
   salesforce.Lookup Product2Id {
     apiName = "PricebookEntry.Product2Id"
@@ -42,6 +44,7 @@ type salesforce.PricebookEntry {
     createable = true
     updateable = false
     queryable = true
+    relationshipName = "Product2"
   }
   salesforce.Currency UnitPrice {
     apiName = "PricebookEntry.UnitPrice"
@@ -76,7 +79,8 @@ type salesforce.PricebookEntry {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "PricebookEntry.CreatedById"
@@ -89,7 +93,9 @@ type salesforce.PricebookEntry {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "CreatedBy"
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "PricebookEntry.LastModifiedDate"
@@ -98,7 +104,8 @@ type salesforce.PricebookEntry {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "PricebookEntry.LastModifiedById"
@@ -111,7 +118,9 @@ type salesforce.PricebookEntry {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "PricebookEntry.SystemModstamp"
@@ -120,7 +129,8 @@ type salesforce.PricebookEntry {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Text ProductCode {
     apiName = "PricebookEntry.ProductCode"
@@ -140,8 +150,9 @@ type salesforce.PricebookEntry {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
     _required = false
+    _hidden_value = true
   }
   salesforce.Checkbox IsArchived {
     apiName = "PricebookEntry.IsArchived"

@@ -64,13 +64,15 @@ type salesforce.StandardValue {
   string forecastCategory {
     _restriction = {
       values = [
+        "BestCase",
+        "Closed",
+        "Forecast",
         "Omitted",
         "Pipeline",
-        "BestCase",
-        "Forecast",
-        "Closed",
       ]
+      enforce_value = false
     }
+    _required = false
   }
   metadataType = "StandardValue"
 }

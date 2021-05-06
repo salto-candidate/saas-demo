@@ -51,13 +51,15 @@ type salesforce.FlowVariable {
         "Currency",
         "Date",
         "DateTime",
-        "Number",
         "Multipicklist",
+        "Number",
         "Picklist",
-        "String",
         "SObject",
+        "String",
       ]
+      enforce_value = false
     }
+    _required = false
   }
   metadataType = "FlowVariable"
 }

@@ -16,21 +16,21 @@ type salesforce.EntityImplements {
   serviceid fullName {
     _required = false
   }
-  salesforce.FieldImplements fieldMap {
-    _required = false
-  }
-  string interface {
-    _required = false
-  }
+  
+  
   boolean isDefault {
     _required = false
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   suffix = "entityImplements"
   dirName = "entityImplements"
   metadataType = "EntityImplements"
+  salesforce.FieldImplements fieldImplements {
+    _required = false
+  }
 }

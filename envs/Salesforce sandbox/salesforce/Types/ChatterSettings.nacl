@@ -18,40 +18,59 @@ settings salesforce.ChatterSettings {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   boolean allowChatterGroupArchiving {
+    _required = false
   }
   boolean allowRecordsInChatterGroup {
+    _required = false
   }
   boolean allowSharingInChatterGroup {
+    _required = false
   }
   boolean enableApprovalRequest {
+    _required = false
   }
   boolean enableCaseFeedRelativeTimestamps {
+    _required = false
   }
   boolean enableChatter {
+    _required = false
   }
   boolean enableChatterEmoticons {
+    _required = false
   }
   boolean enableFeedEdit {
+    _required = false
   }
   boolean enableFeedPinning {
+    _required = false
   }
   boolean enableFeedsDraftPosts {
+    _required = false
   }
   boolean enableFeedsRichText {
+    _required = false
   }
   boolean enableInviteCsnUsers {
+    _required = false
   }
   boolean enableOutOfOfficeEnabledPref {
+    _required = false
   }
   boolean enableRichLinkPreviewsInFeed {
+    _required = false
   }
   boolean enableTodayRecsInFeed {
+    _required = false
   }
   boolean unlistedGroupsEnabled {
+    _required = false
   }
   metadataType = "ChatterSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

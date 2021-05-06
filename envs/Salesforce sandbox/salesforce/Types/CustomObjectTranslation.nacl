@@ -54,38 +54,43 @@ type salesforce.CustomObjectTranslation {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   string gender {
     _restriction = {
       values = [
-        "Masculine",
-        "Feminine",
-        "Neuter",
         "AnimateMasculine",
         "ClassI",
         "ClassIII",
+        "ClassIX",
         "ClassV",
         "ClassVII",
-        "ClassIX",
         "ClassXI",
         "ClassXIV",
         "ClassXV",
         "ClassXVI",
         "ClassXVII",
         "ClassXVIII",
+        "Feminine",
+        "Masculine",
+        "Neuter",
       ]
+      enforce_value = false
     }
+    _required = false
   }
   string startsWith {
     _restriction = {
       values = [
         "Consonant",
-        "Vowel",
         "Special",
+        "Vowel",
       ]
+      enforce_value = false
     }
+    _required = false
   }
   suffix = "objectTranslation"
   dirName = "objectTranslations"

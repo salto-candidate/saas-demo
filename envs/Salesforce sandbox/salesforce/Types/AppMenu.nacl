@@ -21,8 +21,9 @@ type salesforce.AppMenu {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   suffix = "appMenu"
   dirName = "appMenus"

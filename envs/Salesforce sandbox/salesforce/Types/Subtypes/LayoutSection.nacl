@@ -31,12 +31,14 @@ type salesforce.LayoutSection {
   string style {
     _restriction = {
       values = [
-        "TwoColumnsTopToBottom",
-        "TwoColumnsLeftToRight",
-        "OneColumn",
         "CustomLinks",
+        "OneColumn",
+        "TwoColumnsLeftToRight",
+        "TwoColumnsTopToBottom",
       ]
+      enforce_value = false
     }
+    _required = false
   }
   metadataType = "LayoutSection"
 }

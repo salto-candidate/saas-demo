@@ -1,4 +1,4 @@
-type salesforce.KnowledgeWorkOrderField {
+type salesforce.FlowDataTypeMapping {
   annotations {
     serviceid metadataType {
     }
@@ -13,15 +13,14 @@ type salesforce.KnowledgeWorkOrderField {
     string dirName {
     }
   }
-  string name {
+  salesforce.FlowMetadataValue processMetadataValues {
     _required = false
   }
-  string internalId {
+  string typeName {
     _required = false
-    _hidden = true
-    localOnly = true
   }
-  suffix = ""
-  dirName = ""
-  metadataType = "KnowledgeWorkOrderField"
+  string typeValue {
+    _required = false
+  }
+  metadataType = "FlowDataTypeMapping"
 }

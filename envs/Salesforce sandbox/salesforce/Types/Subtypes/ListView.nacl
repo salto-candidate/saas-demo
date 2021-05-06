@@ -42,23 +42,26 @@ type salesforce.ListView {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   string filterScope {
     _restriction = {
       values = [
+        "Delegated",
         "Everything",
         "Mine",
         "MineAndMyGroups",
-        "Queue",
-        "Delegated",
-        "MyTerritory",
         "MyTeamTerritory",
-        "Team",
+        "MyTerritory",
+        "Queue",
         "SalesTeam",
+        "Team",
       ]
+      enforce_value = false
     }
+    _required = false
   }
   metadataType = "ListView"
 }

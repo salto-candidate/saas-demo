@@ -40,6 +40,18 @@ type salesforce.Contact {
     }
     string externalSharingModel {
     }
+    string label {
+    }
+    boolean enablePublishStatusTracking {
+    }
+    salesforce.MktDataLakeAttributes mktDataLakeAttributes {
+    }
+    salesforce.MktDataModelAttributes mktDataModelAttributes {
+    }
+    salesforce.ProfileSearchLayouts profileSearchLayouts {
+    }
+    hidden_string internalId {
+    }
   }
   apiName = "Contact"
   metadataType = "CustomObject"
@@ -406,7 +418,7 @@ type salesforce.Contact {
     enableTopics = true
   }
   _generated_dependencies = [
-    salesforce.LightningPage.instance.Contact_Record_Page1,
     salesforce.LightningPage.instance.Contact_Record_Page,
+    salesforce.LightningPage.instance.Contact_Record_Page1,
   ]
 }

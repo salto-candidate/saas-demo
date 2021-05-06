@@ -351,4 +351,8 @@ salesforce.SearchSettings {
   sidebarLimitToItemsIOwnCheckboxEnabled = true
   singleSearchResultShortcutEnabled = true
   spellCorrectKnowledgeSearchEnabled = false
+  enableEinsteinSearchAssistantDialog = "false"
+  enableEinsteinSearchNaturalLanguage = "false"
+  enablePersonalTagging = false
+  enablePublicTagging = false
 }

@@ -18,10 +18,14 @@ settings salesforce.TrailheadSettings {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   boolean enableMyTrailheadPref {
+    _required = false
   }
   metadataType = "TrailheadSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

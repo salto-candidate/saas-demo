@@ -1,4 +1,4 @@
-type salesforce.KnowledgeWorkOrderLineItemFieldsSettings {
+type salesforce.RedirectWhitelistUrl {
   annotations {
     serviceid metadataType {
     }
@@ -13,14 +13,18 @@ type salesforce.KnowledgeWorkOrderLineItemFieldsSettings {
     string dirName {
     }
   }
+  serviceid fullName {
+    _required = false
+  }
+  string url {
+    _required = false
+  }
   string internalId {
     _required = false
-    _hidden = true
+    _hidden_value = true
     localOnly = true
   }
-  "List<salesforce.KnowledgeWorkOrderLineItemField>" field {
-  }
-  suffix = ""
-  dirName = ""
-  metadataType = "KnowledgeWorkOrderLineItemFieldsSettings"
+  suffix = "redirectWhitelistUrl"
+  dirName = "redirectWhitelistUrls"
+  metadataType = "RedirectWhitelistUrl"
 }

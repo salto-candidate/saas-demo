@@ -4,9 +4,10 @@ type salesforce.FeedItem {
     label = "Feed Item ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Lookup ParentId {
     apiName = "FeedItem.ParentId"
@@ -20,17 +21,24 @@ type salesforce.FeedItem {
       salesforce.Campaign,
       salesforce.Case,
       salesforce.CollaborationGroup,
+      salesforce.CommSubscription,
+      salesforce.CommSubscriptionChannelType,
+      salesforce.CommSubscriptionConsent,
+      salesforce.CommSubscriptionTiming,
       salesforce.Contact,
       "ContentDocument",
       salesforce.Contract,
       "Dashboard",
       "DashboardComponent",
+      salesforce.EngagementChannelType,
       "EnhancedLetterhead",
       salesforce.Event,
+      salesforce.Image,
       salesforce.Lead,
       salesforce.Opportunity,
       salesforce.Order,
       salesforce.OrderItem,
+      salesforce.PartyConsent,
       salesforce.Product2,
       salesforce.ProfileSkill,
       salesforce.ProfileSkillEndorsement,
@@ -49,6 +57,7 @@ type salesforce.FeedItem {
     createable = true
     updateable = false
     queryable = true
+    relationshipName = "Parent"
   }
   salesforce.Picklist Type {
     apiName = "FeedItem.Type"
@@ -246,7 +255,9 @@ type salesforce.FeedItem {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "CreatedBy"
+    _hidden_value = true
   }
   salesforce.DateTime CreatedDate {
     apiName = "FeedItem.CreatedDate"
@@ -255,7 +266,8 @@ type salesforce.FeedItem {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Checkbox IsDeleted {
     apiName = "FeedItem.IsDeleted"
@@ -264,8 +276,9 @@ type salesforce.FeedItem {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
     _required = false
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "FeedItem.LastModifiedDate"
@@ -274,7 +287,8 @@ type salesforce.FeedItem {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "FeedItem.SystemModstamp"
@@ -283,7 +297,8 @@ type salesforce.FeedItem {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Number Revision {
     apiName = "FeedItem.Revision"
@@ -399,6 +414,7 @@ type salesforce.FeedItem {
     createable = false
     updateable = false
     queryable = true
+    relationshipName = "InsertedBy"
   }
   salesforce.Lookup BestCommentId {
     apiName = "FeedItem.BestCommentId"
@@ -411,6 +427,7 @@ type salesforce.FeedItem {
     createable = false
     updateable = false
     queryable = true
+    relationshipName = "BestComment"
   }
   salesforce.Checkbox HasContent {
     apiName = "FeedItem.HasContent"

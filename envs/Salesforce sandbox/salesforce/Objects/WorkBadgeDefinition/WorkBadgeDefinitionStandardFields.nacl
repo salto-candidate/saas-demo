@@ -4,9 +4,10 @@ type salesforce.WorkBadgeDefinition {
     label = "Badge ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Lookup OwnerId {
     apiName = "WorkBadgeDefinition.OwnerId"
@@ -20,7 +21,9 @@ type salesforce.WorkBadgeDefinition {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "Owner"
+    _hidden_value = true
   }
   salesforce.Checkbox IsDeleted {
     apiName = "WorkBadgeDefinition.IsDeleted"
@@ -29,8 +32,9 @@ type salesforce.WorkBadgeDefinition {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
     _required = false
+    _hidden_value = true
   }
   salesforce.Text Name {
     apiName = "WorkBadgeDefinition.Name"
@@ -50,7 +54,8 @@ type salesforce.WorkBadgeDefinition {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "WorkBadgeDefinition.CreatedById"
@@ -63,7 +68,9 @@ type salesforce.WorkBadgeDefinition {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "CreatedBy"
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "WorkBadgeDefinition.LastModifiedDate"
@@ -72,7 +79,8 @@ type salesforce.WorkBadgeDefinition {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "WorkBadgeDefinition.LastModifiedById"
@@ -85,7 +93,9 @@ type salesforce.WorkBadgeDefinition {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "WorkBadgeDefinition.SystemModstamp"
@@ -94,7 +104,8 @@ type salesforce.WorkBadgeDefinition {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Checkbox IsCompanyWide {
     apiName = "WorkBadgeDefinition.IsCompanyWide"

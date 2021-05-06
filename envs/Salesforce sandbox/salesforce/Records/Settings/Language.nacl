@@ -5,4 +5,5 @@ salesforce.LanguageSettings {
   enablePlatformLanguages = false
   enableTranslationWorkbench = false
   useLanguageFallback = false
+  enableLocalNamesForStdObjects = false
 }

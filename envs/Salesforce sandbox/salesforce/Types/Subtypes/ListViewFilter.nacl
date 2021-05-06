@@ -22,20 +22,22 @@ type salesforce.ListViewFilter {
   string operation {
     _restriction = {
       values = [
-        "equals",
-        "notEqual",
-        "lessThan",
-        "greaterThan",
-        "lessOrEqual",
-        "greaterOrEqual",
         "contains",
-        "notContain",
-        "startsWith",
-        "includes",
+        "equals",
         "excludes",
+        "greaterOrEqual",
+        "greaterThan",
+        "includes",
+        "lessOrEqual",
+        "lessThan",
+        "notContain",
+        "notEqual",
+        "startsWith",
         "within",
       ]
+      enforce_value = false
     }
+    _required = false
   }
   metadataType = "ListViewFilter"
 }

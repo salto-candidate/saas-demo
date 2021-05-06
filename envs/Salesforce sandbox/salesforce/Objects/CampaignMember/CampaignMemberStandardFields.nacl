@@ -4,9 +4,10 @@ type salesforce.CampaignMember {
     label = "Campaign Member ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Checkbox IsDeleted {
     apiName = "CampaignMember.IsDeleted"
@@ -15,8 +16,9 @@ type salesforce.CampaignMember {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
     _required = false
+    _hidden_value = true
   }
   salesforce.Lookup CampaignId {
     apiName = "CampaignMember.CampaignId"
@@ -29,6 +31,7 @@ type salesforce.CampaignMember {
     createable = true
     updateable = false
     queryable = true
+    relationshipName = "Campaign"
   }
   salesforce.Lookup LeadId {
     apiName = "CampaignMember.LeadId"
@@ -41,6 +44,7 @@ type salesforce.CampaignMember {
     createable = true
     updateable = false
     queryable = true
+    relationshipName = "Lead"
   }
   salesforce.Lookup ContactId {
     apiName = "CampaignMember.ContactId"
@@ -53,6 +57,7 @@ type salesforce.CampaignMember {
     createable = true
     updateable = false
     queryable = true
+    relationshipName = "Contact"
   }
   salesforce.Picklist Status {
     apiName = "CampaignMember.Status"
@@ -79,7 +84,8 @@ type salesforce.CampaignMember {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "CampaignMember.CreatedById"
@@ -92,7 +98,9 @@ type salesforce.CampaignMember {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "CreatedBy"
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "CampaignMember.LastModifiedDate"
@@ -101,7 +109,8 @@ type salesforce.CampaignMember {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "CampaignMember.LastModifiedById"
@@ -114,7 +123,9 @@ type salesforce.CampaignMember {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "CampaignMember.SystemModstamp"
@@ -123,7 +134,8 @@ type salesforce.CampaignMember {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Date FirstRespondedDate {
     apiName = "CampaignMember.FirstRespondedDate"
@@ -153,7 +165,8 @@ type salesforce.CampaignMember {
     caseSensitive = false
     length = 255
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Text FirstName {
     apiName = "CampaignMember.FirstName"
@@ -343,10 +356,11 @@ type salesforce.CampaignMember {
   }
   salesforce.Lookup LeadOrContactId {
     apiName = "CampaignMember.LeadOrContactId"
-    label = "Lead/Contact ID"
+    label = "Related Record ID"
     _required = false
     allowLookupRecordDeletion = true
     referenceTo = [
+      salesforce.Account,
       salesforce.Contact,
       salesforce.Lead,
     ]
@@ -356,7 +370,7 @@ type salesforce.CampaignMember {
   }
   salesforce.Lookup LeadOrContactOwnerId {
     apiName = "CampaignMember.LeadOrContactOwnerId"
-    label = "Lead/Contact Owner ID"
+    label = "Related Record Owner ID"
     _required = false
     allowLookupRecordDeletion = true
     referenceTo = [
@@ -366,5 +380,6 @@ type salesforce.CampaignMember {
     createable = false
     updateable = false
     queryable = true
+    relationshipName = "LeadOrContactOwner"
   }
 }

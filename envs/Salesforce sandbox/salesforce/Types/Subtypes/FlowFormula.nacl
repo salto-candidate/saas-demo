@@ -38,7 +38,9 @@ type salesforce.FlowFormula {
         "Number",
         "String",
       ]
+      enforce_value = false
     }
+    _required = false
   }
   metadataType = "FlowFormula"
 }

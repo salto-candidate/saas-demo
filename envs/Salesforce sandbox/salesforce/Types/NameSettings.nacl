@@ -24,10 +24,17 @@ settings salesforce.NameSettings {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   boolean enableFormalName {
+    _required = false
   }
   metadataType = "NameSettings"
+  boolean enableInformalName {
+    _required = false
+  }
+  suffix = "settings"
+  dirName = "settings"
 }

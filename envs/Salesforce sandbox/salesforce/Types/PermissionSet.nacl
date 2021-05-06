@@ -34,32 +34,47 @@ type salesforce.PermissionSet {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   "List<salesforce.PermissionSetApplicationVisibility>" applicationVisibilities {
+    _required = false
   }
   "List<salesforce.PermissionSetApexClassAccess>" classAccesses {
+    _required = false
   }
   "List<salesforce.PermissionSetCustomMetadataTypeAccess>" customMetadataTypeAccesses {
+    _required = false
   }
   "List<salesforce.PermissionSetCustomPermissions>" customPermissions {
+    _required = false
   }
   "List<salesforce.PermissionSetCustomSettingAccesses>" customSettingAccesses {
+    _required = false
   }
   "List<salesforce.PermissionSetFieldPermissions>" fieldPermissions {
+    _required = false
   }
   "List<salesforce.PermissionSetObjectPermissions>" objectPermissions {
+    _required = false
   }
   "List<salesforce.PermissionSetApexPageAccess>" pageAccesses {
+    _required = false
   }
   "List<salesforce.PermissionSetRecordTypeVisibility>" recordTypeVisibilities {
+    _required = false
   }
   "List<salesforce.PermissionSetTabSetting>" tabSettings {
+    _required = false
   }
   "List<salesforce.PermissionSetUserPermission>" userPermissions {
+    _required = false
   }
   suffix = "permissionset"
   dirName = "permissionsets"
   metadataType = "PermissionSet"
+  "List<salesforce.PermissionSetExternalDataSourceAccess>" externalDataSourceAccesses {
+    _required = false
+  }
 }

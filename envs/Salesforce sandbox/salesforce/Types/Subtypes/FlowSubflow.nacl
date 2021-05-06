@@ -44,4 +44,10 @@ type salesforce.FlowSubflow {
     _required = false
   }
   metadataType = "FlowSubflow"
+  string elementSubtype {
+    _required = false
+  }
+  boolean storeOutputAutomatically {
+    _required = false
+  }
 }

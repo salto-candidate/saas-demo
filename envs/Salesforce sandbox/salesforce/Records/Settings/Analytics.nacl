@@ -26,4 +26,16 @@ salesforce.AnalyticsSettings {
   enableUseOldChartsLookAndFeel = false
   enableWaveReplication = false
   enableWaveSharingInheritance = false
+  enableAnalyticsSharingEnable = true
+  enableOrgHasWatchlistEnabled = "true"
+  enableQueryLiveConnectors = false
+  enableReportCrtAutoAddPref = "false"
+  enableS3OutputConnector = "false"
+  enableSecureImageSharing = "false"
+  enableSnowflakeOutputConnector = "false"
+  enableWaveIndexMVDim = "true"
+  enableWaveRecordNavigation = false
+  maxHoursAppInProgress = 48
+  replaceBlankMeasuresWithNulls = false
+  turnOnTimeZones = false
 }

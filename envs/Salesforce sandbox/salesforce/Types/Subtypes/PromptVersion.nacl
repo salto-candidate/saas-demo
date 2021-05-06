@@ -45,6 +45,9 @@ type salesforce.PromptVersion {
         "BottomCenter",
         "BottomLeft",
         "BottomRight",
+        "MiddleCenter",
+        "MiddleLeft",
+        "MiddleRight",
         "TopCenter",
         "TopLeft",
         "TopRight",
@@ -152,4 +155,26 @@ type salesforce.PromptVersion {
     _required = false
   }
   metadataType = "PromptVersion"
+  string themeColor {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "Theme1",
+        "Theme2",
+        "Theme3",
+        "Theme4",
+      ]
+    }
+  }
+  string themeSaturation {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "Dark",
+        "Light",
+      ]
+    }
+  }
 }

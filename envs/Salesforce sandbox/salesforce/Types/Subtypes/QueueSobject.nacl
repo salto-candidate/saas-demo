@@ -42,6 +42,7 @@ type salesforce.QueueSobject {
         "QuickText",
         "Scorecard",
         "SocialPost",
+        "Task",
         "UserProvisioningRequest",
         "WorkBadgeDefinition",
         "WorkThanks",

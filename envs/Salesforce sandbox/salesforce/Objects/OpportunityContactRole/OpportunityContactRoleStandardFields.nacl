@@ -4,9 +4,10 @@ type salesforce.OpportunityContactRole {
     label = "Contact Role ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Lookup OpportunityId {
     apiName = "OpportunityContactRole.OpportunityId"
@@ -19,6 +20,7 @@ type salesforce.OpportunityContactRole {
     createable = true
     updateable = false
     queryable = true
+    relationshipName = "Opportunity"
   }
   salesforce.Lookup ContactId {
     apiName = "OpportunityContactRole.ContactId"
@@ -31,6 +33,7 @@ type salesforce.OpportunityContactRole {
     createable = true
     updateable = true
     queryable = true
+    relationshipName = "Contact"
   }
   salesforce.Picklist Role {
     apiName = "OpportunityContactRole.Role"
@@ -57,7 +60,8 @@ type salesforce.OpportunityContactRole {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "OpportunityContactRole.CreatedById"
@@ -70,7 +74,9 @@ type salesforce.OpportunityContactRole {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "CreatedBy"
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "OpportunityContactRole.LastModifiedDate"
@@ -79,7 +85,8 @@ type salesforce.OpportunityContactRole {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "OpportunityContactRole.LastModifiedById"
@@ -92,7 +99,9 @@ type salesforce.OpportunityContactRole {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "OpportunityContactRole.SystemModstamp"
@@ -101,7 +110,8 @@ type salesforce.OpportunityContactRole {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Checkbox IsDeleted {
     apiName = "OpportunityContactRole.IsDeleted"
@@ -110,7 +120,8 @@ type salesforce.OpportunityContactRole {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
     _required = false
+    _hidden_value = true
   }
 }

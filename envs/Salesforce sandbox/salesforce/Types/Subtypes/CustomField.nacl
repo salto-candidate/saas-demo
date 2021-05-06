@@ -201,35 +201,44 @@ type salesforce.CustomField {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   string type {
     _restriction = {
       values = [
         "AutoNumber",
-        "Text",
-        "Number",
-        "Percent",
         "Checkbox",
-        "Date",
-        "Time",
-        "DateTime",
         "Currency",
-        "Picklist",
-        "MultiselectPicklist",
+        "Date",
+        "DateTime",
         "Email",
-        "Phone",
-        "LongTextArea",
-        "Html",
-        "TextArea",
         "EncryptedText",
-        "Url",
+        "Html",
+        "LongTextArea",
         "Lookup",
         "MasterDetail",
+        "MultiselectPicklist",
+        "Number",
+        "Percent",
+        "Phone",
+        "Picklist",
         "Summary",
+        "Text",
+        "TextArea",
+        "Time",
+        "Url",
       ]
+      enforce_value = false
     }
+    _required = false
   }
   metadataType = "CustomField"
+  salesforce.MktDataLakeFieldAttributes mktDataLakeFieldAttributes {
+    _required = false
+  }
+  salesforce.MktDataModelFieldAttributes mktDataModelFieldAttributes {
+    _required = false
+  }
 }

@@ -35,4 +35,7 @@ type salesforce.FlowStep {
     _required = false
   }
   metadataType = "FlowStep"
+  string elementSubtype {
+    _required = false
+  }
 }

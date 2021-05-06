@@ -106,9 +106,7 @@ type salesforce.SessionSettings {
   boolean lockerServiceCSP {
     _required = false
   }
-  boolean lockerServiceFrozenRealm {
-    _required = false
-  }
+  
   string logoutURL {
     _required = false
   }
@@ -128,4 +126,13 @@ type salesforce.SessionSettings {
     _required = false
   }
   metadataType = "SessionSettings"
+  boolean canConfirmIdentityBySmsOnly {
+    _required = false
+  }
+  boolean enableOauthCorsPolicy {
+    _required = false
+  }
+  boolean enforceUserDeviceRevoked {
+    _required = false
+  }
 }

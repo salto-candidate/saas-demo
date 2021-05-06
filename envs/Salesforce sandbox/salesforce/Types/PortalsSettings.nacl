@@ -1,4 +1,4 @@
-type salesforce.KnowledgeWorkOrderFieldsSettings {
+settings salesforce.PortalsSettings {
   annotations {
     serviceid metadataType {
     }
@@ -13,14 +13,15 @@ type salesforce.KnowledgeWorkOrderFieldsSettings {
     string dirName {
     }
   }
+  serviceid fullName {
+    _required = false
+  }
   string internalId {
     _required = false
-    _hidden = true
+    _hidden_value = true
     localOnly = true
   }
-  "List<salesforce.KnowledgeWorkOrderField>" field {
-  }
-  suffix = ""
-  dirName = ""
-  metadataType = "KnowledgeWorkOrderFieldsSettings"
+  suffix = "settings"
+  dirName = "settings"
+  metadataType = "PortalsSettings"
 }

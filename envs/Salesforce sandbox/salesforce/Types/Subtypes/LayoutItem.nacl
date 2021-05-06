@@ -56,10 +56,12 @@ type salesforce.LayoutItem {
     _restriction = {
       values = [
         "Edit",
-        "Required",
         "Readonly",
+        "Required",
       ]
+      enforce_value = false
     }
+    _required = false
   }
   metadataType = "LayoutItem"
 }

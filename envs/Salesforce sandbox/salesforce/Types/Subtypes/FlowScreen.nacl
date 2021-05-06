@@ -62,4 +62,16 @@ type salesforce.FlowScreen {
     _required = false
   }
   metadataType = "FlowScreen"
+  string elementSubtype {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "SortCollectionProcessor",
+      ]
+    }
+    foreignKeyDomain = [
+      "FlowElementSubtypeDefinition",
+    ]
+  }
 }

@@ -7,10 +7,11 @@ type salesforce.Yariv__c {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
     description = "blabla description"
     displayFormat = "YYY-{0000}"
     externalId = false
+    _hidden_value = true
   }
   salesforce.FormulaDateTime Yariv_Formula__c {
     apiName = "Yariv__c.Yariv_Formula__c"

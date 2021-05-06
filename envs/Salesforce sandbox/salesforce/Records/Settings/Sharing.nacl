@@ -9,4 +9,7 @@ salesforce.SharingSettings {
   enableRemoveTMGroupMembership = false
   enableSecureGuestAccess = false
   enableStandardReportVisibility = true
+  deferGroupMembership = false
+  deferSharingRules = false
+  enableRestrictAccessLookupRecords = false
 }

@@ -18,40 +18,59 @@ settings salesforce.FlowSettings {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   boolean doesFormulaEnforceDataAccess {
+    _required = false
   }
   boolean doesFormulaGenerateHtmlOutput {
+    _required = false
   }
   boolean enableFlowBREncodedFixEnabled {
+    _required = false
   }
   boolean enableFlowDeployAsActiveEnabled {
+    _required = false
   }
   boolean enableFlowFieldFilterEnabled {
+    _required = false
   }
   boolean enableFlowFormulasFixEnabled {
+    _required = false
   }
   boolean enableFlowInterviewSharingEnabled {
+    _required = false
   }
   boolean enableFlowNullPreviousValueFix {
+    _required = false
   }
   boolean enableFlowPauseEnabled {
+    _required = false
   }
   boolean enableFlowUseApexExceptionEmail {
+    _required = false
   }
   boolean enableInvocableFlowFixEnabled {
+    _required = false
   }
   boolean enableLightningRuntimeEnabled {
+    _required = false
   }
   boolean isAccessToInvokedApexRequired {
+    _required = false
   }
   boolean isApexPluginAccessModifierRespected {
+    _required = false
   }
   boolean isEnhancedFlowListViewVisible {
+    _required = false
   }
   boolean isManageFlowRequiredForAutomationCharts {
+    _required = false
   }
   metadataType = "FlowSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

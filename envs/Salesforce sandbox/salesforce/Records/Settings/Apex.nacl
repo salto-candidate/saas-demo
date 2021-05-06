@@ -13,4 +13,5 @@ salesforce.ApexSettings {
   enableGaplessTestAutoNum = true
   enableMngdCtrlActionAccessPref = false
   enableNonCertifiedApexMdCrud = false
+  enableSecureNoArgConstructorPref = false
 }

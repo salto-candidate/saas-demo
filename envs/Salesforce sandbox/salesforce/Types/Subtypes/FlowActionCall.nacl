@@ -46,6 +46,7 @@ type salesforce.FlowActionCall {
         "addMessageToQuipDocument",
         "addQuipDocumentToFolder",
         "addRebateMemberList",
+        "addSkillRequirements",
         "addUsersToChat",
         "addUsersToQuipChat",
         "addUsersToQuipDocument",
@@ -58,6 +59,7 @@ type salesforce.FlowActionCall {
         "apex",
         "archiveKnowledgeArticles",
         "assignKnowledgeArticles",
+        "assignMemberTierBenefits",
         "assignTargetToSalesCadence",
         "assignTrailheadBadge",
         "attachQuipDocumentToRecord",
@@ -94,7 +96,9 @@ type salesforce.FlowActionCall {
         "createDraftFromOnlineKnowledgeArticle",
         "createFinancialRecords",
         "createFulfillmentOrder",
+        "createFulfillmentOrders",
         "createInvoiceFromFulfillmentOrder",
+        "createOrderFromQuote",
         "createOrderPaymentSummary",
         "createOrderSummary",
         "createQuipChat",
@@ -102,6 +106,7 @@ type salesforce.FlowActionCall {
         "createQuipFolder",
         "createResponseEventAction",
         "createServiceReport",
+        "createWorkItem",
         "creditPoints",
         "customNotificationAction",
         "dataProcessingEngineAction",
@@ -111,6 +116,7 @@ type salesforce.FlowActionCall {
         "deleteKnowledgeArticles",
         "deleteWorkPlans",
         "deployOrchestration",
+        "dynamicSendSurveyInvitation",
         "editQuipDocument",
         "einsteinEPLitePredictionAction",
         "emailAlert",
@@ -118,39 +124,54 @@ type salesforce.FlowActionCall {
         "emailSimple",
         "ensureFundsOrderSummaryAsync",
         "ensureRefundsOrderSummaryAsync",
+        "exportQuipDocumentToPdf",
         "exportSurveyResponses",
         "externalService",
         "flow",
+        "generateKnowledgeLogData",
         "generateRebatePayoutPeriods",
         "generateWorkOrders",
         "generateWorkPlans",
         "getBenefitAndCalculateRebateAmount",
+        "getDialerSoftphonePathSuffix",
+        "getIntelligentAccountSettingsToken",
         "getPointsBalance",
         "getTier",
-        "iasCreateReservation",
-        "iasFulfillment",
-        "iasGetAvailability",
-        "iasReleaseReservation",
-        "iasTransferReservation",
         "insightFeedback",
+        "internalTestAction",
         "invokeOrchOutputFlow",
+        "issueVoucher",
         "liveMessageNotification",
         "lockQuipDocument",
+        "lockQuipSection",
         "managedContentReleasePublish",
+        "managedContentVersionPublish",
+        "managedContentVersionUnpublish",
         "marketingEmail",
         "massUpdateAccountForecast",
         "massUpdateSalesAgreement",
         "metricRefresh",
+        "modifyCadenceTrackerAttributes",
+        "ociCreateReservation",
+        "ociFulfillReservation",
+        "ociGetAvailability",
+        "ociReleaseReservation",
+        "ociTransferReservation",
         "orchestrationDebugLog",
         "orchestrationTimer",
+        "orderRoutingFindRoutesWithFewestSplits",
+        "orderRoutingRankByAverageDistance",
         "orderToCartAction",
+        "outboundMessage",
         "pardotAddToListMembership",
         "pardotGetListx",
         "pauseSalesCadenceTracker",
+        "performMultiLevelRollups",
         "priceCart",
         "print",
         "printServiceDocument",
         "processCreateWorkitem",
+        "processMemberBenefitAction",
         "processRebatesBatchCalculationJob",
         "processStartStep",
         "processStopInstance",
@@ -159,8 +180,10 @@ type salesforce.FlowActionCall {
         "publishPardotContent",
         "quickAction",
         "quipLivePaste",
+        "rebatesProcessCSV",
         "recalculateForecast",
         "refreshActualsCalculation",
+        "refreshDecisionTable",
         "removeQuipDocumentFromFolder",
         "removeTargetFromSalesCadence",
         "removeUsersFromQuipChat",
@@ -169,6 +192,7 @@ type salesforce.FlowActionCall {
         "resumeSalesCadenceTracker",
         "returnOrderItemSummariesPreview",
         "returnOrderItemSummariesSubmit",
+        "routeWork",
         "routingAddressVerification",
         "salesCadenceListenerBranchStepTranslator",
         "saveAppointment",
@@ -176,6 +200,7 @@ type salesforce.FlowActionCall {
         "scaleCacheAsyncRefresh",
         "sendAlert",
         "sendSurveyInvitation",
+        "setCheckoutDeliveryMethod",
         "sfdcOutputAction",
         "skillsBasedRouting",
         "storeReplyRecommendationsFeedback",
@@ -203,4 +228,22 @@ type salesforce.FlowActionCall {
     _required = false
   }
   metadataType = "FlowActionCall"
+  string elementSubtype {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "SortCollectionProcessor",
+      ]
+    }
+    foreignKeyDomain = [
+      "FlowElementSubtypeDefinition",
+    ]
+  }
+  salesforce.FlowDataTypeMapping dataTypeMappings {
+    _required = false
+  }
+  boolean storeOutputAutomatically {
+    _required = false
+  }
 }

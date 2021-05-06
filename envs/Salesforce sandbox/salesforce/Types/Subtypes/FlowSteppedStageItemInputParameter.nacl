@@ -1,4 +1,4 @@
-settings salesforce.OrgPreferenceSettings {
+type salesforce.FlowSteppedStageItemInputParameter {
   annotations {
     serviceid metadataType {
     }
@@ -13,15 +13,14 @@ settings salesforce.OrgPreferenceSettings {
     string dirName {
     }
   }
-  serviceid fullName {
+  string name {
     _required = false
   }
-  string internalId {
+  salesforce.FlowMetadataValue processMetadataValues {
     _required = false
-    _hidden = true
-    localOnly = true
   }
-  "List<salesforce.OrganizationSettingsDetail>" preferences {
+  salesforce.FlowElementReferenceOrValue value {
+    _required = false
   }
-  metadataType = "OrgPreferenceSettings"
+  metadataType = "FlowSteppedStageItemInputParameter"
 }

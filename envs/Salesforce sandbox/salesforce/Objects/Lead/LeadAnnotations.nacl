@@ -40,6 +40,18 @@ type salesforce.Lead {
     }
     string externalSharingModel {
     }
+    string label {
+    }
+    boolean enablePublishStatusTracking {
+    }
+    salesforce.MktDataLakeAttributes mktDataLakeAttributes {
+    }
+    salesforce.MktDataModelAttributes mktDataModelAttributes {
+    }
+    salesforce.ProfileSearchLayouts profileSearchLayouts {
+    }
+    hidden_string internalId {
+    }
   }
   apiName = "Lead"
   metadataType = "CustomObject"
@@ -335,7 +347,7 @@ type salesforce.Lead {
     enableTopics = true
   }
   _generated_dependencies = [
-    salesforce.LightningPage.instance.Lead_Record_Page1,
     salesforce.LightningPage.instance.Lead_Record_Page,
+    salesforce.LightningPage.instance.Lead_Record_Page1,
   ]
 }

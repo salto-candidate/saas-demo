@@ -26,4 +26,7 @@ type salesforce.FlowTextTemplate {
     _required = false
   }
   metadataType = "FlowTextTemplate"
+  boolean isViewedAsPlainText {
+    _required = false
+  }
 }

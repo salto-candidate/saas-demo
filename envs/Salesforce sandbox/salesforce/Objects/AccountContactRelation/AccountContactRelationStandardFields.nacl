@@ -4,9 +4,10 @@ type salesforce.AccountContactRelation {
     label = "Account Contact Relationship ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Lookup AccountId {
     apiName = "AccountContactRelation.AccountId"
@@ -19,6 +20,7 @@ type salesforce.AccountContactRelation {
     createable = true
     updateable = false
     queryable = true
+    relationshipName = "Account"
   }
   salesforce.Lookup ContactId {
     apiName = "AccountContactRelation.ContactId"
@@ -31,6 +33,7 @@ type salesforce.AccountContactRelation {
     createable = true
     updateable = false
     queryable = true
+    relationshipName = "Contact"
   }
   salesforce.MultiselectPicklist Roles {
     apiName = "AccountContactRelation.Roles"
@@ -82,8 +85,9 @@ type salesforce.AccountContactRelation {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
     _required = false
+    _hidden_value = true
   }
   salesforce.DateTime CreatedDate {
     apiName = "AccountContactRelation.CreatedDate"
@@ -92,7 +96,8 @@ type salesforce.AccountContactRelation {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "AccountContactRelation.CreatedById"
@@ -105,7 +110,9 @@ type salesforce.AccountContactRelation {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "CreatedBy"
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "AccountContactRelation.LastModifiedDate"
@@ -114,7 +121,8 @@ type salesforce.AccountContactRelation {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "AccountContactRelation.LastModifiedById"
@@ -127,7 +135,9 @@ type salesforce.AccountContactRelation {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "AccountContactRelation.SystemModstamp"
@@ -136,6 +146,7 @@ type salesforce.AccountContactRelation {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
 }

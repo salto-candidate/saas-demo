@@ -4,9 +4,10 @@ type salesforce.PartnerRole {
     label = "Partner Role Value ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Text MasterLabel {
     apiName = "PartnerRole.MasterLabel"
@@ -62,7 +63,9 @@ type salesforce.PartnerRole {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "CreatedBy"
+    _hidden_value = true
   }
   salesforce.DateTime CreatedDate {
     apiName = "PartnerRole.CreatedDate"
@@ -71,7 +74,8 @@ type salesforce.PartnerRole {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "PartnerRole.LastModifiedById"
@@ -84,7 +88,9 @@ type salesforce.PartnerRole {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "PartnerRole.LastModifiedDate"
@@ -93,7 +99,8 @@ type salesforce.PartnerRole {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "PartnerRole.SystemModstamp"
@@ -102,6 +109,7 @@ type salesforce.PartnerRole {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
 }

@@ -1,9 +1,9 @@
 salesforce.BusinessHoursSettings {
   fullName = "BusinessHours"
-  businessHours = [
-    {
-      active = "true"
-      default = "true"
+  businessHours = {
+    Default = {
+      active = true
+      default = true
       fridayEndTime = "00:00:00.000Z"
       fridayStartTime = "00:00:00.000Z"
       mondayEndTime = "00:00:00.000Z"
@@ -20,6 +20,6 @@ salesforce.BusinessHoursSettings {
       tuesdayStartTime = "00:00:00.000Z"
       wednesdayEndTime = "00:00:00.000Z"
       wednesdayStartTime = "00:00:00.000Z"
-    },
-  ]
+    }
+  }
 }

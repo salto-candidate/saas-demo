@@ -2,7 +2,7 @@ salesforce.SecuritySettings {
   fullName = "Security"
   canUsersGrantLoginAccess = true
   enableAuditFieldsInactiveOwner = false
-  enableAuraSecureEvalPref = false
+  enableAuraSecureEvalPref = true
   enableRequireHttpsConnection = true
   networkAccess = {
     ipRanges = [
@@ -19,7 +19,7 @@ salesforce.SecuritySettings {
   }
   passwordPolicies = {
     complexity = "AlphaNumeric"
-    enableSetPasswordInApi = true
+    
     expiration = "NinetyDays"
     historyRestriction = "3"
     lockoutInterval = "FifteenMinutes"
@@ -31,7 +31,7 @@ salesforce.SecuritySettings {
   }
   sessionSettings = {
     allowUserAuthenticationByCertificate = false
-    canConfirmEmailChangeInLightningCommunities = false
+    canConfirmEmailChangeInLightningCommunities = true
     disableTimeoutWarning = false
     enableCSPOnEmail = true
     enableCSRFOnGet = true
@@ -65,10 +65,15 @@ salesforce.SecuritySettings {
     requireHttpOnly = false
     requireHttps = true
     sessionTimeout = "TwoHours"
+    canConfirmIdentityBySmsOnly = true
+    enableOauthCorsPolicy = false
+    enforceUserDeviceRevoked = false
   }
   singleSignOnSettings = {
     enableMultipleSamlConfigs = true
     enableSamlJitProvisioning = false
     enableSamlLogin = false
+    enableCaseInsensitiveFederationID = false
+    isLoginWithSalesforceCredentialsDisabled = false
   }
 }

@@ -18,8 +18,11 @@ settings salesforce.DiscoverySettings {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   metadataType = "DiscoverySettings"
+  suffix = "settings"
+  dirName = "settings"
 }

@@ -2,145 +2,175 @@ salesforce.LightningPage Opportunity_Record_Page {
   fullName = "Opportunity_Record_Page"
   flexiPageRegions = [
     {
-      componentInstances = [
-        {
-          componentInstanceProperties = [
-            {
-              name = "collapsed"
-              value = "false"
-            },
-          ]
-          componentName = "force:highlightsPanel"
-        },
-      ]
+      
       mode = "Replace"
       name = "header"
       type = "Region"
-    },
-    {
-      componentInstances = [
+      itemInstances = [
         {
-          componentInstanceProperties = [
-            {
-              name = "active"
-              value = "true"
-            },
-            {
-              name = "body"
-              value = "activityTabContent"
-            },
-            {
-              name = "title"
-              value = "Standard.Tab.activity"
-            },
-          ]
-          componentName = "flexipage:tab"
-        },
-        {
-          componentInstanceProperties = [
-            {
-              name = "body"
-              value = "feedTabContent"
-            },
-            {
-              name = "title"
-              value = "Standard.Tab.collaborate"
-            },
-          ]
-          componentName = "flexipage:tab"
-        },
-        {
-          componentInstanceProperties = [
-            {
-              name = "body"
-              value = "detailTabContent"
-            },
-            {
-              name = "title"
-              value = "Standard.Tab.detail"
-            },
-          ]
-          componentName = "flexipage:tab"
+          componentInstance = {
+            componentInstanceProperties = [
+              {
+                name = "collapsed"
+                value = "false"
+              },
+            ]
+            componentName = "force:highlightsPanel"
+          }
         },
       ]
+    },
+    {
+      
       mode = "Replace"
       name = "tabs"
       type = "Facet"
-    },
-    {
-      componentInstances = [
+      itemInstances = [
         {
-          componentInstanceProperties = [
-            {
-              name = "tabs"
-              value = "tabs"
-            },
-          ]
-          componentName = "flexipage:tabset"
+          componentInstance = {
+            componentInstanceProperties = [
+              {
+                name = "active"
+                value = "true"
+              },
+              {
+                name = "body"
+                value = "activityTabContent"
+              },
+              {
+                name = "title"
+                value = "Standard.Tab.activity"
+              },
+            ]
+            componentName = "flexipage:tab"
+          }
+        },
+        {
+          componentInstance = {
+            componentInstanceProperties = [
+              {
+                name = "body"
+                value = "feedTabContent"
+              },
+              {
+                name = "title"
+                value = "Standard.Tab.collaborate"
+              },
+            ]
+            componentName = "flexipage:tab"
+          }
+        },
+        {
+          componentInstance = {
+            componentInstanceProperties = [
+              {
+                name = "body"
+                value = "detailTabContent"
+              },
+              {
+                name = "title"
+                value = "Standard.Tab.detail"
+              },
+            ]
+            componentName = "flexipage:tab"
+          }
         },
       ]
+    },
+    {
+      
       mode = "Replace"
       name = "main"
       type = "Region"
-    },
-    {
-      componentInstances = [
+      itemInstances = [
         {
-          componentInstanceProperties = [
-            {
-              name = "hideUpdateButton"
-              value = "false"
-            },
-          ]
-          componentName = "runtime_sales_pathassistant:pathAssistant"
+          componentInstance = {
+            componentInstanceProperties = [
+              {
+                name = "tabs"
+                value = "tabs"
+              },
+            ]
+            componentName = "flexipage:tabset"
+          }
         },
       ]
+    },
+    {
+      
       mode = "Replace"
       name = "subheader"
       type = "Region"
-    },
-    {
-      componentInstances = [
+      itemInstances = [
         {
-          componentName = "runtime_sales_activities:activityPanel"
+          componentInstance = {
+            componentInstanceProperties = [
+              {
+                name = "hideUpdateButton"
+                value = "false"
+              },
+            ]
+            componentName = "runtime_sales_pathassistant:pathAssistant"
+          }
         },
       ]
+    },
+    {
+      
       mode = "Replace"
       name = "activityTabContent"
       type = "Facet"
-    },
-    {
-      componentInstances = [
+      itemInstances = [
         {
-          componentName = "forceChatter:recordFeedContainer"
+          componentInstance = {
+            componentName = "runtime_sales_activities:activityPanel"
+          }
         },
       ]
+    },
+    {
+      
       mode = "Replace"
       name = "feedTabContent"
       type = "Facet"
-    },
-    {
-      componentInstances = [
+      itemInstances = [
         {
-          componentName = "force:detailPanel"
+          componentInstance = {
+            componentName = "forceChatter:recordFeedContainer"
+          }
         },
       ]
+    },
+    {
+      
       mode = "Replace"
       name = "detailTabContent"
       type = "Facet"
-    },
-    {
-      componentInstances = [
+      itemInstances = [
         {
-          componentName = "force:relatedListQuickLinksContainer"
-        },
-        {
-          componentName = "force:relatedListContainer"
+          componentInstance = {
+            componentName = "force:detailPanel"
+          }
         },
       ]
+    },
+    {
+      
       mode = "Replace"
       name = "sidebar"
       type = "Region"
+      itemInstances = [
+        {
+          componentInstance = {
+            componentName = "force:relatedListQuickLinksContainer"
+          }
+        },
+        {
+          componentInstance = {
+            componentName = "force:relatedListContainer"
+          }
+        },
+      ]
     },
   ]
   masterLabel = "Opportunity Record Page"

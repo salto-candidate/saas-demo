@@ -4,9 +4,10 @@ type salesforce.ForecastingOwnerAdjustment {
     label = "ForecastingAdjustment ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Checkbox IsDeleted {
     apiName = "ForecastingOwnerAdjustment.IsDeleted"
@@ -15,8 +16,9 @@ type salesforce.ForecastingOwnerAdjustment {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
     _required = false
+    _hidden_value = true
   }
   salesforce.DateTime CreatedDate {
     apiName = "ForecastingOwnerAdjustment.CreatedDate"
@@ -25,7 +27,8 @@ type salesforce.ForecastingOwnerAdjustment {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "ForecastingOwnerAdjustment.CreatedById"
@@ -38,7 +41,9 @@ type salesforce.ForecastingOwnerAdjustment {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "CreatedBy"
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "ForecastingOwnerAdjustment.LastModifiedDate"
@@ -47,7 +52,8 @@ type salesforce.ForecastingOwnerAdjustment {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "ForecastingOwnerAdjustment.LastModifiedById"
@@ -60,7 +66,9 @@ type salesforce.ForecastingOwnerAdjustment {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "ForecastingOwnerAdjustment.SystemModstamp"
@@ -69,7 +77,8 @@ type salesforce.ForecastingOwnerAdjustment {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup ForecastingItemId {
     apiName = "ForecastingOwnerAdjustment.ForecastingItemId"
@@ -82,6 +91,7 @@ type salesforce.ForecastingOwnerAdjustment {
     createable = false
     updateable = false
     queryable = true
+    relationshipName = "ForecastingItem"
   }
   salesforce.Currency OwnerAdjustedAmount {
     apiName = "ForecastingOwnerAdjustment.OwnerAdjustedAmount"
@@ -123,6 +133,7 @@ type salesforce.ForecastingOwnerAdjustment {
     createable = false
     updateable = false
     queryable = true
+    relationshipName = "Period"
   }
   salesforce.Lookup ForecastOwnerId {
     apiName = "ForecastingOwnerAdjustment.ForecastOwnerId"
@@ -135,6 +146,7 @@ type salesforce.ForecastingOwnerAdjustment {
     createable = true
     updateable = false
     queryable = true
+    relationshipName = "ForecastOwner"
   }
   salesforce.Date StartDate {
     apiName = "ForecastingOwnerAdjustment.StartDate"
@@ -281,5 +293,6 @@ type salesforce.ForecastingOwnerAdjustment {
     createable = true
     updateable = false
     queryable = true
+    relationshipName = "ForecastingType"
   }
 }

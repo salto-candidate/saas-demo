@@ -51,10 +51,17 @@ type salesforce.EmbeddedServiceBranding {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   suffix = "EmbeddedServiceBranding"
   dirName = "EmbeddedServiceBranding"
   metadataType = "EmbeddedServiceBranding"
+  string navBarTextColor {
+    _required = false
+  }
+  string secondaryNavBarColor {
+    _required = false
+  }
 }

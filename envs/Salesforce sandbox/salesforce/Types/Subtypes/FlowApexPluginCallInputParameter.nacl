@@ -25,6 +25,7 @@ type salesforce.FlowApexPluginCallInputParameter {
       enforce_value = false
       values = [
         "ActiveStages",
+        "AppProcess",
         "ContextRecord",
         "CurrentDate",
         "CurrentDateTime",
@@ -69,6 +70,7 @@ type salesforce.FlowApexPluginCallInputParameter {
       "InteractionStage",
       "InteractionStatement",
       "InteractionSteppedStage",
+      "InteractionSteppedStageItem",
       "InteractionSwitch",
       "InteractionTodo",
       "InteractionValueList",

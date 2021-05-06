@@ -4,9 +4,10 @@ type salesforce.Asset {
     label = "Asset ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Lookup ContactId {
     apiName = "Asset.ContactId"
@@ -19,6 +20,7 @@ type salesforce.Asset {
     createable = true
     updateable = true
     queryable = true
+    relationshipName = "Contact"
   }
   salesforce.Lookup AccountId {
     apiName = "Asset.AccountId"
@@ -31,6 +33,7 @@ type salesforce.Asset {
     createable = true
     updateable = true
     queryable = true
+    relationshipName = "Account"
   }
   salesforce.Lookup ParentId {
     apiName = "Asset.ParentId"
@@ -43,6 +46,7 @@ type salesforce.Asset {
     createable = true
     updateable = true
     queryable = true
+    relationshipName = "Parent"
   }
   salesforce.Lookup RootAssetId {
     apiName = "Asset.RootAssetId"
@@ -55,6 +59,7 @@ type salesforce.Asset {
     createable = false
     updateable = false
     queryable = true
+    relationshipName = "RootAsset"
   }
   salesforce.Lookup Product2Id {
     apiName = "Asset.Product2Id"
@@ -67,6 +72,7 @@ type salesforce.Asset {
     createable = true
     updateable = true
     queryable = true
+    relationshipName = "Product2"
   }
   salesforce.Text ProductCode {
     apiName = "Asset.ProductCode"
@@ -94,7 +100,8 @@ type salesforce.Asset {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "Asset.CreatedById"
@@ -107,7 +114,9 @@ type salesforce.Asset {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "CreatedBy"
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "Asset.LastModifiedDate"
@@ -116,7 +125,8 @@ type salesforce.Asset {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "Asset.LastModifiedById"
@@ -129,7 +139,9 @@ type salesforce.Asset {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "Asset.SystemModstamp"
@@ -138,7 +150,8 @@ type salesforce.Asset {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Checkbox IsDeleted {
     apiName = "Asset.IsDeleted"
@@ -147,8 +160,9 @@ type salesforce.Asset {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
     _required = false
+    _hidden_value = true
   }
   salesforce.Text Name {
     apiName = "Asset.Name"
@@ -247,7 +261,9 @@ type salesforce.Asset {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "Owner"
+    _hidden_value = true
   }
   salesforce.Lookup AssetProvidedById {
     apiName = "Asset.AssetProvidedById"
@@ -260,6 +276,7 @@ type salesforce.Asset {
     createable = true
     updateable = true
     queryable = true
+    relationshipName = "AssetProvidedBy"
   }
   salesforce.Lookup AssetServicedById {
     apiName = "Asset.AssetServicedById"
@@ -272,6 +289,7 @@ type salesforce.Asset {
     createable = true
     updateable = true
     queryable = true
+    relationshipName = "AssetServicedBy"
   }
   salesforce.Checkbox IsInternal {
     apiName = "Asset.IsInternal"

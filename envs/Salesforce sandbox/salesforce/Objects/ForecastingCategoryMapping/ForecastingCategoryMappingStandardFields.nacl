@@ -4,9 +4,10 @@ type salesforce.ForecastingCategoryMapping {
     label = "Forecasting Category Mapping ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Checkbox IsDeleted {
     apiName = "ForecastingCategoryMapping.IsDeleted"
@@ -15,8 +16,9 @@ type salesforce.ForecastingCategoryMapping {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
     _required = false
+    _hidden_value = true
   }
   salesforce.DateTime CreatedDate {
     apiName = "ForecastingCategoryMapping.CreatedDate"
@@ -25,7 +27,8 @@ type salesforce.ForecastingCategoryMapping {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "ForecastingCategoryMapping.CreatedById"
@@ -38,7 +41,9 @@ type salesforce.ForecastingCategoryMapping {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "CreatedBy"
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "ForecastingCategoryMapping.LastModifiedDate"
@@ -47,7 +52,8 @@ type salesforce.ForecastingCategoryMapping {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "ForecastingCategoryMapping.LastModifiedById"
@@ -60,7 +66,9 @@ type salesforce.ForecastingCategoryMapping {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "ForecastingCategoryMapping.SystemModstamp"
@@ -69,7 +77,8 @@ type salesforce.ForecastingCategoryMapping {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Picklist SourceCategory {
     apiName = "ForecastingCategoryMapping.SourceCategory"

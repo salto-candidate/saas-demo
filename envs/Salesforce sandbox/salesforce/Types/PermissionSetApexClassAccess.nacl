@@ -19,12 +19,8 @@ type salesforce.PermissionSetApexClassAccess {
   boolean enabled {
     _required = false
   }
-  string internalId {
-    _required = false
-    _hidden = true
-    localOnly = true
-  }
-  suffix = ""
-  dirName = ""
+  
+  
+  
   metadataType = "PermissionSetApexClassAccess"
 }

@@ -38,8 +38,9 @@ type salesforce.ApexTrigger {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   hasMetaFile = true
   suffix = "trigger"

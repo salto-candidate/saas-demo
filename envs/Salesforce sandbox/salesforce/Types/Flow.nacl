@@ -89,6 +89,7 @@ type salesforce.Flow {
         "OfflineFlow",
         "OrchestrationFlow",
         "RecommendationStrategy",
+        "RoutingFlow",
         "SalesEntryExperienceFlow",
         "Survey",
         "SurveyEnrich",
@@ -151,10 +152,31 @@ type salesforce.Flow {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   suffix = "flow"
   dirName = "flows"
   metadataType = "Flow"
+  number apiVersion {
+    _required = false
+  }
+  salesforce.FlowCollectionProcessor collectionProcessors {
+    _required = false
+  }
+  string runInMode {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "DefaultMode",
+        "SystemModeWithSharing",
+        "SystemModeWithoutSharing",
+      ]
+    }
+  }
+  salesforce.FlowSteppedStage steppedStages {
+    _required = false
+  }
 }

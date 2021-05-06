@@ -18,8 +18,11 @@ settings salesforce.EssentialsSettings {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   metadataType = "EssentialsSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

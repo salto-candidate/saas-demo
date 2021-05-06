@@ -4,9 +4,10 @@ type salesforce.ContactPointConsent {
     label = "Contact Point Consent ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Lookup OwnerId {
     apiName = "ContactPointConsent.OwnerId"
@@ -20,7 +21,9 @@ type salesforce.ContactPointConsent {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "Owner"
+    _hidden_value = true
   }
   salesforce.Checkbox IsDeleted {
     apiName = "ContactPointConsent.IsDeleted"
@@ -29,8 +32,9 @@ type salesforce.ContactPointConsent {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
     _required = false
+    _hidden_value = true
   }
   salesforce.Text Name {
     apiName = "ContactPointConsent.Name"
@@ -50,7 +54,8 @@ type salesforce.ContactPointConsent {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "ContactPointConsent.CreatedById"
@@ -63,7 +68,9 @@ type salesforce.ContactPointConsent {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "CreatedBy"
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "ContactPointConsent.LastModifiedDate"
@@ -72,7 +79,8 @@ type salesforce.ContactPointConsent {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "ContactPointConsent.LastModifiedById"
@@ -85,7 +93,9 @@ type salesforce.ContactPointConsent {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "ContactPointConsent.SystemModstamp"
@@ -94,7 +104,8 @@ type salesforce.ContactPointConsent {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup ContactPointId {
     apiName = "ContactPointConsent.ContactPointId"
@@ -109,6 +120,7 @@ type salesforce.ContactPointConsent {
     createable = true
     updateable = true
     queryable = true
+    relationshipName = "ContactPoint"
   }
   salesforce.Lookup DataUsePurposeId {
     apiName = "ContactPointConsent.DataUsePurposeId"
@@ -121,6 +133,7 @@ type salesforce.ContactPointConsent {
     createable = true
     updateable = true
     queryable = true
+    relationshipName = "DataUsePurpose"
   }
   salesforce.Picklist PrivacyConsentStatus {
     apiName = "ContactPointConsent.PrivacyConsentStatus"

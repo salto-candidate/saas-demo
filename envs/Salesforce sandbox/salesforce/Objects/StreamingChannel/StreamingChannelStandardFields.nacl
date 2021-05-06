@@ -4,9 +4,10 @@ type salesforce.StreamingChannel {
     label = "Streaming Channel Id"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Lookup OwnerId {
     apiName = "StreamingChannel.OwnerId"
@@ -20,7 +21,9 @@ type salesforce.StreamingChannel {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "Owner"
+    _hidden_value = true
   }
   salesforce.Checkbox IsDeleted {
     apiName = "StreamingChannel.IsDeleted"
@@ -29,8 +32,9 @@ type salesforce.StreamingChannel {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
     _required = false
+    _hidden_value = true
   }
   salesforce.Text Name {
     apiName = "StreamingChannel.Name"
@@ -50,7 +54,8 @@ type salesforce.StreamingChannel {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "StreamingChannel.CreatedById"
@@ -63,7 +68,9 @@ type salesforce.StreamingChannel {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "CreatedBy"
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "StreamingChannel.LastModifiedDate"
@@ -72,7 +79,8 @@ type salesforce.StreamingChannel {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "StreamingChannel.LastModifiedById"
@@ -85,7 +93,9 @@ type salesforce.StreamingChannel {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "StreamingChannel.SystemModstamp"
@@ -94,7 +104,8 @@ type salesforce.StreamingChannel {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Checkbox IsDynamic {
     apiName = "StreamingChannel.IsDynamic"

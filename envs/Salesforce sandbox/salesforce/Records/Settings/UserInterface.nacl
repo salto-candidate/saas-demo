@@ -15,4 +15,7 @@ salesforce.UserInterfaceSettings {
   enableProfileCustomTabsets = "true"
   enableQuickCreate = true
   enableTabOrganizer = "true"
+  enableCustomObjectTruncate = false
+  enableExternalObjectAsyncRelatedLists = true
+  enableRelatedListHovers = "true"
 }

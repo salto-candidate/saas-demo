@@ -4,4 +4,5 @@ salesforce.EACSettings {
   enableInboxActivitySharing = false
   enableInsightsInTimeline = true
   enableInsightsInTimelineEacStd = false
+  provisionProductivityFeatures = false
 }

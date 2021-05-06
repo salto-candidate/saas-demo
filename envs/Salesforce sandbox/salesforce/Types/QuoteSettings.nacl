@@ -21,10 +21,14 @@ settings salesforce.QuoteSettings {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   boolean enableQuotesWithoutOppEnabled {
+    _required = false
   }
   metadataType = "QuoteSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

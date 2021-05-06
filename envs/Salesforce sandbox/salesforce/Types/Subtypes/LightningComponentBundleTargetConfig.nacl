@@ -11,4 +11,5 @@ type salesforce.LightningComponentBundleTargetConfig {
   }
   salesforce.LightningComponentBundleSupportedFormFactors supportedFormFactors {
   }
+  metadataType = "LightningComponentBundleTargetConfig"
 }

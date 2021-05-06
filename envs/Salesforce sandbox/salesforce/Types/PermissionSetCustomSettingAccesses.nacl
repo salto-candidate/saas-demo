@@ -13,12 +13,8 @@ type salesforce.PermissionSetCustomSettingAccesses {
     string dirName {
     }
   }
-  string internalId {
-    _required = false
-    _hidden = true
-    localOnly = true
-  }
-  suffix = ""
-  dirName = ""
+  
+  
+  
   metadataType = "PermissionSetCustomSettingAccesses"
 }

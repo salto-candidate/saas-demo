@@ -4,9 +4,10 @@ type salesforce.Pricebook2 {
     label = "Price Book ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Checkbox IsDeleted {
     apiName = "Pricebook2.IsDeleted"
@@ -15,8 +16,9 @@ type salesforce.Pricebook2 {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
     _required = false
+    _hidden_value = true
   }
   salesforce.Text Name {
     apiName = "Pricebook2.Name"
@@ -36,7 +38,8 @@ type salesforce.Pricebook2 {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "Pricebook2.CreatedById"
@@ -49,7 +52,9 @@ type salesforce.Pricebook2 {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "CreatedBy"
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "Pricebook2.LastModifiedDate"
@@ -58,7 +63,8 @@ type salesforce.Pricebook2 {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "Pricebook2.LastModifiedById"
@@ -71,7 +77,9 @@ type salesforce.Pricebook2 {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "Pricebook2.SystemModstamp"
@@ -80,7 +88,8 @@ type salesforce.Pricebook2 {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Checkbox IsActive {
     apiName = "Pricebook2.IsActive"

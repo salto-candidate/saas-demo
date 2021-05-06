@@ -4,9 +4,10 @@ type salesforce.ForecastingQuota {
     label = "ForecastingQuota ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Lookup PeriodId {
     apiName = "ForecastingQuota.PeriodId"
@@ -70,6 +71,7 @@ type salesforce.ForecastingQuota {
     createable = true
     updateable = true
     queryable = true
+    relationshipName = "QuotaOwner"
   }
   salesforce.Checkbox IsQuantity {
     apiName = "ForecastingQuota.IsQuantity"
@@ -94,7 +96,8 @@ type salesforce.ForecastingQuota {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "ForecastingQuota.CreatedById"
@@ -107,7 +110,9 @@ type salesforce.ForecastingQuota {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "CreatedBy"
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "ForecastingQuota.LastModifiedDate"
@@ -116,7 +121,8 @@ type salesforce.ForecastingQuota {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "ForecastingQuota.LastModifiedById"
@@ -129,7 +135,9 @@ type salesforce.ForecastingQuota {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "ForecastingQuota.SystemModstamp"
@@ -138,7 +146,8 @@ type salesforce.ForecastingQuota {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup ForecastingTypeId {
     apiName = "ForecastingQuota.ForecastingTypeId"

@@ -1,4 +1,4 @@
 salesforce.InvocableActionSettings {
   fullName = "InvocableAction"
-  isPartialSaveAllowed = false
+  isPartialSaveAllowed = true
 }

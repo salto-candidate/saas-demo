@@ -4,9 +4,10 @@ type salesforce.DuplicateRecordSet {
     label = "Duplicate Record Set ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Checkbox IsDeleted {
     apiName = "DuplicateRecordSet.IsDeleted"
@@ -15,8 +16,9 @@ type salesforce.DuplicateRecordSet {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
     _required = false
+    _hidden_value = true
   }
   salesforce.AutoNumber Name {
     apiName = "DuplicateRecordSet.Name"
@@ -25,7 +27,8 @@ type salesforce.DuplicateRecordSet {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime CreatedDate {
     apiName = "DuplicateRecordSet.CreatedDate"
@@ -34,7 +37,8 @@ type salesforce.DuplicateRecordSet {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "DuplicateRecordSet.CreatedById"
@@ -47,7 +51,9 @@ type salesforce.DuplicateRecordSet {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "CreatedBy"
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "DuplicateRecordSet.LastModifiedDate"
@@ -56,7 +62,8 @@ type salesforce.DuplicateRecordSet {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "DuplicateRecordSet.LastModifiedById"
@@ -69,7 +76,9 @@ type salesforce.DuplicateRecordSet {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "DuplicateRecordSet.SystemModstamp"
@@ -78,7 +87,8 @@ type salesforce.DuplicateRecordSet {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup DuplicateRuleId {
     apiName = "DuplicateRecordSet.DuplicateRuleId"
@@ -91,6 +101,7 @@ type salesforce.DuplicateRecordSet {
     createable = true
     updateable = true
     queryable = true
+    relationshipName = "DuplicateRule"
   }
   salesforce.Summary RecordCount {
     apiName = "DuplicateRecordSet.RecordCount"

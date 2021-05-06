@@ -18,10 +18,14 @@ settings salesforce.DeploymentSettings {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   boolean doesSkipAsyncApexValidation {
+    _required = false
   }
   metadataType = "DeploymentSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

@@ -38,4 +38,16 @@ type salesforce.FlowAssignment {
     _required = false
   }
   metadataType = "FlowAssignment"
+  string elementSubtype {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "SortCollectionProcessor",
+      ]
+    }
+    foreignKeyDomain = [
+      "FlowElementSubtypeDefinition",
+    ]
+  }
 }

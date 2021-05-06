@@ -58,8 +58,9 @@ type salesforce.LightningBolt {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   suffix = "lightningBolt"
   dirName = "lightningBolts"

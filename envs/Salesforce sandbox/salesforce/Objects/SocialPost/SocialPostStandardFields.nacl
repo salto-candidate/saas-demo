@@ -4,9 +4,10 @@ type salesforce.SocialPost {
     label = "Social Post ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Lookup OwnerId {
     apiName = "SocialPost.OwnerId"
@@ -20,7 +21,9 @@ type salesforce.SocialPost {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "Owner"
+    _hidden_value = true
   }
   salesforce.Checkbox IsDeleted {
     apiName = "SocialPost.IsDeleted"
@@ -29,8 +32,9 @@ type salesforce.SocialPost {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
     _required = false
+    _hidden_value = true
   }
   salesforce.Text Name {
     apiName = "SocialPost.Name"
@@ -50,7 +54,8 @@ type salesforce.SocialPost {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "SocialPost.CreatedById"
@@ -63,7 +68,9 @@ type salesforce.SocialPost {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "CreatedBy"
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "SocialPost.LastModifiedDate"
@@ -72,7 +79,8 @@ type salesforce.SocialPost {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "SocialPost.LastModifiedById"
@@ -85,7 +93,9 @@ type salesforce.SocialPost {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "SocialPost.SystemModstamp"
@@ -94,7 +104,8 @@ type salesforce.SocialPost {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup ParentId {
     apiName = "SocialPost.ParentId"
@@ -107,6 +118,7 @@ type salesforce.SocialPost {
     createable = true
     updateable = true
     queryable = true
+    relationshipName = "Parent"
   }
   salesforce.Lookup PersonaId {
     apiName = "SocialPost.PersonaId"
@@ -119,6 +131,7 @@ type salesforce.SocialPost {
     createable = true
     updateable = true
     queryable = true
+    relationshipName = "Persona"
   }
   salesforce.Lookup WhoId {
     apiName = "SocialPost.WhoId"
@@ -133,6 +146,7 @@ type salesforce.SocialPost {
     createable = true
     updateable = true
     queryable = true
+    relationshipName = "Who"
   }
   salesforce.Lookup ReplyToId {
     apiName = "SocialPost.ReplyToId"
@@ -145,6 +159,7 @@ type salesforce.SocialPost {
     createable = true
     updateable = false
     queryable = true
+    relationshipName = "ReplyTo"
   }
   salesforce.Text Headline {
     apiName = "SocialPost.Headline"
@@ -859,6 +874,7 @@ type salesforce.SocialPost {
     createable = true
     updateable = false
     queryable = true
+    relationshipName = "OutboundSocialAccount"
   }
   salesforce.Picklist ReviewedStatus {
     apiName = "SocialPost.ReviewedStatus"
@@ -940,6 +956,7 @@ type salesforce.SocialPost {
     createable = true
     updateable = true
     queryable = true
+    relationshipName = "DeletedBy"
   }
   salesforce.Text ResponseContextExternalId {
     apiName = "SocialPost.ResponseContextExternalId"
@@ -1018,6 +1035,7 @@ type salesforce.SocialPost {
     createable = true
     updateable = true
     queryable = true
+    relationshipName = "HiddenBy"
   }
   salesforce.LongTextArea Notes {
     apiName = "SocialPost.Notes"

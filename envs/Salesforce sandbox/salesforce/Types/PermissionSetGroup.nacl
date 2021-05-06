@@ -36,12 +36,15 @@ type salesforce.PermissionSetGroup {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   "List<string>" permissionSets {
+    _required = false
   }
   string mutingPermissionSets {
+    _required = false
   }
   suffix = "permissionsetgroup"
   dirName = "permissionsetgroups"

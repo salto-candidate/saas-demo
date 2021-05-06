@@ -4,9 +4,10 @@ type salesforce.Lead {
     label = "Lead ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Checkbox IsDeleted {
     apiName = "Lead.IsDeleted"
@@ -15,8 +16,9 @@ type salesforce.Lead {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
     _required = false
+    _hidden_value = true
   }
   salesforce.Lookup MasterRecordId {
     apiName = "Lead.MasterRecordId"
@@ -29,6 +31,7 @@ type salesforce.Lead {
     createable = false
     updateable = false
     queryable = true
+    relationshipName = "MasterRecord"
   }
   salesforce.Name Name {
     apiName = "Lead.Name"
@@ -181,7 +184,9 @@ type salesforce.Lead {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "Owner"
+    _hidden_value = true
   }
   salesforce.Checkbox IsConverted {
     apiName = "Lead.IsConverted"
@@ -210,6 +215,7 @@ type salesforce.Lead {
     createable = false
     updateable = false
     queryable = true
+    relationshipName = "ConvertedAccount"
   }
   salesforce.Lookup ConvertedContactId {
     apiName = "Lead.ConvertedContactId"
@@ -222,6 +228,7 @@ type salesforce.Lead {
     createable = false
     updateable = false
     queryable = true
+    relationshipName = "ConvertedContact"
   }
   salesforce.Lookup ConvertedOpportunityId {
     apiName = "Lead.ConvertedOpportunityId"
@@ -234,6 +241,7 @@ type salesforce.Lead {
     createable = false
     updateable = false
     queryable = true
+    relationshipName = "ConvertedOpportunity"
   }
   salesforce.Checkbox IsUnreadByOwner {
     apiName = "Lead.IsUnreadByOwner"
@@ -250,7 +258,8 @@ type salesforce.Lead {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "Lead.CreatedById"
@@ -263,7 +272,9 @@ type salesforce.Lead {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "CreatedBy"
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "Lead.LastModifiedDate"
@@ -272,7 +283,8 @@ type salesforce.Lead {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "Lead.LastModifiedById"
@@ -285,7 +297,9 @@ type salesforce.Lead {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "Lead.SystemModstamp"
@@ -294,7 +308,8 @@ type salesforce.Lead {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Date LastActivityDate {
     apiName = "Lead.LastActivityDate"
@@ -303,7 +318,8 @@ type salesforce.Lead {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Text Jigsaw {
     apiName = "Lead.Jigsaw"
@@ -357,6 +373,7 @@ type salesforce.Lead {
     createable = true
     updateable = true
     queryable = true
+    relationshipName = "Individual"
   }
   salesforce.Unknown AnnualRevenue {
     apiName = "Lead.AnnualRevenue"

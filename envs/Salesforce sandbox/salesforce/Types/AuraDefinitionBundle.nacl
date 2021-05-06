@@ -57,13 +57,14 @@ type salesforce.AuraDefinitionBundle {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   string type {
-    _required = true
+    _required = false
     _restriction = {
-      enforceValue = true
+      
       values = [
         "Application",
         "Component",
@@ -71,8 +72,12 @@ type salesforce.AuraDefinitionBundle {
         "Interface",
         "Tokens",
       ]
+      enforce_value = false
     }
   }
   dirName = "aura"
   metadataType = "AuraDefinitionBundle"
+  salesforce.AuraDefinitions auraDefinitions {
+    _required = false
+  }
 }

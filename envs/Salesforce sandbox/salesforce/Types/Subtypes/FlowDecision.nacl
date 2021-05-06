@@ -41,4 +41,16 @@ type salesforce.FlowDecision {
     _required = false
   }
   metadataType = "FlowDecision"
+  string elementSubtype {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "SortCollectionProcessor",
+      ]
+    }
+    foreignKeyDomain = [
+      "FlowElementSubtypeDefinition",
+    ]
+  }
 }

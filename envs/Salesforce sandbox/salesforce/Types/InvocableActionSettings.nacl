@@ -18,10 +18,14 @@ settings salesforce.InvocableActionSettings {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   boolean isPartialSaveAllowed {
+    _required = false
   }
   metadataType = "InvocableActionSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

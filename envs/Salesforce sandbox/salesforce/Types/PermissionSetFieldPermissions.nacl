@@ -22,12 +22,8 @@ type salesforce.PermissionSetFieldPermissions {
   boolean readable {
     _required = false
   }
-  string internalId {
-    _required = false
-    _hidden = true
-    localOnly = true
-  }
-  suffix = ""
-  dirName = ""
+  
+  
+  
   metadataType = "PermissionSetFieldPermissions"
 }

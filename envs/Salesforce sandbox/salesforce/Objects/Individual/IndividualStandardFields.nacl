@@ -4,9 +4,10 @@ type salesforce.Individual {
     label = "Individual ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Lookup OwnerId {
     apiName = "Individual.OwnerId"
@@ -19,7 +20,9 @@ type salesforce.Individual {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "Owner"
+    _hidden_value = true
   }
   salesforce.Checkbox IsDeleted {
     apiName = "Individual.IsDeleted"
@@ -28,8 +31,9 @@ type salesforce.Individual {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
     _required = false
+    _hidden_value = true
   }
   salesforce.Name Name {
     apiName = "Individual.Name"
@@ -231,6 +235,7 @@ type salesforce.Individual {
     createable = false
     updateable = false
     queryable = true
+    relationshipName = "MasterRecord"
   }
   salesforce.Number ConsumerCreditScore {
     apiName = "Individual.ConsumerCreditScore"
@@ -272,7 +277,8 @@ type salesforce.Individual {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "Individual.CreatedById"
@@ -285,7 +291,9 @@ type salesforce.Individual {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "CreatedBy"
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "Individual.LastModifiedDate"
@@ -294,7 +302,8 @@ type salesforce.Individual {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "Individual.LastModifiedById"
@@ -307,7 +316,9 @@ type salesforce.Individual {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "Individual.SystemModstamp"
@@ -316,6 +327,7 @@ type salesforce.Individual {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
 }

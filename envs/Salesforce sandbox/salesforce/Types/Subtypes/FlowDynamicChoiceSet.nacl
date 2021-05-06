@@ -55,15 +55,20 @@ type salesforce.FlowDynamicChoiceSet {
   string dataType {
     _restriction = {
       values = [
+        "Boolean",
         "Currency",
         "Date",
-        "Number",
-        "String",
-        "Boolean",
-        "Picklist",
         "Multipicklist",
+        "Number",
+        "Picklist",
+        "String",
       ]
+      enforce_value = false
     }
+    _required = false
   }
   metadataType = "FlowDynamicChoiceSet"
+  string filterLogic {
+    _required = false
+  }
 }

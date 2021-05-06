@@ -40,6 +40,18 @@ type salesforce.Individual {
     }
     string externalSharingModel {
     }
+    string label {
+    }
+    boolean enablePublishStatusTracking {
+    }
+    salesforce.MktDataLakeAttributes mktDataLakeAttributes {
+    }
+    salesforce.MktDataModelAttributes mktDataModelAttributes {
+    }
+    salesforce.ProfileSearchLayouts profileSearchLayouts {
+    }
+    hidden_string internalId {
+    }
   }
   apiName = "Individual"
   metadataType = "CustomObject"

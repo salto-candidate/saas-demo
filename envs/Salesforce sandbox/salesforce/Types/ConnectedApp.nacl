@@ -75,10 +75,17 @@ type salesforce.ConnectedApp {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   suffix = "connectedApp"
   dirName = "connectedApps"
   metadataType = "ConnectedApp"
+  salesforce.ConnectedAppOauthPolicy oauthPolicy {
+    _required = false
+  }
+  salesforce.ConnectedAppSessionPolicy sessionPolicy {
+    _required = false
+  }
 }

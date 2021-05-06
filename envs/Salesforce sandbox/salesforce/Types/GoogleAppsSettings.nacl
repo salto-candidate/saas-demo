@@ -21,8 +21,11 @@ settings salesforce.GoogleAppsSettings {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   metadataType = "GoogleAppsSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

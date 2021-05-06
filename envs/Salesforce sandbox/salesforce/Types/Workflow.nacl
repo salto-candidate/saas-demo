@@ -21,20 +21,27 @@ type salesforce.Workflow {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   "List<salesforce.WorkflowAlert>" alerts {
+    _required = false
   }
   "List<salesforce.WorkflowFieldUpdate>" fieldUpdates {
+    _required = false
   }
   "List<salesforce.WorkflowFlowAction>" flowActions {
+    _required = false
   }
   "List<salesforce.WorkflowKnowledgePublish>" knowledgePublishes {
+    _required = false
   }
   "List<salesforce.WorkflowOutboundMessage>" outboundMessages {
+    _required = false
   }
   "List<salesforce.WorkflowTask>" tasks {
+    _required = false
   }
   suffix = "workflow"
   dirName = "workflows"

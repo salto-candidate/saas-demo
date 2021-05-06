@@ -30,4 +30,12 @@ salesforce.CaseSettings {
   webToCase = {
     enableWebToCase = false
   }
+  enableEscalateQfiToCaseInternal = false
+  enableMultiLangSolnSrchCSS = "false"
+  enableMultiLangSolnSrchPKB = "false"
+  enableMultiLangSolution = "false"
+  enableSolutionCategory = "false"
+  enableSolutionInlineCategory = "true"
+  enableSolutionShortSummary = "true"
+  visibleInCssCheckbox = false
 }

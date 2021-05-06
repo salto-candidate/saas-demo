@@ -39,16 +39,23 @@ settings salesforce.OpportunitySettings {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   boolean customizableProductSchedulesEnabled {
+    _required = false
   }
   boolean doesAutoAddSplitOwnerAsOpportunityTeamMember {
+    _required = false
   }
   boolean enableOpportunityFieldHistoryTracking {
+    _required = false
   }
   boolean enableOpportunityInsightsInMobile {
+    _required = false
   }
   metadataType = "OpportunitySettings"
+  suffix = "settings"
+  dirName = "settings"
 }

@@ -155,6 +155,7 @@ salesforce.Flow Set_account_tiering {
         },
       ]
       object = salesforce.Account
+      filterLogic = "and"
     },
   ]
   startElementReference = "myDecision"
@@ -177,4 +178,5 @@ salesforce.Flow Set_account_tiering {
       objectType = salesforce.Account
     },
   ]
+  apiVersion = 49
 }

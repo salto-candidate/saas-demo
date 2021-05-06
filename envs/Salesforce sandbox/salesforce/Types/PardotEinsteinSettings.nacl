@@ -18,12 +18,17 @@ settings salesforce.PardotEinsteinSettings {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   boolean enableCampaignInsight {
+    _required = false
   }
   boolean enableEngagementScore {
+    _required = false
   }
   metadataType = "PardotEinsteinSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

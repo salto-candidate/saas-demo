@@ -4,9 +4,10 @@ type salesforce.AccountContactRole {
     label = "Contact Role ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Checkbox IsDeleted {
     apiName = "AccountContactRole.IsDeleted"
@@ -15,8 +16,9 @@ type salesforce.AccountContactRole {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
     _required = false
+    _hidden_value = true
   }
   salesforce.DateTime CreatedDate {
     apiName = "AccountContactRole.CreatedDate"
@@ -25,7 +27,8 @@ type salesforce.AccountContactRole {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "AccountContactRole.CreatedById"
@@ -38,7 +41,9 @@ type salesforce.AccountContactRole {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "CreatedBy"
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "AccountContactRole.LastModifiedDate"
@@ -47,7 +52,8 @@ type salesforce.AccountContactRole {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "AccountContactRole.LastModifiedById"
@@ -60,7 +66,9 @@ type salesforce.AccountContactRole {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "AccountContactRole.SystemModstamp"
@@ -69,7 +77,8 @@ type salesforce.AccountContactRole {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup AccountId {
     apiName = "AccountContactRole.AccountId"
@@ -82,6 +91,7 @@ type salesforce.AccountContactRole {
     createable = true
     updateable = false
     queryable = true
+    relationshipName = "Account"
   }
   salesforce.Lookup ContactId {
     apiName = "AccountContactRole.ContactId"
@@ -94,6 +104,7 @@ type salesforce.AccountContactRole {
     createable = true
     updateable = true
     queryable = true
+    relationshipName = "Contact"
   }
   salesforce.Picklist Role {
     apiName = "AccountContactRole.Role"

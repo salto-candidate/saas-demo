@@ -54,10 +54,14 @@ type salesforce.ExternalServiceRegistration {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   suffix = "externalServiceRegistration"
   dirName = "externalServiceRegistrations"
   metadataType = "ExternalServiceRegistration"
+  salesforce.ExternalServiceOperation operations {
+    _required = false
+  }
 }

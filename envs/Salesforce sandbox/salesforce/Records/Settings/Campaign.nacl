@@ -5,4 +5,5 @@ salesforce.CampaignSettings {
   enableCampaignInfluence2 = true
   enableCampaignMemberTWCF = true
   enableSuppressNoValueCI2 = false
+  aiAttributionTimeframe = 6
 }

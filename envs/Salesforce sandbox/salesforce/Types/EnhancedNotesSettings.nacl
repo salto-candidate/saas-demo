@@ -18,12 +18,17 @@ settings salesforce.EnhancedNotesSettings {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   boolean enableEnhancedNotes {
+    _required = false
   }
   boolean enableTasksOnEnhancedNotes {
+    _required = false
   }
   metadataType = "EnhancedNotesSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

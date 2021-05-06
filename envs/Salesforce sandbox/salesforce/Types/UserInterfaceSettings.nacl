@@ -18,32 +18,47 @@ settings salesforce.UserInterfaceSettings {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   boolean enableAsyncRelatedLists {
+    _required = false
   }
   boolean enableClickjackUserPageHeaderless {
+    _required = false
   }
   boolean enableCollapsibleSections {
+    _required = false
   }
   boolean enableCollapsibleSidebar {
+    _required = false
   }
   boolean enableCustomObjectTruncate {
+    _required = false
   }
   boolean enableCustomSidebarOnAllPages {
+    _required = false
   }
   boolean enableDeleteFieldHistory {
+    _required = false
   }
   boolean enableExternalObjectAsyncRelatedLists {
+    _required = false
   }
   boolean enableHoverDetails {
+    _required = false
   }
   boolean enableInlineEdit {
+    _required = false
   }
   boolean enablePersonalCanvas {
+    _required = false
   }
   boolean enableQuickCreate {
+    _required = false
   }
   metadataType = "UserInterfaceSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

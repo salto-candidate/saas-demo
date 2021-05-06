@@ -30,10 +30,14 @@ type salesforce.CustomPermission {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   suffix = "customPermission"
   dirName = "customPermissions"
   metadataType = "CustomPermission"
+  boolean isLicensed {
+    _required = false
+  }
 }

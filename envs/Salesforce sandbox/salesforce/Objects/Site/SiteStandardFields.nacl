@@ -4,9 +4,10 @@ type salesforce.Site {
     label = "Site ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Text Name {
     apiName = "Site.Name"
@@ -52,6 +53,7 @@ type salesforce.Site {
     createable = false
     updateable = false
     queryable = true
+    relationshipName = "GuestUser"
   }
   salesforce.Picklist Status {
     apiName = "Site.Status"
@@ -87,6 +89,7 @@ type salesforce.Site {
     createable = false
     updateable = false
     queryable = true
+    relationshipName = "Admin"
   }
   salesforce.Checkbox OptionsEnableFeeds {
     apiName = "Site.OptionsEnableFeeds"
@@ -247,7 +250,7 @@ type salesforce.Site {
       {
         fullName = "External"
         default = false
-        label = "Allow framing of site or community pages on external domains (Good protection)"
+        label = "Allow framing of site pages on external domains (Good protection)"
         isActive = true
       },
       {
@@ -330,7 +333,8 @@ type salesforce.Site {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "Site.CreatedById"
@@ -343,7 +347,9 @@ type salesforce.Site {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "CreatedBy"
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "Site.LastModifiedDate"
@@ -352,7 +358,8 @@ type salesforce.Site {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "Site.LastModifiedById"
@@ -365,7 +372,9 @@ type salesforce.Site {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "Site.SystemModstamp"
@@ -374,6 +383,34 @@ type salesforce.Site {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
+  }
+  salesforce.Checkbox OptionsAllowGuestPaymentsApi {
+    apiName = "Site.OptionsAllowGuestPaymentsApi"
+    label = "Guest Access to the Payments API"
+    createable = false
+    updateable = false
+    queryable = true
+  }
+  salesforce.Checkbox OptionsHasStoredPathPrefix {
+    apiName = "Site.OptionsHasStoredPathPrefix"
+    label = "HasStoredPathPrefix"
+    createable = false
+    updateable = false
+    queryable = true
+  }
+  salesforce.Lookup GuestRecordDefaultOwnerId {
+    apiName = "Site.GuestRecordDefaultOwnerId"
+    label = "User ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "GuestRecordDefaultOwner"
+    queryable = true
   }
 }

@@ -289,12 +289,13 @@ type salesforce.EmailTemplate {
         "MailAssociationItem",
         "ManagedContent",
         "ManagedContentChannel",
+        "ManagedContentDeployment",
+        "ManagedContentExportJobItem",
         "ManagedContentFolderLink",
         "ManagedContentImportExportJob",
         "ManagedContentNode",
         "ManagedContentNodeRefTree",
         "ManagedContentNodeRendition",
-        "ManagedContentPendingChange",
         "ManagedContentRecordShare",
         "ManagedContentSpace",
         "ManagedContentSpaceFolder",
@@ -514,8 +515,9 @@ type salesforce.EmailTemplate {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   hasMetaFile = true
   folderType = "EmailFolder"

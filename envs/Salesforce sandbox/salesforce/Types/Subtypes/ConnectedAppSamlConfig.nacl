@@ -82,4 +82,14 @@ type salesforce.ConnectedAppSamlConfig {
     }
   }
   metadataType = "ConnectedAppSamlConfig"
+  string samlSigningAlgoType {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "SHA1",
+        "SHA256",
+      ]
+    }
+  }
 }

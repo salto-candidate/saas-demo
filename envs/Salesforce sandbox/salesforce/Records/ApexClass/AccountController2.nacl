@@ -5,7 +5,7 @@ salesforce.ApexClass AccountController2 {
   fullName = "AccountController2"
   content = file("salesforce/Records/ApexClass/AccountController2.cls")
   _generated_dependencies = [
-    salesforce.Account.field.Tier__c,
     salesforce.Account,
+    salesforce.Account.field.Tier__c,
   ]
 }

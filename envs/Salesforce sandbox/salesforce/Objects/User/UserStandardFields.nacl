@@ -4,9 +4,10 @@ type salesforce.User {
     label = "User ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Text Username {
     apiName = "User.Username"
@@ -19,7 +20,7 @@ type salesforce.User {
     length = 80
     queryable = true
   }
-  salesforce.Name Name {
+  salesforce.Name2 Name {
     apiName = "User.Name"
     label = "Full Name"
     _required = true
@@ -246,18 +247,6 @@ type salesforce.User {
         isActive = true
       },
       {
-        fullName = "Pacific/Chatham"
-        default = false
-        label = "(GMT+13:45) Chatham Daylight Time (Pacific/Chatham)"
-        isActive = true
-      },
-      {
-        fullName = "Pacific/Auckland"
-        default = false
-        label = "(GMT+13:00) New Zealand Daylight Time (Pacific/Auckland)"
-        isActive = true
-      },
-      {
         fullName = "Pacific/Enderbury"
         default = false
         label = "(GMT+13:00) Phoenix Islands Time (Pacific/Enderbury)"
@@ -270,9 +259,21 @@ type salesforce.User {
         isActive = true
       },
       {
+        fullName = "Pacific/Chatham"
+        default = false
+        label = "(GMT+12:45) Chatham Standard Time (Pacific/Chatham)"
+        isActive = true
+      },
+      {
         fullName = "Asia/Kamchatka"
         default = false
         label = "(GMT+12:00) Petropavlovsk-Kamchatski Standard Time (Asia/Kamchatka)"
+        isActive = true
+      },
+      {
+        fullName = "Pacific/Auckland"
+        default = false
+        label = "(GMT+12:00) New Zealand Standard Time (Pacific/Auckland)"
         isActive = true
       },
       {
@@ -282,39 +283,39 @@ type salesforce.User {
         isActive = true
       },
       {
-        fullName = "Pacific/Norfolk"
-        default = false
-        label = "(GMT+12:00) Norfolk Island Time (Pacific/Norfolk)"
-        isActive = true
-      },
-      {
-        fullName = "Australia/Lord_Howe"
-        default = false
-        label = "(GMT+11:00) Lord Howe Daylight Time (Australia/Lord_Howe)"
-        isActive = true
-      },
-      {
-        fullName = "Australia/Sydney"
-        default = false
-        label = "(GMT+11:00) Australian Eastern Daylight Time (Australia/Sydney)"
-        isActive = true
-      },
-      {
         fullName = "Pacific/Guadalcanal"
         default = false
         label = "(GMT+11:00) Solomon Islands Time (Pacific/Guadalcanal)"
         isActive = true
       },
       {
-        fullName = "Australia/Adelaide"
+        fullName = "Pacific/Norfolk"
         default = false
-        label = "(GMT+10:30) Australian Central Daylight Time (Australia/Adelaide)"
+        label = "(GMT+11:00) Norfolk Island Time (Pacific/Norfolk)"
+        isActive = true
+      },
+      {
+        fullName = "Australia/Lord_Howe"
+        default = false
+        label = "(GMT+10:30) Lord Howe Standard Time (Australia/Lord_Howe)"
         isActive = true
       },
       {
         fullName = "Australia/Brisbane"
         default = false
         label = "(GMT+10:00) Australian Eastern Standard Time (Australia/Brisbane)"
+        isActive = true
+      },
+      {
+        fullName = "Australia/Sydney"
+        default = false
+        label = "(GMT+10:00) Australian Eastern Standard Time (Australia/Sydney)"
+        isActive = true
+      },
+      {
+        fullName = "Australia/Adelaide"
+        default = false
+        label = "(GMT+09:30) Australian Central Standard Time (Australia/Adelaide)"
         isActive = true
       },
       {
@@ -450,6 +451,12 @@ type salesforce.User {
         isActive = true
       },
       {
+        fullName = "Asia/Tehran"
+        default = false
+        label = "(GMT+04:30) Iran Daylight Time (Asia/Tehran)"
+        isActive = true
+      },
+      {
         fullName = "Asia/Baku"
         default = false
         label = "(GMT+04:00) Azerbaijan Standard Time (Asia/Baku)"
@@ -474,12 +481,6 @@ type salesforce.User {
         isActive = true
       },
       {
-        fullName = "Asia/Tehran"
-        default = false
-        label = "(GMT+03:30) Iran Standard Time (Asia/Tehran)"
-        isActive = true
-      },
-      {
         fullName = "Africa/Nairobi"
         default = false
         label = "(GMT+03:00) East Africa Time (Africa/Nairobi)"
@@ -492,6 +493,18 @@ type salesforce.User {
         isActive = true
       },
       {
+        fullName = "Asia/Beirut"
+        default = false
+        label = "(GMT+03:00) Eastern European Summer Time (Asia/Beirut)"
+        isActive = true
+      },
+      {
+        fullName = "Asia/Jerusalem"
+        default = false
+        label = "(GMT+03:00) Israel Daylight Time (Asia/Jerusalem)"
+        isActive = true
+      },
+      {
         fullName = "Asia/Kuwait"
         default = false
         label = "(GMT+03:00) Arabian Standard Time (Asia/Kuwait)"
@@ -501,6 +514,24 @@ type salesforce.User {
         fullName = "Asia/Riyadh"
         default = false
         label = "(GMT+03:00) Arabian Standard Time (Asia/Riyadh)"
+        isActive = true
+      },
+      {
+        fullName = "Europe/Athens"
+        default = false
+        label = "(GMT+03:00) Eastern European Summer Time (Europe/Athens)"
+        isActive = true
+      },
+      {
+        fullName = "Europe/Bucharest"
+        default = false
+        label = "(GMT+03:00) Eastern European Summer Time (Europe/Bucharest)"
+        isActive = true
+      },
+      {
+        fullName = "Europe/Helsinki"
+        default = false
+        label = "(GMT+03:00) Eastern European Summer Time (Europe/Helsinki)"
         isActive = true
       },
       {
@@ -534,33 +565,39 @@ type salesforce.User {
         isActive = true
       },
       {
-        fullName = "Asia/Beirut"
+        fullName = "Europe/Amsterdam"
         default = false
-        label = "(GMT+02:00) Eastern European Standard Time (Asia/Beirut)"
+        label = "(GMT+02:00) Central European Summer Time (Europe/Amsterdam)"
         isActive = true
       },
       {
-        fullName = "Asia/Jerusalem"
+        fullName = "Europe/Berlin"
         default = false
-        label = "(GMT+02:00) Israel Standard Time (Asia/Jerusalem)"
+        label = "(GMT+02:00) Central European Summer Time (Europe/Berlin)"
         isActive = true
       },
       {
-        fullName = "Europe/Athens"
+        fullName = "Europe/Brussels"
         default = false
-        label = "(GMT+02:00) Eastern European Standard Time (Europe/Athens)"
+        label = "(GMT+02:00) Central European Summer Time (Europe/Brussels)"
         isActive = true
       },
       {
-        fullName = "Europe/Bucharest"
+        fullName = "Europe/Paris"
         default = false
-        label = "(GMT+02:00) Eastern European Standard Time (Europe/Bucharest)"
+        label = "(GMT+02:00) Central European Summer Time (Europe/Paris)"
         isActive = true
       },
       {
-        fullName = "Europe/Helsinki"
+        fullName = "Europe/Prague"
         default = false
-        label = "(GMT+02:00) Eastern European Standard Time (Europe/Helsinki)"
+        label = "(GMT+02:00) Central European Summer Time (Europe/Prague)"
+        isActive = true
+      },
+      {
+        fullName = "Europe/Rome"
+        default = false
+        label = "(GMT+02:00) Central European Summer Time (Europe/Rome)"
         isActive = true
       },
       {
@@ -570,81 +607,45 @@ type salesforce.User {
         isActive = true
       },
       {
-        fullName = "Africa/Casablanca"
-        default = false
-        label = "(GMT+01:00) Western European Summer Time (Africa/Casablanca)"
-        isActive = true
-      },
-      {
-        fullName = "Europe/Amsterdam"
-        default = false
-        label = "(GMT+01:00) Central European Standard Time (Europe/Amsterdam)"
-        isActive = true
-      },
-      {
-        fullName = "Europe/Berlin"
-        default = false
-        label = "(GMT+01:00) Central European Standard Time (Europe/Berlin)"
-        isActive = true
-      },
-      {
-        fullName = "Europe/Brussels"
-        default = false
-        label = "(GMT+01:00) Central European Standard Time (Europe/Brussels)"
-        isActive = true
-      },
-      {
-        fullName = "Europe/Paris"
-        default = false
-        label = "(GMT+01:00) Central European Standard Time (Europe/Paris)"
-        isActive = true
-      },
-      {
-        fullName = "Europe/Prague"
-        default = false
-        label = "(GMT+01:00) Central European Standard Time (Europe/Prague)"
-        isActive = true
-      },
-      {
-        fullName = "Europe/Rome"
-        default = false
-        label = "(GMT+01:00) Central European Standard Time (Europe/Rome)"
-        isActive = true
-      },
-      {
         fullName = "Europe/Dublin"
         default = false
-        label = "(GMT+00:00) Greenwich Mean Time (Europe/Dublin)"
+        label = "(GMT+01:00) Irish Standard Time (Europe/Dublin)"
         isActive = true
       },
       {
         fullName = "Europe/Lisbon"
         default = false
-        label = "(GMT+00:00) Western European Standard Time (Europe/Lisbon)"
+        label = "(GMT+01:00) Western European Summer Time (Europe/Lisbon)"
         isActive = true
       },
       {
         fullName = "Europe/London"
         default = false
-        label = "(GMT+00:00) Greenwich Mean Time (Europe/London)"
+        label = "(GMT+01:00) British Summer Time (Europe/London)"
+        isActive = true
+      },
+      {
+        fullName = "Africa/Casablanca"
+        default = false
+        label = "(GMT+00:00) Western European Standard Time (Africa/Casablanca)"
+        isActive = true
+      },
+      {
+        fullName = "America/Scoresbysund"
+        default = false
+        label = "(GMT+00:00) East Greenland Summer Time (America/Scoresbysund)"
+        isActive = true
+      },
+      {
+        fullName = "Atlantic/Azores"
+        default = false
+        label = "(GMT+00:00) Azores Summer Time (Atlantic/Azores)"
         isActive = true
       },
       {
         fullName = "GMT"
         default = false
         label = "(GMT+00:00) Greenwich Mean Time (GMT)"
-        isActive = true
-      },
-      {
-        fullName = "America/Scoresbysund"
-        default = false
-        label = "(GMT-01:00) East Greenland Standard Time (America/Scoresbysund)"
-        isActive = true
-      },
-      {
-        fullName = "Atlantic/Azores"
-        default = false
-        label = "(GMT-01:00) Azores Standard Time (Atlantic/Azores)"
         isActive = true
       },
       {
@@ -660,15 +661,21 @@ type salesforce.User {
         isActive = true
       },
       {
+        fullName = "America/St_Johns"
+        default = false
+        label = "(GMT-02:30) Newfoundland Daylight Time (America/St_Johns)"
+        isActive = true
+      },
+      {
         fullName = "America/Argentina/Buenos_Aires"
         default = false
         label = "(GMT-03:00) Argentina Standard Time (America/Argentina/Buenos_Aires)"
         isActive = true
       },
       {
-        fullName = "America/Santiago"
+        fullName = "America/Halifax"
         default = false
-        label = "(GMT-03:00) Chile Summer Time (America/Santiago)"
+        label = "(GMT-03:00) Atlantic Daylight Time (America/Halifax)"
         isActive = true
       },
       {
@@ -678,9 +685,9 @@ type salesforce.User {
         isActive = true
       },
       {
-        fullName = "America/St_Johns"
+        fullName = "Atlantic/Bermuda"
         default = false
-        label = "(GMT-03:30) Newfoundland Standard Time (America/St_Johns)"
+        label = "(GMT-03:00) Atlantic Daylight Time (Atlantic/Bermuda)"
         isActive = true
       },
       {
@@ -690,9 +697,15 @@ type salesforce.User {
         isActive = true
       },
       {
-        fullName = "America/Halifax"
+        fullName = "America/Indiana/Indianapolis"
         default = false
-        label = "(GMT-04:00) Atlantic Standard Time (America/Halifax)"
+        label = "(GMT-04:00) Eastern Daylight Time (America/Indiana/Indianapolis)"
+        isActive = true
+      },
+      {
+        fullName = "America/New_York"
+        default = false
+        label = "(GMT-04:00) Eastern Daylight Time (America/New_York)"
         isActive = true
       },
       {
@@ -702,9 +715,9 @@ type salesforce.User {
         isActive = true
       },
       {
-        fullName = "Atlantic/Bermuda"
+        fullName = "America/Santiago"
         default = false
-        label = "(GMT-04:00) Atlantic Standard Time (Atlantic/Bermuda)"
+        label = "(GMT-04:00) Chile Standard Time (America/Santiago)"
         isActive = true
       },
       {
@@ -714,9 +727,9 @@ type salesforce.User {
         isActive = true
       },
       {
-        fullName = "America/Indiana/Indianapolis"
+        fullName = "America/Chicago"
         default = false
-        label = "(GMT-05:00) Eastern Standard Time (America/Indiana/Indianapolis)"
+        label = "(GMT-05:00) Central Daylight Time (America/Chicago)"
         isActive = true
       },
       {
@@ -726,9 +739,9 @@ type salesforce.User {
         isActive = true
       },
       {
-        fullName = "America/New_York"
+        fullName = "America/Mexico_City"
         default = false
-        label = "(GMT-05:00) Eastern Standard Time (America/New_York)"
+        label = "(GMT-05:00) Central Daylight Time (America/Mexico_City)"
         isActive = true
       },
       {
@@ -738,9 +751,9 @@ type salesforce.User {
         isActive = true
       },
       {
-        fullName = "America/Chicago"
+        fullName = "America/Denver"
         default = false
-        label = "(GMT-06:00) Central Standard Time (America/Chicago)"
+        label = "(GMT-06:00) Mountain Daylight Time (America/Denver)"
         isActive = true
       },
       {
@@ -750,21 +763,15 @@ type salesforce.User {
         isActive = true
       },
       {
-        fullName = "America/Mexico_City"
-        default = false
-        label = "(GMT-06:00) Central Standard Time (America/Mexico_City)"
-        isActive = true
-      },
-      {
-        fullName = "America/Denver"
-        default = false
-        label = "(GMT-07:00) Mountain Standard Time (America/Denver)"
-        isActive = true
-      },
-      {
         fullName = "America/Mazatlan"
         default = false
-        label = "(GMT-07:00) Mexican Pacific Standard Time (America/Mazatlan)"
+        label = "(GMT-06:00) Mexican Pacific Daylight Time (America/Mazatlan)"
+        isActive = true
+      },
+      {
+        fullName = "America/Los_Angeles"
+        default = false
+        label = "(GMT-07:00) Pacific Daylight Time (America/Los_Angeles)"
         isActive = true
       },
       {
@@ -774,15 +781,15 @@ type salesforce.User {
         isActive = true
       },
       {
-        fullName = "America/Los_Angeles"
+        fullName = "America/Tijuana"
         default = false
-        label = "(GMT-08:00) Pacific Standard Time (America/Los_Angeles)"
+        label = "(GMT-07:00) Pacific Daylight Time (America/Tijuana)"
         isActive = true
       },
       {
-        fullName = "America/Tijuana"
+        fullName = "America/Anchorage"
         default = false
-        label = "(GMT-08:00) Pacific Standard Time (America/Tijuana)"
+        label = "(GMT-08:00) Alaska Daylight Time (America/Anchorage)"
         isActive = true
       },
       {
@@ -792,9 +799,9 @@ type salesforce.User {
         isActive = true
       },
       {
-        fullName = "America/Anchorage"
+        fullName = "America/Adak"
         default = false
-        label = "(GMT-09:00) Alaska Standard Time (America/Anchorage)"
+        label = "(GMT-09:00) Hawaii-Aleutian Daylight Time (America/Adak)"
         isActive = true
       },
       {
@@ -807,12 +814,6 @@ type salesforce.User {
         fullName = "Pacific/Marquesas"
         default = false
         label = "(GMT-09:30) Marquesas Time (Pacific/Marquesas)"
-        isActive = true
-      },
-      {
-        fullName = "America/Adak"
-        default = false
-        label = "(GMT-10:00) Hawaii-Aleutian Standard Time (America/Adak)"
         isActive = true
       },
       {
@@ -850,6 +851,7 @@ type salesforce.User {
     createable = true
     updateable = true
     queryable = true
+    relationshipName = "UserRole"
   }
   salesforce.Picklist LocaleSidKey {
     apiName = "User.LocaleSidKey"
@@ -2232,6 +2234,7 @@ type salesforce.User {
     createable = true
     updateable = true
     queryable = true
+    relationshipName = "Profile"
   }
   salesforce.Picklist UserType {
     apiName = "User.UserType"
@@ -2446,6 +2449,7 @@ type salesforce.User {
     createable = true
     updateable = true
     queryable = true
+    relationshipName = "Manager"
   }
   salesforce.DateTime LastLoginDate {
     apiName = "User.LastLoginDate"
@@ -2470,7 +2474,8 @@ type salesforce.User {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "User.CreatedById"
@@ -2483,7 +2488,9 @@ type salesforce.User {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "CreatedBy"
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "User.LastModifiedDate"
@@ -2492,7 +2499,8 @@ type salesforce.User {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "User.LastModifiedById"
@@ -2505,7 +2513,9 @@ type salesforce.User {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "User.SystemModstamp"
@@ -2514,7 +2524,8 @@ type salesforce.User {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Number NumberOfFailedLogins {
     apiName = "User.NumberOfFailedLogins"
@@ -2571,13 +2582,7 @@ type salesforce.User {
     updateable = true
     queryable = true
   }
-  salesforce.Checkbox UserPermissionsMobileUser {
-    apiName = "User.UserPermissionsMobileUser"
-    label = "Apex Mobile User"
-    createable = true
-    updateable = true
-    queryable = true
-  }
+  
   salesforce.Checkbox UserPermissionsSFContentUser {
     apiName = "User.UserPermissionsSFContentUser"
     label = "Salesforce CRM Content User"
@@ -2915,13 +2920,7 @@ type salesforce.User {
     updateable = true
     queryable = true
   }
-  salesforce.Checkbox UserPreferencesPipelineViewHideHelpPopover {
-    apiName = "User.UserPreferencesPipelineViewHideHelpPopover"
-    label = "PipelineViewHideHelpPopover"
-    createable = true
-    updateable = true
-    queryable = true
-  }
+  
   salesforce.Checkbox UserPreferencesHideS1BrowserUI {
     apiName = "User.UserPreferencesHideS1BrowserUI"
     label = "HideS1BrowserUI"
@@ -3150,6 +3149,7 @@ type salesforce.User {
     createable = true
     updateable = true
     queryable = true
+    relationshipName = "Contact"
   }
   salesforce.Lookup AccountId {
     apiName = "User.AccountId"
@@ -3162,6 +3162,7 @@ type salesforce.User {
     createable = false
     updateable = false
     queryable = true
+    relationshipName = "Account"
   }
   salesforce.Lookup CallCenterId {
     apiName = "User.CallCenterId"
@@ -3353,5 +3354,6 @@ type salesforce.User {
     createable = true
     updateable = true
     queryable = true
+    relationshipName = "Individual"
   }
 }

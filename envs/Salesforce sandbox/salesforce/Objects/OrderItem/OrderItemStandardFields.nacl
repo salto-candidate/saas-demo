@@ -4,9 +4,10 @@ type salesforce.OrderItem {
     label = "Order Product ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Lookup Product2Id {
     apiName = "OrderItem.Product2Id"
@@ -19,6 +20,7 @@ type salesforce.OrderItem {
     createable = true
     updateable = false
     queryable = true
+    relationshipName = "Product2"
   }
   salesforce.Checkbox IsDeleted {
     apiName = "OrderItem.IsDeleted"
@@ -27,8 +29,9 @@ type salesforce.OrderItem {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
     _required = false
+    _hidden_value = true
   }
   salesforce.Lookup OrderId {
     apiName = "OrderItem.OrderId"
@@ -41,6 +44,7 @@ type salesforce.OrderItem {
     createable = true
     updateable = false
     queryable = true
+    relationshipName = "Order"
   }
   salesforce.Lookup PricebookEntryId {
     apiName = "OrderItem.PricebookEntryId"
@@ -53,6 +57,7 @@ type salesforce.OrderItem {
     createable = true
     updateable = false
     queryable = true
+    relationshipName = "PricebookEntry"
   }
   salesforce.Lookup OriginalOrderItemId {
     apiName = "OrderItem.OriginalOrderItemId"
@@ -65,6 +70,7 @@ type salesforce.OrderItem {
     createable = true
     updateable = false
     queryable = true
+    relationshipName = "OriginalOrderItem"
   }
   salesforce.Number AvailableQuantity {
     apiName = "OrderItem.AvailableQuantity"
@@ -102,7 +108,7 @@ type salesforce.OrderItem {
     apiName = "OrderItem.ListPrice"
     label = "List Price"
     _required = false
-    createable = false
+    createable = true
     updateable = false
     scale = 2
     precision = 18
@@ -152,7 +158,8 @@ type salesforce.OrderItem {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "OrderItem.CreatedById"
@@ -165,7 +172,9 @@ type salesforce.OrderItem {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "CreatedBy"
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "OrderItem.LastModifiedDate"
@@ -174,7 +183,8 @@ type salesforce.OrderItem {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "OrderItem.LastModifiedById"
@@ -187,7 +197,9 @@ type salesforce.OrderItem {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "OrderItem.SystemModstamp"
@@ -196,7 +208,8 @@ type salesforce.OrderItem {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.AutoNumber OrderItemNumber {
     apiName = "OrderItem.OrderItemNumber"
@@ -205,7 +218,8 @@ type salesforce.OrderItem {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Unknown ProductCode {
     apiName = "OrderItem.ProductCode"

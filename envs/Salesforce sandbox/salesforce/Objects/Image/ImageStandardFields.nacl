@@ -4,9 +4,10 @@ type salesforce.Image {
     label = "Image ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Lookup OwnerId {
     apiName = "Image.OwnerId"
@@ -20,7 +21,9 @@ type salesforce.Image {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "Owner"
+    _hidden_value = true
   }
   salesforce.Checkbox IsDeleted {
     apiName = "Image.IsDeleted"
@@ -29,8 +32,9 @@ type salesforce.Image {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
     _required = false
+    _hidden_value = true
   }
   salesforce.Text Name {
     apiName = "Image.Name"
@@ -50,7 +54,8 @@ type salesforce.Image {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "Image.CreatedById"
@@ -63,7 +68,9 @@ type salesforce.Image {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "CreatedBy"
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "Image.LastModifiedDate"
@@ -72,7 +79,8 @@ type salesforce.Image {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "Image.LastModifiedById"
@@ -85,7 +93,9 @@ type salesforce.Image {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "Image.SystemModstamp"
@@ -94,7 +104,8 @@ type salesforce.Image {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Text ImageViewType {
     apiName = "Image.ImageViewType"
@@ -190,6 +201,7 @@ type salesforce.Image {
     createable = true
     updateable = true
     queryable = true
+    relationshipName = "ContentDocument"
   }
   salesforce.Text CapturedAngle {
     apiName = "Image.CapturedAngle"

@@ -28,9 +28,61 @@ type salesforce.Geolocation {
     }
     boolean queryable {
     }
+    hidden_string internalId {
+    }
   }
   number latitude {
   }
   number longitude {
+  }
+}
+type salesforce.Name {
+  annotations {
+    hidden_string internalId {
+    }
+    string relationshipName {
+    }
+  }
+  string MiddleName {
+  }
+  string Suffix {
+  }
+}
+type salesforce.Name2 {
+  annotations {
+    serviceid apiName {
+    }
+    string description {
+    }
+    string inlineHelpText {
+    }
+    string label {
+    }
+    string businessOwnerUser {
+    }
+    string businessOwnerGroup {
+    }
+    salesforce.businessStatus businessStatus {
+    }
+    salesforce.securityClassification securityClassification {
+    }
+    string complianceGroup {
+    }
+    boolean createable {
+    }
+    boolean updateable {
+    }
+    boolean queryable {
+    }
+    hidden_string internalId {
+    }
+  }
+  string FirstName {
+  }
+  string LastName {
+  }
+  string MiddleName {
+  }
+  string Suffix {
   }
 }

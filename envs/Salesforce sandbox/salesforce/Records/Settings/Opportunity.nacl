@@ -8,4 +8,6 @@ salesforce.OpportunitySettings {
   enableOpportunityTeam = false
   enableUpdateReminders = true
   promptToAddProducts = false
+  oppAmountDealMotionEnabled = "true"
+  oppCloseDateDealMotionEnabled = "true"
 }

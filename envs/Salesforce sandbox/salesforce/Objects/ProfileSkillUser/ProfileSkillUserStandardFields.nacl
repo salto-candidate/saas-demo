@@ -4,9 +4,10 @@ type salesforce.ProfileSkillUser {
     label = "Skill User ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Checkbox IsDeleted {
     apiName = "ProfileSkillUser.IsDeleted"
@@ -15,8 +16,9 @@ type salesforce.ProfileSkillUser {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
     _required = false
+    _hidden_value = true
   }
   salesforce.AutoNumber Name {
     apiName = "ProfileSkillUser.Name"
@@ -25,7 +27,8 @@ type salesforce.ProfileSkillUser {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime CreatedDate {
     apiName = "ProfileSkillUser.CreatedDate"
@@ -34,7 +37,8 @@ type salesforce.ProfileSkillUser {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "ProfileSkillUser.CreatedById"
@@ -47,7 +51,9 @@ type salesforce.ProfileSkillUser {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "CreatedBy"
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "ProfileSkillUser.LastModifiedDate"
@@ -56,7 +62,8 @@ type salesforce.ProfileSkillUser {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "ProfileSkillUser.LastModifiedById"
@@ -69,7 +76,9 @@ type salesforce.ProfileSkillUser {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "ProfileSkillUser.SystemModstamp"
@@ -78,7 +87,8 @@ type salesforce.ProfileSkillUser {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup ProfileSkillId {
     apiName = "ProfileSkillUser.ProfileSkillId"
@@ -91,6 +101,7 @@ type salesforce.ProfileSkillUser {
     createable = true
     updateable = false
     queryable = true
+    relationshipName = "ProfileSkill"
   }
   salesforce.Lookup UserId {
     apiName = "ProfileSkillUser.UserId"
@@ -103,6 +114,7 @@ type salesforce.ProfileSkillUser {
     createable = true
     updateable = false
     queryable = true
+    relationshipName = "User"
   }
   salesforce.Summary EndorsementCount {
     apiName = "ProfileSkillUser.EndorsementCount"

@@ -27,10 +27,17 @@ settings salesforce.ProductSettings {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   boolean enableMySettings {
+    _required = false
   }
   metadataType = "ProductSettings"
+  boolean enableSecureGuestUserRecordAccess {
+    _required = false
+  }
+  suffix = "settings"
+  dirName = "settings"
 }

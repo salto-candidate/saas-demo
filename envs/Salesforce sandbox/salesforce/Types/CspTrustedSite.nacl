@@ -39,10 +39,35 @@ type salesforce.CspTrustedSite {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   suffix = "cspTrustedSite"
   dirName = "cspTrustedSites"
   metadataType = "CspTrustedSite"
+  boolean isApplicableToConnectSrc {
+    _required = false
+  }
+  boolean isApplicableToFontSrc {
+    _required = false
+  }
+  boolean isApplicableToFrameSrc {
+    _required = false
+  }
+  boolean isApplicableToImgSrc {
+    _required = false
+  }
+  boolean isApplicableToMediaSrc {
+    _required = false
+  }
+  boolean isApplicableToStyleSrc {
+    _required = false
+  }
+  string mobileExtension {
+    _required = false
+    foreignKeyDomain = [
+      "FieldServiceMobileExtension",
+    ]
+  }
 }

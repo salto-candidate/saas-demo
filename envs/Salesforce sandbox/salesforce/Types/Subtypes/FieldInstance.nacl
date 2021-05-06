@@ -1,4 +1,4 @@
-type salesforce.KnowledgeCaseFieldsSettings {
+type salesforce.FieldInstance {
   annotations {
     serviceid metadataType {
     }
@@ -13,14 +13,14 @@ type salesforce.KnowledgeCaseFieldsSettings {
     string dirName {
     }
   }
-  string internalId {
+  salesforce.FieldInstanceProperty fieldInstanceProperties {
     _required = false
-    _hidden = true
-    localOnly = true
   }
-  "List<salesforce.KnowledgeCaseField>" field {
+  string fieldItem {
+    _required = false
   }
-  suffix = ""
-  dirName = ""
-  metadataType = "KnowledgeCaseFieldsSettings"
+  salesforce.UiFormulaRule visibilityRule {
+    _required = false
+  }
+  metadataType = "FieldInstance"
 }

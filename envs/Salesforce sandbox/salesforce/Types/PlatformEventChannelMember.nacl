@@ -22,6 +22,7 @@ type salesforce.PlatformEventChannelMember {
       enforce_value = false
       values = [
         "ActivityEngagementVirtualChannel",
+        "ChangeDataCaptureDiffeoStandard",
         "ChangeDataStandardSales",
         "ChangeEvents",
         "CommerceChangeEvents",
@@ -35,6 +36,7 @@ type salesforce.PlatformEventChannelMember {
         "GlobalIdentityStandard",
         "IsotopeStandardChangeEvents",
         "PardotSyncStdChannel",
+        "VideoCall",
         "WorkPlansCDCEventChannel",
       ]
     }
@@ -55,6 +57,7 @@ type salesforce.PlatformEventChannelMember {
         "CampaignMemberChangeEvent",
         "CampaignMemberStatusChangeEvent",
         "CaseChangeEvent",
+        "CommSubscriptionConsentChangeEvent",
         "ContactChangeEvent",
         "ContactPointAddressChangeEvent",
         "ContactPointConsentChangeEvent",
@@ -62,18 +65,28 @@ type salesforce.PlatformEventChannelMember {
         "ContactPointPhoneChangeEvent",
         "ContactPointTypeConsentChangeEvent",
         "ContractChangeEvent",
+        "EmailMessageChangeEvent",
+        "EmailTemplateChangeEvent",
         "EventChangeEvent",
         "EventRelationChangeEvent",
         "IndividualChangeEvent",
         "LeadChangeEvent",
         "ListEmailChangeEvent",
+        "MacroChangeEvent",
+        "MacroInstructionChangeEvent",
         "OpportunityChangeEvent",
         "OpportunityContactRoleChangeEvent",
         "OrderChangeEvent",
         "OrderItemChangeEvent",
+        "PartyConsentChangeEvent",
+        "Pricebook2ChangeEvent",
         "Product2ChangeEvent",
+        "QuickTextChangeEvent",
         "QuoteChangeEvent",
         "QuoteLineItemChangeEvent",
+        "RecommendationChangeEvent",
+        "RecommendationReactionChangeEvent",
+        "SocialPostChangeEvent",
         "TaskChangeEvent",
         "TaskRelationChangeEvent",
         "UserChangeEvent",
@@ -86,8 +99,9 @@ type salesforce.PlatformEventChannelMember {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   suffix = "platformEventChannelMember"
   dirName = "platformEventChannelMembers"

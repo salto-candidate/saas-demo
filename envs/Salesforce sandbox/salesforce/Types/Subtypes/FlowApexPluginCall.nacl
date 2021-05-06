@@ -50,4 +50,16 @@ type salesforce.FlowApexPluginCall {
     _required = false
   }
   metadataType = "FlowApexPluginCall"
+  string elementSubtype {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "SortCollectionProcessor",
+      ]
+    }
+    foreignKeyDomain = [
+      "FlowElementSubtypeDefinition",
+    ]
+  }
 }

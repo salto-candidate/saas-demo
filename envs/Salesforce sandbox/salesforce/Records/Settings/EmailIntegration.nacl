@@ -8,4 +8,5 @@ salesforce.EmailIntegrationSettings {
   enableOutlookIntegration = true
   isLayoutCustomizationAllowed = true
   shouldUseTrustedDomainsList = true
+  orgIsSyncingEventsOutbound = "false"
 }

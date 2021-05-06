@@ -4,9 +4,10 @@ type salesforce.MacroUsage {
     label = "Macro Usage ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Lookup OwnerId {
     apiName = "MacroUsage.OwnerId"
@@ -20,7 +21,9 @@ type salesforce.MacroUsage {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "Owner"
+    _hidden_value = true
   }
   salesforce.Checkbox IsDeleted {
     apiName = "MacroUsage.IsDeleted"
@@ -29,8 +32,9 @@ type salesforce.MacroUsage {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
     _required = false
+    _hidden_value = true
   }
   salesforce.Text Name {
     apiName = "MacroUsage.Name"
@@ -50,7 +54,8 @@ type salesforce.MacroUsage {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "MacroUsage.CreatedById"
@@ -63,7 +68,9 @@ type salesforce.MacroUsage {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "CreatedBy"
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "MacroUsage.LastModifiedDate"
@@ -72,7 +79,8 @@ type salesforce.MacroUsage {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "MacroUsage.LastModifiedById"
@@ -85,7 +93,9 @@ type salesforce.MacroUsage {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "MacroUsage.SystemModstamp"
@@ -94,7 +104,8 @@ type salesforce.MacroUsage {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup MacroId {
     apiName = "MacroUsage.MacroId"
@@ -107,6 +118,7 @@ type salesforce.MacroUsage {
     createable = false
     updateable = false
     queryable = true
+    relationshipName = "Macro"
   }
   salesforce.Text ContextRecord {
     apiName = "MacroUsage.ContextRecord"
@@ -160,6 +172,7 @@ type salesforce.MacroUsage {
     createable = false
     updateable = false
     queryable = true
+    relationshipName = "User"
   }
   salesforce.Checkbox IsFromBulk {
     apiName = "MacroUsage.IsFromBulk"

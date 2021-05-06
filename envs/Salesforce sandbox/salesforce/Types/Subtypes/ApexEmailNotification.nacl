@@ -1,4 +1,4 @@
-type salesforce.KnowledgeSitesSettings {
+type salesforce.ApexEmailNotification {
   annotations {
     serviceid metadataType {
     }
@@ -13,14 +13,14 @@ type salesforce.KnowledgeSitesSettings {
     string dirName {
     }
   }
-  string internalId {
+  string email {
     _required = false
-    _hidden = true
-    localOnly = true
   }
-  string site {
+  string user {
+    _required = false
+    foreignKeyDomain = [
+      salesforce.User,
+    ]
   }
-  suffix = ""
-  dirName = ""
-  metadataType = "KnowledgeSitesSettings"
+  metadataType = "ApexEmailNotification"
 }

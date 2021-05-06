@@ -76,6 +76,18 @@ type salesforce.Yariv__c {
     }
     string visibility {
     }
+    string label {
+    }
+    boolean enablePublishStatusTracking {
+    }
+    salesforce.MktDataLakeAttributes mktDataLakeAttributes {
+    }
+    salesforce.MktDataModelAttributes mktDataModelAttributes {
+    }
+    salesforce.ProfileSearchLayouts profileSearchLayouts {
+    }
+    hidden_string internalId {
+    }
   }
   apiName = "Yariv__c"
   metadataType = "CustomObject"

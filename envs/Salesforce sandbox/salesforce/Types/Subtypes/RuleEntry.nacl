@@ -55,10 +55,12 @@ type salesforce.RuleEntry {
   string assignedToType {
     _restriction = {
       values = [
-        "User",
         "Queue",
+        "User",
       ]
+      enforce_value = false
     }
+    _required = false
   }
   metadataType = "RuleEntry"
 }

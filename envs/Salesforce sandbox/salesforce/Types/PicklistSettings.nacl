@@ -18,10 +18,14 @@ settings salesforce.PicklistSettings {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   boolean isPicklistApiNameEditDisabled {
+    _required = false
   }
   metadataType = "PicklistSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

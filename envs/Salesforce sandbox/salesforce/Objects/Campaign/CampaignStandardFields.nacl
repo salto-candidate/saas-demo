@@ -4,9 +4,10 @@ type salesforce.Campaign {
     label = "Campaign ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Checkbox IsDeleted {
     apiName = "Campaign.IsDeleted"
@@ -15,8 +16,9 @@ type salesforce.Campaign {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
     _required = false
+    _hidden_value = true
   }
   salesforce.Text Name {
     apiName = "Campaign.Name"
@@ -40,6 +42,7 @@ type salesforce.Campaign {
     createable = false
     updateable = false
     queryable = true
+    relationshipName = "Parent"
   }
   salesforce.Picklist Type {
     apiName = "Campaign.Type"
@@ -242,7 +245,9 @@ type salesforce.Campaign {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "Owner"
+    _hidden_value = true
   }
   salesforce.DateTime CreatedDate {
     apiName = "Campaign.CreatedDate"
@@ -251,7 +256,8 @@ type salesforce.Campaign {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "Campaign.CreatedById"
@@ -264,7 +270,9 @@ type salesforce.Campaign {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "CreatedBy"
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "Campaign.LastModifiedDate"
@@ -273,7 +281,8 @@ type salesforce.Campaign {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "Campaign.LastModifiedById"
@@ -286,7 +295,9 @@ type salesforce.Campaign {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "Campaign.SystemModstamp"
@@ -295,7 +306,8 @@ type salesforce.Campaign {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Date LastActivityDate {
     apiName = "Campaign.LastActivityDate"
@@ -304,7 +316,8 @@ type salesforce.Campaign {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CampaignMemberRecordTypeId {
     apiName = "Campaign.CampaignMemberRecordTypeId"
@@ -317,6 +330,7 @@ type salesforce.Campaign {
     createable = false
     updateable = false
     queryable = true
+    relationshipName = "CampaignMemberRecordType"
   }
   salesforce.Unknown HierarchyActualCost {
     apiName = "Campaign.HierarchyActualCost"

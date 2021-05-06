@@ -22,11 +22,13 @@ type salesforce.ContentAssetLink {
   string access {
     _restriction = {
       values = [
-        "VIEWER",
         "COLLABORATOR",
         "INFERRED",
+        "VIEWER",
       ]
+      enforce_value = false
     }
+    _required = false
   }
   metadataType = "ContentAssetLink"
 }

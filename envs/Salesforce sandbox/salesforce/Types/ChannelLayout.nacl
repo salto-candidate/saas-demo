@@ -30,10 +30,17 @@ type salesforce.ChannelLayout {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   suffix = "channelLayout"
   dirName = "channelLayouts"
   metadataType = "ChannelLayout"
+  boolean doesExcludeFieldLabels {
+    _required = false
+  }
+  boolean doesExcludeFiles {
+    _required = false
+  }
 }

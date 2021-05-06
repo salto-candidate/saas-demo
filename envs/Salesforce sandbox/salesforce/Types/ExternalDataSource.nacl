@@ -123,6 +123,7 @@ type salesforce.ExternalDataSource {
         "Datajourney",
         "EnInsightsFeedback",
         "Engagement",
+        "ExternalEvent",
         "ExternalReference",
         "ForecastingItemPivot",
         "Ftest",
@@ -142,6 +143,7 @@ type salesforce.ExternalDataSource {
         "PardotEntity",
         "Perms",
         "Pliny",
+        "RecentFieldChange",
         "Salesforce",
         "SetupNode",
         "SfdcOrg",
@@ -196,8 +198,9 @@ type salesforce.ExternalDataSource {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   suffix = "dataSource"
   dirName = "dataSources"

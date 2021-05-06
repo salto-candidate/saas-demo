@@ -34,12 +34,8 @@ type salesforce.PermissionSetObjectPermissions {
   boolean viewAllRecords {
     _required = false
   }
-  string internalId {
-    _required = false
-    _hidden = true
-    localOnly = true
-  }
-  suffix = ""
-  dirName = ""
+  
+  
+  
   metadataType = "PermissionSetObjectPermissions"
 }

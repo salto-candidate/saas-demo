@@ -33,10 +33,14 @@ type salesforce.OauthCustomScope {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   suffix = "oauthcustomscope"
   dirName = "oauthcustomscopes"
   metadataType = "OauthCustomScope"
+  salesforce.OauthCustomScopeApp assignedTo {
+    _required = false
+  }
 }

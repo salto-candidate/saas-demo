@@ -4,9 +4,10 @@ type salesforce.ChatterActivity {
     label = "Chatter Activity ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Lookup ParentId {
     apiName = "ChatterActivity.ParentId"
@@ -82,6 +83,7 @@ type salesforce.ChatterActivity {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
 }

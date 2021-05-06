@@ -4,9 +4,10 @@ type salesforce.Recommendation {
     label = "Recommendation ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Checkbox IsDeleted {
     apiName = "Recommendation.IsDeleted"
@@ -15,8 +16,9 @@ type salesforce.Recommendation {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
     _required = false
+    _hidden_value = true
   }
   salesforce.Text Name {
     apiName = "Recommendation.Name"
@@ -36,7 +38,8 @@ type salesforce.Recommendation {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "Recommendation.CreatedById"
@@ -49,7 +52,9 @@ type salesforce.Recommendation {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "CreatedBy"
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "Recommendation.LastModifiedDate"
@@ -58,7 +63,8 @@ type salesforce.Recommendation {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "Recommendation.LastModifiedById"
@@ -71,7 +77,9 @@ type salesforce.Recommendation {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "Recommendation.SystemModstamp"
@@ -80,7 +88,8 @@ type salesforce.Recommendation {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Text ActionReference {
     apiName = "Recommendation.ActionReference"
@@ -116,6 +125,7 @@ type salesforce.Recommendation {
     createable = true
     updateable = true
     queryable = true
+    relationshipName = "Image"
   }
   salesforce.Text AcceptanceLabel {
     apiName = "Recommendation.AcceptanceLabel"

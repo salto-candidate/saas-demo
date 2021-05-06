@@ -51,8 +51,9 @@ type salesforce.CustomApplicationComponent {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   suffix = "customApplicationComponent"
   dirName = "customApplicationComponents"

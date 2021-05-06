@@ -4,9 +4,10 @@ type salesforce.ExpressionFilter {
     label = "ExpressionFilter ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Checkbox IsDeleted {
     apiName = "ExpressionFilter.IsDeleted"
@@ -15,8 +16,9 @@ type salesforce.ExpressionFilter {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
     _required = false
+    _hidden_value = true
   }
   salesforce.AutoNumber Name {
     apiName = "ExpressionFilter.Name"
@@ -25,7 +27,8 @@ type salesforce.ExpressionFilter {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime CreatedDate {
     apiName = "ExpressionFilter.CreatedDate"
@@ -34,7 +37,8 @@ type salesforce.ExpressionFilter {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "ExpressionFilter.CreatedById"
@@ -47,7 +51,9 @@ type salesforce.ExpressionFilter {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "CreatedBy"
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "ExpressionFilter.LastModifiedDate"
@@ -56,7 +62,8 @@ type salesforce.ExpressionFilter {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "ExpressionFilter.LastModifiedById"
@@ -69,7 +76,9 @@ type salesforce.ExpressionFilter {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "ExpressionFilter.SystemModstamp"
@@ -78,7 +87,8 @@ type salesforce.ExpressionFilter {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Text FilterConditionLogic {
     apiName = "ExpressionFilter.FilterConditionLogic"
@@ -102,6 +112,7 @@ type salesforce.ExpressionFilter {
     createable = true
     updateable = false
     queryable = true
+    relationshipName = "Context"
   }
   salesforce.Text FilterDescription {
     apiName = "ExpressionFilter.FilterDescription"

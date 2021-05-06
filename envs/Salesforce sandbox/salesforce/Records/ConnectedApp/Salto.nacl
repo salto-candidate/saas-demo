@@ -12,5 +12,11 @@ salesforce.ConnectedApp Salto {
       "Full",
       "RefreshToken",
     ]
+    isConsumerSecretOptional = false
+    isIntrospectAllTokens = false
+  }
+  oauthPolicy = {
+    ipRelaxation = "ENFORCE"
+    refreshTokenPolicy = "infinite"
   }
 }

@@ -38,15 +38,20 @@ type salesforce.LightningComponentBundle {
     _required = false
   }
   salesforce.TargetConfigs targetConfigs {
+    _required = false
   }
   salesforce.Targets targets {
     _required = false
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   dirName = "lwc"
   metadataType = "LightningComponentBundle"
+  salesforce.Capabilities capabilities {
+    _required = false
+  }
 }

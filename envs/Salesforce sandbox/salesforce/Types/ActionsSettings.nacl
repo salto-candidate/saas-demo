@@ -18,14 +18,20 @@ settings salesforce.ActionsSettings {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   boolean enableDefaultQuickActionsOn {
+    _required = false
   }
   boolean enableMdpEnabled {
+    _required = false
   }
   boolean enableThirdPartyActions {
+    _required = false
   }
   metadataType = "ActionsSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

@@ -4,9 +4,10 @@ type salesforce.Idea {
     label = "Idea ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Checkbox IsDeleted {
     apiName = "Idea.IsDeleted"
@@ -15,8 +16,9 @@ type salesforce.Idea {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
     _required = false
+    _hidden_value = true
   }
   salesforce.Text Title {
     apiName = "Idea.Title"
@@ -40,7 +42,9 @@ type salesforce.Idea {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "RecordType"
+    _hidden_value = true
   }
   salesforce.DateTime CreatedDate {
     apiName = "Idea.CreatedDate"
@@ -49,7 +53,8 @@ type salesforce.Idea {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "Idea.CreatedById"
@@ -62,7 +67,9 @@ type salesforce.Idea {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "CreatedBy"
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "Idea.LastModifiedDate"
@@ -71,7 +78,8 @@ type salesforce.Idea {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "Idea.LastModifiedById"
@@ -84,7 +92,9 @@ type salesforce.Idea {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "Idea.SystemModstamp"
@@ -93,7 +103,8 @@ type salesforce.Idea {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CommunityId {
     apiName = "Idea.CommunityId"
@@ -106,6 +117,7 @@ type salesforce.Idea {
     createable = true
     updateable = false
     queryable = true
+    relationshipName = "Community"
   }
   salesforce.Html Body {
     apiName = "Idea.Body"
@@ -182,6 +194,7 @@ type salesforce.Idea {
     createable = false
     updateable = false
     queryable = true
+    relationshipName = "LastComment"
   }
   salesforce.Lookup ParentIdeaId {
     apiName = "Idea.ParentIdeaId"
@@ -194,6 +207,7 @@ type salesforce.Idea {
     createable = false
     updateable = false
     queryable = true
+    relationshipName = "ParentIdea"
   }
   salesforce.Checkbox IsHtml {
     apiName = "Idea.IsHtml"

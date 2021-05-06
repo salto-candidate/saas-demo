@@ -34,7 +34,9 @@ type salesforce.FlowConstant {
         "Number",
         "String",
       ]
+      enforce_value = false
     }
+    _required = false
   }
   metadataType = "FlowConstant"
 }

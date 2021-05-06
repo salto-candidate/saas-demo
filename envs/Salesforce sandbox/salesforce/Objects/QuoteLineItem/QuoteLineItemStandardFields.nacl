@@ -4,9 +4,10 @@ type salesforce.QuoteLineItem {
     label = "Quote Line Item ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Checkbox IsDeleted {
     apiName = "QuoteLineItem.IsDeleted"
@@ -15,8 +16,9 @@ type salesforce.QuoteLineItem {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
     _required = false
+    _hidden_value = true
   }
   salesforce.AutoNumber LineNumber {
     apiName = "QuoteLineItem.LineNumber"
@@ -25,7 +27,8 @@ type salesforce.QuoteLineItem {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime CreatedDate {
     apiName = "QuoteLineItem.CreatedDate"
@@ -34,7 +37,8 @@ type salesforce.QuoteLineItem {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "QuoteLineItem.CreatedById"
@@ -47,7 +51,9 @@ type salesforce.QuoteLineItem {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "CreatedBy"
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "QuoteLineItem.LastModifiedDate"
@@ -56,7 +62,8 @@ type salesforce.QuoteLineItem {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "QuoteLineItem.LastModifiedById"
@@ -69,7 +76,9 @@ type salesforce.QuoteLineItem {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "QuoteLineItem.SystemModstamp"
@@ -78,7 +87,8 @@ type salesforce.QuoteLineItem {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup QuoteId {
     apiName = "QuoteLineItem.QuoteId"
@@ -91,6 +101,7 @@ type salesforce.QuoteLineItem {
     createable = true
     updateable = false
     queryable = true
+    relationshipName = "Quote"
   }
   salesforce.Lookup PricebookEntryId {
     apiName = "QuoteLineItem.PricebookEntryId"
@@ -103,6 +114,7 @@ type salesforce.QuoteLineItem {
     createable = true
     updateable = false
     queryable = true
+    relationshipName = "PricebookEntry"
   }
   salesforce.Lookup OpportunityLineItemId {
     apiName = "QuoteLineItem.OpportunityLineItemId"
@@ -115,6 +127,7 @@ type salesforce.QuoteLineItem {
     createable = true
     updateable = false
     queryable = true
+    relationshipName = "OpportunityLineItem"
   }
   salesforce.Number Quantity {
     apiName = "QuoteLineItem.Quantity"
@@ -177,6 +190,7 @@ type salesforce.QuoteLineItem {
     createable = true
     updateable = false
     queryable = true
+    relationshipName = "Product2"
   }
   salesforce.Number SortOrder {
     apiName = "QuoteLineItem.SortOrder"

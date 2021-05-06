@@ -35,4 +35,10 @@ type salesforce.StrategyNodeRecommendationLoad {
     _required = false
   }
   metadataType = "StrategyNodeRecommendationLoad"
+  string object {
+    _required = false
+  }
+  salesforce.StrategyNodeSortField sortField {
+    _required = false
+  }
 }

@@ -4,9 +4,10 @@ type salesforce.ProfileSkillEndorsement {
     label = "Endorsement ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Checkbox IsDeleted {
     apiName = "ProfileSkillEndorsement.IsDeleted"
@@ -15,8 +16,9 @@ type salesforce.ProfileSkillEndorsement {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
     _required = false
+    _hidden_value = true
   }
   salesforce.AutoNumber Name {
     apiName = "ProfileSkillEndorsement.Name"
@@ -25,7 +27,8 @@ type salesforce.ProfileSkillEndorsement {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime CreatedDate {
     apiName = "ProfileSkillEndorsement.CreatedDate"
@@ -34,7 +37,8 @@ type salesforce.ProfileSkillEndorsement {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "ProfileSkillEndorsement.CreatedById"
@@ -47,7 +51,9 @@ type salesforce.ProfileSkillEndorsement {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "CreatedBy"
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "ProfileSkillEndorsement.LastModifiedDate"
@@ -56,7 +62,8 @@ type salesforce.ProfileSkillEndorsement {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "ProfileSkillEndorsement.LastModifiedById"
@@ -69,7 +76,9 @@ type salesforce.ProfileSkillEndorsement {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "ProfileSkillEndorsement.SystemModstamp"
@@ -78,7 +87,8 @@ type salesforce.ProfileSkillEndorsement {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup ProfileSkillUserId {
     apiName = "ProfileSkillEndorsement.ProfileSkillUserId"
@@ -91,6 +101,7 @@ type salesforce.ProfileSkillEndorsement {
     createable = true
     updateable = false
     queryable = true
+    relationshipName = "ProfileSkillUser"
   }
   salesforce.Lookup UserId {
     apiName = "ProfileSkillEndorsement.UserId"
@@ -103,5 +114,6 @@ type salesforce.ProfileSkillEndorsement {
     createable = true
     updateable = true
     queryable = true
+    relationshipName = "User"
   }
 }

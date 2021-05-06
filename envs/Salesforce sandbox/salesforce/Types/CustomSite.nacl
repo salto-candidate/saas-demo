@@ -142,19 +142,11 @@ type salesforce.CustomSite {
   boolean requireHttps {
     _required = false
   }
-  boolean requireInsecurePortalAccess {
-    _required = false
-  }
+  
   string robotsTxtPage {
     _required = false
   }
-  string rootComponent {
-    _required = false
-    foreignKeyDomain = [
-      "ManagedContent",
-      "SiteComponent",
-    ]
-  }
+  
   string selfRegPage {
     _required = false
   }
@@ -193,10 +185,17 @@ type salesforce.CustomSite {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   suffix = "site"
   dirName = "sites"
   metadataType = "CustomSite"
+  string siteGuestRecordDefaultOwner {
+    _required = false
+  }
+  salesforce.SiteIframeWhiteListUrl siteIframeWhiteListUrls {
+    _required = false
+  }
 }

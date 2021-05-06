@@ -4,9 +4,10 @@ type salesforce.PromptAction {
     label = "Prompt Action ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Lookup OwnerId {
     apiName = "PromptAction.OwnerId"
@@ -20,7 +21,9 @@ type salesforce.PromptAction {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "Owner"
+    _hidden_value = true
   }
   salesforce.Checkbox IsDeleted {
     apiName = "PromptAction.IsDeleted"
@@ -29,8 +32,9 @@ type salesforce.PromptAction {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
     _required = false
+    _hidden_value = true
   }
   salesforce.Text Name {
     apiName = "PromptAction.Name"
@@ -50,7 +54,8 @@ type salesforce.PromptAction {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "PromptAction.CreatedById"
@@ -63,7 +68,9 @@ type salesforce.PromptAction {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "CreatedBy"
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "PromptAction.LastModifiedDate"
@@ -72,7 +79,8 @@ type salesforce.PromptAction {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "PromptAction.LastModifiedById"
@@ -85,7 +93,9 @@ type salesforce.PromptAction {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "PromptAction.SystemModstamp"
@@ -94,7 +104,8 @@ type salesforce.PromptAction {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup PromptVersionId {
     apiName = "PromptAction.PromptVersionId"
@@ -107,6 +118,7 @@ type salesforce.PromptAction {
     createable = true
     updateable = true
     queryable = true
+    relationshipName = "PromptVersion"
   }
   salesforce.Lookup UserId {
     apiName = "PromptAction.UserId"
@@ -119,6 +131,7 @@ type salesforce.PromptAction {
     createable = true
     updateable = true
     queryable = true
+    relationshipName = "User"
   }
   salesforce.Number TimesDisplayed {
     apiName = "PromptAction.TimesDisplayed"
@@ -202,6 +215,12 @@ type salesforce.PromptAction {
         label = "Finish"
         isActive = true
       },
+      {
+        fullName = "Snooze"
+        default = false
+        label = "Snooze"
+        isActive = true
+      },
     ]
     restricted = true
     createable = true
@@ -214,6 +233,28 @@ type salesforce.PromptAction {
     _required = false
     createable = true
     updateable = true
+    queryable = true
+  }
+  salesforce.Number StepNumber {
+    apiName = "PromptAction.StepNumber"
+    label = "Step Number"
+    _required = false
+    precision = 9
+    createable = true
+    updateable = true
+    scale = 0
+    unique = false
+    queryable = true
+  }
+  salesforce.Number StepCount {
+    apiName = "PromptAction.StepCount"
+    label = "Step Count"
+    _required = false
+    precision = 9
+    createable = true
+    updateable = true
+    scale = 0
+    unique = false
     queryable = true
   }
 }

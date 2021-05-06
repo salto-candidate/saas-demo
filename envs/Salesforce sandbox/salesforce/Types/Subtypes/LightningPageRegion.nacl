@@ -23,9 +23,7 @@ type salesforce.LightningPageRegion {
       ]
     }
   }
-  "List<salesforce.ComponentInstance>" componentInstances {
-    _required = false
-  }
+  
   string mode {
     _required = false
     _restriction = {
@@ -72,4 +70,7 @@ type salesforce.LightningPageRegion {
     }
   }
   metadataType = "FlexiPageRegion"
+  "List<salesforce.ItemInstance>" itemInstances {
+    _required = false
+  }
 }

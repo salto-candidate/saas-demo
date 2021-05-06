@@ -4,9 +4,10 @@ type salesforce.EmailMessage {
     label = "Email Message ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Lookup ParentId {
     apiName = "EmailMessage.ParentId"
@@ -19,6 +20,7 @@ type salesforce.EmailMessage {
     createable = true
     updateable = false
     queryable = true
+    relationshipName = "Parent"
   }
   salesforce.Lookup ActivityId {
     apiName = "EmailMessage.ActivityId"
@@ -43,7 +45,9 @@ type salesforce.EmailMessage {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "CreatedBy"
+    _hidden_value = true
   }
   salesforce.DateTime CreatedDate {
     apiName = "EmailMessage.CreatedDate"
@@ -52,7 +56,8 @@ type salesforce.EmailMessage {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "EmailMessage.LastModifiedDate"
@@ -61,7 +66,8 @@ type salesforce.EmailMessage {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "EmailMessage.LastModifiedById"
@@ -74,7 +80,9 @@ type salesforce.EmailMessage {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "EmailMessage.SystemModstamp"
@@ -83,7 +91,8 @@ type salesforce.EmailMessage {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.LongTextArea TextBody {
     apiName = "EmailMessage.TextBody"
@@ -271,8 +280,9 @@ type salesforce.EmailMessage {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
     _required = false
+    _hidden_value = true
   }
   salesforce.Lookup ReplyToEmailMessageId {
     apiName = "EmailMessage.ReplyToEmailMessageId"
@@ -285,6 +295,7 @@ type salesforce.EmailMessage {
     createable = true
     updateable = false
     queryable = true
+    relationshipName = "ReplyToEmailMessage"
   }
   salesforce.Checkbox IsExternallyVisible {
     apiName = "EmailMessage.IsExternallyVisible"
@@ -335,10 +346,13 @@ type salesforce.EmailMessage {
       salesforce.AssetRelationship,
       salesforce.Campaign,
       salesforce.Case,
+      salesforce.CommSubscriptionConsent,
       salesforce.Contract,
+      salesforce.Image,
       "ListEmail",
       salesforce.Opportunity,
       salesforce.Order,
+      salesforce.PartyConsent,
       salesforce.Product2,
       salesforce.Quote,
       salesforce.Solution,
@@ -346,6 +360,7 @@ type salesforce.EmailMessage {
     createable = true
     updateable = false
     queryable = true
+    relationshipName = "RelatedTo"
   }
   salesforce.Checkbox IsTracked {
     apiName = "EmailMessage.IsTracked"
@@ -398,6 +413,7 @@ type salesforce.EmailMessage {
     createable = true
     updateable = true
     queryable = true
+    relationshipName = "EmailTemplate"
   }
   salesforce.Unknown IsPrivateDraft {
     apiName = "EmailMessage.IsPrivateDraft"

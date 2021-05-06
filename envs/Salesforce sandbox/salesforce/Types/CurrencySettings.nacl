@@ -21,16 +21,23 @@ settings salesforce.CurrencySettings {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   boolean enableCurrencyEffectiveDates {
+    _required = false
   }
   boolean enableCurrencySymbolWithMultiCurrency {
+    _required = false
   }
   boolean isMultiCurrencyActivationAllowed {
+    _required = false
   }
   boolean isParenCurrencyConvDisabled {
+    _required = false
   }
   metadataType = "CurrencySettings"
+  suffix = "settings"
+  dirName = "settings"
 }

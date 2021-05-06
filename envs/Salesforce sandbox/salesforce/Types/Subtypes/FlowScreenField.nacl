@@ -74,24 +74,37 @@ type salesforce.FlowScreenField {
         "Number",
         "String",
       ]
+      enforce_value = false
     }
+    _required = false
   }
   string fieldType {
     _restriction = {
       values = [
-        "DisplayText",
-        "InputField",
-        "LargeTextArea",
-        "PasswordField",
-        "RadioButtons",
-        "DropdownBox",
-        "MultiSelectCheckboxes",
-        "MultiSelectPicklist",
-        "ComponentInstance",
         "ComponentChoice",
         "ComponentInput",
+        "ComponentInstance",
+        "DisplayText",
+        "DropdownBox",
+        "InputField",
+        "LargeTextArea",
+        "MultiSelectCheckboxes",
+        "MultiSelectPicklist",
+        "PasswordField",
+        "RadioButtons",
       ]
+      enforce_value = false
     }
+    _required = false
   }
   metadataType = "FlowScreenField"
+  salesforce.FlowDataTypeMapping dataTypeMappings {
+    _required = false
+  }
+  salesforce.FlowScreenField fields {
+    _required = false
+  }
+  string objectFieldReference {
+    _required = false
+  }
 }

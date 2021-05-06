@@ -27,16 +27,23 @@ settings salesforce.AccountSettings {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   boolean enableAccountHistoryTracking {
+    _required = false
   }
   boolean enableAccountInsightsInMobile {
+    _required = false
   }
   boolean enableContactHistoryTracking {
+    _required = false
   }
   boolean enableRelateContactToMultipleAccounts {
+    _required = false
   }
   metadataType = "AccountSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

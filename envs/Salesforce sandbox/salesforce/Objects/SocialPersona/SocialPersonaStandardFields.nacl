@@ -4,9 +4,10 @@ type salesforce.SocialPersona {
     label = "Social Persona ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Checkbox IsDeleted {
     apiName = "SocialPersona.IsDeleted"
@@ -15,8 +16,9 @@ type salesforce.SocialPersona {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
     _required = false
+    _hidden_value = true
   }
   salesforce.Text Name {
     apiName = "SocialPersona.Name"
@@ -36,7 +38,8 @@ type salesforce.SocialPersona {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "SocialPersona.CreatedById"
@@ -49,7 +52,9 @@ type salesforce.SocialPersona {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "CreatedBy"
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "SocialPersona.LastModifiedDate"
@@ -58,7 +63,8 @@ type salesforce.SocialPersona {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "SocialPersona.LastModifiedById"
@@ -71,7 +77,9 @@ type salesforce.SocialPersona {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "SocialPersona.SystemModstamp"
@@ -80,7 +88,8 @@ type salesforce.SocialPersona {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup ParentId {
     apiName = "SocialPersona.ParentId"
@@ -96,6 +105,7 @@ type salesforce.SocialPersona {
     createable = true
     updateable = true
     queryable = true
+    relationshipName = "Parent"
   }
   salesforce.Picklist Provider {
     apiName = "SocialPersona.Provider"
@@ -318,7 +328,7 @@ type salesforce.SocialPersona {
   }
   salesforce.Checkbox IsBlacklisted {
     apiName = "SocialPersona.IsBlacklisted"
-    label = "Blacklisted"
+    label = "Blocklisted"
     defaultValue = false
     createable = true
     updateable = true

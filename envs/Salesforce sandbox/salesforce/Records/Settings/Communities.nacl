@@ -8,4 +8,7 @@ salesforce.CommunitiesSettings {
   enableOotbProfExtUserOpsEnable = false
   enablePRMAccRelPref = false
   enableRelaxPartnerAccountFieldPref = false
+  applyLoginPageTypeToEmbeddedLogin = "false"
+  enableGuestPermDisOptOutCruc = "false"
+  enableGuestSecurityOptOutCruc = "false"
 }

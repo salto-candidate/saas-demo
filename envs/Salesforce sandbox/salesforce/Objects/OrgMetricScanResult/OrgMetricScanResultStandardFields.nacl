@@ -4,9 +4,10 @@ type salesforce.OrgMetricScanResult {
     label = "Org Metric Scan Result ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Checkbox IsDeleted {
     apiName = "OrgMetricScanResult.IsDeleted"
@@ -15,8 +16,9 @@ type salesforce.OrgMetricScanResult {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
     _required = false
+    _hidden_value = true
   }
   salesforce.Text Name {
     apiName = "OrgMetricScanResult.Name"
@@ -36,7 +38,8 @@ type salesforce.OrgMetricScanResult {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "OrgMetricScanResult.CreatedById"
@@ -49,7 +52,9 @@ type salesforce.OrgMetricScanResult {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "CreatedBy"
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "OrgMetricScanResult.LastModifiedDate"
@@ -58,7 +63,8 @@ type salesforce.OrgMetricScanResult {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "OrgMetricScanResult.LastModifiedById"
@@ -71,7 +77,9 @@ type salesforce.OrgMetricScanResult {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "OrgMetricScanResult.SystemModstamp"
@@ -80,7 +88,8 @@ type salesforce.OrgMetricScanResult {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup OrgMetricScanSummaryId {
     apiName = "OrgMetricScanResult.OrgMetricScanSummaryId"
@@ -93,6 +102,7 @@ type salesforce.OrgMetricScanResult {
     createable = true
     updateable = false
     queryable = true
+    relationshipName = "OrgMetricScanSummary"
   }
   salesforce.Url Url {
     apiName = "OrgMetricScanResult.Url"

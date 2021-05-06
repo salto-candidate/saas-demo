@@ -35,4 +35,7 @@ type salesforce.FlowRule {
     _required = false
   }
   metadataType = "FlowRule"
+  boolean doesRequireRecordChangedToMeetCriteria {
+    _required = false
+  }
 }

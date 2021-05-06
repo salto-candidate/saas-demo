@@ -111,38 +111,56 @@ settings salesforce.CaseSettings {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   string newEmailDefaultTemplateClass {
+    _required = false
   }
   boolean caseAutoProcUser {
+    _required = false
   }
   boolean caseFeedReadUnreadLtng {
+    _required = false
   }
   boolean caseMergeinLightning {
+    _required = false
   }
   boolean defaultCaseFeedLayoutOn {
+    _required = false
   }
   boolean enableEmailContactOnCasePost {
+    _required = false
   }
   boolean enableEscalateQfiToCaseInternal {
+    _required = false
   }
   boolean enableEscalateQfiToCaseNetworks {
+    _required = false
   }
   boolean enableExtNetworksCaseFeedEnabled {
+    _required = false
   }
   boolean enableNewEmailDefaultTemplate {
+    _required = false
   }
   boolean escalateCaseBefore {
+    _required = false
   }
   boolean genericMessageEnabled {
+    _required = false
   }
   boolean keepCaseMergeRecords {
+    _required = false
   }
   boolean predictiveSupportEnabled {
+    _required = false
   }
   boolean visibleInCssCheckbox {
+    _required = false
   }
   metadataType = "CaseSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

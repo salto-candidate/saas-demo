@@ -21,4 +21,6 @@ salesforce.ActivitiesSettings {
   showEventDetailsMultiUserCalendar = false
   showHomePageHoverLinksForEvents = true
   showMyTasksHoverLinks = true
+  enableHideChildEventsPreference = false
+  enableMLSingleClientProfile = false
 }

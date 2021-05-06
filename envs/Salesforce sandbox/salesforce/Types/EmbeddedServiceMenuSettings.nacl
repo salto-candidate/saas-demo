@@ -39,10 +39,17 @@ type salesforce.EmbeddedServiceMenuSettings {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   suffix = "EmbeddedServiceMenuSettings"
   dirName = "EmbeddedServiceMenuSettings"
   metadataType = "EmbeddedServiceMenuSettings"
+  salesforce.EmbeddedServiceCustomLabel embeddedServiceCustomLabels {
+    _required = false
+  }
+  salesforce.EmbeddedServiceCustomization embeddedServiceCustomizations {
+    _required = false
+  }
 }

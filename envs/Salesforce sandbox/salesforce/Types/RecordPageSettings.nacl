@@ -18,12 +18,17 @@ settings salesforce.RecordPageSettings {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   boolean enableActivityRelatedList {
+    _required = false
   }
   boolean enableFullRecordView {
+    _required = false
   }
   metadataType = "RecordPageSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

@@ -24,12 +24,17 @@ settings salesforce.OmniChannelSettings {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   boolean enableOmniAutoLoginPrompt {
+    _required = false
   }
   boolean enableOmniSecondaryRoutingPriority {
+    _required = false
   }
   metadataType = "OmniChannelSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

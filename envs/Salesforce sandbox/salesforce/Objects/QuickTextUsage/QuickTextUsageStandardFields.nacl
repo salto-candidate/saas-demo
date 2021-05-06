@@ -4,9 +4,10 @@ type salesforce.QuickTextUsage {
     label = "Quick Text Usage ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Lookup OwnerId {
     apiName = "QuickTextUsage.OwnerId"
@@ -20,7 +21,9 @@ type salesforce.QuickTextUsage {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "Owner"
+    _hidden_value = true
   }
   salesforce.Checkbox IsDeleted {
     apiName = "QuickTextUsage.IsDeleted"
@@ -29,8 +32,9 @@ type salesforce.QuickTextUsage {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
     _required = false
+    _hidden_value = true
   }
   salesforce.Text Name {
     apiName = "QuickTextUsage.Name"
@@ -50,7 +54,8 @@ type salesforce.QuickTextUsage {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "QuickTextUsage.CreatedById"
@@ -63,7 +68,9 @@ type salesforce.QuickTextUsage {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "CreatedBy"
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "QuickTextUsage.LastModifiedDate"
@@ -72,7 +79,8 @@ type salesforce.QuickTextUsage {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "QuickTextUsage.LastModifiedById"
@@ -85,7 +93,9 @@ type salesforce.QuickTextUsage {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "QuickTextUsage.SystemModstamp"
@@ -94,7 +104,8 @@ type salesforce.QuickTextUsage {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup QuickTextId {
     apiName = "QuickTextUsage.QuickTextId"
@@ -107,6 +118,7 @@ type salesforce.QuickTextUsage {
     createable = false
     updateable = false
     queryable = true
+    relationshipName = "QuickText"
   }
   salesforce.Picklist Channel {
     apiName = "QuickTextUsage.Channel"
@@ -239,6 +251,7 @@ type salesforce.QuickTextUsage {
     createable = false
     updateable = false
     queryable = true
+    relationshipName = "User"
   }
   salesforce.Picklist AppContext {
     apiName = "QuickTextUsage.AppContext"

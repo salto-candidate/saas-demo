@@ -4,9 +4,10 @@ type salesforce.AuthorizationFormText {
     label = "Authorization Form Text ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Checkbox IsDeleted {
     apiName = "AuthorizationFormText.IsDeleted"
@@ -15,8 +16,9 @@ type salesforce.AuthorizationFormText {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
     _required = false
+    _hidden_value = true
   }
   salesforce.Text Name {
     apiName = "AuthorizationFormText.Name"
@@ -36,7 +38,8 @@ type salesforce.AuthorizationFormText {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "AuthorizationFormText.CreatedById"
@@ -49,7 +52,9 @@ type salesforce.AuthorizationFormText {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "CreatedBy"
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "AuthorizationFormText.LastModifiedDate"
@@ -58,7 +63,8 @@ type salesforce.AuthorizationFormText {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "AuthorizationFormText.LastModifiedById"
@@ -71,7 +77,9 @@ type salesforce.AuthorizationFormText {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "AuthorizationFormText.SystemModstamp"
@@ -80,7 +88,8 @@ type salesforce.AuthorizationFormText {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup AuthorizationFormId {
     apiName = "AuthorizationFormText.AuthorizationFormId"
@@ -93,6 +102,7 @@ type salesforce.AuthorizationFormText {
     createable = true
     updateable = false
     queryable = true
+    relationshipName = "AuthorizationForm"
   }
   salesforce.Text FullAuthorizationFormUrl {
     apiName = "AuthorizationFormText.FullAuthorizationFormUrl"
@@ -2693,5 +2703,6 @@ type salesforce.AuthorizationFormText {
     createable = true
     updateable = true
     queryable = true
+    relationshipName = "ContentDocument"
   }
 }

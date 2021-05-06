@@ -133,17 +133,20 @@ type salesforce.WebLink {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   string displayType {
     _restriction = {
       values = [
-        "link",
         "button",
+        "link",
         "massActionButton",
       ]
+      enforce_value = false
     }
+    _required = false
   }
   metadataType = "WebLink"
 }

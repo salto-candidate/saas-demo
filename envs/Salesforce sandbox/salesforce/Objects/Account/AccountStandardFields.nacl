@@ -4,9 +4,10 @@ type salesforce.Account {
     label = "Account ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Checkbox IsDeleted {
     apiName = "Account.IsDeleted"
@@ -15,8 +16,9 @@ type salesforce.Account {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
     _required = false
+    _hidden_value = true
   }
   salesforce.Lookup MasterRecordId {
     apiName = "Account.MasterRecordId"
@@ -29,6 +31,7 @@ type salesforce.Account {
     createable = false
     updateable = false
     queryable = true
+    relationshipName = "MasterRecord"
   }
   salesforce.Picklist Type {
     apiName = "Account.Type"
@@ -51,6 +54,7 @@ type salesforce.Account {
     createable = true
     updateable = true
     queryable = true
+    relationshipName = "Parent"
   }
   salesforce.Address BillingAddress {
     apiName = "Account.BillingAddress"
@@ -133,7 +137,9 @@ type salesforce.Account {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "Owner"
+    _hidden_value = true
   }
   salesforce.DateTime CreatedDate {
     apiName = "Account.CreatedDate"
@@ -142,7 +148,8 @@ type salesforce.Account {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "Account.CreatedById"
@@ -155,7 +162,9 @@ type salesforce.Account {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "CreatedBy"
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "Account.LastModifiedDate"
@@ -164,7 +173,8 @@ type salesforce.Account {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "Account.LastModifiedById"
@@ -177,7 +187,9 @@ type salesforce.Account {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "Account.SystemModstamp"
@@ -186,7 +198,8 @@ type salesforce.Account {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Date LastActivityDate {
     apiName = "Account.LastActivityDate"
@@ -195,7 +208,8 @@ type salesforce.Account {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Text Jigsaw {
     apiName = "Account.Jigsaw"

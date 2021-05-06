@@ -4,9 +4,10 @@ type salesforce.CollaborationGroupMember {
     label = "Group Member Id"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Lookup CollaborationGroupId {
     apiName = "CollaborationGroupMember.CollaborationGroupId"
@@ -19,6 +20,7 @@ type salesforce.CollaborationGroupMember {
     createable = true
     updateable = false
     queryable = true
+    relationshipName = "CollaborationGroup"
   }
   salesforce.Lookup MemberId {
     apiName = "CollaborationGroupMember.MemberId"
@@ -31,6 +33,7 @@ type salesforce.CollaborationGroupMember {
     createable = true
     updateable = false
     queryable = true
+    relationshipName = "Member"
   }
   salesforce.Picklist CollaborationRole {
     apiName = "CollaborationGroupMember.CollaborationRole"
@@ -97,7 +100,8 @@ type salesforce.CollaborationGroupMember {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "CollaborationGroupMember.CreatedById"
@@ -110,7 +114,9 @@ type salesforce.CollaborationGroupMember {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "CreatedBy"
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "CollaborationGroupMember.LastModifiedDate"
@@ -119,7 +125,8 @@ type salesforce.CollaborationGroupMember {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "CollaborationGroupMember.LastModifiedById"
@@ -132,7 +139,9 @@ type salesforce.CollaborationGroupMember {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "CollaborationGroupMember.SystemModstamp"
@@ -141,7 +150,8 @@ type salesforce.CollaborationGroupMember {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime LastFeedAccessDate {
     apiName = "CollaborationGroupMember.LastFeedAccessDate"

@@ -4,9 +4,10 @@ type salesforce.AssetRelationship {
     label = "Asset Relationship ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Checkbox IsDeleted {
     apiName = "AssetRelationship.IsDeleted"
@@ -15,8 +16,9 @@ type salesforce.AssetRelationship {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
     _required = false
+    _hidden_value = true
   }
   salesforce.AutoNumber AssetRelationshipNumber {
     apiName = "AssetRelationship.AssetRelationshipNumber"
@@ -25,7 +27,8 @@ type salesforce.AssetRelationship {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime CreatedDate {
     apiName = "AssetRelationship.CreatedDate"
@@ -34,7 +37,8 @@ type salesforce.AssetRelationship {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "AssetRelationship.CreatedById"
@@ -47,7 +51,9 @@ type salesforce.AssetRelationship {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "CreatedBy"
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "AssetRelationship.LastModifiedDate"
@@ -56,7 +62,8 @@ type salesforce.AssetRelationship {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "AssetRelationship.LastModifiedById"
@@ -69,7 +76,9 @@ type salesforce.AssetRelationship {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "AssetRelationship.SystemModstamp"
@@ -78,7 +87,8 @@ type salesforce.AssetRelationship {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup AssetId {
     apiName = "AssetRelationship.AssetId"
@@ -91,6 +101,7 @@ type salesforce.AssetRelationship {
     createable = true
     updateable = false
     queryable = true
+    relationshipName = "Asset"
   }
   salesforce.Lookup RelatedAssetId {
     apiName = "AssetRelationship.RelatedAssetId"
@@ -103,6 +114,7 @@ type salesforce.AssetRelationship {
     createable = true
     updateable = true
     queryable = true
+    relationshipName = "RelatedAsset"
   }
   salesforce.DateTime FromDate {
     apiName = "AssetRelationship.FromDate"

@@ -38,7 +38,9 @@ type salesforce.FlowAssignmentItem {
         "RemoveUncommon",
         "Subtract",
       ]
+      enforce_value = false
     }
+    _required = false
   }
   metadataType = "FlowAssignmentItem"
 }

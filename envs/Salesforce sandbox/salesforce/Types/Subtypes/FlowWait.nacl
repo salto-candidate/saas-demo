@@ -44,4 +44,13 @@ type salesforce.FlowWait {
     _required = false
   }
   metadataType = "FlowWait"
+  string elementSubtype {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "SortCollectionProcessor",
+      ]
+    }
+  }
 }

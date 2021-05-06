@@ -18,4 +18,18 @@ salesforce.LightningExperienceSettings {
   enableTryLightningOptOut = false
   enableUseS1AlohaDesktop = false
   enableUsersAreLightningOnly = true
+  enableAuraSecStaticResCRUCPref = "false"
+  enableLEXExtensionComponentCustomization = "false"
+  enableLEXExtensionDarkMode = "false"
+  enableLEXExtensionInlineEditModifier = "false"
+  enableLEXExtensionLinkGrabber = "false"
+  enableLEXExtensionRelatedLists = "false"
+  enableLEXExtensionRequiredFields = "false"
+  enableLEXExtensionTrailhead = "false"
+  enableNoBackgroundNavigations = "false"
+  enableQuip = "false"
+  isLEXExtensionComponentCustomizationOff = false
+  isLEXExtensionDarkModeOff = false
+  isLEXExtensionLinkGrabberOff = false
+  isLEXExtensionOff = false
 }

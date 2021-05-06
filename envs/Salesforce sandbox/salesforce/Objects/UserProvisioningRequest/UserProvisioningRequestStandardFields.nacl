@@ -4,9 +4,10 @@ type salesforce.UserProvisioningRequest {
     label = "UserProvisioningRequest ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Lookup OwnerId {
     apiName = "UserProvisioningRequest.OwnerId"
@@ -20,7 +21,9 @@ type salesforce.UserProvisioningRequest {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "Owner"
+    _hidden_value = true
   }
   salesforce.Checkbox IsDeleted {
     apiName = "UserProvisioningRequest.IsDeleted"
@@ -29,8 +32,9 @@ type salesforce.UserProvisioningRequest {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
     _required = false
+    _hidden_value = true
   }
   salesforce.AutoNumber Name {
     apiName = "UserProvisioningRequest.Name"
@@ -39,7 +43,8 @@ type salesforce.UserProvisioningRequest {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime CreatedDate {
     apiName = "UserProvisioningRequest.CreatedDate"
@@ -48,7 +53,8 @@ type salesforce.UserProvisioningRequest {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "UserProvisioningRequest.CreatedById"
@@ -61,7 +67,9 @@ type salesforce.UserProvisioningRequest {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "CreatedBy"
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "UserProvisioningRequest.LastModifiedDate"
@@ -70,7 +78,8 @@ type salesforce.UserProvisioningRequest {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "UserProvisioningRequest.LastModifiedById"
@@ -83,7 +92,9 @@ type salesforce.UserProvisioningRequest {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "UserProvisioningRequest.SystemModstamp"
@@ -92,7 +103,8 @@ type salesforce.UserProvisioningRequest {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup SalesforceUserId {
     apiName = "UserProvisioningRequest.SalesforceUserId"
@@ -105,6 +117,7 @@ type salesforce.UserProvisioningRequest {
     createable = true
     updateable = true
     queryable = true
+    relationshipName = "SalesforceUser"
   }
   salesforce.Text ExternalUserId {
     apiName = "UserProvisioningRequest.ExternalUserId"
@@ -289,6 +302,7 @@ type salesforce.UserProvisioningRequest {
     createable = true
     updateable = true
     queryable = true
+    relationshipName = "ConnectedApp"
   }
   salesforce.Lookup UserProvConfigId {
     apiName = "UserProvisioningRequest.UserProvConfigId"
@@ -296,11 +310,12 @@ type salesforce.UserProvisioningRequest {
     _required = false
     allowLookupRecordDeletion = true
     referenceTo = [
-      "UserProvisioningConfig",
+      salesforce.UserProvisioningConfig,
     ]
     createable = true
     updateable = true
     queryable = true
+    relationshipName = "UserProvConfig"
   }
   salesforce.Lookup UserProvAccountId {
     apiName = "UserProvisioningRequest.UserProvAccountId"
@@ -313,6 +328,7 @@ type salesforce.UserProvisioningRequest {
     createable = true
     updateable = true
     queryable = true
+    relationshipName = "UserProvAccount"
   }
   salesforce.Picklist ApprovalStatus {
     apiName = "UserProvisioningRequest.ApprovalStatus"
@@ -360,6 +376,7 @@ type salesforce.UserProvisioningRequest {
     createable = true
     updateable = true
     queryable = true
+    relationshipName = "Manager"
   }
   salesforce.Number RetryCount {
     apiName = "UserProvisioningRequest.RetryCount"
@@ -383,5 +400,6 @@ type salesforce.UserProvisioningRequest {
     createable = true
     updateable = true
     queryable = true
+    relationshipName = "Parent"
   }
 }

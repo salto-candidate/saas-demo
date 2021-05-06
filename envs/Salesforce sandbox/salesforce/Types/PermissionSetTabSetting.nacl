@@ -16,12 +16,8 @@ type salesforce.PermissionSetTabSetting {
   string tab {
     _required = false
   }
-  string internalId {
-    _required = false
-    _hidden = true
-    localOnly = true
-  }
-  suffix = ""
-  dirName = ""
+  
+  
+  
   metadataType = "PermissionSetTabSetting"
 }

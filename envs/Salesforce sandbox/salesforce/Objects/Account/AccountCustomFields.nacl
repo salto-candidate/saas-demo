@@ -12,6 +12,7 @@ type salesforce.Account {
     updateable = true
     queryable = true
     description = "desc bla bla"
+    relationshipName = "Accounts"
   }
   salesforce.Picklist Tier__c {
     apiName = "Account.Tier__c"
@@ -31,7 +32,7 @@ type salesforce.Account {
       {
         fullName = "Key Accounts"
         default = false
-        label = "Key Accounts 1235"
+        label = "Key Accounts - updated!"
       },
       {
         fullName = "Medium Business"
@@ -43,7 +44,7 @@ type salesforce.Account {
         fullName = "NewTierOnlyInEnv2"
         default = false
         isActive = false
-        label = "Test new tier345asdfasdfads"
+        label = "Test new tier - change"
       },
     ]
     restricted = true
@@ -59,27 +60,21 @@ type salesforce.Account {
     _required = false
     valueSet = [
       {
-        default = false
         fullName = "Active"
+        default = false
         label = "Active"
       },
       {
-        default = false
         fullName = "Churned"
+        default = false
         isActive = false
-        label = "Churn_never_happens"
+        label = "Churned"
       },
       {
-        default = false
         fullName = "Inactive"
+        default = false
         isActive = false
         label = "Inactive"
-      },
-      {
-        default = false
-        fullName = "INACTIVE"
-        isActive = false
-        label = "INACTIVE!!"
       },
     ]
     restricted = true
@@ -173,6 +168,30 @@ type salesforce.Account {
   salesforce.Number NumericField2__c {
     apiName = "Account.NumericField2__c"
     label = "NumericField2"
+    _required = false
+    precision = 18
+    scale = 0
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+    externalId = false
+  }
+  salesforce.Number NumOfResorts__c {
+    apiName = "Account.NumOfResorts__c"
+    label = "Number Of Resorts"
+    _required = false
+    precision = 18
+    scale = 0
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+    externalId = false
+  }
+  salesforce.Number LiamScore__c {
+    apiName = "Account.LiamScore__c"
+    label = "Liam Score"
     _required = false
     precision = 18
     scale = 0

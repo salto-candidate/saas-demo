@@ -18,14 +18,23 @@ settings salesforce.SiteSettings {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   boolean enableProxyLoginICHeader {
+    _required = false
   }
   boolean enableSitesRecordReassignOrgPref {
+    _required = false
   }
   boolean enableTopicsInSites {
+    _required = false
   }
   metadataType = "SiteSettings"
+  boolean enableVisualforceApiAccessAllowed {
+    _required = false
+  }
+  suffix = "settings"
+  dirName = "settings"
 }

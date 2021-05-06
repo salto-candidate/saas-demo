@@ -25,18 +25,20 @@ type salesforce.FlowRecordFilter {
   string operator {
     _restriction = {
       values = [
-        "EqualTo",
-        "NotEqualTo",
-        "GreaterThan",
-        "LessThan",
-        "GreaterThanOrEqualTo",
-        "LessThanOrEqualTo",
-        "StartsWith",
-        "EndsWith",
         "Contains",
+        "EndsWith",
+        "EqualTo",
+        "GreaterThan",
+        "GreaterThanOrEqualTo",
         "IsNull",
+        "LessThan",
+        "LessThanOrEqualTo",
+        "NotEqualTo",
+        "StartsWith",
       ]
+      enforce_value = false
     }
+    _required = false
   }
   metadataType = "FlowRecordFilter"
 }

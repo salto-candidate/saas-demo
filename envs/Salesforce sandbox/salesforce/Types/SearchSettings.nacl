@@ -45,26 +45,38 @@ settings salesforce.SearchSettings {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   boolean enableAdvancedSearchInAlohaSidebar {
+    _required = false
   }
   boolean enableEinsteinSearchPersonalization {
+    _required = false
   }
   boolean enablePersonalTagging {
+    _required = false
   }
   boolean enablePublicTagging {
+    _required = false
   }
   boolean enableSalesforceGeneratedSynonyms {
+    _required = false
   }
   boolean enableSearchTermHistory {
+    _required = false
   }
   boolean enableSetupSearch {
+    _required = false
   }
   boolean enableSuggestArticlesLinksOnly {
+    _required = false
   }
   boolean enableUseDefaultSearchEntity {
+    _required = false
   }
   metadataType = "SearchSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

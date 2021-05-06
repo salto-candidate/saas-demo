@@ -26,6 +26,7 @@ type salesforce.EmbeddedServiceCustomLabel {
       values = [
         "Base",
         "ChannelMenu",
+        "EmbeddedMessaging",
         "FieldService",
         "Flows",
         "LiveAgent",

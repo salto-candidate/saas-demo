@@ -18,8 +18,11 @@ settings salesforce.IsvHammerSettings {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   metadataType = "IsvHammerSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

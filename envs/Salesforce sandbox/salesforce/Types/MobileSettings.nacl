@@ -21,22 +21,32 @@ settings salesforce.MobileSettings {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   boolean enableImportContactFromDevice {
+    _required = false
   }
   boolean enableLightningOnMobile {
+    _required = false
   }
   boolean enableNewSalesforceMobileAppForTablet {
+    _required = false
   }
   boolean enableOfflineDraftsEnabled {
+    _required = false
   }
   boolean enablePopulateNameManuallyInToday {
+    _required = false
   }
   boolean enableS1EncryptedStoragePref2 {
+    _required = false
   }
   boolean enableS1OfflinePref {
+    _required = false
   }
   metadataType = "MobileSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

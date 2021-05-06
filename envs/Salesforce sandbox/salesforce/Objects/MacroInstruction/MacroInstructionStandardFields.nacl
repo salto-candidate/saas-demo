@@ -4,9 +4,10 @@ type salesforce.MacroInstruction {
     label = "Macro Instruction ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Checkbox IsDeleted {
     apiName = "MacroInstruction.IsDeleted"
@@ -15,8 +16,9 @@ type salesforce.MacroInstruction {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
     _required = false
+    _hidden_value = true
   }
   salesforce.AutoNumber Name {
     apiName = "MacroInstruction.Name"
@@ -25,7 +27,8 @@ type salesforce.MacroInstruction {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime CreatedDate {
     apiName = "MacroInstruction.CreatedDate"
@@ -34,7 +37,8 @@ type salesforce.MacroInstruction {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "MacroInstruction.CreatedById"
@@ -47,7 +51,9 @@ type salesforce.MacroInstruction {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "CreatedBy"
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "MacroInstruction.LastModifiedDate"
@@ -56,7 +62,8 @@ type salesforce.MacroInstruction {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "MacroInstruction.LastModifiedById"
@@ -69,7 +76,9 @@ type salesforce.MacroInstruction {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "MacroInstruction.SystemModstamp"
@@ -78,7 +87,8 @@ type salesforce.MacroInstruction {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup MacroId {
     apiName = "MacroInstruction.MacroId"
@@ -91,6 +101,7 @@ type salesforce.MacroInstruction {
     createable = true
     updateable = false
     queryable = true
+    relationshipName = "Macro"
   }
   salesforce.Picklist Operation {
     apiName = "MacroInstruction.Operation"
@@ -1216,6 +1227,12 @@ type salesforce.MacroInstruction {
         fullName = "Tab.FeedItem"
         default = false
         label = "Active Feed Item Tab"
+        isActive = true
+      },
+      {
+        fullName = "Tab.Image"
+        default = false
+        label = "Active Image Tab"
         isActive = true
       },
       {

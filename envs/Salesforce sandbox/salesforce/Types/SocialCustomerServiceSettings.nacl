@@ -29,20 +29,29 @@ settings salesforce.SocialCustomerServiceSettings {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   boolean enableSocialApprovals {
+    _required = false
   }
   boolean enableSocialCaseAssignmentRules {
+    _required = false
   }
   boolean enableSocialCustomerService {
+    _required = false
   }
   boolean enableSocialPersonaHistoryTracking {
+    _required = false
   }
   boolean enableSocialPostHistoryTracking {
+    _required = false
   }
   boolean enableSocialReceiveParentPost {
+    _required = false
   }
   metadataType = "SocialCustomerServiceSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

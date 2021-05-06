@@ -4,9 +4,10 @@ type salesforce.Yariv__c {
     label = "Record ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Lookup OwnerId {
     apiName = "Yariv__c.OwnerId"
@@ -20,7 +21,9 @@ type salesforce.Yariv__c {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "Owner"
+    _hidden_value = true
   }
   salesforce.Checkbox IsDeleted {
     apiName = "Yariv__c.IsDeleted"
@@ -29,8 +32,9 @@ type salesforce.Yariv__c {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
     _required = false
+    _hidden_value = true
   }
   salesforce.Text Name {
     apiName = "Yariv__c.Name"
@@ -50,7 +54,8 @@ type salesforce.Yariv__c {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "Yariv__c.CreatedById"
@@ -63,7 +68,9 @@ type salesforce.Yariv__c {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "CreatedBy"
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "Yariv__c.LastModifiedDate"
@@ -72,7 +79,8 @@ type salesforce.Yariv__c {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "Yariv__c.LastModifiedById"
@@ -85,7 +93,9 @@ type salesforce.Yariv__c {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "Yariv__c.SystemModstamp"
@@ -94,6 +104,7 @@ type salesforce.Yariv__c {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
 }

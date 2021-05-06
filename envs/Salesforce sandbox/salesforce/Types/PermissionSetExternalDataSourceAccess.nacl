@@ -19,12 +19,8 @@ type salesforce.PermissionSetExternalDataSourceAccess {
   string externalDataSource {
     _required = false
   }
-  string internalId {
-    _required = false
-    _hidden = true
-    localOnly = true
-  }
-  suffix = ""
-  dirName = ""
+  
+  
+  
   metadataType = "PermissionSetExternalDataSourceAccess"
 }

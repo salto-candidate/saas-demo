@@ -4,9 +4,10 @@ type salesforce.OpportunityCompetitor {
     label = "Opportunity: Competitor ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Lookup OpportunityId {
     apiName = "OpportunityCompetitor.OpportunityId"
@@ -19,6 +20,7 @@ type salesforce.OpportunityCompetitor {
     createable = true
     updateable = false
     queryable = true
+    relationshipName = "Opportunity"
   }
   salesforce.Picklist CompetitorName {
     apiName = "OpportunityCompetitor.CompetitorName"
@@ -61,7 +63,9 @@ type salesforce.OpportunityCompetitor {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "CreatedBy"
+    _hidden_value = true
   }
   salesforce.DateTime CreatedDate {
     apiName = "OpportunityCompetitor.CreatedDate"
@@ -70,7 +74,8 @@ type salesforce.OpportunityCompetitor {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "OpportunityCompetitor.LastModifiedById"
@@ -83,7 +88,9 @@ type salesforce.OpportunityCompetitor {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "OpportunityCompetitor.LastModifiedDate"
@@ -92,7 +99,8 @@ type salesforce.OpportunityCompetitor {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "OpportunityCompetitor.SystemModstamp"
@@ -101,7 +109,8 @@ type salesforce.OpportunityCompetitor {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Checkbox IsDeleted {
     apiName = "OpportunityCompetitor.IsDeleted"
@@ -110,7 +119,8 @@ type salesforce.OpportunityCompetitor {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
     _required = false
+    _hidden_value = true
   }
 }

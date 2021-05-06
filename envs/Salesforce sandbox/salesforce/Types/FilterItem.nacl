@@ -3,19 +3,19 @@ type salesforce.FilterItem {
   }
   string operation {
     _restriction = {
-      enforceValue = true
+      
       values = [
-        "equals",
-        "notEqual",
-        "lessThan",
-        "greaterThan",
-        "lessOrEqual",
-        "greaterOrEqual",
         "contains",
-        "notContain",
-        "startsWith",
-        "includes",
+        "equals",
         "excludes",
+        "greaterOrEqual",
+        "greaterThan",
+        "includes",
+        "lessOrEqual",
+        "lessThan",
+        "notContain",
+        "notEqual",
+        "startsWith",
         "within",
       ]
     }

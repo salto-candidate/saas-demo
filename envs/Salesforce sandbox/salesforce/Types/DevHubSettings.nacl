@@ -18,12 +18,17 @@ settings salesforce.DevHubSettings {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   boolean enablePackaging2 {
+    _required = false
   }
   boolean enableScratchOrgManagementPref {
+    _required = false
   }
   metadataType = "DevHubSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

@@ -20,6 +20,8 @@ salesforce.ConnectedApp Salto_CI {
       "Wave",
       "Eclair",
     ]
+    isConsumerSecretOptional = false
+    isIntrospectAllTokens = false
   }
   permissionSetName = "Sales User"
   profileName = [
@@ -35,4 +37,8 @@ salesforce.ConnectedApp Salto_CI {
     "Standard User",
     "CPQ Integration User",
   ]
+  oauthPolicy = {
+    ipRelaxation = "ENFORCE"
+    refreshTokenPolicy = "infinite"
+  }
 }

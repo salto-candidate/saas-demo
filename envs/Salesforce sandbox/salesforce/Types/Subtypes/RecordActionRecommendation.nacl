@@ -35,4 +35,7 @@ type salesforce.RecordActionRecommendation {
     _required = false
   }
   metadataType = "RecordActionRecommendation"
+  boolean shouldLaunchActionOnReject {
+    _required = false
+  }
 }

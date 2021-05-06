@@ -21,12 +21,17 @@ settings salesforce.PathAssistantSettings {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   boolean canOverrideAutoPathCollapseWithUserPref {
+    _required = false
   }
   boolean pathAssistantForOpportunityEnabled {
+    _required = false
   }
   metadataType = "PathAssistantSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

@@ -4,9 +4,10 @@ type salesforce.ContentVersion {
     label = "ContentVersion ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Lookup ContentDocumentId {
     apiName = "ContentVersion.ContentDocumentId"
@@ -19,6 +20,7 @@ type salesforce.ContentVersion {
     createable = true
     updateable = false
     queryable = true
+    relationshipName = "ContentDocument"
   }
   salesforce.Checkbox IsLatest {
     apiName = "ContentVersion.IsLatest"
@@ -46,6 +48,7 @@ type salesforce.ContentVersion {
     createable = true
     updateable = false
     queryable = true
+    relationshipName = "ContentBody"
   }
   salesforce.Text VersionNumber {
     apiName = "ContentVersion.VersionNumber"
@@ -164,8 +167,9 @@ type salesforce.ContentVersion {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
     _required = false
+    _hidden_value = true
   }
   salesforce.DateTime ContentModifiedDate {
     apiName = "ContentVersion.ContentModifiedDate"
@@ -186,6 +190,7 @@ type salesforce.ContentVersion {
     createable = false
     updateable = false
     queryable = true
+    relationshipName = "ContentModifiedBy"
   }
   salesforce.Number PositiveRatingCount {
     apiName = "ContentVersion.PositiveRatingCount"
@@ -239,7 +244,9 @@ type salesforce.ContentVersion {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "Owner"
+    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "ContentVersion.CreatedById"
@@ -252,7 +259,9 @@ type salesforce.ContentVersion {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "CreatedBy"
+    _hidden_value = true
   }
   salesforce.DateTime CreatedDate {
     apiName = "ContentVersion.CreatedDate"
@@ -261,7 +270,8 @@ type salesforce.ContentVersion {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "ContentVersion.LastModifiedById"
@@ -274,7 +284,9 @@ type salesforce.ContentVersion {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "ContentVersion.LastModifiedDate"
@@ -283,7 +295,8 @@ type salesforce.ContentVersion {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "ContentVersion.SystemModstamp"
@@ -292,7 +305,8 @@ type salesforce.ContentVersion {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.LongTextArea TagCsv {
     apiName = "ContentVersion.TagCsv"
@@ -388,6 +402,10 @@ type salesforce.ContentVersion {
       salesforce.Campaign,
       salesforce.Case,
       salesforce.CollaborationGroup,
+      salesforce.CommSubscription,
+      salesforce.CommSubscriptionChannelType,
+      salesforce.CommSubscriptionConsent,
+      salesforce.CommSubscriptionTiming,
       salesforce.Contact,
       "ContentWorkspace",
       salesforce.Contract,
@@ -395,14 +413,17 @@ type salesforce.ContentVersion {
       "DashboardComponent",
       salesforce.EmailMessage,
       salesforce.EmailTemplate,
+      salesforce.EngagementChannelType,
       "EnhancedLetterhead",
       salesforce.Event,
+      salesforce.Image,
       salesforce.Lead,
       "ListEmail",
       salesforce.Opportunity,
       salesforce.Order,
       salesforce.OrderItem,
       "Organization",
+      salesforce.PartyConsent,
       salesforce.Product2,
       salesforce.ProfileSkill,
       salesforce.ProfileSkillEndorsement,
@@ -421,6 +442,7 @@ type salesforce.ContentVersion {
     createable = true
     updateable = false
     queryable = true
+    relationshipName = "FirstPublishLocation"
   }
   salesforce.Picklist Origin {
     apiName = "ContentVersion.Origin"
@@ -518,6 +540,7 @@ type salesforce.ContentVersion {
     createable = true
     updateable = true
     queryable = true
+    relationshipName = "ExternalDataSource"
   }
   salesforce.Text Checksum {
     apiName = "ContentVersion.Checksum"

@@ -41,6 +41,7 @@ type salesforce.LightningPage {
         "cg_retail__RetailOrderDetails_rec_S",
         "cg_retail__RetailPromotionDetails_rec_S",
         "cg_retail__RetailShipmentDetails_rec_S",
+        "cg_retail__RetailVehicleLocation_rec_S",
         "cg_retail__Visit_rec_S",
         "clients__default_app_L",
         "commerce__Contract_rec_L",
@@ -112,10 +113,12 @@ type salesforce.LightningPage {
         "runtime_appointmentbooking__STM_rec_L",
         "runtime_appointmentbooking__ST_rec_L",
         "runtime_appointmentbooking__WT_rec_L",
+        "runtime_cdp__CalculatedInsight_rec_L",
         "runtime_cdp__DataStream_rec_L",
         "runtime_cdp__Homepage_L",
         "runtime_cdp__MarketSegmentActivation_rec_L",
         "runtime_cdp__MarketSegment_rec_L",
+        "runtime_commerce_oci__invDesktopHome",
         "runtime_commerce_oms__OrdrSmry_rec_L",
         "runtime_commerce_store__WebStore_rec_L",
         "runtime_industries_lending__ResidentialLoanApplication_rec_L",
@@ -176,6 +179,8 @@ type salesforce.LightningPage {
         "sfa__PricebookEntry_rec_L",
         "sfa__Product2_rec_L",
         "sfa__Task_rec_L",
+        "sfa__VideoCall_rec_L",
+        "sfa__VideoCall_rec_simple",
         "sfa__VoiceCallSales_rec_L_3col",
         "sfa__VoiceCall_rec_simple",
         "sfa__WorkOrderLineItem_rec_L",
@@ -220,6 +225,7 @@ type salesforce.LightningPage {
         "clients:defaultMailAppTemplate",
         "contentpage:defaultEmailContentPageTemplate",
         "contentpage:defaultEmailTemplatePageTemplate",
+        "contentpage:defaultLandingPageTemplate",
         "embeddedService:embeddedServicePageTemplateDefault",
         "flexipage:appHomeTemplateHeaderThreeColumns",
         "flexipage:appHomeTemplateHeaderTwoColumns",
@@ -257,6 +263,7 @@ type salesforce.LightningPage {
         "home:desktopTemplate",
         "home:desktopTemplateHeaderThreeColumns",
         "one:utilityBarTemplateDesktop",
+        "runtime_commerce_oci:homeTemplateOneRegion",
         "runtime_service_fieldservice:oneRegionDocumentTemplate",
         "salesforceIdentity:loginBody",
         "salesforceIdentity:loginBody2",
@@ -265,6 +272,8 @@ type salesforce.LightningPage {
         "siteforce:dynamicLayout",
         "siteforce:helpCenterBody",
         "siteforce:insuranceBody",
+        "siteforce:loyaltyBody",
+        "siteforce:mfgLayoutStarter",
         "siteforce:mortgageBody",
         "siteforce:napiliBody",
         "siteforce:oneColumnLayout",
@@ -315,6 +324,7 @@ type salesforce.LightningPage {
         "EmailTemplatePage",
         "EmbeddedServicePage",
         "HomePage",
+        "LandingPage",
         "MailAppAppPage",
         "ObjectPage",
         "RecordPage",
@@ -326,8 +336,9 @@ type salesforce.LightningPage {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   suffix = "flexipage"
   dirName = "flexipages"

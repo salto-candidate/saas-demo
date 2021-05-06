@@ -18,12 +18,17 @@ settings salesforce.BusinessHoursSettings {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
-  "List<salesforce.BusinessHoursEntry>" businessHours {
+  "Map<salesforce.BusinessHoursEntry>" businessHours {
+    _required = false
   }
   "List<salesforce.Holidays>" holidays {
+    _required = false
   }
   metadataType = "BusinessHoursSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

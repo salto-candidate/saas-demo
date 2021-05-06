@@ -50,4 +50,19 @@ type salesforce.FlowRecordCreate {
     _required = false
   }
   metadataType = "FlowRecordCreate"
+  string elementSubtype {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "SortCollectionProcessor",
+      ]
+    }
+    foreignKeyDomain = [
+      "FlowElementSubtypeDefinition",
+    ]
+  }
+  boolean storeOutputAutomatically {
+    _required = false
+  }
 }

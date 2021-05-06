@@ -25,21 +25,23 @@ type salesforce.FlowCondition {
   string operator {
     _restriction = {
       values = [
-        "EqualTo",
-        "NotEqualTo",
-        "GreaterThan",
-        "LessThan",
-        "GreaterThanOrEqualTo",
-        "LessThanOrEqualTo",
-        "StartsWith",
-        "EndsWith",
         "Contains",
+        "EndsWith",
+        "EqualTo",
+        "GreaterThan",
+        "GreaterThanOrEqualTo",
         "IsNull",
-        "WasSet",
+        "LessThan",
+        "LessThanOrEqualTo",
+        "NotEqualTo",
+        "StartsWith",
         "WasSelected",
+        "WasSet",
         "WasVisited",
       ]
+      enforce_value = false
     }
+    _required = false
   }
   metadataType = "FlowCondition"
 }

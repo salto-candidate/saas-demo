@@ -7,4 +7,5 @@ salesforce.UserManagementSettings {
   enableNewProfileUI = false
   enableScrambleUserData = false
   enableUserSelfDeactivate = false
+  restrictedProfileCloning = "false"
 }

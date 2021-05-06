@@ -4,9 +4,10 @@ type salesforce.CollaborationGroup {
     label = "Group Id"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Text Name {
     apiName = "CollaborationGroup.Name"
@@ -41,7 +42,9 @@ type salesforce.CollaborationGroup {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "Owner"
+    _hidden_value = true
   }
   salesforce.Picklist CollaborationType {
     apiName = "CollaborationGroup.CollaborationType"
@@ -88,7 +91,8 @@ type salesforce.CollaborationGroup {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "CollaborationGroup.CreatedById"
@@ -101,7 +105,9 @@ type salesforce.CollaborationGroup {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "CreatedBy"
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "CollaborationGroup.LastModifiedDate"
@@ -110,7 +116,8 @@ type salesforce.CollaborationGroup {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "CollaborationGroup.LastModifiedById"
@@ -123,7 +130,9 @@ type salesforce.CollaborationGroup {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "CollaborationGroup.SystemModstamp"
@@ -132,7 +141,8 @@ type salesforce.CollaborationGroup {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Url FullPhotoUrl {
     apiName = "CollaborationGroup.FullPhotoUrl"
@@ -229,6 +239,7 @@ type salesforce.CollaborationGroup {
     createable = true
     updateable = true
     queryable = true
+    relationshipName = "Announcement"
   }
   salesforce.Email GroupEmail {
     apiName = "CollaborationGroup.GroupEmail"

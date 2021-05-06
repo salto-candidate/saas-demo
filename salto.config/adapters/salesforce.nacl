@@ -1,20 +1,48 @@
 salesforce {
-  metadataTypesSkippedList = [
-    "Report",
-    "ReportType",
-    "ReportFolder",
-    "Dashboard",
-    "DashboardFolder",
-    "Profile",
-    "ForecastingSettings",
-  ]
-  instancesRegexSkippedList = [
-    "^ConnectedApp.CPQIntegrationUserApp$",
-    "^EmailTemplate.MarketoEmailTemplates",
-    "^StandardValueSet.AddressCountryCode",
-    "^StandardValueSet.AddressStateCode",
-  ]
   maxConcurrentRetrieveRequests = 3
   maxItemsInRetrieveRequest = 2500
   enableHideTypesInNacls = false
+  fetch = {
+    metadata = {
+      exclude = [
+        {
+          metadataType = "ConnectedApp"
+          name = "CPQIntegrationUserApp"
+        },
+        {
+          metadataType = "EmailTemplate"
+          name = "MarketoEmailTemplates.*"
+        },
+        {
+          metadataType = "StandardValueSet"
+          name = "AddressCountryCode.*"
+        },
+        {
+          metadataType = "StandardValueSet"
+          name = "AddressStateCode.*"
+        },
+        {
+          metadataType = "Report"
+        },
+        {
+          metadataType = "ReportType"
+        },
+        {
+          metadataType = "ReportFolder"
+        },
+        {
+          metadataType = "Dashboard"
+        },
+        {
+          metadataType = "DashboardFolder"
+        },
+        {
+          metadataType = "Profile"
+        },
+        {
+          metadataType = "ForecastingSettings"
+        },
+      ]
+    }
+  }
 }

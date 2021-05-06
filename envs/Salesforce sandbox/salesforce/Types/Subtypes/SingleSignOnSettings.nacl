@@ -26,4 +26,10 @@ type salesforce.SingleSignOnSettings {
     _required = false
   }
   metadataType = "SingleSignOnSettings"
+  boolean enableCaseInsensitiveFederationID {
+    _required = false
+  }
+  boolean isLoginWithSalesforceCredentialsDisabled {
+    _required = false
+  }
 }

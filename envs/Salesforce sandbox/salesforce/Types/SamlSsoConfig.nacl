@@ -126,10 +126,14 @@ type salesforce.SamlSsoConfig {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   suffix = "samlssoconfig"
   dirName = "samlssoconfigs"
   metadataType = "SamlSsoConfig"
+  boolean useConfigRequestMethod {
+    _required = false
+  }
 }

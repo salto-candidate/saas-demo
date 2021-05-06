@@ -17,4 +17,7 @@ salesforce.ContentSettings {
   enableUploadFilesOnAttachments = false
   skipContentAssetTriggers = false
   skipContentAssetTriggersOnDeploy = true
+  enableCMSC2CConnections = true
+  enableDeleteFileInContentPacks = false
+  setValidContentTypeForAtchDocDownload = "false"
 }

@@ -84,8 +84,17 @@ settings salesforce.ActivitiesSettings {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   metadataType = "ActivitiesSettings"
+  boolean enableHideChildEventsPreference {
+    _required = false
+  }
+  boolean enableMLSingleClientProfile {
+    _required = false
+  }
+  suffix = "settings"
+  dirName = "settings"
 }

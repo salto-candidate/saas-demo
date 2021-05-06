@@ -53,7 +53,17 @@ salesforce.PermissionSet Sales_User {
     },
     {
       editable = false
+      field = salesforce.Account.field.LiamScore__c
+      readable = false
+    },
+    {
+      editable = false
       field = salesforce.Account.field.NewTier__c
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Account.field.NumOfResorts__c
       readable = false
     },
     {
@@ -633,32 +643,32 @@ salesforce.PermissionSet Sales_User {
     },
     {
       editable = false
-      field = "CommSubscription.IsDefault"
+      field = salesforce.CommSubscription.field.IsDefault
       readable = false
     },
     {
       editable = false
-      field = "CommSubscriptionConsent.EffectiveToDate"
+      field = salesforce.CommSubscriptionConsent.field.EffectiveToDate
       readable = false
     },
     {
       editable = false
-      field = "CommSubscriptionTiming.Offset"
+      field = salesforce.CommSubscriptionTiming.field.Offset
       readable = false
     },
     {
       editable = false
-      field = "CommSubscriptionTiming.PreferredTimeEnd"
+      field = salesforce.CommSubscriptionTiming.field.PreferredTimeEnd
       readable = false
     },
     {
       editable = false
-      field = "CommSubscriptionTiming.PreferredTimeStart"
+      field = salesforce.CommSubscriptionTiming.field.PreferredTimeStart
       readable = false
     },
     {
       editable = false
-      field = "CommSubscriptionTiming.PreferredTimeZone"
+      field = salesforce.CommSubscriptionTiming.field.PreferredTimeZone
       readable = false
     },
     {
@@ -1158,7 +1168,7 @@ salesforce.PermissionSet Sales_User {
     },
     {
       editable = false
-      field = "EngagementChannelType.ContactPointType"
+      field = salesforce.EngagementChannelType.field.ContactPointType
       readable = false
     },
     {
@@ -1653,17 +1663,17 @@ salesforce.PermissionSet Sales_User {
     },
     {
       editable = false
-      field = "PartyConsent.DoubleConsentCaptureDate"
+      field = salesforce.PartyConsent.field.DoubleConsentCaptureDate
       readable = false
     },
     {
       editable = false
-      field = "PartyConsent.EffectiveFrom"
+      field = salesforce.PartyConsent.field.EffectiveFrom
       readable = false
     },
     {
       editable = false
-      field = "PartyConsent.EffectiveTo"
+      field = salesforce.PartyConsent.field.EffectiveTo
       readable = false
     },
     {

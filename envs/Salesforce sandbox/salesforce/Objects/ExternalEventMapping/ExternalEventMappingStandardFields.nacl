@@ -4,9 +4,10 @@ type salesforce.ExternalEventMapping {
     label = "External Event Mapping ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Lookup OwnerId {
     apiName = "ExternalEventMapping.OwnerId"
@@ -20,7 +21,9 @@ type salesforce.ExternalEventMapping {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "Owner"
+    _hidden_value = true
   }
   salesforce.Checkbox IsDeleted {
     apiName = "ExternalEventMapping.IsDeleted"
@@ -29,8 +32,9 @@ type salesforce.ExternalEventMapping {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
     _required = false
+    _hidden_value = true
   }
   salesforce.AutoNumber Name {
     apiName = "ExternalEventMapping.Name"
@@ -39,7 +43,8 @@ type salesforce.ExternalEventMapping {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime CreatedDate {
     apiName = "ExternalEventMapping.CreatedDate"
@@ -48,7 +53,8 @@ type salesforce.ExternalEventMapping {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "ExternalEventMapping.CreatedById"
@@ -61,7 +67,9 @@ type salesforce.ExternalEventMapping {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "CreatedBy"
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "ExternalEventMapping.LastModifiedDate"
@@ -70,7 +78,8 @@ type salesforce.ExternalEventMapping {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "ExternalEventMapping.LastModifiedById"
@@ -83,7 +92,9 @@ type salesforce.ExternalEventMapping {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "ExternalEventMapping.SystemModstamp"
@@ -92,7 +103,8 @@ type salesforce.ExternalEventMapping {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Text ExternalId {
     apiName = "ExternalEventMapping.ExternalId"
@@ -116,6 +128,7 @@ type salesforce.ExternalEventMapping {
     createable = true
     updateable = true
     queryable = true
+    relationshipName = "Event"
   }
   salesforce.Date StartDate {
     apiName = "ExternalEventMapping.StartDate"

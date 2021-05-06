@@ -47,4 +47,19 @@ type salesforce.FlowRecordDelete {
     _required = false
   }
   metadataType = "FlowRecordDelete"
+  string elementSubtype {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "SortCollectionProcessor",
+      ]
+    }
+    foreignKeyDomain = [
+      "FlowElementSubtypeDefinition",
+    ]
+  }
+  string filterLogic {
+    _required = false
+  }
 }

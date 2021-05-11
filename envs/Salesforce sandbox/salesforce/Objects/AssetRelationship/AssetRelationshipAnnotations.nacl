@@ -52,6 +52,8 @@ type salesforce.AssetRelationship {
     }
     hidden_string internalId {
     }
+    hidden_string keyPrefix {
+    }
   }
   apiName = "AssetRelationship"
   metadataType = "CustomObject"

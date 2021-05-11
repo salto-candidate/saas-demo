@@ -68,7 +68,6 @@ type salesforce.Flow {
       values = [
         "ActionCadenceFlow",
         "ActionPlan",
-        "AppProcess",
         "Appointments",
         "AutoLaunchedFlow",
         "CartAsyncFlow",
@@ -88,6 +87,7 @@ type salesforce.Flow {
         "ManagedContentFlow",
         "OfflineFlow",
         "OrchestrationFlow",
+        "Orchestrator",
         "RecommendationStrategy",
         "RoutingFlow",
         "SalesEntryExperienceFlow",
@@ -176,7 +176,8 @@ type salesforce.Flow {
       ]
     }
   }
-  salesforce.FlowSteppedStage steppedStages {
+  
+  salesforce.FlowOrchestratedStage orchestratedStages {
     _required = false
   }
 }

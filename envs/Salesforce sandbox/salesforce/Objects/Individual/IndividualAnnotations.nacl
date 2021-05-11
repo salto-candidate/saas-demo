@@ -52,6 +52,8 @@ type salesforce.Individual {
     }
     hidden_string internalId {
     }
+    hidden_string keyPrefix {
+    }
   }
   apiName = "Individual"
   metadataType = "CustomObject"

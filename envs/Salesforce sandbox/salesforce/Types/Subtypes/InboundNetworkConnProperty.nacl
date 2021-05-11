@@ -21,6 +21,7 @@ type salesforce.InboundNetworkConnProperty {
         "AwsVpcEndpointId",
         "LinkId",
         "Region",
+        "SourceIpRanges",
       ]
     }
   }

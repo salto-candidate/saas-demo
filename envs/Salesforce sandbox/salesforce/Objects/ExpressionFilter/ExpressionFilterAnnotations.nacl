@@ -52,6 +52,8 @@ type salesforce.ExpressionFilter {
     }
     hidden_string internalId {
     }
+    hidden_string keyPrefix {
+    }
   }
   apiName = "ExpressionFilter"
   metadataType = "CustomObject"

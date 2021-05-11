@@ -52,6 +52,8 @@ type salesforce.AuthorizationForm {
     }
     hidden_string internalId {
     }
+    hidden_string keyPrefix {
+    }
   }
   apiName = "AuthorizationForm"
   metadataType = "CustomObject"

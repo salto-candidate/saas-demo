@@ -1164,6 +1164,12 @@ type salesforce.MacroInstruction {
         isActive = true
       },
       {
+        fullName = "Tab.AuthorizationFormText"
+        default = false
+        label = "Active Authorization Form Text Tab"
+        isActive = true
+      },
+      {
         fullName = "Tab.Case"
         default = false
         label = "Active Case Tab"
@@ -1203,6 +1209,24 @@ type salesforce.MacroInstruction {
         fullName = "Tab.Contact"
         default = false
         label = "Active Contact Tab"
+        isActive = true
+      },
+      {
+        fullName = "Tab.ContactPointAddress"
+        default = false
+        label = "Active Contact Point Address Tab"
+        isActive = true
+      },
+      {
+        fullName = "Tab.ContactPointEmail"
+        default = false
+        label = "Active Contact Point Email Tab"
+        isActive = true
+      },
+      {
+        fullName = "Tab.ContactPointPhone"
+        default = false
+        label = "Active Contact Point Phone Tab"
         isActive = true
       },
       {

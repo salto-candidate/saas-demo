@@ -52,6 +52,8 @@ type salesforce.PartnerRole {
     }
     hidden_string internalId {
     }
+    hidden_string keyPrefix {
+    }
   }
   apiName = "PartnerRole"
   metadataType = "CustomObject"

@@ -19,6 +19,7 @@ type salesforce.MktDataModelFieldAttributes {
       enforce_value = false
       values = [
         "Bridge",
+        "Curated",
         "Custom",
         "Derived",
         "Standard",

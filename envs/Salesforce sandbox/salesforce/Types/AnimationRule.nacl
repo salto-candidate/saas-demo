@@ -57,6 +57,7 @@ type salesforce.AnimationRule {
       enforce_value = false
       values = [
         "Account",
+        "Asset",
         "Campaign",
         "Case",
         "Contact",
@@ -79,6 +80,7 @@ type salesforce.AnimationRule {
       values = [
         "AccountSource",
         "Active__c",
+        "DigitalAssetStatus",
         "ForecastCategoryName",
         "Industry",
         "LeadSource",

@@ -52,6 +52,8 @@ type salesforce.MLModel {
     }
     hidden_string internalId {
     }
+    hidden_string keyPrefix {
+    }
   }
   apiName = "MLModel"
   metadataType = "CustomObject"

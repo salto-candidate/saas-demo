@@ -52,6 +52,8 @@ type salesforce.TopicAssignment {
     }
     hidden_string internalId {
     }
+    hidden_string keyPrefix {
+    }
   }
   apiName = "TopicAssignment"
   metadataType = "CustomObject"

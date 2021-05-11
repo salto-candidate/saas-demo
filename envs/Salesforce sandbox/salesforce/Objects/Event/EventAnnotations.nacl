@@ -52,6 +52,8 @@ type salesforce.Event {
     }
     hidden_string internalId {
     }
+    hidden_string keyPrefix {
+    }
   }
   apiName = "Event"
   metadataType = "CustomObject"

@@ -52,6 +52,8 @@ type salesforce.CommSubscriptionTiming {
     }
     hidden_string internalId {
     }
+    hidden_string keyPrefix {
+    }
   }
   apiName = "CommSubscriptionTiming"
   metadataType = "CustomObject"

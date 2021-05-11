@@ -1,4 +1,4 @@
-type salesforce.FlowSteppedStageItemInputParameter {
+type salesforce.FlowStageStepOutputParameter {
   annotations {
     serviceid metadataType {
     }
@@ -13,14 +13,14 @@ type salesforce.FlowSteppedStageItemInputParameter {
     string dirName {
     }
   }
+  string assignToReference {
+    _required = false
+  }
   string name {
     _required = false
   }
   salesforce.FlowMetadataValue processMetadataValues {
     _required = false
   }
-  salesforce.FlowElementReferenceOrValue value {
-    _required = false
-  }
-  metadataType = "FlowSteppedStageItemInputParameter"
+  metadataType = "FlowStageStepOutputParameter"
 }

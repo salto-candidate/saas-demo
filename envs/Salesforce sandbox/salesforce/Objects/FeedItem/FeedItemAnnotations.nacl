@@ -52,6 +52,8 @@ type salesforce.FeedItem {
     }
     hidden_string internalId {
     }
+    hidden_string keyPrefix {
+    }
   }
   apiName = "FeedItem"
   metadataType = "CustomObject"

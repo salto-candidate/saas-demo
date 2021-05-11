@@ -209,7 +209,7 @@ type salesforce.ContactPointPhone {
       {
         fullName = "Pacific/Norfolk"
         default = false
-        label = "(GMT+11:00) Norfolk Island Time (Pacific/Norfolk)"
+        label = "(GMT+11:00) Norfolk Island Standard Time (Pacific/Norfolk)"
         isActive = true
       },
       {

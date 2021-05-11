@@ -52,6 +52,8 @@ type salesforce.ContactPointTypeConsent {
     }
     hidden_string internalId {
     }
+    hidden_string keyPrefix {
+    }
   }
   apiName = "ContactPointTypeConsent"
   metadataType = "CustomObject"

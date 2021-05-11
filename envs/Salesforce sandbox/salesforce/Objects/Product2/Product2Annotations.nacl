@@ -52,6 +52,8 @@ type salesforce.Product2 {
     }
     hidden_string internalId {
     }
+    hidden_string keyPrefix {
+    }
   }
   apiName = "Product2"
   metadataType = "CustomObject"

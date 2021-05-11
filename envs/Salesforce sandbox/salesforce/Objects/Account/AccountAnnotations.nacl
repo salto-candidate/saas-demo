@@ -52,6 +52,8 @@ type salesforce.Account {
     }
     hidden_string internalId {
     }
+    hidden_string keyPrefix {
+    }
   }
   apiName = "Account"
   metadataType = "CustomObject"

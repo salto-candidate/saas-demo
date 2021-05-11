@@ -52,6 +52,8 @@ type salesforce.EngagementChannelType {
     }
     hidden_string internalId {
     }
+    hidden_string keyPrefix {
+    }
   }
   apiName = "EngagementChannelType"
   metadataType = "CustomObject"

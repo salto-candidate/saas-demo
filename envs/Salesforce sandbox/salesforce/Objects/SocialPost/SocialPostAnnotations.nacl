@@ -52,6 +52,8 @@ type salesforce.SocialPost {
     }
     hidden_string internalId {
     }
+    hidden_string keyPrefix {
+    }
   }
   apiName = "SocialPost"
   metadataType = "CustomObject"

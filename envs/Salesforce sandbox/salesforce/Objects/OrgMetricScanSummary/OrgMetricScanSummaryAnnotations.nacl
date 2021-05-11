@@ -52,6 +52,8 @@ type salesforce.OrgMetricScanSummary {
     }
     hidden_string internalId {
     }
+    hidden_string keyPrefix {
+    }
   }
   apiName = "OrgMetricScanSummary"
   metadataType = "CustomObject"

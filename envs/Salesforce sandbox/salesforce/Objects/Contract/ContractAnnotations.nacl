@@ -52,6 +52,8 @@ type salesforce.Contract {
     }
     hidden_string internalId {
     }
+    hidden_string keyPrefix {
+    }
   }
   apiName = "Contract"
   metadataType = "CustomObject"

@@ -52,6 +52,8 @@ type salesforce.Campaign {
     }
     hidden_string internalId {
     }
+    hidden_string keyPrefix {
+    }
   }
   apiName = "Campaign"
   metadataType = "CustomObject"

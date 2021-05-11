@@ -41,6 +41,13 @@ salesforce.NotificationTypeConfig NotificationTypeConfig {
         desktopEnabled = true
         mobileEnabled = false
       }
+      notificationType = "einstein_agent_notify"
+    },
+    {
+      notificationChannels = {
+        desktopEnabled = true
+        mobileEnabled = false
+      }
       notificationType = "event_reminder"
     },
     {
@@ -91,6 +98,13 @@ salesforce.NotificationTypeConfig NotificationTypeConfig {
         mobileEnabled = true
       }
       notificationType = "profile_post"
+    },
+    {
+      notificationChannels = {
+        desktopEnabled = true
+        mobileEnabled = false
+      }
+      notificationType = "reply_recommendation_notify"
     },
     {
       notificationChannels = {

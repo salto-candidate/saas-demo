@@ -52,6 +52,8 @@ type salesforce.ContactPointAddress {
     }
     hidden_string internalId {
     }
+    hidden_string keyPrefix {
+    }
   }
   apiName = "ContactPointAddress"
   metadataType = "CustomObject"

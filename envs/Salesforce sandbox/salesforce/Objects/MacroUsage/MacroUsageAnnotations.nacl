@@ -52,6 +52,8 @@ type salesforce.MacroUsage {
     }
     hidden_string internalId {
     }
+    hidden_string keyPrefix {
+    }
   }
   apiName = "MacroUsage"
   metadataType = "CustomObject"

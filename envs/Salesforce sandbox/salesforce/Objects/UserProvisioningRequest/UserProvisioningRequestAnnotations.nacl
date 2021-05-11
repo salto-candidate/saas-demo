@@ -52,6 +52,8 @@ type salesforce.UserProvisioningRequest {
     }
     hidden_string internalId {
     }
+    hidden_string keyPrefix {
+    }
   }
   apiName = "UserProvisioningRequest"
   metadataType = "CustomObject"

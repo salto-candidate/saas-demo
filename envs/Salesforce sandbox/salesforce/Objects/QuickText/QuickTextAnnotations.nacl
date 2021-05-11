@@ -52,6 +52,8 @@ type salesforce.QuickText {
     }
     hidden_string internalId {
     }
+    hidden_string keyPrefix {
+    }
   }
   apiName = "QuickText"
   metadataType = "CustomObject"

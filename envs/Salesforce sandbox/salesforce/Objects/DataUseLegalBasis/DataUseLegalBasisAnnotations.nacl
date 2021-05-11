@@ -52,6 +52,8 @@ type salesforce.DataUseLegalBasis {
     }
     hidden_string internalId {
     }
+    hidden_string keyPrefix {
+    }
   }
   apiName = "DataUseLegalBasis"
   metadataType = "CustomObject"

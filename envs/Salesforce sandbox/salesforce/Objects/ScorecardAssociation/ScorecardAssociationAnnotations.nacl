@@ -52,6 +52,8 @@ type salesforce.ScorecardAssociation {
     }
     hidden_string internalId {
     }
+    hidden_string keyPrefix {
+    }
   }
   apiName = "ScorecardAssociation"
   metadataType = "CustomObject"

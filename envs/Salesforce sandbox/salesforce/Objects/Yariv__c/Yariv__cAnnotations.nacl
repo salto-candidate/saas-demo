@@ -88,6 +88,8 @@ type salesforce.Yariv__c {
     }
     hidden_string internalId {
     }
+    hidden_string keyPrefix {
+    }
   }
   apiName = "Yariv__c"
   metadataType = "CustomObject"

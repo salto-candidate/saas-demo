@@ -52,6 +52,8 @@ type salesforce.ForecastingTypeToCategory {
     }
     hidden_string internalId {
     }
+    hidden_string keyPrefix {
+    }
   }
   apiName = "ForecastingTypeToCategory"
   metadataType = "CustomObject"

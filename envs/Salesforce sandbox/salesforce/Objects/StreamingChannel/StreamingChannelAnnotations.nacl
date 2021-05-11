@@ -52,6 +52,8 @@ type salesforce.StreamingChannel {
     }
     hidden_string internalId {
     }
+    hidden_string keyPrefix {
+    }
   }
   apiName = "StreamingChannel"
   metadataType = "CustomObject"

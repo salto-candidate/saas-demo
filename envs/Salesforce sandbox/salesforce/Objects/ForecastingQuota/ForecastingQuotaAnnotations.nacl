@@ -52,6 +52,8 @@ type salesforce.ForecastingQuota {
     }
     hidden_string internalId {
     }
+    hidden_string keyPrefix {
+    }
   }
   apiName = "ForecastingQuota"
   metadataType = "CustomObject"

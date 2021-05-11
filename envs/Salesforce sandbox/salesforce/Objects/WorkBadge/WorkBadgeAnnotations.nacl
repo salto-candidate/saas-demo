@@ -52,6 +52,8 @@ type salesforce.WorkBadge {
     }
     hidden_string internalId {
     }
+    hidden_string keyPrefix {
+    }
   }
   apiName = "WorkBadge"
   metadataType = "CustomObject"

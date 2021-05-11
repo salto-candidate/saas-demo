@@ -52,6 +52,8 @@ type salesforce.MLModelFactor {
     }
     hidden_string internalId {
     }
+    hidden_string keyPrefix {
+    }
   }
   apiName = "MLModelFactor"
   metadataType = "CustomObject"

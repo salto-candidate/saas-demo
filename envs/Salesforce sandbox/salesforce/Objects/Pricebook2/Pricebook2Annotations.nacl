@@ -52,6 +52,8 @@ type salesforce.Pricebook2 {
     }
     hidden_string internalId {
     }
+    hidden_string keyPrefix {
+    }
   }
   apiName = "Pricebook2"
   metadataType = "CustomObject"

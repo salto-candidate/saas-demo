@@ -38,4 +38,7 @@ type salesforce.SharingGuestRule {
     _required = false
   }
   metadataType = "SharingGuestRule"
+  boolean includeHVUOwnedRecords {
+    _required = false
+  }
 }

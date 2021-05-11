@@ -52,6 +52,8 @@ type salesforce.Contact {
     }
     hidden_string internalId {
     }
+    hidden_string keyPrefix {
+    }
   }
   apiName = "Contact"
   metadataType = "CustomObject"

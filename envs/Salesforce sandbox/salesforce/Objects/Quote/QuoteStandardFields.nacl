@@ -385,7 +385,7 @@ type salesforce.Quote {
   }
   salesforce.Checkbox CanCreateQuoteLineItems {
     apiName = "Quote.CanCreateQuoteLineItems"
-    label = "CanCreateQuoteLineItems"
+    label = "Can Create Quote Line Items"
     defaultValue = false
     createable = true
     updateable = false

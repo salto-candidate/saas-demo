@@ -28,6 +28,7 @@ type salesforce.AIApplication {
       enforce_value = false
       values = [
         "Disabled",
+        "Draft",
         "Enabled",
         "Migrated",
       ]
@@ -46,6 +47,7 @@ type salesforce.AIApplication {
         "EPLite",
         "ForecastingPredictive",
         "IntelligentOffers",
+        "KeyAccountIdentification",
         "LeadScoring",
         "OpportunityScoring",
         "Platform",

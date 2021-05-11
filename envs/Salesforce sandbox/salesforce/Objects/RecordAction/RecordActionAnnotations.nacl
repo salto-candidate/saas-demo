@@ -52,6 +52,8 @@ type salesforce.RecordAction {
     }
     hidden_string internalId {
     }
+    hidden_string keyPrefix {
+    }
   }
   apiName = "RecordAction"
   metadataType = "CustomObject"

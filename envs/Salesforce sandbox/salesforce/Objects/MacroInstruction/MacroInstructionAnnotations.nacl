@@ -52,6 +52,8 @@ type salesforce.MacroInstruction {
     }
     hidden_string internalId {
     }
+    hidden_string keyPrefix {
+    }
   }
   apiName = "MacroInstruction"
   metadataType = "CustomObject"

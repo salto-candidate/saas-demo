@@ -52,6 +52,8 @@ type salesforce.Opportunity {
     }
     hidden_string internalId {
     }
+    hidden_string keyPrefix {
+    }
   }
   apiName = "Opportunity"
   metadataType = "CustomObject"

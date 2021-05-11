@@ -47,14 +47,14 @@ salesforce.SecuritySettings {
     enablePostForSessions = false
     enableSMSIdentity = true
     enableU2F = false
-    enableUpgradeInsecureRequests = true
+    
     enableXssProtection = true
     enforceIpRangesEveryRequest = false
     forceLogoutOnSessionTimeout = true
     forceRelogin = true
     hasRetainedLoginHints = false
     hasUserSwitching = true
-    hstsOnForcecomSites = false
+    
     identityConfirmationOnEmailChange = false
     identityConfirmationOnTwoFactorRegistrationEnabled = true
     lockSessionsToDomain = true
@@ -63,7 +63,7 @@ salesforce.SecuritySettings {
     redirectionWarning = true
     referrerPolicy = true
     requireHttpOnly = false
-    requireHttps = true
+    
     sessionTimeout = "TwoHours"
     canConfirmIdentityBySmsOnly = true
     enableOauthCorsPolicy = false

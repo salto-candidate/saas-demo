@@ -52,6 +52,8 @@ type salesforce.DuplicateRecordSet {
     }
     hidden_string internalId {
     }
+    hidden_string keyPrefix {
+    }
   }
   apiName = "DuplicateRecordSet"
   metadataType = "CustomObject"

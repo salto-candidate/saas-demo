@@ -52,6 +52,8 @@ type salesforce.Task {
     }
     hidden_string internalId {
     }
+    hidden_string keyPrefix {
+    }
   }
   apiName = "Task"
   metadataType = "CustomObject"

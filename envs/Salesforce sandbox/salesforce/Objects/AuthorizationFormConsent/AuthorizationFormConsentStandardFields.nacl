@@ -126,7 +126,7 @@ type salesforce.AuthorizationFormConsent {
   salesforce.Lookup AuthorizationFormTextId {
     apiName = "AuthorizationFormConsent.AuthorizationFormTextId"
     label = "Authorization Form Text ID"
-    _required = true
+    _required = false
     allowLookupRecordDeletion = true
     referenceTo = [
       salesforce.AuthorizationFormText,
@@ -211,6 +211,12 @@ type salesforce.AuthorizationFormConsent {
         fullName = "Signed"
         default = false
         label = "Signed"
+        isActive = true
+      },
+      {
+        fullName = "Rejected"
+        default = false
+        label = "Rejected"
         isActive = true
       },
     ]

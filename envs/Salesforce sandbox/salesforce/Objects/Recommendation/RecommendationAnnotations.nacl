@@ -52,6 +52,8 @@ type salesforce.Recommendation {
     }
     hidden_string internalId {
     }
+    hidden_string keyPrefix {
+    }
   }
   apiName = "Recommendation"
   metadataType = "CustomObject"

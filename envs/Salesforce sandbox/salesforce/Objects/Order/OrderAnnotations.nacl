@@ -52,6 +52,8 @@ type salesforce.Order {
     }
     hidden_string internalId {
     }
+    hidden_string keyPrefix {
+    }
   }
   apiName = "Order"
   metadataType = "CustomObject"

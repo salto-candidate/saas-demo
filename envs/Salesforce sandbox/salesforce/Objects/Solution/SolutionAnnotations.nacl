@@ -52,6 +52,8 @@ type salesforce.Solution {
     }
     hidden_string internalId {
     }
+    hidden_string keyPrefix {
+    }
   }
   apiName = "Solution"
   metadataType = "CustomObject"

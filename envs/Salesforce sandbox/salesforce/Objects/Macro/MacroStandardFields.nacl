@@ -162,6 +162,12 @@ type salesforce.Macro {
         isActive = true
       },
       {
+        fullName = "AuthorizationFormText"
+        default = false
+        label = "Authorization Form Text"
+        isActive = true
+      },
+      {
         fullName = "Case"
         default = false
         label = "Case"
@@ -195,6 +201,24 @@ type salesforce.Macro {
         fullName = "Contact"
         default = false
         label = "Contact"
+        isActive = true
+      },
+      {
+        fullName = "ContactPointAddress"
+        default = false
+        label = "Contact Point Address"
+        isActive = true
+      },
+      {
+        fullName = "ContactPointEmail"
+        default = false
+        label = "Contact Point Email"
+        isActive = true
+      },
+      {
+        fullName = "ContactPointPhone"
+        default = false
+        label = "Contact Point Phone"
         isActive = true
       },
       {

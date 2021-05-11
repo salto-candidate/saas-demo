@@ -29,7 +29,7 @@ salesforce.AnalyticsSettings {
   enableAnalyticsSharingEnable = true
   enableOrgHasWatchlistEnabled = "true"
   enableQueryLiveConnectors = false
-  enableReportCrtAutoAddPref = "false"
+  
   enableS3OutputConnector = "false"
   enableSecureImageSharing = "false"
   enableSnowflakeOutputConnector = "false"

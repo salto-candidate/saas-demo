@@ -52,6 +52,8 @@ type salesforce.CollaborationGroupMember {
     }
     hidden_string internalId {
     }
+    hidden_string keyPrefix {
+    }
   }
   apiName = "CollaborationGroupMember"
   metadataType = "CustomObject"

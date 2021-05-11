@@ -52,6 +52,8 @@ type salesforce.ContentVersion {
     }
     hidden_string internalId {
     }
+    hidden_string keyPrefix {
+    }
   }
   apiName = "ContentVersion"
   metadataType = "CustomObject"

@@ -106,9 +106,6 @@ salesforce.Layout Group_Layout {
   quickActionList = {
     quickActionListItems = [
       {
-        quickActionName = "FeedItem.AnnouncementPost"
-      },
-      {
         quickActionName = "FeedItem.ContentNote"
       },
       {

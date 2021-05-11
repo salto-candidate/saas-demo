@@ -18,9 +18,7 @@ type salesforce.EntityImplements {
   }
   
   
-  boolean isDefault {
-    _required = false
-  }
+  
   string internalId {
     _required = false
     

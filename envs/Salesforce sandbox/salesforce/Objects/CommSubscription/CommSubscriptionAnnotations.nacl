@@ -52,6 +52,8 @@ type salesforce.CommSubscription {
     }
     hidden_string internalId {
     }
+    hidden_string keyPrefix {
+    }
   }
   apiName = "CommSubscription"
   metadataType = "CustomObject"

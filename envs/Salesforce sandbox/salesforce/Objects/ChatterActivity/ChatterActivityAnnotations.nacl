@@ -52,6 +52,8 @@ type salesforce.ChatterActivity {
     }
     hidden_string internalId {
     }
+    hidden_string keyPrefix {
+    }
   }
   apiName = "ChatterActivity"
   metadataType = "CustomObject"

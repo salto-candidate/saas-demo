@@ -2,7 +2,7 @@ type salesforce.OpportunityCompetitor {
   serviceid Id {
     apiName = "OpportunityCompetitor.Id"
     label = "Opportunity: Competitor ID"
-    _required = false
+    
     queryable = true
     
     updateable = false
@@ -13,7 +13,7 @@ type salesforce.OpportunityCompetitor {
     apiName = "OpportunityCompetitor.OpportunityId"
     label = "Opportunity ID"
     _required = true
-    allowLookupRecordDeletion = true
+    
     referenceTo = [
       salesforce.Opportunity,
     ]
@@ -25,7 +25,7 @@ type salesforce.OpportunityCompetitor {
   salesforce.Picklist CompetitorName {
     apiName = "OpportunityCompetitor.CompetitorName"
     label = "Competitor Name"
-    _required = false
+    
     createable = true
     updateable = true
     queryable = true
@@ -33,7 +33,7 @@ type salesforce.OpportunityCompetitor {
   salesforce.Text Strengths {
     apiName = "OpportunityCompetitor.Strengths"
     label = "Strengths"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -44,7 +44,7 @@ type salesforce.OpportunityCompetitor {
   salesforce.Text Weaknesses {
     apiName = "OpportunityCompetitor.Weaknesses"
     label = "Weaknesses"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -55,8 +55,8 @@ type salesforce.OpportunityCompetitor {
   salesforce.Lookup CreatedById {
     apiName = "OpportunityCompetitor.CreatedById"
     label = "Created By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -70,7 +70,7 @@ type salesforce.OpportunityCompetitor {
   salesforce.DateTime CreatedDate {
     apiName = "OpportunityCompetitor.CreatedDate"
     label = "Created Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -80,8 +80,8 @@ type salesforce.OpportunityCompetitor {
   salesforce.Lookup LastModifiedById {
     apiName = "OpportunityCompetitor.LastModifiedById"
     label = "Last Modified By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -95,7 +95,7 @@ type salesforce.OpportunityCompetitor {
   salesforce.DateTime LastModifiedDate {
     apiName = "OpportunityCompetitor.LastModifiedDate"
     label = "Last Modified Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -105,7 +105,7 @@ type salesforce.OpportunityCompetitor {
   salesforce.DateTime SystemModstamp {
     apiName = "OpportunityCompetitor.SystemModstamp"
     label = "System Modstamp"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -120,7 +120,7 @@ type salesforce.OpportunityCompetitor {
     updateable = false
     queryable = true
     
-    _required = false
+    
     _hidden_value = true
   }
 }

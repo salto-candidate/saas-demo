@@ -14,31 +14,31 @@ type salesforce.CallCenter {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   string adapterUrl {
-    _required = false
+    
   }
   string customSettings {
-    _required = false
+    
   }
   string displayName {
-    _required = false
+    
   }
   string displayNameLabel {
-    _required = false
+    
   }
   string internalNameLabel {
-    _required = false
+    
   }
   salesforce.CallCenterSection sections {
-    _required = false
+    
   }
   string version {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true

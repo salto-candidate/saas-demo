@@ -4,7 +4,7 @@ type salesforce.CommSubscriptionChannelType {
     inlineHelpText = "The communication subscription record associated with the communication subscription channel type."
     label = "Communication Subscription ID"
     _required = true
-    allowLookupRecordDeletion = true
+    
     referenceTo = [
       salesforce.CommSubscription,
     ]
@@ -12,13 +12,14 @@ type salesforce.CommSubscriptionChannelType {
     updateable = true
     relationshipName = "CommunicationSubscription"
     queryable = true
+    trackHistory = "false"
   }
   salesforce.Lookup EngagementChannelTypeId {
     apiName = "CommSubscriptionChannelType.EngagementChannelTypeId"
     inlineHelpText = "The engagement channel type record associated with the communication subscription channel type."
     label = "Engagement Channel Type ID"
     _required = true
-    allowLookupRecordDeletion = true
+    
     referenceTo = [
       salesforce.EngagementChannelType,
     ]
@@ -26,6 +27,7 @@ type salesforce.CommSubscriptionChannelType {
     updateable = true
     relationshipName = "EngagementChannelType"
     queryable = true
+    trackHistory = "false"
   }
   salesforce.Text Name {
     apiName = "CommSubscriptionChannelType.Name"
@@ -41,8 +43,8 @@ type salesforce.CommSubscriptionChannelType {
   salesforce.Lookup OwnerId {
     apiName = "CommSubscriptionChannelType.OwnerId"
     label = "Owner ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Group,
       salesforce.User,
@@ -52,11 +54,12 @@ type salesforce.CommSubscriptionChannelType {
     relationshipName = "Owner"
     queryable = true
     _hidden_value = true
+    trackHistory = "false"
   }
   serviceid Id {
     apiName = "CommSubscriptionChannelType.Id"
     label = "Communication Subscription Channel Type ID"
-    _required = false
+    
     queryable = true
     _hidden_value = true
     updateable = false
@@ -70,12 +73,12 @@ type salesforce.CommSubscriptionChannelType {
     updateable = false
     queryable = true
     _hidden_value = true
-    _required = false
+    
   }
   salesforce.DateTime CreatedDate {
     apiName = "CommSubscriptionChannelType.CreatedDate"
     label = "Created Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -84,8 +87,8 @@ type salesforce.CommSubscriptionChannelType {
   salesforce.Lookup CreatedById {
     apiName = "CommSubscriptionChannelType.CreatedById"
     label = "Created By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -98,7 +101,7 @@ type salesforce.CommSubscriptionChannelType {
   salesforce.DateTime LastModifiedDate {
     apiName = "CommSubscriptionChannelType.LastModifiedDate"
     label = "Last Modified Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -107,8 +110,8 @@ type salesforce.CommSubscriptionChannelType {
   salesforce.Lookup LastModifiedById {
     apiName = "CommSubscriptionChannelType.LastModifiedById"
     label = "Last Modified By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -121,7 +124,7 @@ type salesforce.CommSubscriptionChannelType {
   salesforce.DateTime SystemModstamp {
     apiName = "CommSubscriptionChannelType.SystemModstamp"
     label = "System Modstamp"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true

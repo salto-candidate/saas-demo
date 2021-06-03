@@ -14,7 +14,7 @@ type salesforce.EmbeddedServiceCustomComponent {
     }
   }
   string componentBundleType {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -24,14 +24,14 @@ type salesforce.EmbeddedServiceCustomComponent {
     }
   }
   string customComponent {
-    _required = false
+    
     foreignKeyDomain = [
       salesforce.AuraDefinitionBundle,
       salesforce.LightningComponentBundle,
     ]
   }
   string customComponentType {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [

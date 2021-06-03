@@ -14,28 +14,28 @@ type salesforce.ConnectedAppMobileDetailConfig {
     }
   }
   string applicationBinaryFile {
-    _required = false
+    
   }
   string applicationBinaryFileName {
-    _required = false
+    
   }
   string applicationBundleIdentifier {
-    _required = false
+    
   }
   number applicationFileLength {
-    _required = false
+    
   }
   string applicationIconFile {
-    _required = false
+    
   }
   string applicationIconFileName {
-    _required = false
+    
   }
   string applicationInstallUrl {
-    _required = false
+    
   }
   string devicePlatform {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -45,7 +45,7 @@ type salesforce.ConnectedAppMobileDetailConfig {
     }
   }
   string deviceType {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -56,13 +56,13 @@ type salesforce.ConnectedAppMobileDetailConfig {
     }
   }
   string minimumOsVersion {
-    _required = false
+    
   }
   boolean privateApp {
-    _required = false
+    
   }
   string version {
-    _required = false
+    
   }
   metadataType = "ConnectedAppMobileDetailConfig"
 }

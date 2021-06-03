@@ -14,7 +14,7 @@ type salesforce.NetworkAccess {
     }
   }
   "List<salesforce.IpRange>" ipRanges {
-    _required = false
+    
   }
   metadataType = "NetworkAccess"
 }

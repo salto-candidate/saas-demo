@@ -14,22 +14,22 @@ type salesforce.WorkflowKnowledgePublish {
     }
   }
   string action {
-    _required = false
+    
   }
   string description {
-    _required = false
+    
   }
   serviceid fullName {
-    _required = false
+    
   }
   string label {
-    _required = false
+    
   }
   string language {
-    _required = false
+    
   }
   boolean protected {
-    _required = false
+    
   }
   
   

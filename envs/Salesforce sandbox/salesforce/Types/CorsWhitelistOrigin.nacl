@@ -14,13 +14,13 @@ type salesforce.CorsWhitelistOrigin {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   string urlPattern {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true

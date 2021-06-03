@@ -2,8 +2,8 @@ type salesforce.Account {
   salesforce.Lookup Yariv_ref__c {
     apiName = "Account.Yariv_ref__c"
     label = "Yariv ref"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Yariv__c,
     ]
@@ -13,11 +13,15 @@ type salesforce.Account {
     queryable = true
     description = "desc bla bla"
     relationshipName = "Accounts"
+    deleteConstraint = "SetNull"
+    externalId = false
+    relationshipLabel = "Accounts"
+    trackFeedHistory = false
   }
   salesforce.Picklist Tier__c {
     apiName = "Account.Tier__c"
     label = "Tier"
-    _required = false
+    
     valueSet = [
       {
         fullName = "Small Business"
@@ -41,10 +45,10 @@ type salesforce.Account {
         label = "Medium Business"
       },
       {
-        fullName = "NewTierOnlyInEnv2"
+        fullName = "Government2"
         default = false
         isActive = false
-        label = "Test new tier - change"
+        label = "Government"
       },
     ]
     restricted = true
@@ -53,16 +57,24 @@ type salesforce.Account {
     queryable = true
     description = "Account Tiering for Enterprise, Mid Market, Small business etc."
     sorted = false
+    externalId = false
+    trackFeedHistory = false
   }
   salesforce.Picklist Active__c {
     apiName = "Account.Active__c"
     label = "Active"
-    _required = false
+    
     valueSet = [
       {
         fullName = "Active"
         default = false
         label = "Active"
+      },
+      {
+        fullName = "Churned"
+        default = false
+        isActive = false
+        label = "Churned"
       },
       {
         fullName = "Churned"
@@ -83,19 +95,23 @@ type salesforce.Account {
     queryable = true
     description = "Whether this account is currently active or not."
     sorted = false
+    externalId = false
+    trackFeedHistory = false
   }
   salesforce.Url Domain__c {
     apiName = "Account.Domain__c"
     label = "Domain"
-    _required = false
+    
     createable = true
     updateable = true
     queryable = true
+    externalId = false
+    trackFeedHistory = false
   }
   salesforce.FormulaNumber Power_of_1__c {
     apiName = "Account.Power_of_1__c"
     label = "Accounts"
-    _required = false
+    
     precision = 18
     scale = 0
     formula = "1"
@@ -109,15 +125,17 @@ type salesforce.Account {
   salesforce.Url Secondary_Domain__c {
     apiName = "Account.Secondary_Domain__c"
     label = "Secondary Domain"
-    _required = false
+    
     createable = true
     updateable = true
     queryable = true
+    externalId = false
+    trackFeedHistory = false
   }
   salesforce.Text Salto_test__c {
     apiName = "Account.Salto_test__c"
     label = "Salto test NEW"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -125,11 +143,12 @@ type salesforce.Account {
     length = 255
     queryable = true
     externalId = false
+    trackFeedHistory = false
   }
   salesforce.Picklist NewTier__c {
     apiName = "Account.NewTier__c"
     label = "NewTier"
-    _required = false
+    
     valueSet = [
       {
         fullName = "Small Business"
@@ -152,11 +171,13 @@ type salesforce.Account {
     updateable = true
     queryable = true
     sorted = false
+    externalId = false
+    trackFeedHistory = false
   }
   salesforce.Number NumericalField__c {
     apiName = "Account.NumericalField__c"
     label = "NumericalField"
-    _required = false
+    
     precision = 18
     scale = 0
     createable = true
@@ -164,11 +185,12 @@ type salesforce.Account {
     unique = false
     queryable = true
     externalId = false
+    trackFeedHistory = false
   }
   salesforce.Number NumericField2__c {
     apiName = "Account.NumericField2__c"
     label = "NumericField2"
-    _required = false
+    
     precision = 18
     scale = 0
     createable = true
@@ -176,11 +198,12 @@ type salesforce.Account {
     unique = false
     queryable = true
     externalId = false
+    trackFeedHistory = false
   }
   salesforce.Number NumOfResorts__c {
     apiName = "Account.NumOfResorts__c"
     label = "Number Of Resorts"
-    _required = false
+    
     precision = 18
     scale = 0
     createable = true
@@ -188,11 +211,12 @@ type salesforce.Account {
     unique = false
     queryable = true
     externalId = false
+    trackFeedHistory = false
   }
   salesforce.Number LiamScore__c {
     apiName = "Account.LiamScore__c"
     label = "Liam Score"
-    _required = false
+    
     precision = 18
     scale = 0
     createable = true
@@ -200,5 +224,6 @@ type salesforce.Account {
     unique = false
     queryable = true
     externalId = false
+    trackFeedHistory = false
   }
 }

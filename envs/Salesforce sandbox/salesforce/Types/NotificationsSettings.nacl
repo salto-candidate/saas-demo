@@ -14,19 +14,19 @@ settings salesforce.NotificationsSettings {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true
   }
   boolean enableMobileAppPushNotifications {
-    _required = false
+    
   }
   boolean enableNotifications {
-    _required = false
+    
   }
   metadataType = "NotificationsSettings"
   suffix = "settings"

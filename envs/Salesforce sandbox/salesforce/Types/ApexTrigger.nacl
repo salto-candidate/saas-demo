@@ -14,19 +14,19 @@ type salesforce.ApexTrigger {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   string content {
-    _required = false
+    
   }
   number apiVersion {
-    _required = false
+    
   }
   "List<salesforce.PackageVersion>" packageVersions {
-    _required = false
+    
   }
   string status {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -37,7 +37,7 @@ type salesforce.ApexTrigger {
     }
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true

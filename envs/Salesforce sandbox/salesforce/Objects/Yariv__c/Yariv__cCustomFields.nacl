@@ -2,7 +2,7 @@ type salesforce.Yariv__c {
   salesforce.AutoNumber Yariv_Auto__c {
     apiName = "Yariv__c.Yariv_Auto__c"
     label = "Yariv Auto"
-    _required = false
+    
     inlineHelpText = "new help text"
     createable = false
     updateable = false
@@ -12,16 +12,19 @@ type salesforce.Yariv__c {
     displayFormat = "YYY-{0000}"
     externalId = false
     _hidden_value = true
+    trackTrending = false
   }
   salesforce.FormulaDateTime Yariv_Formula__c {
     apiName = "Yariv__c.Yariv_Formula__c"
     label = "Yariv Formula"
-    _required = false
+    
     formula = "NOW() + 2"
     createable = false
     updateable = false
     queryable = true
     formulaTreatBlanksAs = "BlankAsZero"
+    externalId = false
+    trackTrending = false
   }
   salesforce.Checkbox Yariv_Checkbox__c {
     apiName = "Yariv__c.Yariv_Checkbox__c"
@@ -32,11 +35,13 @@ type salesforce.Yariv__c {
     updateable = true
     queryable = true
     description = "Description bla bla"
+    externalId = false
+    trackTrending = false
   }
   salesforce.Currency Yariv_Currency__c {
     apiName = "Yariv__c.Yariv_Currency__c"
     label = "Yariv Currency"
-    _required = false
+    
     defaultValueFormula = "25"
     inlineHelpText = "Help text bla bla"
     createable = true
@@ -45,28 +50,34 @@ type salesforce.Yariv__c {
     precision = 18
     queryable = true
     description = "Description bla bla"
+    externalId = false
+    trackTrending = false
   }
   salesforce.Date Yariv_Date__c {
     apiName = "Yariv__c.Yariv_Date__c"
     label = "Yariv Date"
-    _required = false
+    
     defaultValueFormula = "Today() + 7"
     inlineHelpText = "Help bla"
     createable = true
     updateable = true
     queryable = true
     description = "Description bla"
+    externalId = false
+    trackTrending = false
   }
   salesforce.DateTime Yariv_Datetime__c {
     apiName = "Yariv__c.Yariv_Datetime__c"
     label = "Yariv Datetime"
-    _required = false
+    
     defaultValueFormula = "Now() + 7"
     inlineHelpText = "Help bla"
     createable = true
     updateable = true
     queryable = true
     description = "Description bla"
+    externalId = false
+    trackTrending = false
   }
   salesforce.Email Yariv_Email__c {
     apiName = "Yariv__c.Yariv_Email__c"
@@ -79,11 +90,13 @@ type salesforce.Yariv__c {
     queryable = true
     description = "Bla description"
     externalId = false
+    caseSensitive = "true"
+    trackTrending = false
   }
   salesforce.Geolocation Yariv_Geolocation__c {
     apiName = "Yariv__c.Yariv_Geolocation__c"
     label = "Yariv Geolocation"
-    _required = false
+    
     scale = 2
     inlineHelpText = "Bla Help"
     createable = false
@@ -91,11 +104,13 @@ type salesforce.Yariv__c {
     queryable = true
     description = "Bla Description"
     displayLocationInDecimal = false
+    externalId = false
+    trackTrending = false
   }
   salesforce.Number Yariv_Number__c {
     apiName = "Yariv__c.Yariv_Number__c"
     label = "Yariv Number"
-    _required = false
+    
     precision = 16
     scale = 2
     inlineHelpText = "bla help"
@@ -105,11 +120,12 @@ type salesforce.Yariv__c {
     queryable = true
     description = "bla description"
     externalId = false
+    trackTrending = false
   }
   salesforce.Percent Yariv_Percent__c {
     apiName = "Yariv__c.Yariv_Percent__c"
     label = "Yariv Percent"
-    _required = false
+    
     inlineHelpText = "help"
     createable = true
     updateable = true
@@ -117,21 +133,25 @@ type salesforce.Yariv__c {
     precision = 16
     queryable = true
     description = "description"
+    externalId = false
+    trackTrending = false
   }
   salesforce.Phone Yariv_Phone__c {
     apiName = "Yariv__c.Yariv_Phone__c"
     label = "Yariv Phone"
-    _required = false
+    
     inlineHelpText = "help"
     createable = true
     updateable = true
     queryable = true
     description = "description"
+    externalId = false
+    trackTrending = false
   }
   salesforce.Picklist Picklist_Yariv__c {
     apiName = "Yariv__c.Picklist_Yariv__c"
     label = "Picklist Yariv"
-    _required = false
+    
     valueSet = [
       {
         fullName = "do"
@@ -171,11 +191,13 @@ type salesforce.Yariv__c {
     queryable = true
     description = "description"
     sorted = false
+    externalId = false
+    trackTrending = false
   }
   salesforce.MultiselectPicklist Yariv_Multipick__c {
     apiName = "Yariv__c.Yariv_Multipick__c"
     label = "Yariv Multipick"
-    _required = false
+    
     valueSet = [
       {
         fullName = "do"
@@ -221,11 +243,13 @@ type salesforce.Yariv__c {
     queryable = true
     description = "description"
     sorted = false
+    externalId = false
+    trackTrending = false
   }
   salesforce.Text Yariv_Text__c {
     apiName = "Yariv__c.Yariv_Text__c"
     label = "Yariv Text"
-    _required = false
+    
     inlineHelpText = "help bla"
     createable = true
     updateable = true
@@ -235,21 +259,24 @@ type salesforce.Yariv__c {
     queryable = true
     description = "description for text bla"
     externalId = false
+    trackTrending = false
   }
   salesforce.TextArea Yariv_Text_Area__c {
     apiName = "Yariv__c.Yariv_Text_Area__c"
     label = "Yariv Text Area"
-    _required = false
+    
     inlineHelpText = "bla help"
     createable = true
     updateable = true
     queryable = true
     description = "bla desc"
+    externalId = false
+    trackTrending = false
   }
   salesforce.LongTextArea Yariv_Text_Area_Long__c {
     apiName = "Yariv__c.Yariv_Text_Area_Long__c"
     label = "Yariv Text Area Long"
-    _required = false
+    
     inlineHelpText = "help bla"
     createable = true
     updateable = true
@@ -257,11 +284,13 @@ type salesforce.Yariv__c {
     queryable = true
     description = "desc bla"
     visibleLines = 3
+    externalId = false
+    trackTrending = false
   }
   salesforce.Html Yariv_Text_Area_Rich__c {
     apiName = "Yariv__c.Yariv_Text_Area_Rich__c"
     label = "Yariv Text Area Rich"
-    _required = false
+    
     inlineHelpText = "bla help"
     createable = true
     updateable = true
@@ -269,11 +298,13 @@ type salesforce.Yariv__c {
     queryable = true
     description = "bla desc"
     visibleLines = 25
+    externalId = false
+    trackTrending = false
   }
   salesforce.EncryptedText Yariv_Text_Encvrypted__c {
     apiName = "Yariv__c.Yariv_Text_Encvrypted__c"
     label = "Yariv Text Encvrypted"
-    _required = false
+    
     inlineHelpText = "bla help"
     createable = true
     updateable = true
@@ -282,25 +313,31 @@ type salesforce.Yariv__c {
     queryable = true
     description = "bla descv"
     maskChar = "X"
+    externalId = false
+    trackTrending = false
   }
   salesforce.Time Yariv_Time__c {
     apiName = "Yariv__c.Yariv_Time__c"
     label = "Yariv Time"
-    _required = false
+    
     inlineHelpText = "bla help"
     createable = true
     updateable = true
     queryable = true
     description = "bla desc"
+    externalId = false
+    trackTrending = false
   }
   salesforce.Url Yariv_URL__c {
     apiName = "Yariv__c.Yariv_URL__c"
     label = "Yariv URL"
-    _required = false
+    
     inlineHelpText = "bla help"
     createable = true
     updateable = true
     queryable = true
     description = "bla desc"
+    externalId = false
+    trackTrending = false
   }
 }

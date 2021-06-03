@@ -14,10 +14,10 @@ type salesforce.ValueSetValuesDefinition {
     }
   }
   boolean sorted {
-    _required = false
+    
   }
   salesforce.CustomValue value {
-    _required = false
+    
   }
   metadataType = "ValueSetValuesDefinition"
 }

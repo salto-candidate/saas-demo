@@ -2,7 +2,7 @@ type salesforce.Asset {
   serviceid Id {
     apiName = "Asset.Id"
     label = "Asset ID"
-    _required = false
+    
     queryable = true
     
     updateable = false
@@ -12,8 +12,8 @@ type salesforce.Asset {
   salesforce.Lookup ContactId {
     apiName = "Asset.ContactId"
     label = "Contact ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Contact,
     ]
@@ -21,12 +21,13 @@ type salesforce.Asset {
     updateable = true
     queryable = true
     relationshipName = "Contact"
+    trackHistory = "false"
   }
   salesforce.Lookup AccountId {
     apiName = "Asset.AccountId"
     label = "Account ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Account,
     ]
@@ -34,12 +35,13 @@ type salesforce.Asset {
     updateable = true
     queryable = true
     relationshipName = "Account"
+    trackHistory = "false"
   }
   salesforce.Lookup ParentId {
     apiName = "Asset.ParentId"
     label = "Parent Asset ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Asset,
     ]
@@ -47,12 +49,13 @@ type salesforce.Asset {
     updateable = true
     queryable = true
     relationshipName = "Parent"
+    trackHistory = "false"
   }
   salesforce.Lookup RootAssetId {
     apiName = "Asset.RootAssetId"
     label = "Root Asset ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Asset,
     ]
@@ -60,12 +63,13 @@ type salesforce.Asset {
     updateable = false
     queryable = true
     relationshipName = "RootAsset"
+    trackHistory = "false"
   }
   salesforce.Lookup Product2Id {
     apiName = "Asset.Product2Id"
     label = "Product ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Product2,
     ]
@@ -73,11 +77,12 @@ type salesforce.Asset {
     updateable = true
     queryable = true
     relationshipName = "Product2"
+    trackHistory = "false"
   }
   salesforce.Text ProductCode {
     apiName = "Asset.ProductCode"
     label = "Product Code"
-    _required = false
+    
     createable = false
     updateable = false
     unique = false
@@ -96,7 +101,7 @@ type salesforce.Asset {
   salesforce.DateTime CreatedDate {
     apiName = "Asset.CreatedDate"
     label = "Created Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -106,8 +111,8 @@ type salesforce.Asset {
   salesforce.Lookup CreatedById {
     apiName = "Asset.CreatedById"
     label = "Created By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -121,7 +126,7 @@ type salesforce.Asset {
   salesforce.DateTime LastModifiedDate {
     apiName = "Asset.LastModifiedDate"
     label = "Last Modified Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -131,8 +136,8 @@ type salesforce.Asset {
   salesforce.Lookup LastModifiedById {
     apiName = "Asset.LastModifiedById"
     label = "Last Modified By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -146,7 +151,7 @@ type salesforce.Asset {
   salesforce.DateTime SystemModstamp {
     apiName = "Asset.SystemModstamp"
     label = "System Modstamp"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -161,7 +166,7 @@ type salesforce.Asset {
     updateable = false
     queryable = true
     
-    _required = false
+    
     _hidden_value = true
   }
   salesforce.Text Name {
@@ -178,7 +183,7 @@ type salesforce.Asset {
   salesforce.Text SerialNumber {
     apiName = "Asset.SerialNumber"
     label = "Serial Number"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -189,7 +194,7 @@ type salesforce.Asset {
   salesforce.Date InstallDate {
     apiName = "Asset.InstallDate"
     label = "Install Date"
-    _required = false
+    
     createable = true
     updateable = true
     queryable = true
@@ -197,7 +202,7 @@ type salesforce.Asset {
   salesforce.Date PurchaseDate {
     apiName = "Asset.PurchaseDate"
     label = "Purchase Date"
-    _required = false
+    
     createable = true
     updateable = true
     queryable = true
@@ -205,7 +210,7 @@ type salesforce.Asset {
   salesforce.Date UsageEndDate {
     apiName = "Asset.UsageEndDate"
     label = "Usage End Date"
-    _required = false
+    
     createable = true
     updateable = true
     queryable = true
@@ -213,17 +218,18 @@ type salesforce.Asset {
   salesforce.Picklist Status {
     apiName = "Asset.Status"
     label = "Status"
-    _required = false
+    
     restricted = false
     createable = true
     updateable = true
     queryable = true
     valueSetName = salesforce.StandardValueSet.instance.AssetStatus
+    trackHistory = "false"
   }
   salesforce.Currency Price {
     apiName = "Asset.Price"
     label = "Price"
-    _required = false
+    
     createable = true
     updateable = true
     scale = 0
@@ -233,7 +239,7 @@ type salesforce.Asset {
   salesforce.Number Quantity {
     apiName = "Asset.Quantity"
     label = "Quantity"
-    _required = false
+    
     precision = 12
     scale = 2
     createable = true
@@ -244,7 +250,7 @@ type salesforce.Asset {
   salesforce.LongTextArea Description {
     apiName = "Asset.Description"
     label = "Description"
-    _required = false
+    
     createable = true
     updateable = true
     length = 32000
@@ -253,8 +259,8 @@ type salesforce.Asset {
   salesforce.Lookup OwnerId {
     apiName = "Asset.OwnerId"
     label = "Owner ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -264,12 +270,13 @@ type salesforce.Asset {
     
     relationshipName = "Owner"
     _hidden_value = true
+    trackHistory = "false"
   }
   salesforce.Lookup AssetProvidedById {
     apiName = "Asset.AssetProvidedById"
     label = "Asset Provided By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Account,
     ]
@@ -277,12 +284,13 @@ type salesforce.Asset {
     updateable = true
     queryable = true
     relationshipName = "AssetProvidedBy"
+    trackHistory = "false"
   }
   salesforce.Lookup AssetServicedById {
     apiName = "Asset.AssetServicedById"
     label = "Asset Serviced By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Account,
     ]
@@ -290,6 +298,7 @@ type salesforce.Asset {
     updateable = true
     queryable = true
     relationshipName = "AssetServicedBy"
+    trackHistory = "false"
   }
   salesforce.Checkbox IsInternal {
     apiName = "Asset.IsInternal"
@@ -302,7 +311,7 @@ type salesforce.Asset {
   salesforce.Number AssetLevel {
     apiName = "Asset.AssetLevel"
     label = "Asset Level"
-    _required = false
+    
     precision = 9
     createable = false
     updateable = false
@@ -313,7 +322,7 @@ type salesforce.Asset {
   salesforce.Text StockKeepingUnit {
     apiName = "Asset.StockKeepingUnit"
     label = "Product SKU"
-    _required = false
+    
     createable = false
     updateable = false
     unique = false
@@ -326,6 +335,7 @@ type salesforce.Asset {
     queryable = false
     updateable = false
     createable = false
+    trackHistory = "false"
   }
   salesforce.Unknown ExternalIdentifier {
     apiName = "Asset.ExternalIdentifier"
@@ -333,6 +343,7 @@ type salesforce.Asset {
     queryable = false
     updateable = false
     createable = false
+    trackHistory = "false"
   }
   salesforce.Unknown ManufactureDate {
     apiName = "Asset.ManufactureDate"
@@ -340,6 +351,7 @@ type salesforce.Asset {
     queryable = false
     updateable = false
     createable = false
+    trackHistory = "false"
   }
   salesforce.Unknown ProductDescription {
     apiName = "Asset.ProductDescription"
@@ -359,6 +371,7 @@ type salesforce.Asset {
     queryable = false
     updateable = false
     createable = false
+    trackHistory = "false"
   }
   salesforce.Unknown Uuid {
     apiName = "Asset.Uuid"
@@ -366,5 +379,6 @@ type salesforce.Asset {
     queryable = false
     updateable = false
     createable = false
+    trackHistory = "false"
   }
 }

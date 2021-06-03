@@ -14,7 +14,7 @@ type salesforce.PermissionSetTabSetting {
     }
   }
   string tab {
-    _required = false
+    
   }
   
   

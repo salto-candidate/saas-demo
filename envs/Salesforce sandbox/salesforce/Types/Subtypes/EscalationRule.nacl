@@ -14,16 +14,16 @@ type salesforce.EscalationRule {
     }
   }
   boolean active {
-    _required = false
+    
   }
   serviceid fullName {
-    _required = false
+    
   }
   salesforce.RuleEntry ruleEntry {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true

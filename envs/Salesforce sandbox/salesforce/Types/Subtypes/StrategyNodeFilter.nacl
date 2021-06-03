@@ -14,22 +14,22 @@ type salesforce.StrategyNodeFilter {
     }
   }
   string childNode {
-    _required = false
+    
   }
   string description {
-    _required = false
+    
   }
   string label {
-    _required = false
+    
   }
   string name {
-    _required = false
+    
   }
   number limit {
-    _required = false
+    
   }
   string expression {
-    _required = false
+    
   }
   metadataType = "StrategyNodeFilter"
 }

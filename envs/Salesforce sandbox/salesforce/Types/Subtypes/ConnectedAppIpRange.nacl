@@ -14,13 +14,13 @@ type salesforce.ConnectedAppIpRange {
     }
   }
   string description {
-    _required = false
+    
   }
   string end {
-    _required = false
+    
   }
   string start {
-    _required = false
+    
   }
   metadataType = "ConnectedAppIpRange"
 }

@@ -14,19 +14,19 @@ type salesforce.MLFilter {
     }
   }
   string filterName {
-    _required = false
+    
   }
   salesforce.MLFilter lhFilter {
-    _required = false
+    
     foreignKeyDomain = [
       salesforce.MLFilter,
     ]
   }
   string lhPredictionField {
-    _required = false
+    
   }
   string lhType {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -43,7 +43,7 @@ type salesforce.MLFilter {
     }
   }
   string lhUnit {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -59,10 +59,10 @@ type salesforce.MLFilter {
     }
   }
   string lhValue {
-    _required = false
+    
   }
   string operation {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -92,16 +92,16 @@ type salesforce.MLFilter {
     }
   }
   salesforce.MLFilter rhFilter {
-    _required = false
+    
     foreignKeyDomain = [
       salesforce.MLFilter,
     ]
   }
   string rhPredictionField {
-    _required = false
+    
   }
   string rhType {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -118,7 +118,7 @@ type salesforce.MLFilter {
     }
   }
   string rhUnit {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -134,10 +134,10 @@ type salesforce.MLFilter {
     }
   }
   string rhValue {
-    _required = false
+    
   }
   number sortOrder {
-    _required = false
+    
   }
   metadataType = "MLFilter"
 }

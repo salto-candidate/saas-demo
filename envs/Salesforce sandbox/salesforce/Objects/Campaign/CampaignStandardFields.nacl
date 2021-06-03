@@ -2,7 +2,7 @@ type salesforce.Campaign {
   serviceid Id {
     apiName = "Campaign.Id"
     label = "Campaign ID"
-    _required = false
+    
     queryable = true
     
     updateable = false
@@ -17,7 +17,7 @@ type salesforce.Campaign {
     updateable = false
     queryable = true
     
-    _required = false
+    
     _hidden_value = true
   }
   salesforce.Text Name {
@@ -34,8 +34,8 @@ type salesforce.Campaign {
   salesforce.Lookup ParentId {
     apiName = "Campaign.ParentId"
     label = "Parent Campaign ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Campaign,
     ]
@@ -47,7 +47,7 @@ type salesforce.Campaign {
   salesforce.Picklist Type {
     apiName = "Campaign.Type"
     label = "Type"
-    _required = false
+    
     restricted = false
     createable = false
     updateable = false
@@ -57,7 +57,7 @@ type salesforce.Campaign {
   salesforce.Picklist Status {
     apiName = "Campaign.Status"
     label = "Status"
-    _required = false
+    
     restricted = false
     createable = false
     updateable = false
@@ -67,7 +67,7 @@ type salesforce.Campaign {
   salesforce.Date StartDate {
     apiName = "Campaign.StartDate"
     label = "Start Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -75,7 +75,7 @@ type salesforce.Campaign {
   salesforce.Date EndDate {
     apiName = "Campaign.EndDate"
     label = "End Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -83,7 +83,7 @@ type salesforce.Campaign {
   salesforce.Currency ExpectedRevenue {
     apiName = "Campaign.ExpectedRevenue"
     label = "Expected Revenue in Campaign"
-    _required = false
+    
     createable = false
     updateable = false
     scale = 0
@@ -93,7 +93,7 @@ type salesforce.Campaign {
   salesforce.Currency BudgetedCost {
     apiName = "Campaign.BudgetedCost"
     label = "Budgeted Cost in Campaign"
-    _required = false
+    
     createable = false
     updateable = false
     scale = 0
@@ -103,7 +103,7 @@ type salesforce.Campaign {
   salesforce.Currency ActualCost {
     apiName = "Campaign.ActualCost"
     label = "Actual Cost in Campaign"
-    _required = false
+    
     createable = false
     updateable = false
     scale = 0
@@ -113,7 +113,7 @@ type salesforce.Campaign {
   salesforce.Percent ExpectedResponse {
     apiName = "Campaign.ExpectedResponse"
     label = "Expected Response (%)"
-    _required = false
+    
     createable = false
     updateable = false
     scale = 2
@@ -123,7 +123,7 @@ type salesforce.Campaign {
   salesforce.Number NumberSent {
     apiName = "Campaign.NumberSent"
     label = "Num Sent in Campaign"
-    _required = false
+    
     precision = 18
     scale = 0
     createable = false
@@ -142,7 +142,7 @@ type salesforce.Campaign {
   salesforce.LongTextArea Description {
     apiName = "Campaign.Description"
     label = "Description"
-    _required = false
+    
     createable = false
     updateable = false
     length = 32000
@@ -237,8 +237,8 @@ type salesforce.Campaign {
   salesforce.Lookup OwnerId {
     apiName = "Campaign.OwnerId"
     label = "Owner ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -252,7 +252,7 @@ type salesforce.Campaign {
   salesforce.DateTime CreatedDate {
     apiName = "Campaign.CreatedDate"
     label = "Created Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -262,8 +262,8 @@ type salesforce.Campaign {
   salesforce.Lookup CreatedById {
     apiName = "Campaign.CreatedById"
     label = "Created By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -277,7 +277,7 @@ type salesforce.Campaign {
   salesforce.DateTime LastModifiedDate {
     apiName = "Campaign.LastModifiedDate"
     label = "Last Modified Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -287,8 +287,8 @@ type salesforce.Campaign {
   salesforce.Lookup LastModifiedById {
     apiName = "Campaign.LastModifiedById"
     label = "Last Modified By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -302,7 +302,7 @@ type salesforce.Campaign {
   salesforce.DateTime SystemModstamp {
     apiName = "Campaign.SystemModstamp"
     label = "System Modstamp"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -312,7 +312,7 @@ type salesforce.Campaign {
   salesforce.Date LastActivityDate {
     apiName = "Campaign.LastActivityDate"
     label = "Last Activity"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -322,8 +322,8 @@ type salesforce.Campaign {
   salesforce.Lookup CampaignMemberRecordTypeId {
     apiName = "Campaign.CampaignMemberRecordTypeId"
     label = "Record Type ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.RecordType,
     ]

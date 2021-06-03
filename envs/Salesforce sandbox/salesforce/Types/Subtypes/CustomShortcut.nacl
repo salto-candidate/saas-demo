@@ -14,19 +14,19 @@ type salesforce.CustomShortcut {
     }
   }
   string action {
-    _required = false
+    
   }
   boolean active {
-    _required = false
+    
   }
   string keyCommand {
-    _required = false
+    
   }
   string description {
-    _required = false
+    
   }
   string eventName {
-    _required = false
+    
   }
   metadataType = "CustomShortcut"
 }

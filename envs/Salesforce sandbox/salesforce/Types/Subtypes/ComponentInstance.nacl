@@ -14,13 +14,13 @@ type salesforce.ComponentInstance {
     }
   }
   "List<salesforce.ComponentInstanceProperty>" componentInstanceProperties {
-    _required = false
+    
   }
   string componentName {
-    _required = false
+    
   }
   salesforce.UiFormulaRule visibilityRule {
-    _required = false
+    
   }
   metadataType = "ComponentInstance"
 }

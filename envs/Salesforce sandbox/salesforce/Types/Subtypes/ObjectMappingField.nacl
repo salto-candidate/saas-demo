@@ -14,14 +14,14 @@ type salesforce.ObjectMappingField {
     }
   }
   string inputField {
-    _required = false
+    
     foreignKeyDomain = [
       salesforce.CustomField,
       "CustomFieldDataColumn",
     ]
   }
   string outputField {
-    _required = false
+    
     foreignKeyDomain = [
       salesforce.CustomField,
       "CustomFieldDataColumn",

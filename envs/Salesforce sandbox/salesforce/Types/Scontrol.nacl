@@ -14,13 +14,13 @@ type salesforce.Scontrol {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   string content {
-    _required = false
+    
   }
   string contentSource {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -31,10 +31,10 @@ type salesforce.Scontrol {
     }
   }
   string description {
-    _required = false
+    
   }
   string encodingKey {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -52,19 +52,19 @@ type salesforce.Scontrol {
     }
   }
   string fileContent {
-    _required = false
+    
   }
   string fileName {
-    _required = false
+    
   }
   string name {
-    _required = false
+    
   }
   boolean supportsCaching {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true

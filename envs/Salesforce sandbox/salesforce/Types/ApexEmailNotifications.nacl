@@ -14,13 +14,13 @@ type salesforce.ApexEmailNotifications {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   salesforce.ApexEmailNotification apexEmailNotification {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     _hidden_value = true
     localOnly = true
   }

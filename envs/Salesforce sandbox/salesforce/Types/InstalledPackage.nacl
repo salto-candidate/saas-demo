@@ -14,19 +14,19 @@ type salesforce.InstalledPackage {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   boolean activateRSS {
-    _required = false
+    
   }
   string password {
-    _required = false
+    
   }
   string versionNumber {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true

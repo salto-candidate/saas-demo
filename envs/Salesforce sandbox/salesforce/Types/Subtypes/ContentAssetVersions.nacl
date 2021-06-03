@@ -14,7 +14,7 @@ type salesforce.ContentAssetVersions {
     }
   }
   "List<salesforce.ContentAssetVersion>" version {
-    _required = false
+    
   }
   metadataType = "ContentAssetVersions"
 }

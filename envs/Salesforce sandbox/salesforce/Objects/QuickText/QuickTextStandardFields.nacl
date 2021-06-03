@@ -2,7 +2,7 @@ type salesforce.QuickText {
   serviceid Id {
     apiName = "QuickText.Id"
     label = "Quick Text ID"
-    _required = false
+    
     queryable = true
     
     updateable = false
@@ -12,8 +12,8 @@ type salesforce.QuickText {
   salesforce.Lookup OwnerId {
     apiName = "QuickText.OwnerId"
     label = "Owner ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Group,
       salesforce.User,
@@ -24,6 +24,7 @@ type salesforce.QuickText {
     
     relationshipName = "Owner"
     _hidden_value = true
+    trackHistory = "false"
   }
   salesforce.Checkbox IsDeleted {
     apiName = "QuickText.IsDeleted"
@@ -33,7 +34,7 @@ type salesforce.QuickText {
     updateable = false
     queryable = true
     
-    _required = false
+    
     _hidden_value = true
   }
   salesforce.Text Name {
@@ -50,7 +51,7 @@ type salesforce.QuickText {
   salesforce.DateTime CreatedDate {
     apiName = "QuickText.CreatedDate"
     label = "Created Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -60,8 +61,8 @@ type salesforce.QuickText {
   salesforce.Lookup CreatedById {
     apiName = "QuickText.CreatedById"
     label = "Created By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -75,7 +76,7 @@ type salesforce.QuickText {
   salesforce.DateTime LastModifiedDate {
     apiName = "QuickText.LastModifiedDate"
     label = "Last Modified Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -85,8 +86,8 @@ type salesforce.QuickText {
   salesforce.Lookup LastModifiedById {
     apiName = "QuickText.LastModifiedById"
     label = "Last Modified By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -100,7 +101,7 @@ type salesforce.QuickText {
   salesforce.DateTime SystemModstamp {
     apiName = "QuickText.SystemModstamp"
     label = "System Modstamp"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -119,23 +120,25 @@ type salesforce.QuickText {
   salesforce.Picklist Category {
     apiName = "QuickText.Category"
     label = "Category"
-    _required = false
+    
     restricted = false
     createable = true
     updateable = true
     queryable = true
     valueSetName = salesforce.StandardValueSet.instance.QuickTextCategory
+    trackHistory = "false"
   }
   salesforce.MultiselectPicklist Channel {
     apiName = "QuickText.Channel"
     label = "Channel"
-    _required = false
+    
     restricted = false
     visibleLines = 0
     createable = true
     updateable = true
     queryable = true
     valueSetName = salesforce.StandardValueSet.instance.QuickTextChannel
+    trackHistory = "false"
   }
   salesforce.Checkbox IsInsertable {
     apiName = "QuickText.IsInsertable"
@@ -148,7 +151,7 @@ type salesforce.QuickText {
   salesforce.Picklist SourceType {
     apiName = "QuickText.SourceType"
     label = "Source Entity Type"
-    _required = false
+    
     valueSet = [
       {
         fullName = "EINSTEIN_GENERATED"

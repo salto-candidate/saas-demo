@@ -2,7 +2,7 @@ type salesforce.CaseContactRole {
   serviceid Id {
     apiName = "CaseContactRole.Id"
     label = "Contact Role ID"
-    _required = false
+    
     queryable = true
     
     updateable = false
@@ -13,7 +13,7 @@ type salesforce.CaseContactRole {
     apiName = "CaseContactRole.CasesId"
     label = "Case ID"
     _required = true
-    allowLookupRecordDeletion = true
+    
     referenceTo = [
       salesforce.Case,
     ]
@@ -26,7 +26,7 @@ type salesforce.CaseContactRole {
     apiName = "CaseContactRole.ContactId"
     label = "Contact ID"
     _required = true
-    allowLookupRecordDeletion = true
+    
     referenceTo = [
       salesforce.Contact,
     ]
@@ -38,7 +38,7 @@ type salesforce.CaseContactRole {
   salesforce.Picklist Role {
     apiName = "CaseContactRole.Role"
     label = "Role"
-    _required = false
+    
     restricted = false
     createable = true
     updateable = true
@@ -48,7 +48,7 @@ type salesforce.CaseContactRole {
   salesforce.DateTime CreatedDate {
     apiName = "CaseContactRole.CreatedDate"
     label = "Created Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -58,8 +58,8 @@ type salesforce.CaseContactRole {
   salesforce.Lookup CreatedById {
     apiName = "CaseContactRole.CreatedById"
     label = "Created By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -73,7 +73,7 @@ type salesforce.CaseContactRole {
   salesforce.DateTime LastModifiedDate {
     apiName = "CaseContactRole.LastModifiedDate"
     label = "Last Modified Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -83,8 +83,8 @@ type salesforce.CaseContactRole {
   salesforce.Lookup LastModifiedById {
     apiName = "CaseContactRole.LastModifiedById"
     label = "Last Modified By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -98,7 +98,7 @@ type salesforce.CaseContactRole {
   salesforce.DateTime SystemModstamp {
     apiName = "CaseContactRole.SystemModstamp"
     label = "System Modstamp"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -113,7 +113,7 @@ type salesforce.CaseContactRole {
     updateable = false
     queryable = true
     
-    _required = false
+    
     _hidden_value = true
   }
 }

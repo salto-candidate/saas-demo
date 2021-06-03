@@ -2,7 +2,7 @@ type salesforce.ContactPointAddress {
   serviceid Id {
     apiName = "ContactPointAddress.Id"
     label = "Contact Point Address ID"
-    _required = false
+    
     queryable = true
     
     updateable = false
@@ -12,8 +12,8 @@ type salesforce.ContactPointAddress {
   salesforce.Lookup OwnerId {
     apiName = "ContactPointAddress.OwnerId"
     label = "Owner ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Group,
       salesforce.User,
@@ -33,7 +33,7 @@ type salesforce.ContactPointAddress {
     updateable = false
     queryable = true
     
-    _required = false
+    
     _hidden_value = true
   }
   salesforce.Text Name {
@@ -50,7 +50,7 @@ type salesforce.ContactPointAddress {
   salesforce.DateTime CreatedDate {
     apiName = "ContactPointAddress.CreatedDate"
     label = "Created Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -60,8 +60,8 @@ type salesforce.ContactPointAddress {
   salesforce.Lookup CreatedById {
     apiName = "ContactPointAddress.CreatedById"
     label = "Created By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -75,7 +75,7 @@ type salesforce.ContactPointAddress {
   salesforce.DateTime LastModifiedDate {
     apiName = "ContactPointAddress.LastModifiedDate"
     label = "Last Modified Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -85,8 +85,8 @@ type salesforce.ContactPointAddress {
   salesforce.Lookup LastModifiedById {
     apiName = "ContactPointAddress.LastModifiedById"
     label = "Last Modified By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -100,7 +100,7 @@ type salesforce.ContactPointAddress {
   salesforce.DateTime SystemModstamp {
     apiName = "ContactPointAddress.SystemModstamp"
     label = "System Modstamp"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -110,8 +110,8 @@ type salesforce.ContactPointAddress {
   salesforce.Lookup ParentId {
     apiName = "ContactPointAddress.ParentId"
     label = "Parent ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Account,
       salesforce.Individual,
@@ -120,11 +120,12 @@ type salesforce.ContactPointAddress {
     updateable = true
     queryable = true
     relationshipName = "Parent"
+    trackHistory = "false"
   }
   salesforce.Date ActiveFromDate {
     apiName = "ContactPointAddress.ActiveFromDate"
     label = "Active from Date"
-    _required = false
+    
     createable = true
     updateable = true
     queryable = true
@@ -132,7 +133,7 @@ type salesforce.ContactPointAddress {
   salesforce.Date ActiveToDate {
     apiName = "ContactPointAddress.ActiveToDate"
     label = "Active to Date"
-    _required = false
+    
     createable = true
     updateable = true
     queryable = true
@@ -140,7 +141,7 @@ type salesforce.ContactPointAddress {
   salesforce.Time BestTimeToContactEndTime {
     apiName = "ContactPointAddress.BestTimeToContactEndTime"
     label = "Best time to contact end time"
-    _required = false
+    
     createable = true
     updateable = true
     queryable = true
@@ -148,7 +149,7 @@ type salesforce.ContactPointAddress {
   salesforce.Time BestTimeToContactStartTime {
     apiName = "ContactPointAddress.BestTimeToContactStartTime"
     label = "Best time to contact start time"
-    _required = false
+    
     createable = true
     updateable = true
     queryable = true
@@ -156,7 +157,7 @@ type salesforce.ContactPointAddress {
   salesforce.Picklist BestTimeToContactTimezone {
     apiName = "ContactPointAddress.BestTimeToContactTimezone"
     label = "Best time to contact time zone"
-    _required = false
+    
     valueSet = [
       {
         fullName = "Pacific/Kiritimati"
@@ -525,6 +526,12 @@ type salesforce.ContactPointAddress {
         isActive = true
       },
       {
+        fullName = "Africa/Casablanca"
+        default = false
+        label = "(GMT+01:00) Western European Summer Time (Africa/Casablanca)"
+        isActive = true
+      },
+      {
         fullName = "Europe/Dublin"
         default = false
         label = "(GMT+01:00) Irish Standard Time (Europe/Dublin)"
@@ -540,12 +547,6 @@ type salesforce.ContactPointAddress {
         fullName = "Europe/London"
         default = false
         label = "(GMT+01:00) British Summer Time (Europe/London)"
-        isActive = true
-      },
-      {
-        fullName = "Africa/Casablanca"
-        default = false
-        label = "(GMT+00:00) Western European Standard Time (Africa/Casablanca)"
         isActive = true
       },
       {
@@ -769,8 +770,8 @@ type salesforce.ContactPointAddress {
   salesforce.Lookup ContactPointPhoneId {
     apiName = "ContactPointAddress.ContactPointPhoneId"
     label = "Contact Point Phone ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.ContactPointPhone,
     ]
@@ -778,11 +779,12 @@ type salesforce.ContactPointAddress {
     updateable = true
     queryable = true
     relationshipName = "ContactPointPhone"
+    trackHistory = "false"
   }
   salesforce.Picklist AddressType {
     apiName = "ContactPointAddress.AddressType"
     label = "Address Type"
-    _required = false
+    
     valueSet = [
       {
         fullName = "Billing"
@@ -801,11 +803,12 @@ type salesforce.ContactPointAddress {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = "false"
   }
   salesforce.Address Address {
     apiName = "ContactPointAddress.Address"
     label = "Address"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -823,11 +826,13 @@ type salesforce.ContactPointAddress {
     queryable = false
     updateable = false
     createable = false
+    trackHistory = "false"
   }
   salesforce.Picklist UsageType {
     apiName = "ContactPointAddress.UsageType"
     queryable = false
     updateable = false
     createable = false
+    trackHistory = "false"
   }
 }

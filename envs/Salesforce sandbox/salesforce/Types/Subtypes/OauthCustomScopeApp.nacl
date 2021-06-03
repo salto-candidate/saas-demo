@@ -14,7 +14,7 @@ type salesforce.OauthCustomScopeApp {
     }
   }
   string connectedApp {
-    _required = false
+    
   }
   metadataType = "OauthCustomScopeApp"
 }

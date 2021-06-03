@@ -14,10 +14,10 @@ settings salesforce.QuickTextSettings {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     _hidden_value = true
     localOnly = true
   }

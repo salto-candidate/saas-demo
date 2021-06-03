@@ -14,7 +14,7 @@ type salesforce.SiteIframeWhiteListUrl {
     }
   }
   string url {
-    _required = false
+    
   }
   metadataType = "SiteIframeWhiteListUrl"
 }

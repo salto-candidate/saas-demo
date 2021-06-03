@@ -14,10 +14,10 @@ type salesforce.LayoutColumn {
     }
   }
   "List<salesforce.LayoutItem>" layoutItems {
-    _required = false
+    
   }
   string reserved {
-    _required = false
+    
   }
   metadataType = "LayoutColumn"
 }

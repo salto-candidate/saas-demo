@@ -14,10 +14,10 @@ type salesforce.PermissionSetApexClassAccess {
     }
   }
   string apexClass {
-    _required = false
+    
   }
   boolean enabled {
-    _required = false
+    
   }
   
   

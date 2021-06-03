@@ -14,31 +14,31 @@ type salesforce.RecordType {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   boolean active {
-    _required = false
+    
   }
   string businessProcess {
-    _required = false
+    
     foreignKeyDomain = [
       salesforce.BusinessProcess,
     ]
   }
   string compactLayoutAssignment {
-    _required = false
+    
   }
   string description {
-    _required = false
+    
   }
   string label {
-    _required = false
+    
   }
   "List<salesforce.RecordTypePicklistValue>" picklistValues {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true

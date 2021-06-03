@@ -14,16 +14,16 @@ type salesforce.ContentAsset {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   string content {
-    _required = false
+    
   }
   boolean isVisibleByExternalUsers {
-    _required = false
+    
   }
   string language {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -49,19 +49,19 @@ type salesforce.ContentAsset {
     }
   }
   string masterLabel {
-    _required = false
+    
   }
   string originNetwork {
-    _required = false
+    
   }
   "List<salesforce.ContentAssetRelationships>" relationships {
-    _required = false
+    
   }
   salesforce.ContentAssetVersions versions {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true

@@ -2,7 +2,7 @@ type salesforce.Individual {
   serviceid Id {
     apiName = "Individual.Id"
     label = "Individual ID"
-    _required = false
+    
     queryable = true
     
     updateable = false
@@ -12,8 +12,8 @@ type salesforce.Individual {
   salesforce.Lookup OwnerId {
     apiName = "Individual.OwnerId"
     label = "Owner ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -23,6 +23,7 @@ type salesforce.Individual {
     
     relationshipName = "Owner"
     _hidden_value = true
+    trackHistory = "false"
   }
   salesforce.Checkbox IsDeleted {
     apiName = "Individual.IsDeleted"
@@ -32,7 +33,7 @@ type salesforce.Individual {
     updateable = false
     queryable = true
     
-    _required = false
+    
     _hidden_value = true
   }
   salesforce.Name Name {
@@ -110,7 +111,7 @@ type salesforce.Individual {
   salesforce.Date BirthDate {
     apiName = "Individual.BirthDate"
     label = "Birth Date"
-    _required = false
+    
     createable = true
     updateable = true
     queryable = true
@@ -118,7 +119,7 @@ type salesforce.Individual {
   salesforce.Date DeathDate {
     apiName = "Individual.DeathDate"
     label = "Death Date"
-    _required = false
+    
     createable = true
     updateable = true
     queryable = true
@@ -126,7 +127,7 @@ type salesforce.Individual {
   salesforce.Number ConvictionsCount {
     apiName = "Individual.ConvictionsCount"
     label = "Conviction Count"
-    _required = false
+    
     precision = 9
     createable = true
     updateable = true
@@ -137,7 +138,7 @@ type salesforce.Individual {
   salesforce.Number ChildrenCount {
     apiName = "Individual.ChildrenCount"
     label = "Number of Children"
-    _required = false
+    
     precision = 9
     createable = true
     updateable = true
@@ -148,7 +149,7 @@ type salesforce.Individual {
   salesforce.Picklist MilitaryService {
     apiName = "Individual.MilitaryService"
     label = "Military Service"
-    _required = false
+    
     valueSet = [
       {
         fullName = "Unknown"
@@ -173,6 +174,7 @@ type salesforce.Individual {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = "false"
   }
   salesforce.Checkbox IsHomeOwner {
     apiName = "Individual.IsHomeOwner"
@@ -185,7 +187,7 @@ type salesforce.Individual {
   salesforce.Text Occupation {
     apiName = "Individual.Occupation"
     label = "Occupation"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -196,7 +198,7 @@ type salesforce.Individual {
   salesforce.Url Website {
     apiName = "Individual.Website"
     label = "Website"
-    _required = false
+    
     createable = true
     updateable = true
     queryable = true
@@ -204,7 +206,7 @@ type salesforce.Individual {
   salesforce.Picklist IndividualsAge {
     apiName = "Individual.IndividualsAge"
     label = "Individual's Age"
-    _required = false
+    
     valueSet = [
       {
         fullName = "13 or Older"
@@ -223,12 +225,13 @@ type salesforce.Individual {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = "false"
   }
   salesforce.Lookup MasterRecordId {
     apiName = "Individual.MasterRecordId"
     label = "Master Record ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Individual,
     ]
@@ -240,7 +243,7 @@ type salesforce.Individual {
   salesforce.Number ConsumerCreditScore {
     apiName = "Individual.ConsumerCreditScore"
     label = "Consumer Credit Score"
-    _required = false
+    
     precision = 9
     createable = true
     updateable = true
@@ -251,7 +254,7 @@ type salesforce.Individual {
   salesforce.Text ConsumerCreditScoreProviderName {
     apiName = "Individual.ConsumerCreditScoreProviderName"
     label = "Consumer Credit Score Provider Name"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -262,7 +265,7 @@ type salesforce.Individual {
   salesforce.Number InfluencerRating {
     apiName = "Individual.InfluencerRating"
     label = "Influencer Rating"
-    _required = false
+    
     precision = 9
     createable = true
     updateable = true
@@ -273,7 +276,7 @@ type salesforce.Individual {
   salesforce.DateTime CreatedDate {
     apiName = "Individual.CreatedDate"
     label = "Created Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -283,8 +286,8 @@ type salesforce.Individual {
   salesforce.Lookup CreatedById {
     apiName = "Individual.CreatedById"
     label = "Created By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -298,7 +301,7 @@ type salesforce.Individual {
   salesforce.DateTime LastModifiedDate {
     apiName = "Individual.LastModifiedDate"
     label = "Last Modified Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -308,8 +311,8 @@ type salesforce.Individual {
   salesforce.Lookup LastModifiedById {
     apiName = "Individual.LastModifiedById"
     label = "Last Modified By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -323,7 +326,7 @@ type salesforce.Individual {
   salesforce.DateTime SystemModstamp {
     apiName = "Individual.SystemModstamp"
     label = "System Modstamp"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true

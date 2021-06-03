@@ -14,13 +14,13 @@ type salesforce.FeedLayout {
     }
   }
   boolean autocollapsePublisher {
-    _required = false
+    
   }
   boolean compactFeed {
-    _required = false
+    
   }
   string feedFilterPosition {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -31,25 +31,25 @@ type salesforce.FeedLayout {
     }
   }
   "List<salesforce.FeedLayoutFilter>" feedFilters {
-    _required = false
+    
   }
   boolean fullWidthFeed {
-    _required = false
+    
   }
   boolean hideSidebar {
-    _required = false
+    
   }
   boolean highlightExternalFeedItems {
-    _required = false
+    
   }
   salesforce.FeedLayoutComponent leftComponents {
-    _required = false
+    
   }
   "List<salesforce.FeedLayoutComponent>" rightComponents {
-    _required = false
+    
   }
   boolean useInlineFiltersInConsole {
-    _required = false
+    
   }
   metadataType = "FeedLayout"
 }

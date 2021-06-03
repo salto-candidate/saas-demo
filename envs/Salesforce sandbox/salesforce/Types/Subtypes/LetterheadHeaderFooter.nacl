@@ -14,13 +14,13 @@ type salesforce.LetterheadHeaderFooter {
     }
   }
   string backgroundColor {
-    _required = false
+    
   }
   number height {
-    _required = false
+    
   }
   string logo {
-    _required = false
+    
   }
   metadataType = "LetterheadHeaderFooter"
 }

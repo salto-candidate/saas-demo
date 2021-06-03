@@ -14,7 +14,7 @@ type salesforce.QuickActionList {
     }
   }
   "List<salesforce.QuickActionListItem>" quickActionListItems {
-    _required = false
+    
   }
   metadataType = "QuickActionList"
 }

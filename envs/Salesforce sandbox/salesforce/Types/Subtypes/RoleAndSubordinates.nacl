@@ -14,7 +14,7 @@ type salesforce.RoleAndSubordinates {
     }
   }
   string roleAndSubordinate {
-    _required = false
+    
   }
   metadataType = "RoleAndSubordinates"
 }

@@ -14,22 +14,22 @@ settings salesforce.PrivacySettings {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true
   }
   boolean enableConsentAuditTrail {
-    _required = false
+    
   }
   boolean enableConsentEventStream {
-    _required = false
+    
   }
   boolean enableDefaultMetadataValues {
-    _required = false
+    
   }
   metadataType = "PrivacySettings"
   suffix = "settings"

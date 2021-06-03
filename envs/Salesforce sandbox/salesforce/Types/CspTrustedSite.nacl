@@ -14,7 +14,7 @@ type salesforce.CspTrustedSite {
     }
   }
   string context {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -26,19 +26,19 @@ type salesforce.CspTrustedSite {
     }
   }
   string description {
-    _required = false
+    
   }
   string endpointUrl {
-    _required = false
+    
   }
   serviceid fullName {
-    _required = false
+    
   }
   boolean isActive {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true
@@ -47,25 +47,25 @@ type salesforce.CspTrustedSite {
   dirName = "cspTrustedSites"
   metadataType = "CspTrustedSite"
   boolean isApplicableToConnectSrc {
-    _required = false
+    
   }
   boolean isApplicableToFontSrc {
-    _required = false
+    
   }
   boolean isApplicableToFrameSrc {
-    _required = false
+    
   }
   boolean isApplicableToImgSrc {
-    _required = false
+    
   }
   boolean isApplicableToMediaSrc {
-    _required = false
+    
   }
   boolean isApplicableToStyleSrc {
-    _required = false
+    
   }
   string mobileExtension {
-    _required = false
+    
     foreignKeyDomain = [
       "FieldServiceMobileExtension",
     ]

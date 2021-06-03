@@ -14,13 +14,13 @@ type salesforce.ApprovalEntryCriteria {
     }
   }
   string booleanFilter {
-    _required = false
+    
   }
   salesforce.FilterItem criteriaItems {
-    _required = false
+    
   }
   string formula {
-    _required = false
+    
   }
   metadataType = "ApprovalEntryCriteria"
 }

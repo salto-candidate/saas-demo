@@ -14,10 +14,10 @@ type salesforce.PermissionSetUserPermission {
     }
   }
   boolean enabled {
-    _required = false
+    
   }
   string name {
-    _required = false
+    
   }
   
   

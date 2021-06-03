@@ -14,16 +14,16 @@ type salesforce.FlowScreenRuleAction {
     }
   }
   salesforce.FlowMetadataValue processMetadataValues {
-    _required = false
+    
   }
   string attribute {
-    _required = false
+    
   }
   string fieldReference {
-    _required = false
+    
   }
   salesforce.FlowElementReferenceOrValue value {
-    _required = false
+    
   }
   metadataType = "FlowScreenRuleAction"
 }

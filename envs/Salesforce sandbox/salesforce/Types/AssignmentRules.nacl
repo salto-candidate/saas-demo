@@ -14,13 +14,13 @@ type salesforce.AssignmentRules {
     }
   }
   "List<salesforce.AssignmentRule>" assignmentRule {
-    _required = false
+    
   }
   serviceid fullName {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true

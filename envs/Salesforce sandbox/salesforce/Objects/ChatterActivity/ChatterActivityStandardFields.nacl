@@ -2,7 +2,7 @@ type salesforce.ChatterActivity {
   serviceid Id {
     apiName = "ChatterActivity.Id"
     label = "Chatter Activity ID"
-    _required = false
+    
     queryable = true
     
     updateable = false
@@ -12,8 +12,8 @@ type salesforce.ChatterActivity {
   salesforce.Lookup ParentId {
     apiName = "ChatterActivity.ParentId"
     label = "Parent ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -79,7 +79,7 @@ type salesforce.ChatterActivity {
   salesforce.DateTime SystemModstamp {
     apiName = "ChatterActivity.SystemModstamp"
     label = "System Modstamp"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true

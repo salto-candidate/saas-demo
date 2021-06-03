@@ -2,7 +2,7 @@ type salesforce.OpportunityLineItem {
   serviceid Id {
     apiName = "OpportunityLineItem.Id"
     label = "Line Item ID"
-    _required = false
+    
     queryable = true
     
     updateable = false
@@ -13,7 +13,7 @@ type salesforce.OpportunityLineItem {
     apiName = "OpportunityLineItem.OpportunityId"
     label = "Opportunity ID"
     _required = true
-    allowLookupRecordDeletion = true
+    
     referenceTo = [
       salesforce.Opportunity,
     ]
@@ -25,7 +25,7 @@ type salesforce.OpportunityLineItem {
   salesforce.Number SortOrder {
     apiName = "OpportunityLineItem.SortOrder"
     label = "Sort Order"
-    _required = false
+    
     precision = 9
     createable = true
     updateable = true
@@ -36,8 +36,8 @@ type salesforce.OpportunityLineItem {
   salesforce.Lookup PricebookEntryId {
     apiName = "OpportunityLineItem.PricebookEntryId"
     label = "Price Book Entry ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.PricebookEntry,
     ]
@@ -49,8 +49,8 @@ type salesforce.OpportunityLineItem {
   salesforce.Lookup Product2Id {
     apiName = "OpportunityLineItem.Product2Id"
     label = "Product ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Product2,
     ]
@@ -62,7 +62,7 @@ type salesforce.OpportunityLineItem {
   salesforce.Text ProductCode {
     apiName = "OpportunityLineItem.ProductCode"
     label = "Product Code"
-    _required = false
+    
     createable = false
     updateable = false
     unique = false
@@ -73,7 +73,7 @@ type salesforce.OpportunityLineItem {
   salesforce.Text Name {
     apiName = "OpportunityLineItem.Name"
     label = "Opportunity Product Name"
-    _required = false
+    
     createable = false
     updateable = false
     unique = false
@@ -95,7 +95,7 @@ type salesforce.OpportunityLineItem {
   salesforce.Currency TotalPrice {
     apiName = "OpportunityLineItem.TotalPrice"
     label = "Total Price"
-    _required = false
+    
     createable = true
     updateable = true
     scale = 2
@@ -105,7 +105,7 @@ type salesforce.OpportunityLineItem {
   salesforce.Currency UnitPrice {
     apiName = "OpportunityLineItem.UnitPrice"
     label = "Sales Price"
-    _required = false
+    
     createable = true
     updateable = true
     scale = 2
@@ -115,7 +115,7 @@ type salesforce.OpportunityLineItem {
   salesforce.Currency ListPrice {
     apiName = "OpportunityLineItem.ListPrice"
     label = "List Price"
-    _required = false
+    
     createable = false
     updateable = false
     scale = 2
@@ -125,7 +125,7 @@ type salesforce.OpportunityLineItem {
   salesforce.Date ServiceDate {
     apiName = "OpportunityLineItem.ServiceDate"
     label = "Date"
-    _required = false
+    
     createable = true
     updateable = true
     queryable = true
@@ -133,7 +133,7 @@ type salesforce.OpportunityLineItem {
   salesforce.Text Description {
     apiName = "OpportunityLineItem.Description"
     label = "Line Description"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -144,7 +144,7 @@ type salesforce.OpportunityLineItem {
   salesforce.DateTime CreatedDate {
     apiName = "OpportunityLineItem.CreatedDate"
     label = "Created Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -154,8 +154,8 @@ type salesforce.OpportunityLineItem {
   salesforce.Lookup CreatedById {
     apiName = "OpportunityLineItem.CreatedById"
     label = "Created By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -169,7 +169,7 @@ type salesforce.OpportunityLineItem {
   salesforce.DateTime LastModifiedDate {
     apiName = "OpportunityLineItem.LastModifiedDate"
     label = "Last Modified Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -179,8 +179,8 @@ type salesforce.OpportunityLineItem {
   salesforce.Lookup LastModifiedById {
     apiName = "OpportunityLineItem.LastModifiedById"
     label = "Last Modified By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -194,7 +194,7 @@ type salesforce.OpportunityLineItem {
   salesforce.DateTime SystemModstamp {
     apiName = "OpportunityLineItem.SystemModstamp"
     label = "System Modstamp"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -209,7 +209,7 @@ type salesforce.OpportunityLineItem {
     updateable = false
     queryable = true
     
-    _required = false
+    
     _hidden_value = true
   }
   salesforce.Unknown Discount {

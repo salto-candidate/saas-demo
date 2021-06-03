@@ -2,7 +2,7 @@ type salesforce.CollaborationGroupMember {
   serviceid Id {
     apiName = "CollaborationGroupMember.Id"
     label = "Group Member Id"
-    _required = false
+    
     queryable = true
     
     updateable = false
@@ -13,7 +13,7 @@ type salesforce.CollaborationGroupMember {
     apiName = "CollaborationGroupMember.CollaborationGroupId"
     label = "CollaborationGroup ID"
     _required = true
-    allowLookupRecordDeletion = true
+    
     referenceTo = [
       salesforce.CollaborationGroup,
     ]
@@ -26,7 +26,7 @@ type salesforce.CollaborationGroupMember {
     apiName = "CollaborationGroupMember.MemberId"
     label = "Member ID"
     _required = true
-    allowLookupRecordDeletion = true
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -38,7 +38,7 @@ type salesforce.CollaborationGroupMember {
   salesforce.Picklist CollaborationRole {
     apiName = "CollaborationGroupMember.CollaborationRole"
     label = "Group Member Role"
-    _required = false
+    
     valueSet = [
       {
         fullName = "Admin"
@@ -61,7 +61,7 @@ type salesforce.CollaborationGroupMember {
   salesforce.Picklist NotificationFrequency {
     apiName = "CollaborationGroupMember.NotificationFrequency"
     label = "Notification Frequency"
-    _required = false
+    
     valueSet = [
       {
         fullName = "P"
@@ -96,7 +96,7 @@ type salesforce.CollaborationGroupMember {
   salesforce.DateTime CreatedDate {
     apiName = "CollaborationGroupMember.CreatedDate"
     label = "Created Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -106,8 +106,8 @@ type salesforce.CollaborationGroupMember {
   salesforce.Lookup CreatedById {
     apiName = "CollaborationGroupMember.CreatedById"
     label = "Created By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -121,7 +121,7 @@ type salesforce.CollaborationGroupMember {
   salesforce.DateTime LastModifiedDate {
     apiName = "CollaborationGroupMember.LastModifiedDate"
     label = "Last Modified Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -131,8 +131,8 @@ type salesforce.CollaborationGroupMember {
   salesforce.Lookup LastModifiedById {
     apiName = "CollaborationGroupMember.LastModifiedById"
     label = "Last Modified By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -146,7 +146,7 @@ type salesforce.CollaborationGroupMember {
   salesforce.DateTime SystemModstamp {
     apiName = "CollaborationGroupMember.SystemModstamp"
     label = "System Modstamp"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -156,7 +156,7 @@ type salesforce.CollaborationGroupMember {
   salesforce.DateTime LastFeedAccessDate {
     apiName = "CollaborationGroupMember.LastFeedAccessDate"
     label = "Last Feed Access Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true

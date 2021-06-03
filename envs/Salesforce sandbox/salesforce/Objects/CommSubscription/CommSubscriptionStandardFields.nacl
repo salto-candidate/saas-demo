@@ -5,6 +5,7 @@ type salesforce.CommSubscription {
     queryable = false
     updateable = false
     createable = false
+    trackHistory = "false"
   }
   salesforce.Unknown IsDefault {
     apiName = "CommSubscription.IsDefault"
@@ -12,6 +13,7 @@ type salesforce.CommSubscription {
     queryable = false
     updateable = false
     createable = false
+    trackHistory = "false"
   }
   salesforce.Text Name {
     apiName = "CommSubscription.Name"
@@ -27,8 +29,8 @@ type salesforce.CommSubscription {
   salesforce.Lookup OwnerId {
     apiName = "CommSubscription.OwnerId"
     label = "Owner ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Group,
       salesforce.User,
@@ -38,11 +40,12 @@ type salesforce.CommSubscription {
     relationshipName = "Owner"
     queryable = true
     _hidden_value = true
+    trackHistory = "false"
   }
   serviceid Id {
     apiName = "CommSubscription.Id"
     label = "Communication Subscription ID"
-    _required = false
+    
     queryable = true
     _hidden_value = true
     updateable = false
@@ -56,12 +59,12 @@ type salesforce.CommSubscription {
     updateable = false
     queryable = true
     _hidden_value = true
-    _required = false
+    
   }
   salesforce.DateTime CreatedDate {
     apiName = "CommSubscription.CreatedDate"
     label = "Created Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -70,8 +73,8 @@ type salesforce.CommSubscription {
   salesforce.Lookup CreatedById {
     apiName = "CommSubscription.CreatedById"
     label = "Created By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -84,7 +87,7 @@ type salesforce.CommSubscription {
   salesforce.DateTime LastModifiedDate {
     apiName = "CommSubscription.LastModifiedDate"
     label = "Last Modified Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -93,8 +96,8 @@ type salesforce.CommSubscription {
   salesforce.Lookup LastModifiedById {
     apiName = "CommSubscription.LastModifiedById"
     label = "Last Modified By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -107,7 +110,7 @@ type salesforce.CommSubscription {
   salesforce.DateTime SystemModstamp {
     apiName = "CommSubscription.SystemModstamp"
     label = "System Modstamp"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true

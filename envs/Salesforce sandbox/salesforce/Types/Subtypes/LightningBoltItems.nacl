@@ -14,10 +14,10 @@ type salesforce.LightningBoltItems {
     }
   }
   string name {
-    _required = false
+    
   }
   string type {
-    _required = false
+    
   }
   metadataType = "LightningBoltItems"
 }

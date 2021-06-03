@@ -14,22 +14,22 @@ settings salesforce.ConnectedAppSettings {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true
   }
   boolean enableAdminApprovedAppsOnly {
-    _required = false
+    
   }
   boolean enableAdminApprovedAppsOnlyForExternalUser {
-    _required = false
+    
   }
   boolean enableSkipUserProvisioningWizardWelcomePage {
-    _required = false
+    
   }
   metadataType = "ConnectedAppSettings"
   suffix = "settings"

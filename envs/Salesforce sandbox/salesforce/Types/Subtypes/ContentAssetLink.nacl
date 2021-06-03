@@ -14,10 +14,10 @@ type salesforce.ContentAssetLink {
     }
   }
   boolean isManagingWorkspace {
-    _required = false
+    
   }
   string name {
-    _required = false
+    
   }
   string access {
     _restriction = {
@@ -28,7 +28,7 @@ type salesforce.ContentAssetLink {
       ]
       enforce_value = false
     }
-    _required = false
+    
   }
   metadataType = "ContentAssetLink"
 }

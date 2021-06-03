@@ -14,7 +14,7 @@ type salesforce.MktDataModelAttributes {
     }
   }
   string creationType {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -28,25 +28,25 @@ type salesforce.MktDataModelAttributes {
     }
   }
   string dataModelTaxonomy {
-    _required = false
+    
   }
   boolean isEnabled {
-    _required = false
+    
   }
   boolean isSegmentable {
-    _required = false
+    
   }
   string objectCategory {
-    _required = false
+    
   }
   string referenceEntityGroup {
-    _required = false
+    
   }
   string referenceEntityName {
-    _required = false
+    
   }
   string referenceEntitySubjectArea {
-    _required = false
+    
   }
   metadataType = "MktDataModelAttributes"
 }

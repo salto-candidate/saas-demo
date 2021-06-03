@@ -2,7 +2,7 @@ type salesforce.CampaignMember {
   serviceid Id {
     apiName = "CampaignMember.Id"
     label = "Campaign Member ID"
-    _required = false
+    
     queryable = true
     
     updateable = false
@@ -17,14 +17,14 @@ type salesforce.CampaignMember {
     updateable = false
     queryable = true
     
-    _required = false
+    
     _hidden_value = true
   }
   salesforce.Lookup CampaignId {
     apiName = "CampaignMember.CampaignId"
     label = "Campaign ID"
     _required = true
-    allowLookupRecordDeletion = true
+    
     referenceTo = [
       salesforce.Campaign,
     ]
@@ -36,8 +36,8 @@ type salesforce.CampaignMember {
   salesforce.Lookup LeadId {
     apiName = "CampaignMember.LeadId"
     label = "Lead ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Lead,
     ]
@@ -49,8 +49,8 @@ type salesforce.CampaignMember {
   salesforce.Lookup ContactId {
     apiName = "CampaignMember.ContactId"
     label = "Contact ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Contact,
     ]
@@ -62,7 +62,7 @@ type salesforce.CampaignMember {
   salesforce.Picklist Status {
     apiName = "CampaignMember.Status"
     label = "Status"
-    _required = false
+    
     restricted = false
     createable = true
     updateable = true
@@ -80,7 +80,7 @@ type salesforce.CampaignMember {
   salesforce.DateTime CreatedDate {
     apiName = "CampaignMember.CreatedDate"
     label = "Created Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -90,8 +90,8 @@ type salesforce.CampaignMember {
   salesforce.Lookup CreatedById {
     apiName = "CampaignMember.CreatedById"
     label = "Created By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -105,7 +105,7 @@ type salesforce.CampaignMember {
   salesforce.DateTime LastModifiedDate {
     apiName = "CampaignMember.LastModifiedDate"
     label = "Last Modified Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -115,8 +115,8 @@ type salesforce.CampaignMember {
   salesforce.Lookup LastModifiedById {
     apiName = "CampaignMember.LastModifiedById"
     label = "Last Modified By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -130,7 +130,7 @@ type salesforce.CampaignMember {
   salesforce.DateTime SystemModstamp {
     apiName = "CampaignMember.SystemModstamp"
     label = "System Modstamp"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -140,7 +140,7 @@ type salesforce.CampaignMember {
   salesforce.Date FirstRespondedDate {
     apiName = "CampaignMember.FirstRespondedDate"
     label = "First Responded Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -148,7 +148,7 @@ type salesforce.CampaignMember {
   salesforce.Picklist Salutation {
     apiName = "CampaignMember.Salutation"
     label = "Salutation"
-    _required = false
+    
     restricted = false
     createable = false
     updateable = false
@@ -158,7 +158,7 @@ type salesforce.CampaignMember {
   salesforce.Text Name {
     apiName = "CampaignMember.Name"
     label = "Name"
-    _required = false
+    
     createable = false
     updateable = false
     unique = false
@@ -171,7 +171,7 @@ type salesforce.CampaignMember {
   salesforce.Text FirstName {
     apiName = "CampaignMember.FirstName"
     label = "First Name"
-    _required = false
+    
     createable = false
     updateable = false
     unique = false
@@ -182,7 +182,7 @@ type salesforce.CampaignMember {
   salesforce.Text LastName {
     apiName = "CampaignMember.LastName"
     label = "Last Name"
-    _required = false
+    
     createable = false
     updateable = false
     unique = false
@@ -193,7 +193,7 @@ type salesforce.CampaignMember {
   salesforce.Text Title {
     apiName = "CampaignMember.Title"
     label = "Title"
-    _required = false
+    
     createable = false
     updateable = false
     unique = false
@@ -204,7 +204,7 @@ type salesforce.CampaignMember {
   salesforce.Text Street {
     apiName = "CampaignMember.Street"
     label = "Street"
-    _required = false
+    
     createable = false
     updateable = false
     unique = false
@@ -215,7 +215,7 @@ type salesforce.CampaignMember {
   salesforce.Text City {
     apiName = "CampaignMember.City"
     label = "City"
-    _required = false
+    
     createable = false
     updateable = false
     unique = false
@@ -226,7 +226,7 @@ type salesforce.CampaignMember {
   salesforce.Text State {
     apiName = "CampaignMember.State"
     label = "State/Province"
-    _required = false
+    
     createable = false
     updateable = false
     unique = false
@@ -237,7 +237,7 @@ type salesforce.CampaignMember {
   salesforce.Text PostalCode {
     apiName = "CampaignMember.PostalCode"
     label = "Zip/Postal Code"
-    _required = false
+    
     createable = false
     updateable = false
     unique = false
@@ -248,7 +248,7 @@ type salesforce.CampaignMember {
   salesforce.Text Country {
     apiName = "CampaignMember.Country"
     label = "Country"
-    _required = false
+    
     createable = false
     updateable = false
     unique = false
@@ -259,7 +259,7 @@ type salesforce.CampaignMember {
   salesforce.Email Email {
     apiName = "CampaignMember.Email"
     label = "Email"
-    _required = false
+    
     createable = false
     updateable = false
     unique = false
@@ -268,7 +268,7 @@ type salesforce.CampaignMember {
   salesforce.Phone Phone {
     apiName = "CampaignMember.Phone"
     label = "Phone"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -276,7 +276,7 @@ type salesforce.CampaignMember {
   salesforce.Phone Fax {
     apiName = "CampaignMember.Fax"
     label = "Fax"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -284,7 +284,7 @@ type salesforce.CampaignMember {
   salesforce.Phone MobilePhone {
     apiName = "CampaignMember.MobilePhone"
     label = "Mobile"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -292,7 +292,7 @@ type salesforce.CampaignMember {
   salesforce.LongTextArea Description {
     apiName = "CampaignMember.Description"
     label = "Description"
-    _required = false
+    
     createable = false
     updateable = false
     length = 32000
@@ -325,7 +325,7 @@ type salesforce.CampaignMember {
   salesforce.Picklist LeadSource {
     apiName = "CampaignMember.LeadSource"
     label = "Lead Source"
-    _required = false
+    
     restricted = false
     createable = false
     updateable = false
@@ -335,7 +335,7 @@ type salesforce.CampaignMember {
   salesforce.Text CompanyOrAccount {
     apiName = "CampaignMember.CompanyOrAccount"
     label = "Company (Account)"
-    _required = false
+    
     createable = false
     updateable = false
     unique = false
@@ -346,7 +346,7 @@ type salesforce.CampaignMember {
   salesforce.Text Type {
     apiName = "CampaignMember.Type"
     label = "Type"
-    _required = false
+    
     createable = false
     updateable = false
     unique = false
@@ -357,8 +357,8 @@ type salesforce.CampaignMember {
   salesforce.Lookup LeadOrContactId {
     apiName = "CampaignMember.LeadOrContactId"
     label = "Related Record ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Account,
       salesforce.Contact,
@@ -371,8 +371,8 @@ type salesforce.CampaignMember {
   salesforce.Lookup LeadOrContactOwnerId {
     apiName = "CampaignMember.LeadOrContactOwnerId"
     label = "Related Record Owner ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Group,
       salesforce.User,

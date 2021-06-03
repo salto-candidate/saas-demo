@@ -14,19 +14,19 @@ type salesforce.RelatedListItem {
     }
   }
   "List<string>" customButtons {
-    _required = false
+    
   }
   "List<string>" excludeButtons {
-    _required = false
+    
   }
   "List<string>" fields {
-    _required = false
+    
   }
   string relatedList {
-    _required = false
+    
   }
   string sortField {
-    _required = false
+    
   }
   metadataType = "RelatedListItem"
 }

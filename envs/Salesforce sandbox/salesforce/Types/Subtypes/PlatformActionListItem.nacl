@@ -14,10 +14,10 @@ type salesforce.PlatformActionListItem {
     }
   }
   string actionName {
-    _required = false
+    
   }
   string actionType {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -31,10 +31,10 @@ type salesforce.PlatformActionListItem {
     }
   }
   number sortOrder {
-    _required = false
+    
   }
   string subtype {
-    _required = false
+    
   }
   metadataType = "PlatformActionListItem"
 }

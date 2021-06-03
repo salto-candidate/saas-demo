@@ -14,46 +14,46 @@ settings salesforce.EmailIntegrationSettings {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true
   }
   boolean doesEmailLogAsEmailMessageInOutlook {
-    _required = false
+    
   }
   boolean doesGmailStayConnectedToSalesforce {
-    _required = false
+    
   }
   boolean enableContactAndEventSync {
-    _required = false
+    
   }
   boolean enableEmailTrackingInMobile {
-    _required = false
+    
   }
   boolean enableEngageForOutlook {
-    _required = false
+    
   }
   boolean enableGmailIntegration {
-    _required = false
+    
   }
   boolean enableOutlookIntegration {
-    _required = false
+    
   }
   boolean enableProductivityFeatures {
-    _required = false
+    
   }
   boolean enableSupplementalContactInfoInMobile {
-    _required = false
+    
   }
   boolean isLayoutCustomizationAllowed {
-    _required = false
+    
   }
   boolean shouldUseTrustedDomainsList {
-    _required = false
+    
   }
   metadataType = "EmailIntegrationSettings"
   suffix = "settings"

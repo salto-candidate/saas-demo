@@ -14,25 +14,25 @@ type salesforce.DataCategoryGroup {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   boolean active {
-    _required = false
+    
   }
   salesforce.DataCategory dataCategory {
-    _required = false
+    
   }
   string description {
-    _required = false
+    
   }
   string label {
-    _required = false
+    
   }
   salesforce.ObjectUsage objectUsage {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true

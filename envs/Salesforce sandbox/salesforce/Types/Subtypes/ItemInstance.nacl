@@ -14,10 +14,10 @@ type salesforce.ItemInstance {
     }
   }
   salesforce.ComponentInstance componentInstance {
-    _required = false
+    
   }
   salesforce.FieldInstance fieldInstance {
-    _required = false
+    
   }
   metadataType = "ItemInstance"
 }

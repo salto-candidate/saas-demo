@@ -2,7 +2,7 @@ type salesforce.Campaign {
   salesforce.FormulaNumber Multiline_formula_33__c {
     apiName = "Campaign.Multiline_formula_33__c"
     label = "Multiline formula 33"
-    _required = false
+    
     precision = 18
     scale = 2
     formula = '''

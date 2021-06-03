@@ -14,10 +14,10 @@ type salesforce.CustomMetadataValue {
     }
   }
   string field {
-    _required = false
+    
   }
   string value {
-    _required = false
+    
   }
   metadataType = "CustomMetadataValue"
 }

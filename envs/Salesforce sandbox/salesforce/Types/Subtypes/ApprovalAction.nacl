@@ -14,7 +14,7 @@ type salesforce.ApprovalAction {
     }
   }
   "List<salesforce.WorkflowActionReference>" action {
-    _required = false
+    
   }
   metadataType = "ApprovalAction"
 }

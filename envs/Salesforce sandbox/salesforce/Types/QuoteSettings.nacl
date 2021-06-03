@@ -14,19 +14,19 @@ settings salesforce.QuoteSettings {
     }
   }
   boolean enableQuote {
-    _required = false
+    
   }
   serviceid fullName {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true
   }
   boolean enableQuotesWithoutOppEnabled {
-    _required = false
+    
   }
   metadataType = "QuoteSettings"
   suffix = "settings"

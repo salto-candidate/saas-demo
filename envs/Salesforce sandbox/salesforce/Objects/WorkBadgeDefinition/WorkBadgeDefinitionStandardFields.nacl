@@ -2,7 +2,7 @@ type salesforce.WorkBadgeDefinition {
   serviceid Id {
     apiName = "WorkBadgeDefinition.Id"
     label = "Badge ID"
-    _required = false
+    
     queryable = true
     
     updateable = false
@@ -12,8 +12,8 @@ type salesforce.WorkBadgeDefinition {
   salesforce.Lookup OwnerId {
     apiName = "WorkBadgeDefinition.OwnerId"
     label = "Owner ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Group,
       salesforce.User,
@@ -24,6 +24,8 @@ type salesforce.WorkBadgeDefinition {
     
     relationshipName = "Owner"
     _hidden_value = true
+    trackFeedHistory = false
+    trackHistory = "false"
   }
   salesforce.Checkbox IsDeleted {
     apiName = "WorkBadgeDefinition.IsDeleted"
@@ -33,7 +35,7 @@ type salesforce.WorkBadgeDefinition {
     updateable = false
     queryable = true
     
-    _required = false
+    
     _hidden_value = true
   }
   salesforce.Text Name {
@@ -50,7 +52,7 @@ type salesforce.WorkBadgeDefinition {
   salesforce.DateTime CreatedDate {
     apiName = "WorkBadgeDefinition.CreatedDate"
     label = "Created Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -60,8 +62,8 @@ type salesforce.WorkBadgeDefinition {
   salesforce.Lookup CreatedById {
     apiName = "WorkBadgeDefinition.CreatedById"
     label = "Created By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -75,7 +77,7 @@ type salesforce.WorkBadgeDefinition {
   salesforce.DateTime LastModifiedDate {
     apiName = "WorkBadgeDefinition.LastModifiedDate"
     label = "Last Modified Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -85,8 +87,8 @@ type salesforce.WorkBadgeDefinition {
   salesforce.Lookup LastModifiedById {
     apiName = "WorkBadgeDefinition.LastModifiedById"
     label = "Last Modified By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -100,7 +102,7 @@ type salesforce.WorkBadgeDefinition {
   salesforce.DateTime SystemModstamp {
     apiName = "WorkBadgeDefinition.SystemModstamp"
     label = "System Modstamp"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -143,7 +145,7 @@ type salesforce.WorkBadgeDefinition {
   salesforce.Number LimitNumber {
     apiName = "WorkBadgeDefinition.LimitNumber"
     label = "Limit Number"
-    _required = false
+    
     precision = 9
     createable = true
     updateable = true
@@ -162,7 +164,7 @@ type salesforce.WorkBadgeDefinition {
   salesforce.Date LimitStartDate {
     apiName = "WorkBadgeDefinition.LimitStartDate"
     label = "Limit Start Date"
-    _required = false
+    
     createable = true
     updateable = true
     queryable = true
@@ -170,7 +172,7 @@ type salesforce.WorkBadgeDefinition {
   salesforce.Number GivenBadgeCount {
     apiName = "WorkBadgeDefinition.GivenBadgeCount"
     label = "Given Badge Count"
-    _required = false
+    
     precision = 9
     createable = false
     updateable = false

@@ -14,19 +14,19 @@ type salesforce.QueueMembers {
     }
   }
   salesforce.PublicGroups publicGroups {
-    _required = false
+    
   }
   salesforce.RoleAndSubordinates roleAndSubordinates {
-    _required = false
+    
   }
   salesforce.RoleAndSubordinatesInternal roleAndSubordinatesInternal {
-    _required = false
+    
   }
   salesforce.Roles roles {
-    _required = false
+    
   }
   salesforce.Users users {
-    _required = false
+    
   }
   metadataType = "QueueMembers"
 }

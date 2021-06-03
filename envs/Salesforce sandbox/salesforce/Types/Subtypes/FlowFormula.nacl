@@ -14,19 +14,19 @@ type salesforce.FlowFormula {
     }
   }
   string description {
-    _required = false
+    
   }
   string expression {
-    _required = false
+    
   }
   string name {
-    _required = false
+    
   }
   salesforce.FlowMetadataValue processMetadataValues {
-    _required = false
+    
   }
   number scale {
-    _required = false
+    
   }
   string dataType {
     _restriction = {
@@ -40,7 +40,7 @@ type salesforce.FlowFormula {
       ]
       enforce_value = false
     }
-    _required = false
+    
   }
   metadataType = "FlowFormula"
 }

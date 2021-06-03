@@ -14,7 +14,7 @@ type salesforce.CustomPageWebLink {
     }
   }
   string availability {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -24,10 +24,10 @@ type salesforce.CustomPageWebLink {
     }
   }
   string description {
-    _required = false
+    
   }
   string encodingKey {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -45,25 +45,25 @@ type salesforce.CustomPageWebLink {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   boolean hasMenubar {
-    _required = false
+    
   }
   boolean hasScrollbars {
-    _required = false
+    
   }
   boolean hasToolbar {
-    _required = false
+    
   }
   number height {
-    _required = false
+    
   }
   boolean isResizable {
-    _required = false
+    
   }
   string linkType {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -76,10 +76,10 @@ type salesforce.CustomPageWebLink {
     }
   }
   string masterLabel {
-    _required = false
+    
   }
   string openType {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -92,10 +92,10 @@ type salesforce.CustomPageWebLink {
     }
   }
   string page {
-    _required = false
+    
   }
   string position {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -106,13 +106,13 @@ type salesforce.CustomPageWebLink {
     }
   }
   boolean protected {
-    _required = false
+    
   }
   boolean requireRowSelection {
-    _required = false
+    
   }
   string scontrol {
-    _required = false
+    
     foreignKeyDomain = [
       salesforce.ApexPage,
       "FlowDefinition",
@@ -120,19 +120,19 @@ type salesforce.CustomPageWebLink {
     ]
   }
   boolean showsLocation {
-    _required = false
+    
   }
   boolean showsStatus {
-    _required = false
+    
   }
   string url {
-    _required = false
+    
   }
   number width {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true

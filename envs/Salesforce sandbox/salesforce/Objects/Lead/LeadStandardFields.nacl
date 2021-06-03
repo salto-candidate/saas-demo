@@ -2,7 +2,7 @@ type salesforce.Lead {
   serviceid Id {
     apiName = "Lead.Id"
     label = "Lead ID"
-    _required = false
+    
     queryable = true
     
     updateable = false
@@ -17,14 +17,14 @@ type salesforce.Lead {
     updateable = false
     queryable = true
     
-    _required = false
+    
     _hidden_value = true
   }
   salesforce.Lookup MasterRecordId {
     apiName = "Lead.MasterRecordId"
     label = "Master Record ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Lead,
     ]
@@ -44,7 +44,7 @@ type salesforce.Lead {
   salesforce.Text Title {
     apiName = "Lead.Title"
     label = "Title"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -66,7 +66,7 @@ type salesforce.Lead {
   salesforce.Address Address {
     apiName = "Lead.Address"
     label = "Address"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -74,7 +74,7 @@ type salesforce.Lead {
   salesforce.Phone Phone {
     apiName = "Lead.Phone"
     label = "Phone"
-    _required = false
+    
     createable = true
     updateable = true
     queryable = true
@@ -82,7 +82,7 @@ type salesforce.Lead {
   salesforce.Phone MobilePhone {
     apiName = "Lead.MobilePhone"
     label = "Mobile Phone"
-    _required = false
+    
     createable = true
     updateable = true
     queryable = true
@@ -90,7 +90,7 @@ type salesforce.Lead {
   salesforce.Email Email {
     apiName = "Lead.Email"
     label = "Email"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -99,7 +99,7 @@ type salesforce.Lead {
   salesforce.Url Website {
     apiName = "Lead.Website"
     label = "Website"
-    _required = false
+    
     createable = true
     updateable = true
     queryable = true
@@ -107,7 +107,7 @@ type salesforce.Lead {
   salesforce.Url PhotoUrl {
     apiName = "Lead.PhotoUrl"
     label = "Photo URL"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -115,7 +115,7 @@ type salesforce.Lead {
   salesforce.LongTextArea Description {
     apiName = "Lead.Description"
     label = "Description"
-    _required = false
+    
     createable = true
     updateable = true
     length = 32000
@@ -124,12 +124,13 @@ type salesforce.Lead {
   salesforce.Picklist LeadSource {
     apiName = "Lead.LeadSource"
     label = "Lead Source"
-    _required = false
+    
     restricted = false
     createable = true
     updateable = true
     queryable = true
     valueSetName = salesforce.StandardValueSet.instance.LeadSource
+    trackFeedHistory = false
   }
   salesforce.Picklist Status {
     apiName = "Lead.Status"
@@ -140,31 +141,34 @@ type salesforce.Lead {
     updateable = true
     queryable = true
     valueSetName = salesforce.StandardValueSet.instance.LeadStatus
+    trackFeedHistory = true
   }
   salesforce.Picklist Industry {
     apiName = "Lead.Industry"
     label = "Industry"
-    _required = false
+    
     restricted = false
     createable = true
     updateable = true
     queryable = true
     valueSetName = salesforce.StandardValueSet.instance.Industry
+    trackFeedHistory = false
   }
   salesforce.Picklist Rating {
     apiName = "Lead.Rating"
     label = "Rating"
-    _required = false
+    
     restricted = false
     createable = true
     updateable = true
     queryable = true
     valueSetName = salesforce.StandardValueSet.instance.AccountRating
+    trackFeedHistory = false
   }
   salesforce.Number NumberOfEmployees {
     apiName = "Lead.NumberOfEmployees"
     label = "Employees"
-    _required = false
+    
     precision = 8
     createable = true
     updateable = true
@@ -175,8 +179,8 @@ type salesforce.Lead {
   salesforce.Lookup OwnerId {
     apiName = "Lead.OwnerId"
     label = "Owner ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Group,
       salesforce.User,
@@ -187,6 +191,7 @@ type salesforce.Lead {
     
     relationshipName = "Owner"
     _hidden_value = true
+    trackFeedHistory = true
   }
   salesforce.Checkbox IsConverted {
     apiName = "Lead.IsConverted"
@@ -199,7 +204,7 @@ type salesforce.Lead {
   salesforce.Date ConvertedDate {
     apiName = "Lead.ConvertedDate"
     label = "Converted Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -207,8 +212,8 @@ type salesforce.Lead {
   salesforce.Lookup ConvertedAccountId {
     apiName = "Lead.ConvertedAccountId"
     label = "Converted Account ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Account,
     ]
@@ -220,8 +225,8 @@ type salesforce.Lead {
   salesforce.Lookup ConvertedContactId {
     apiName = "Lead.ConvertedContactId"
     label = "Converted Contact ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Contact,
     ]
@@ -233,8 +238,8 @@ type salesforce.Lead {
   salesforce.Lookup ConvertedOpportunityId {
     apiName = "Lead.ConvertedOpportunityId"
     label = "Converted Opportunity ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Opportunity,
     ]
@@ -254,7 +259,7 @@ type salesforce.Lead {
   salesforce.DateTime CreatedDate {
     apiName = "Lead.CreatedDate"
     label = "Created Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -264,8 +269,8 @@ type salesforce.Lead {
   salesforce.Lookup CreatedById {
     apiName = "Lead.CreatedById"
     label = "Created By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -279,7 +284,7 @@ type salesforce.Lead {
   salesforce.DateTime LastModifiedDate {
     apiName = "Lead.LastModifiedDate"
     label = "Last Modified Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -289,8 +294,8 @@ type salesforce.Lead {
   salesforce.Lookup LastModifiedById {
     apiName = "Lead.LastModifiedById"
     label = "Last Modified By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -304,7 +309,7 @@ type salesforce.Lead {
   salesforce.DateTime SystemModstamp {
     apiName = "Lead.SystemModstamp"
     label = "System Modstamp"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -314,7 +319,7 @@ type salesforce.Lead {
   salesforce.Date LastActivityDate {
     apiName = "Lead.LastActivityDate"
     label = "Last Activity"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -324,7 +329,7 @@ type salesforce.Lead {
   salesforce.Text Jigsaw {
     apiName = "Lead.Jigsaw"
     label = "Data.com Key"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -335,7 +340,7 @@ type salesforce.Lead {
   salesforce.Text JigsawContactId {
     apiName = "Lead.JigsawContactId"
     label = "Jigsaw Contact ID"
-    _required = false
+    
     createable = false
     updateable = false
     unique = false
@@ -346,7 +351,7 @@ type salesforce.Lead {
   salesforce.Text EmailBouncedReason {
     apiName = "Lead.EmailBouncedReason"
     label = "Email Bounced Reason"
-    _required = false
+    
     createable = false
     updateable = true
     unique = false
@@ -357,7 +362,7 @@ type salesforce.Lead {
   salesforce.DateTime EmailBouncedDate {
     apiName = "Lead.EmailBouncedDate"
     label = "Email Bounced Date"
-    _required = false
+    
     createable = false
     updateable = true
     queryable = true
@@ -365,8 +370,8 @@ type salesforce.Lead {
   salesforce.Lookup IndividualId {
     apiName = "Lead.IndividualId"
     label = "Individual ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Individual,
     ]
@@ -374,12 +379,14 @@ type salesforce.Lead {
     updateable = true
     queryable = true
     relationshipName = "Individual"
+    trackFeedHistory = false
   }
   salesforce.Unknown AnnualRevenue {
     apiName = "Lead.AnnualRevenue"
     queryable = false
     updateable = false
     createable = false
+    trackFeedHistory = false
   }
   salesforce.Lookup CampaignId {
     apiName = "Lead.CampaignId"
@@ -392,24 +399,28 @@ type salesforce.Lead {
     queryable = false
     updateable = false
     createable = false
+    trackFeedHistory = false
   }
   salesforce.Unknown Fax {
     apiName = "Lead.Fax"
     queryable = false
     updateable = false
     createable = false
+    trackFeedHistory = false
   }
   salesforce.Unknown HasOptedOutOfEmail {
     apiName = "Lead.HasOptedOutOfEmail"
     queryable = false
     updateable = false
     createable = false
+    trackFeedHistory = false
   }
   salesforce.Unknown HasOptedOutOfFax {
     apiName = "Lead.HasOptedOutOfFax"
     queryable = false
     updateable = false
     createable = false
+    trackFeedHistory = false
   }
   salesforce.Unknown LastTransferDate {
     apiName = "Lead.LastTransferDate"

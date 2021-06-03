@@ -14,13 +14,13 @@ type salesforce.CustomLabels {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   "List<salesforce.CustomLabel>" labels {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true

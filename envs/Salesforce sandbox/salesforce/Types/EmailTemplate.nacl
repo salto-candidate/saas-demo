@@ -14,40 +14,40 @@ type salesforce.EmailTemplate {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   string content {
-    _required = false
+    
   }
   number apiVersion {
-    _required = false
+    
   }
   string attachedDocuments {
-    _required = false
+    
   }
   salesforce.Attachment attachments {
-    _required = false
+    
   }
   boolean available {
-    _required = false
+    
   }
   string description {
-    _required = false
+    
   }
   string encodingKey {
-    _required = false
+    
   }
   string letterhead {
-    _required = false
+    
   }
   string name {
-    _required = false
+    
   }
   salesforce.PackageVersion packageVersions {
-    _required = false
+    
   }
   string relatedEntityType {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -474,7 +474,7 @@ type salesforce.EmailTemplate {
     ]
   }
   string style {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -489,13 +489,13 @@ type salesforce.EmailTemplate {
     }
   }
   string subject {
-    _required = false
+    
   }
   string textOnly {
-    _required = false
+    
   }
   string type {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -507,7 +507,7 @@ type salesforce.EmailTemplate {
     }
   }
   string uiType {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -518,7 +518,7 @@ type salesforce.EmailTemplate {
     }
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true

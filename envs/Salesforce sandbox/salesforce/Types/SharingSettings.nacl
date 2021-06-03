@@ -14,62 +14,62 @@ settings salesforce.SharingSettings {
     }
   }
   boolean enableRemoveTMGroupMembership {
-    _required = false
+    
   }
   boolean enableSecureGuestAccess {
-    _required = false
+    
   }
   serviceid fullName {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true
   }
   boolean enableAccountRoleOptimization {
-    _required = false
+    
   }
   boolean enableAssetSharing {
-    _required = false
+    
   }
   boolean enableCommunityUserVisibility {
-    _required = false
+    
   }
   boolean enableExternalSharingModel {
-    _required = false
+    
   }
   boolean enableManagerGroups {
-    _required = false
+    
   }
   boolean enableManualUserRecordSharing {
-    _required = false
+    
   }
   boolean enablePartnerSuperUserAccess {
-    _required = false
+    
   }
   boolean enablePortalUserCaseSharing {
-    _required = false
+    
   }
   boolean enablePortalUserVisibility {
-    _required = false
+    
   }
   boolean enableRestrictAccessLookupRecords {
-    _required = false
+    
   }
   boolean enableStandardReportVisibility {
-    _required = false
+    
   }
   boolean enableTerritoryForecastManager {
-    _required = false
+    
   }
   metadataType = "SharingSettings"
   boolean deferGroupMembership {
-    _required = false
+    
   }
   boolean deferSharingRules {
-    _required = false
+    
   }
   suffix = "settings"
   dirName = "settings"

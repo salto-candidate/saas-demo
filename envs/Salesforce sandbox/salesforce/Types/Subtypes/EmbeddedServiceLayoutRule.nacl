@@ -14,7 +14,7 @@ type salesforce.EmbeddedServiceLayoutRule {
     }
   }
   string appointmentStatus {
-    _required = false
+    
   }
   metadataType = "EmbeddedServiceLayoutRule"
 }

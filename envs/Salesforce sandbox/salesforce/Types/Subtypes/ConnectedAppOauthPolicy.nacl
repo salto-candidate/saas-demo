@@ -14,13 +14,13 @@ type salesforce.ConnectedAppOauthPolicy {
     }
   }
   string ipRelaxation {
-    _required = false
+    
   }
   string refreshTokenPolicy {
-    _required = false
+    
   }
   string singleLogoutUrl {
-    _required = false
+    
   }
   metadataType = "ConnectedAppOauthPolicy"
 }

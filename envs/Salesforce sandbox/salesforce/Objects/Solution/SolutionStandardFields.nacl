@@ -2,7 +2,7 @@ type salesforce.Solution {
   serviceid Id {
     apiName = "Solution.Id"
     label = "Solution ID"
-    _required = false
+    
     queryable = true
     
     updateable = false
@@ -17,13 +17,13 @@ type salesforce.Solution {
     updateable = false
     queryable = true
     
-    _required = false
+    
     _hidden_value = true
   }
   salesforce.AutoNumber SolutionNumber {
     apiName = "Solution.SolutionNumber"
     label = "Solution Number"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -66,6 +66,7 @@ type salesforce.Solution {
     updateable = true
     queryable = true
     valueSetName = salesforce.StandardValueSet.instance.SolutionStatus
+    trackHistory = "true"
   }
   salesforce.Checkbox IsReviewed {
     apiName = "Solution.IsReviewed"
@@ -78,7 +79,7 @@ type salesforce.Solution {
   salesforce.Html SolutionNote {
     apiName = "Solution.SolutionNote"
     label = "Description"
-    _required = false
+    
     createable = true
     updateable = true
     length = 32000
@@ -87,8 +88,8 @@ type salesforce.Solution {
   salesforce.Lookup OwnerId {
     apiName = "Solution.OwnerId"
     label = "Owner ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -102,7 +103,7 @@ type salesforce.Solution {
   salesforce.DateTime CreatedDate {
     apiName = "Solution.CreatedDate"
     label = "Created Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -112,8 +113,8 @@ type salesforce.Solution {
   salesforce.Lookup CreatedById {
     apiName = "Solution.CreatedById"
     label = "Created By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -127,7 +128,7 @@ type salesforce.Solution {
   salesforce.DateTime LastModifiedDate {
     apiName = "Solution.LastModifiedDate"
     label = "Last Modified Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -137,8 +138,8 @@ type salesforce.Solution {
   salesforce.Lookup LastModifiedById {
     apiName = "Solution.LastModifiedById"
     label = "Last Modified By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -152,7 +153,7 @@ type salesforce.Solution {
   salesforce.DateTime SystemModstamp {
     apiName = "Solution.SystemModstamp"
     label = "System Modstamp"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true

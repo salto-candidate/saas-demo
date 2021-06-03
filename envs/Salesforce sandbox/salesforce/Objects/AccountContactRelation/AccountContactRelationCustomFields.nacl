@@ -2,7 +2,7 @@ type salesforce.AccountContactRelation {
   salesforce.Picklist Relationship_Strength__c {
     apiName = "AccountContactRelation.Relationship_Strength__c"
     label = "Relationship Strength"
-    _required = false
+    
     valueSet = [
       {
         fullName = "Strong"
@@ -25,5 +25,6 @@ type salesforce.AccountContactRelation {
     updateable = true
     queryable = true
     sorted = false
+    externalId = false
   }
 }

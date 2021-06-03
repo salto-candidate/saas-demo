@@ -14,19 +14,19 @@ settings salesforce.RecordPageSettings {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true
   }
   boolean enableActivityRelatedList {
-    _required = false
+    
   }
   boolean enableFullRecordView {
-    _required = false
+    
   }
   metadataType = "RecordPageSettings"
   suffix = "settings"

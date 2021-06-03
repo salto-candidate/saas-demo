@@ -14,22 +14,22 @@ type salesforce.ChannelLayout {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   string enabledChannels {
-    _required = false
+    
   }
   string label {
-    _required = false
+    
   }
   salesforce.ChannelLayoutItem layoutItems {
-    _required = false
+    
   }
   string recordType {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true
@@ -38,9 +38,9 @@ type salesforce.ChannelLayout {
   dirName = "channelLayouts"
   metadataType = "ChannelLayout"
   boolean doesExcludeFieldLabels {
-    _required = false
+    
   }
   boolean doesExcludeFiles {
-    _required = false
+    
   }
 }

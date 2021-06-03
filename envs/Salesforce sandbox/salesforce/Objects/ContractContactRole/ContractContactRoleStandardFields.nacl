@@ -2,7 +2,7 @@ type salesforce.ContractContactRole {
   serviceid Id {
     apiName = "ContractContactRole.Id"
     label = "Contact Role ID"
-    _required = false
+    
     queryable = true
     
     updateable = false
@@ -13,7 +13,7 @@ type salesforce.ContractContactRole {
     apiName = "ContractContactRole.ContractId"
     label = "Contract ID"
     _required = true
-    allowLookupRecordDeletion = true
+    
     referenceTo = [
       salesforce.Contract,
     ]
@@ -26,7 +26,7 @@ type salesforce.ContractContactRole {
     apiName = "ContractContactRole.ContactId"
     label = "Contact ID"
     _required = true
-    allowLookupRecordDeletion = true
+    
     referenceTo = [
       salesforce.Contact,
     ]
@@ -38,7 +38,7 @@ type salesforce.ContractContactRole {
   salesforce.Picklist Role {
     apiName = "ContractContactRole.Role"
     label = "Role"
-    _required = false
+    
     restricted = false
     createable = true
     updateable = true
@@ -56,7 +56,7 @@ type salesforce.ContractContactRole {
   salesforce.DateTime CreatedDate {
     apiName = "ContractContactRole.CreatedDate"
     label = "Created Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -66,8 +66,8 @@ type salesforce.ContractContactRole {
   salesforce.Lookup CreatedById {
     apiName = "ContractContactRole.CreatedById"
     label = "Created By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -81,7 +81,7 @@ type salesforce.ContractContactRole {
   salesforce.DateTime LastModifiedDate {
     apiName = "ContractContactRole.LastModifiedDate"
     label = "Last Modified Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -91,8 +91,8 @@ type salesforce.ContractContactRole {
   salesforce.Lookup LastModifiedById {
     apiName = "ContractContactRole.LastModifiedById"
     label = "Last Modified By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -106,7 +106,7 @@ type salesforce.ContractContactRole {
   salesforce.DateTime SystemModstamp {
     apiName = "ContractContactRole.SystemModstamp"
     label = "System Modstamp"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -121,7 +121,7 @@ type salesforce.ContractContactRole {
     updateable = false
     queryable = true
     
-    _required = false
+    
     _hidden_value = true
   }
 }

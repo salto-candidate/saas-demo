@@ -14,10 +14,10 @@ type salesforce.LightningMessageField {
     }
   }
   string description {
-    _required = false
+    
   }
   string fieldName {
-    _required = false
+    
   }
   metadataType = "LightningMessageField"
 }

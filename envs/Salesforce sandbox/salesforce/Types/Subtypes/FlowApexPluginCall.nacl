@@ -14,44 +14,44 @@ type salesforce.FlowApexPluginCall {
     }
   }
   salesforce.FlowMetadataValue processMetadataValues {
-    _required = false
+    
   }
   string description {
-    _required = false
+    
   }
   string name {
-    _required = false
+    
   }
   string label {
-    _required = false
+    
   }
   number locationX {
-    _required = false
+    
   }
   number locationY {
-    _required = false
+    
   }
   string apexClass {
-    _required = false
+    
     foreignKeyDomain = [
       salesforce.ApexClass,
     ]
   }
   salesforce.FlowConnector connector {
-    _required = false
+    
   }
   salesforce.FlowConnector faultConnector {
-    _required = false
+    
   }
   salesforce.FlowApexPluginCallInputParameter inputParameters {
-    _required = false
+    
   }
   salesforce.FlowApexPluginCallOutputParameter outputParameters {
-    _required = false
+    
   }
   metadataType = "FlowApexPluginCall"
   string elementSubtype {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [

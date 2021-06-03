@@ -4,7 +4,7 @@ type salesforce.CommSubscriptionConsent {
     inlineHelpText = "The communication subscription channel type record associated with the communication subscription consent."
     label = "Communication Subscription Channel Type ID"
     _required = true
-    allowLookupRecordDeletion = true
+    
     referenceTo = [
       salesforce.CommSubscriptionChannelType,
     ]
@@ -12,11 +12,12 @@ type salesforce.CommSubscriptionConsent {
     updateable = true
     relationshipName = "CommSubscriptionChannelType"
     queryable = true
+    trackHistory = "false"
   }
   salesforce.DateTime ConsentCapturedDateTime {
     apiName = "CommSubscriptionConsent.ConsentCapturedDateTime"
     label = "Consent Captured Date Time"
-    _required = false
+    
     inlineHelpText = "Date and time that consent was given."
     createable = true
     updateable = true
@@ -25,7 +26,7 @@ type salesforce.CommSubscriptionConsent {
   salesforce.Text ConsentCapturedSource {
     apiName = "CommSubscriptionConsent.ConsentCapturedSource"
     label = "Consent Captured Source"
-    _required = false
+    
     inlineHelpText = "Source through which consent was captured. For example, user@example.com or www.example.com."
     createable = true
     updateable = true
@@ -38,8 +39,8 @@ type salesforce.CommSubscriptionConsent {
     apiName = "CommSubscriptionConsent.ConsentGiverId"
     inlineHelpText = "The person consenting to the communication subscription."
     label = "Consent Giver ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Account,
       salesforce.Contact,
@@ -50,13 +51,14 @@ type salesforce.CommSubscriptionConsent {
     updateable = true
     relationshipName = "ConsentGiver"
     queryable = true
+    trackHistory = "false"
   }
   salesforce.Lookup ContactPointId {
     apiName = "CommSubscriptionConsent.ContactPointId"
     inlineHelpText = "The contact point record associated with the communication subscription consent."
     label = "Contact Point ID"
     _required = true
-    allowLookupRecordDeletion = true
+    
     referenceTo = [
       salesforce.ContactPointAddress,
       salesforce.ContactPointEmail,
@@ -66,6 +68,7 @@ type salesforce.CommSubscriptionConsent {
     updateable = true
     relationshipName = "ContactPoint"
     queryable = true
+    trackHistory = "false"
   }
   salesforce.Date EffectiveFromDate {
     apiName = "CommSubscriptionConsent.EffectiveFromDate"
@@ -82,6 +85,7 @@ type salesforce.CommSubscriptionConsent {
     queryable = false
     updateable = false
     createable = false
+    trackHistory = "false"
   }
   salesforce.Text Name {
     apiName = "CommSubscriptionConsent.Name"
@@ -97,8 +101,8 @@ type salesforce.CommSubscriptionConsent {
   salesforce.Lookup OwnerId {
     apiName = "CommSubscriptionConsent.OwnerId"
     label = "Owner ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Group,
       salesforce.User,
@@ -108,11 +112,12 @@ type salesforce.CommSubscriptionConsent {
     relationshipName = "Owner"
     queryable = true
     _hidden_value = true
+    trackHistory = "false"
   }
   serviceid Id {
     apiName = "CommSubscriptionConsent.Id"
     label = "Communication Subscription Consent ID"
-    _required = false
+    
     queryable = true
     _hidden_value = true
     updateable = false
@@ -126,12 +131,12 @@ type salesforce.CommSubscriptionConsent {
     updateable = false
     queryable = true
     _hidden_value = true
-    _required = false
+    
   }
   salesforce.DateTime CreatedDate {
     apiName = "CommSubscriptionConsent.CreatedDate"
     label = "Created Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -140,8 +145,8 @@ type salesforce.CommSubscriptionConsent {
   salesforce.Lookup CreatedById {
     apiName = "CommSubscriptionConsent.CreatedById"
     label = "Created By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -154,7 +159,7 @@ type salesforce.CommSubscriptionConsent {
   salesforce.DateTime LastModifiedDate {
     apiName = "CommSubscriptionConsent.LastModifiedDate"
     label = "Last Modified Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -163,8 +168,8 @@ type salesforce.CommSubscriptionConsent {
   salesforce.Lookup LastModifiedById {
     apiName = "CommSubscriptionConsent.LastModifiedById"
     label = "Last Modified By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -177,7 +182,7 @@ type salesforce.CommSubscriptionConsent {
   salesforce.DateTime SystemModstamp {
     apiName = "CommSubscriptionConsent.SystemModstamp"
     label = "System Modstamp"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true

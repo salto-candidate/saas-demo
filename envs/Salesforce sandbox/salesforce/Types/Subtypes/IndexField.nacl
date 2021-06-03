@@ -14,10 +14,10 @@ type salesforce.IndexField {
     }
   }
   string name {
-    _required = false
+    
   }
   string sortDirection {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [

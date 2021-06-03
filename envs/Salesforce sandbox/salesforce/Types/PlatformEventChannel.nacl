@@ -14,10 +14,10 @@ type salesforce.PlatformEventChannel {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   string channelType {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -27,10 +27,10 @@ type salesforce.PlatformEventChannel {
     }
   }
   string label {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true

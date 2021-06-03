@@ -5,6 +5,7 @@ type salesforce.EngagementChannelType {
     queryable = false
     updateable = false
     createable = false
+    trackHistory = "false"
   }
   salesforce.Text Name {
     apiName = "EngagementChannelType.Name"
@@ -20,8 +21,8 @@ type salesforce.EngagementChannelType {
   salesforce.Lookup OwnerId {
     apiName = "EngagementChannelType.OwnerId"
     label = "Owner ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Group,
       salesforce.User,
@@ -31,11 +32,12 @@ type salesforce.EngagementChannelType {
     relationshipName = "Owner"
     queryable = true
     _hidden_value = true
+    trackHistory = "false"
   }
   serviceid Id {
     apiName = "EngagementChannelType.Id"
     label = "Engagement Channel Type ID"
-    _required = false
+    
     queryable = true
     _hidden_value = true
     updateable = false
@@ -49,12 +51,12 @@ type salesforce.EngagementChannelType {
     updateable = false
     queryable = true
     _hidden_value = true
-    _required = false
+    
   }
   salesforce.DateTime CreatedDate {
     apiName = "EngagementChannelType.CreatedDate"
     label = "Created Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -63,8 +65,8 @@ type salesforce.EngagementChannelType {
   salesforce.Lookup CreatedById {
     apiName = "EngagementChannelType.CreatedById"
     label = "Created By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -77,7 +79,7 @@ type salesforce.EngagementChannelType {
   salesforce.DateTime LastModifiedDate {
     apiName = "EngagementChannelType.LastModifiedDate"
     label = "Last Modified Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -86,8 +88,8 @@ type salesforce.EngagementChannelType {
   salesforce.Lookup LastModifiedById {
     apiName = "EngagementChannelType.LastModifiedById"
     label = "Last Modified By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -100,7 +102,7 @@ type salesforce.EngagementChannelType {
   salesforce.DateTime SystemModstamp {
     apiName = "EngagementChannelType.SystemModstamp"
     label = "System Modstamp"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true

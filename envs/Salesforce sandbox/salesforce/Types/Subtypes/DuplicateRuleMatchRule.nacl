@@ -14,13 +14,13 @@ type salesforce.DuplicateRuleMatchRule {
     }
   }
   string matchRuleSObjectType {
-    _required = false
+    
   }
   string matchingRule {
-    _required = false
+    
   }
   "List<salesforce.ObjectMapping>" objectMapping {
-    _required = false
+    
     foreignKeyDomain = [
       salesforce.ObjectMapping,
     ]

@@ -2,7 +2,7 @@ type salesforce.SocialPersona {
   serviceid Id {
     apiName = "SocialPersona.Id"
     label = "Social Persona ID"
-    _required = false
+    
     queryable = true
     
     updateable = false
@@ -17,7 +17,7 @@ type salesforce.SocialPersona {
     updateable = false
     queryable = true
     
-    _required = false
+    
     _hidden_value = true
   }
   salesforce.Text Name {
@@ -34,7 +34,7 @@ type salesforce.SocialPersona {
   salesforce.DateTime CreatedDate {
     apiName = "SocialPersona.CreatedDate"
     label = "Created Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -44,8 +44,8 @@ type salesforce.SocialPersona {
   salesforce.Lookup CreatedById {
     apiName = "SocialPersona.CreatedById"
     label = "Created By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -59,7 +59,7 @@ type salesforce.SocialPersona {
   salesforce.DateTime LastModifiedDate {
     apiName = "SocialPersona.LastModifiedDate"
     label = "Last Modified Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -69,8 +69,8 @@ type salesforce.SocialPersona {
   salesforce.Lookup LastModifiedById {
     apiName = "SocialPersona.LastModifiedById"
     label = "Last Modified By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -84,7 +84,7 @@ type salesforce.SocialPersona {
   salesforce.DateTime SystemModstamp {
     apiName = "SocialPersona.SystemModstamp"
     label = "System Modstamp"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -95,7 +95,7 @@ type salesforce.SocialPersona {
     apiName = "SocialPersona.ParentId"
     label = "Parent ID"
     _required = true
-    allowLookupRecordDeletion = true
+    
     referenceTo = [
       salesforce.Account,
       salesforce.Contact,
@@ -283,7 +283,7 @@ type salesforce.SocialPersona {
   salesforce.Text ExternalId {
     apiName = "SocialPersona.ExternalId"
     label = "Social Persona Provider External Id"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -302,7 +302,7 @@ type salesforce.SocialPersona {
   salesforce.Url ExternalPictureURL {
     apiName = "SocialPersona.ExternalPictureURL"
     label = "Provider External Picture URL"
-    _required = false
+    
     createable = true
     updateable = true
     queryable = true
@@ -310,7 +310,7 @@ type salesforce.SocialPersona {
   salesforce.Url ProfileUrl {
     apiName = "SocialPersona.ProfileUrl"
     label = "Profile URL"
-    _required = false
+    
     createable = true
     updateable = true
     queryable = true
@@ -318,7 +318,7 @@ type salesforce.SocialPersona {
   salesforce.Text TopicType {
     apiName = "SocialPersona.TopicType"
     label = "Topic Type"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -337,7 +337,7 @@ type salesforce.SocialPersona {
   salesforce.Text RealName {
     apiName = "SocialPersona.RealName"
     label = "Real Name"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -364,7 +364,7 @@ type salesforce.SocialPersona {
   salesforce.Text MediaType {
     apiName = "SocialPersona.MediaType"
     label = "Social Studio Media Type"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -375,7 +375,7 @@ type salesforce.SocialPersona {
   salesforce.LongTextArea Bio {
     apiName = "SocialPersona.Bio"
     label = "Bio"
-    _required = false
+    
     createable = true
     updateable = true
     length = 32000
@@ -384,7 +384,7 @@ type salesforce.SocialPersona {
   salesforce.Number Followers {
     apiName = "SocialPersona.Followers"
     label = "Followers"
-    _required = false
+    
     precision = 9
     createable = true
     updateable = true
@@ -395,7 +395,7 @@ type salesforce.SocialPersona {
   salesforce.Number Following {
     apiName = "SocialPersona.Following"
     label = "Following"
-    _required = false
+    
     precision = 9
     createable = true
     updateable = true
@@ -406,7 +406,7 @@ type salesforce.SocialPersona {
   salesforce.Number NumberOfFriends {
     apiName = "SocialPersona.NumberOfFriends"
     label = "Number Of Friends"
-    _required = false
+    
     precision = 9
     createable = true
     updateable = true
@@ -417,7 +417,7 @@ type salesforce.SocialPersona {
   salesforce.Number ListedCount {
     apiName = "SocialPersona.ListedCount"
     label = "Listed Count"
-    _required = false
+    
     precision = 9
     createable = true
     updateable = true
@@ -428,7 +428,7 @@ type salesforce.SocialPersona {
   salesforce.Text MediaProvider {
     apiName = "SocialPersona.MediaProvider"
     label = "Social Studio Media Provider"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -439,7 +439,7 @@ type salesforce.SocialPersona {
   salesforce.Picklist ProfileType {
     apiName = "SocialPersona.ProfileType"
     label = "Profile Type"
-    _required = false
+    
     valueSet = [
       {
         fullName = "PERSON"
@@ -462,7 +462,7 @@ type salesforce.SocialPersona {
   salesforce.Text R6SourceId {
     apiName = "SocialPersona.R6SourceId"
     label = "Social Studio Source Id"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -473,7 +473,7 @@ type salesforce.SocialPersona {
   salesforce.Number NumberOfTweets {
     apiName = "SocialPersona.NumberOfTweets"
     label = "Number Of Tweets"
-    _required = false
+    
     precision = 9
     createable = true
     updateable = true
@@ -484,7 +484,7 @@ type salesforce.SocialPersona {
   salesforce.Text SourceApp {
     apiName = "SocialPersona.SourceApp"
     label = "Source App"
-    _required = false
+    
     createable = true
     updateable = false
     unique = false
@@ -495,7 +495,7 @@ type salesforce.SocialPersona {
   salesforce.Text AuthorLabels {
     apiName = "SocialPersona.AuthorLabels"
     label = "Author Labels"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -514,7 +514,7 @@ type salesforce.SocialPersona {
   salesforce.Number InfluencerScore {
     apiName = "SocialPersona.InfluencerScore"
     label = "Influencer Score"
-    _required = false
+    
     precision = 9
     createable = true
     updateable = true
@@ -525,7 +525,7 @@ type salesforce.SocialPersona {
   salesforce.Text AvatarUrl {
     apiName = "SocialPersona.AvatarUrl"
     label = "Avatar URL"
-    _required = false
+    
     createable = false
     updateable = false
     unique = false

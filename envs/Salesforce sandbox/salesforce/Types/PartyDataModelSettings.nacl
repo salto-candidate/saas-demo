@@ -14,22 +14,22 @@ settings salesforce.PartyDataModelSettings {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true
   }
   boolean enableAutoSelectIndividualOnMerge {
-    _required = false
+    
   }
   boolean enableConsentManagementEnabled {
-    _required = false
+    
   }
   boolean enableIndividualAutoCreate {
-    _required = false
+    
   }
   metadataType = "PartyDataModelSettings"
   suffix = "settings"

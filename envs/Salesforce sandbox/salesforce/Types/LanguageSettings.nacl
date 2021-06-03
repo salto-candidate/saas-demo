@@ -14,34 +14,34 @@ settings salesforce.LanguageSettings {
     }
   }
   boolean enableEndUserLanguages {
-    _required = false
+    
   }
   boolean enablePlatformLanguages {
-    _required = false
+    
   }
   serviceid fullName {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true
   }
   boolean enableCanadaIcuFormat {
-    _required = false
+    
   }
   boolean enableICULocaleDateFormat {
-    _required = false
+    
   }
   boolean enableLocalNamesForStdObjects {
-    _required = false
+    
   }
   boolean enableTranslationWorkbench {
-    _required = false
+    
   }
   boolean useLanguageFallback {
-    _required = false
+    
   }
   metadataType = "LanguageSettings"
   suffix = "settings"

@@ -14,22 +14,22 @@ settings salesforce.EncryptionKeySettings {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true
   }
   boolean enableCacheOnlyKeys {
-    _required = false
+    
   }
   boolean canOptOutOfDerivationWithBYOK {
-    _required = false
+    
   }
   boolean enableReplayDetection {
-    _required = false
+    
   }
   metadataType = "EncryptionKeySettings"
   suffix = "settings"

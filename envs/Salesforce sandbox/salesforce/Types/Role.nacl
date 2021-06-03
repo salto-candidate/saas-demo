@@ -14,34 +14,34 @@ type salesforce.Role {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   string caseAccessLevel {
-    _required = false
+    
   }
   string contactAccessLevel {
-    _required = false
+    
   }
   string description {
-    _required = false
+    
   }
   boolean mayForecastManagerShare {
-    _required = false
+    
   }
   string name {
-    _required = false
+    
   }
   string opportunityAccessLevel {
-    _required = false
+    
   }
   string parentRole {
-    _required = false
+    
     foreignKeyDomain = [
       salesforce.Role,
     ]
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true

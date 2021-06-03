@@ -14,10 +14,10 @@ type salesforce.NextAutomatedApprover {
     }
   }
   boolean useApproverFieldOfRecordOwner {
-    _required = false
+    
   }
   string userHierarchyField {
-    _required = false
+    
   }
   metadataType = "NextAutomatedApprover"
 }

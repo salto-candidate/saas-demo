@@ -14,19 +14,19 @@ type salesforce.ConnectedAppOauthIdToken {
     }
   }
   string idTokenAudience {
-    _required = false
+    
   }
   boolean idTokenIncludeAttributes {
-    _required = false
+    
   }
   boolean idTokenIncludeCustomPerms {
-    _required = false
+    
   }
   boolean idTokenIncludeStandardClaims {
-    _required = false
+    
   }
   number idTokenValidity {
-    _required = false
+    
   }
   metadataType = "ConnectedAppOauthIdToken"
 }

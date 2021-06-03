@@ -14,10 +14,10 @@ type salesforce.DuplicateRule {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   string actionOnInsert {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -27,7 +27,7 @@ type salesforce.DuplicateRule {
     }
   }
   string actionOnUpdate {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -37,25 +37,25 @@ type salesforce.DuplicateRule {
     }
   }
   string alertText {
-    _required = false
+    
   }
   string description {
-    _required = false
+    
   }
   salesforce.DuplicateRuleFilter duplicateRuleFilter {
-    _required = false
+    
   }
   "List<salesforce.DuplicateRuleMatchRule>" duplicateRuleMatchRules {
-    _required = false
+    
   }
   boolean isActive {
-    _required = false
+    
   }
   string masterLabel {
-    _required = false
+    
   }
   string securityOption {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -65,10 +65,10 @@ type salesforce.DuplicateRule {
     }
   }
   number sortOrder {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true

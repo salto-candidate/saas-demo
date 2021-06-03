@@ -14,10 +14,10 @@ type salesforce.ValueTranslation {
     }
   }
   string masterLabel {
-    _required = false
+    
   }
   string translation {
-    _required = false
+    
   }
   metadataType = "ValueTranslation"
 }

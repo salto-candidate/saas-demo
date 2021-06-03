@@ -14,28 +14,28 @@ settings salesforce.CurrencySettings {
     }
   }
   boolean enableMultiCurrency {
-    _required = false
+    
   }
   serviceid fullName {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true
   }
   boolean enableCurrencyEffectiveDates {
-    _required = false
+    
   }
   boolean enableCurrencySymbolWithMultiCurrency {
-    _required = false
+    
   }
   boolean isMultiCurrencyActivationAllowed {
-    _required = false
+    
   }
   boolean isParenCurrencyConvDisabled {
-    _required = false
+    
   }
   metadataType = "CurrencySettings"
   suffix = "settings"

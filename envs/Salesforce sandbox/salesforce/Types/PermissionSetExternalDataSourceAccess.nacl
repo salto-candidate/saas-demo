@@ -14,10 +14,10 @@ type salesforce.PermissionSetExternalDataSourceAccess {
     }
   }
   boolean enabled {
-    _required = false
+    
   }
   string externalDataSource {
-    _required = false
+    
   }
   
   

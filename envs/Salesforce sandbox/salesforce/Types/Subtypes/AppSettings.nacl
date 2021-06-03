@@ -14,10 +14,10 @@ type salesforce.AppSettings {
     }
   }
   string connectedAppName {
-    _required = false
+    
   }
   boolean enabled {
-    _required = false
+    
   }
   metadataType = "AppSettings"
 }

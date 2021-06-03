@@ -14,10 +14,10 @@ type salesforce.ConnectedAppAttribute {
     }
   }
   string formula {
-    _required = false
+    
   }
   string key {
-    _required = false
+    
   }
   metadataType = "ConnectedAppAttribute"
 }

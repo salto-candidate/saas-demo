@@ -14,25 +14,25 @@ type salesforce.ActionLinkTemplate {
     }
   }
   string actionUrl {
-    _required = false
+    
   }
   string headers {
-    _required = false
+    
   }
   boolean isConfirmationRequired {
-    _required = false
+    
   }
   boolean isGroupDefault {
-    _required = false
+    
   }
   string label {
-    _required = false
+    
   }
   string labelKey {
-    _required = false
+    
   }
   string linkType {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -44,7 +44,7 @@ type salesforce.ActionLinkTemplate {
     }
   }
   string method {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -58,16 +58,16 @@ type salesforce.ActionLinkTemplate {
     }
   }
   number position {
-    _required = false
+    
   }
   string requestBody {
-    _required = false
+    
   }
   string userAlias {
-    _required = false
+    
   }
   string userVisibility {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [

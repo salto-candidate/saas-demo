@@ -14,13 +14,13 @@ type salesforce.FieldSetItem {
     }
   }
   string field {
-    _required = false
+    
   }
   boolean isFieldManaged {
-    _required = false
+    
   }
   boolean isRequired {
-    _required = false
+    
   }
   metadataType = "FieldSetItem"
 }

@@ -14,16 +14,16 @@ type salesforce.FlowOrchestratedStage {
     }
   }
   salesforce.FlowMetadataValue processMetadataValues {
-    _required = false
+    
   }
   string description {
-    _required = false
+    
   }
   string name {
-    _required = false
+    
   }
   string elementSubtype {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -32,28 +32,28 @@ type salesforce.FlowOrchestratedStage {
     }
   }
   string label {
-    _required = false
+    
   }
   number locationX {
-    _required = false
+    
   }
   number locationY {
-    _required = false
+    
   }
   salesforce.FlowConnector connector {
-    _required = false
+    
   }
   salesforce.FlowStageStepExitActionInputParameter exitActionInputParameters {
-    _required = false
+    
   }
   string exitActionName {
-    _required = false
+    
   }
   salesforce.FlowStageStepExitActionOutputParameter exitActionOutputParameters {
-    _required = false
+    
   }
   string exitActionType {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -232,9 +232,13 @@ type salesforce.FlowOrchestratedStage {
         "setCheckoutDeliveryMethod",
         "sfdcOutputAction",
         "skillsBasedRouting",
+        "slackArchiveChannel",
         "slackCreateChannel",
+        "slackInviteUserToWorkspace",
         "slackInviteUsersToChannel",
         "slackPostMessage",
+        "slackUserInChannel",
+        "slackUserInWorkspace",
         "storeReplyRecommendationsFeedback",
         "submit",
         "submitDigitalFormResponse",
@@ -249,13 +253,13 @@ type salesforce.FlowOrchestratedStage {
     }
   }
   string exitConditionLogic {
-    _required = false
+    
   }
   salesforce.FlowCondition exitConditions {
-    _required = false
+    
   }
   salesforce.FlowStageStep stageSteps {
-    _required = false
+    
   }
   metadataType = "FlowOrchestratedStage"
 }

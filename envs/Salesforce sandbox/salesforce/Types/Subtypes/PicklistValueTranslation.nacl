@@ -14,10 +14,10 @@ type salesforce.PicklistValueTranslation {
     }
   }
   string masterLabel {
-    _required = false
+    
   }
   string translation {
-    _required = false
+    
   }
   metadataType = "PicklistValueTranslation"
 }

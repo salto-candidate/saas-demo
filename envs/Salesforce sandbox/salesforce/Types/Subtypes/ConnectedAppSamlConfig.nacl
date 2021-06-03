@@ -14,16 +14,16 @@ type salesforce.ConnectedAppSamlConfig {
     }
   }
   string acsUrl {
-    _required = false
+    
   }
   string certificate {
-    _required = false
+    
   }
   string encryptionCertificate {
-    _required = false
+    
   }
   string encryptionType {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -34,13 +34,13 @@ type salesforce.ConnectedAppSamlConfig {
     }
   }
   string entityUrl {
-    _required = false
+    
   }
   string issuer {
-    _required = false
+    
   }
   string samlIdpSLOBindingEnum {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -50,7 +50,7 @@ type salesforce.ConnectedAppSamlConfig {
     }
   }
   string samlNameIdFormat {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -62,13 +62,13 @@ type salesforce.ConnectedAppSamlConfig {
     }
   }
   string samlSloUrl {
-    _required = false
+    
   }
   string samlSubjectCustomAttr {
-    _required = false
+    
   }
   string samlSubjectType {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -83,7 +83,7 @@ type salesforce.ConnectedAppSamlConfig {
   }
   metadataType = "ConnectedAppSamlConfig"
   string samlSigningAlgoType {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [

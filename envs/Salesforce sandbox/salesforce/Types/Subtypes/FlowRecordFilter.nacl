@@ -14,13 +14,13 @@ type salesforce.FlowRecordFilter {
     }
   }
   "List<salesforce.FlowMetadataValue>" processMetadataValues {
-    _required = false
+    
   }
   string field {
-    _required = false
+    
   }
   salesforce.FlowElementReferenceOrValue value {
-    _required = false
+    
   }
   string operator {
     _restriction = {
@@ -38,7 +38,7 @@ type salesforce.FlowRecordFilter {
       ]
       enforce_value = false
     }
-    _required = false
+    
   }
   metadataType = "FlowRecordFilter"
 }

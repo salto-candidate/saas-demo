@@ -14,16 +14,16 @@ type salesforce.SiteDotCom {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   string content {
-    _required = false
+    
   }
   string label {
-    _required = false
+    
   }
   string siteType {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -35,7 +35,7 @@ type salesforce.SiteDotCom {
     }
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true

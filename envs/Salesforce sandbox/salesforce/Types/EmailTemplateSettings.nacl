@@ -14,16 +14,16 @@ settings salesforce.EmailTemplateSettings {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true
   }
   boolean enableTemplateEnhancedFolderPref {
-    _required = false
+    
   }
   metadataType = "EmailTemplateSettings"
   suffix = "settings"

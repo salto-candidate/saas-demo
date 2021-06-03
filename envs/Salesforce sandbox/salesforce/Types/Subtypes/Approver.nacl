@@ -14,10 +14,10 @@ type salesforce.Approver {
     }
   }
   string name {
-    _required = false
+    
   }
   string type {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [

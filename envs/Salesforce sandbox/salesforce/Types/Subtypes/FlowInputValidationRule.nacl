@@ -14,10 +14,10 @@ type salesforce.FlowInputValidationRule {
     }
   }
   string errorMessage {
-    _required = false
+    
   }
   string formulaExpression {
-    _required = false
+    
   }
   metadataType = "FlowInputValidationRule"
 }

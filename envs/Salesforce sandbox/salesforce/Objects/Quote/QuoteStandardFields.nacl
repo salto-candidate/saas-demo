@@ -2,7 +2,7 @@ type salesforce.Quote {
   serviceid Id {
     apiName = "Quote.Id"
     label = "Quote ID"
-    _required = false
+    
     queryable = true
     
     updateable = false
@@ -12,8 +12,8 @@ type salesforce.Quote {
   salesforce.Lookup OwnerId {
     apiName = "Quote.OwnerId"
     label = "Owner ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Group,
       salesforce.User,
@@ -33,7 +33,7 @@ type salesforce.Quote {
     updateable = false
     queryable = true
     
-    _required = false
+    
     _hidden_value = true
   }
   salesforce.Text Name {
@@ -50,7 +50,7 @@ type salesforce.Quote {
   salesforce.DateTime CreatedDate {
     apiName = "Quote.CreatedDate"
     label = "Created Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -60,8 +60,8 @@ type salesforce.Quote {
   salesforce.Lookup CreatedById {
     apiName = "Quote.CreatedById"
     label = "Created By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -75,7 +75,7 @@ type salesforce.Quote {
   salesforce.DateTime LastModifiedDate {
     apiName = "Quote.LastModifiedDate"
     label = "Last Modified Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -85,8 +85,8 @@ type salesforce.Quote {
   salesforce.Lookup LastModifiedById {
     apiName = "Quote.LastModifiedById"
     label = "Last Modified By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -100,7 +100,7 @@ type salesforce.Quote {
   salesforce.DateTime SystemModstamp {
     apiName = "Quote.SystemModstamp"
     label = "System Modstamp"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -111,7 +111,7 @@ type salesforce.Quote {
     apiName = "Quote.OpportunityId"
     label = "Opportunity ID"
     _required = true
-    allowLookupRecordDeletion = true
+    
     referenceTo = [
       salesforce.Opportunity,
     ]
@@ -123,8 +123,8 @@ type salesforce.Quote {
   salesforce.Lookup Pricebook2Id {
     apiName = "Quote.Pricebook2Id"
     label = "Price Book ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Pricebook2,
     ]
@@ -136,8 +136,8 @@ type salesforce.Quote {
   salesforce.Lookup ContactId {
     apiName = "Quote.ContactId"
     label = "Contact ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Contact,
     ]
@@ -149,7 +149,7 @@ type salesforce.Quote {
   salesforce.AutoNumber QuoteNumber {
     apiName = "Quote.QuoteNumber"
     label = "Quote Number"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -167,7 +167,7 @@ type salesforce.Quote {
   salesforce.Currency ShippingHandling {
     apiName = "Quote.ShippingHandling"
     label = "Shipping and Handling"
-    _required = false
+    
     createable = true
     updateable = true
     scale = 2
@@ -177,7 +177,7 @@ type salesforce.Quote {
   salesforce.Currency Tax {
     apiName = "Quote.Tax"
     label = "Tax"
-    _required = false
+    
     createable = true
     updateable = true
     scale = 2
@@ -187,7 +187,7 @@ type salesforce.Quote {
   salesforce.Picklist Status {
     apiName = "Quote.Status"
     label = "Status"
-    _required = false
+    
     restricted = false
     createable = true
     updateable = true
@@ -197,7 +197,7 @@ type salesforce.Quote {
   salesforce.Date ExpirationDate {
     apiName = "Quote.ExpirationDate"
     label = "Expiration Date"
-    _required = false
+    
     createable = true
     updateable = true
     queryable = true
@@ -205,7 +205,7 @@ type salesforce.Quote {
   salesforce.LongTextArea Description {
     apiName = "Quote.Description"
     label = "Description"
-    _required = false
+    
     createable = true
     updateable = true
     length = 32000
@@ -214,7 +214,7 @@ type salesforce.Quote {
   salesforce.Summary Subtotal {
     apiName = "Quote.Subtotal"
     label = "Subtotal"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -222,7 +222,7 @@ type salesforce.Quote {
   salesforce.Summary TotalPrice {
     apiName = "Quote.TotalPrice"
     label = "Total Price"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -230,7 +230,7 @@ type salesforce.Quote {
   salesforce.Summary LineItemCount {
     apiName = "Quote.LineItemCount"
     label = "Line Items"
-    _required = false
+    
     precision = 9
     createable = false
     updateable = false
@@ -239,7 +239,7 @@ type salesforce.Quote {
   salesforce.Address BillingAddress {
     apiName = "Quote.BillingAddress"
     label = "Bill To"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -247,7 +247,7 @@ type salesforce.Quote {
   salesforce.Address ShippingAddress {
     apiName = "Quote.ShippingAddress"
     label = "Ship To"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -255,7 +255,7 @@ type salesforce.Quote {
   salesforce.Address QuoteToAddress {
     apiName = "Quote.QuoteToAddress"
     label = "Quote To"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -263,7 +263,7 @@ type salesforce.Quote {
   salesforce.Address AdditionalAddress {
     apiName = "Quote.AdditionalAddress"
     label = "Additional To"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -271,7 +271,7 @@ type salesforce.Quote {
   salesforce.Text BillingName {
     apiName = "Quote.BillingName"
     label = "Bill To Name"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -282,7 +282,7 @@ type salesforce.Quote {
   salesforce.Text ShippingName {
     apiName = "Quote.ShippingName"
     label = "Ship To Name"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -293,7 +293,7 @@ type salesforce.Quote {
   salesforce.Text QuoteToName {
     apiName = "Quote.QuoteToName"
     label = "Quote To Name"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -304,7 +304,7 @@ type salesforce.Quote {
   salesforce.Text AdditionalName {
     apiName = "Quote.AdditionalName"
     label = "Additional To Name"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -315,7 +315,7 @@ type salesforce.Quote {
   salesforce.Email Email {
     apiName = "Quote.Email"
     label = "Email"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -324,7 +324,7 @@ type salesforce.Quote {
   salesforce.Phone Phone {
     apiName = "Quote.Phone"
     label = "Phone"
-    _required = false
+    
     createable = true
     updateable = true
     queryable = true
@@ -332,7 +332,7 @@ type salesforce.Quote {
   salesforce.Phone Fax {
     apiName = "Quote.Fax"
     label = "Fax"
-    _required = false
+    
     createable = true
     updateable = true
     queryable = true
@@ -340,8 +340,8 @@ type salesforce.Quote {
   salesforce.Lookup ContractId {
     apiName = "Quote.ContractId"
     label = "Contract ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Contract,
     ]
@@ -353,8 +353,8 @@ type salesforce.Quote {
   salesforce.Lookup AccountId {
     apiName = "Quote.AccountId"
     label = "Account ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Account,
     ]
@@ -366,7 +366,7 @@ type salesforce.Quote {
   salesforce.Percent Discount {
     apiName = "Quote.Discount"
     label = "Discount"
-    _required = false
+    
     createable = false
     updateable = false
     scale = 2
@@ -376,7 +376,7 @@ type salesforce.Quote {
   salesforce.Currency GrandTotal {
     apiName = "Quote.GrandTotal"
     label = "Grand Total"
-    _required = false
+    
     createable = false
     updateable = false
     scale = 2

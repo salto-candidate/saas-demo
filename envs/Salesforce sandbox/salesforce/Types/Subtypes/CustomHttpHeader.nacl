@@ -14,16 +14,16 @@ type salesforce.CustomHttpHeader {
     }
   }
   string description {
-    _required = false
+    
   }
   string headerFieldName {
-    _required = false
+    
   }
   string headerFieldValue {
-    _required = false
+    
   }
   boolean isActive {
-    _required = false
+    
   }
   metadataType = "CustomHttpHeader"
 }

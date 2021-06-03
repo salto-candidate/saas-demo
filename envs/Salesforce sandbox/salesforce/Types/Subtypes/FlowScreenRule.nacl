@@ -14,19 +14,19 @@ type salesforce.FlowScreenRule {
     }
   }
   salesforce.FlowMetadataValue processMetadataValues {
-    _required = false
+    
   }
   string conditionLogic {
-    _required = false
+    
   }
   salesforce.FlowCondition conditions {
-    _required = false
+    
   }
   string label {
-    _required = false
+    
   }
   salesforce.FlowScreenRuleAction ruleActions {
-    _required = false
+    
   }
   metadataType = "FlowScreenRule"
 }

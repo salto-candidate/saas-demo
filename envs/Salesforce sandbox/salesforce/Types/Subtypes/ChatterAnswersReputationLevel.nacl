@@ -14,10 +14,10 @@ type salesforce.ChatterAnswersReputationLevel {
     }
   }
   string name {
-    _required = false
+    
   }
   number value {
-    _required = false
+    
   }
   metadataType = "ChatterAnswersReputationLevel"
 }

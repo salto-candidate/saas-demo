@@ -14,7 +14,7 @@ type salesforce.LightningBolt {
     }
   }
   string category {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -36,28 +36,28 @@ type salesforce.LightningBolt {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   salesforce.LightningBoltFeatures lightningBoltFeatures {
-    _required = false
+    
   }
   salesforce.LightningBoltImages lightningBoltImages {
-    _required = false
+    
   }
   salesforce.LightningBoltItems lightningBoltItems {
-    _required = false
+    
   }
   string masterLabel {
-    _required = false
+    
   }
   string publisher {
-    _required = false
+    
   }
   string summary {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true

@@ -14,16 +14,16 @@ type salesforce.EmbeddedServiceLayout {
     }
   }
   salesforce.EmbeddedServiceLayoutRule embeddedServiceLayoutRules {
-    _required = false
+    
   }
   string layout {
-    _required = false
+    
     foreignKeyDomain = [
       salesforce.LightningPage,
     ]
   }
   string layoutType {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [

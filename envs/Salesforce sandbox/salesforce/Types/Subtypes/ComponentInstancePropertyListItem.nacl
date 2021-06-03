@@ -14,10 +14,10 @@ type salesforce.ComponentInstancePropertyListItem {
     }
   }
   string value {
-    _required = false
+    
   }
   salesforce.UiFormulaRule visibilityRule {
-    _required = false
+    
   }
   metadataType = "ComponentInstancePropertyListItem"
 }

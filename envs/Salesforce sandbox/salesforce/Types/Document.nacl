@@ -14,28 +14,28 @@ type salesforce.Document {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   string content {
-    _required = false
+    
   }
   string description {
-    _required = false
+    
   }
   boolean internalUseOnly {
-    _required = false
+    
   }
   string keywords {
-    _required = false
+    
   }
   string name {
-    _required = false
+    
   }
   boolean public {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true

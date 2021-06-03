@@ -2,7 +2,7 @@ type salesforce.Account {
   serviceid Id {
     apiName = "Account.Id"
     label = "Account ID"
-    _required = false
+    
     queryable = true
     
     updateable = false
@@ -17,14 +17,14 @@ type salesforce.Account {
     updateable = false
     queryable = true
     
-    _required = false
+    
     _hidden_value = true
   }
   salesforce.Lookup MasterRecordId {
     apiName = "Account.MasterRecordId"
     label = "Master Record ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Account,
     ]
@@ -36,18 +36,19 @@ type salesforce.Account {
   salesforce.Picklist Type {
     apiName = "Account.Type"
     label = "Account Type"
-    _required = false
+    
     restricted = false
     createable = true
     updateable = true
     queryable = true
     valueSetName = salesforce.StandardValueSet.instance.AccountType
+    trackFeedHistory = false
   }
   salesforce.Lookup ParentId {
     apiName = "Account.ParentId"
     label = "Parent Account ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Account,
     ]
@@ -59,7 +60,7 @@ type salesforce.Account {
   salesforce.Address BillingAddress {
     apiName = "Account.BillingAddress"
     label = "Billing Address"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -67,7 +68,7 @@ type salesforce.Account {
   salesforce.Address ShippingAddress {
     apiName = "Account.ShippingAddress"
     label = "Shipping Address"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -75,7 +76,7 @@ type salesforce.Account {
   salesforce.Phone Phone {
     apiName = "Account.Phone"
     label = "Account Phone"
-    _required = false
+    
     createable = true
     updateable = true
     queryable = true
@@ -83,7 +84,7 @@ type salesforce.Account {
   salesforce.Url Website {
     apiName = "Account.Website"
     label = "Website"
-    _required = false
+    
     createable = true
     updateable = true
     queryable = true
@@ -91,7 +92,7 @@ type salesforce.Account {
   salesforce.Url PhotoUrl {
     apiName = "Account.PhotoUrl"
     label = "Photo URL"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -99,17 +100,18 @@ type salesforce.Account {
   salesforce.Picklist Industry {
     apiName = "Account.Industry"
     label = "Industry"
-    _required = false
+    
     restricted = false
     createable = true
     updateable = true
     queryable = true
     valueSetName = salesforce.StandardValueSet.instance.Industry
+    trackFeedHistory = false
   }
   salesforce.Number NumberOfEmployees {
     apiName = "Account.NumberOfEmployees"
     label = "Employees"
-    _required = false
+    
     precision = 8
     createable = true
     updateable = true
@@ -120,7 +122,7 @@ type salesforce.Account {
   salesforce.LongTextArea Description {
     apiName = "Account.Description"
     label = "Account Description"
-    _required = false
+    
     createable = true
     updateable = true
     length = 32000
@@ -129,8 +131,8 @@ type salesforce.Account {
   salesforce.Lookup OwnerId {
     apiName = "Account.OwnerId"
     label = "Owner ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -140,11 +142,12 @@ type salesforce.Account {
     
     relationshipName = "Owner"
     _hidden_value = true
+    trackFeedHistory = true
   }
   salesforce.DateTime CreatedDate {
     apiName = "Account.CreatedDate"
     label = "Created Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -154,8 +157,8 @@ type salesforce.Account {
   salesforce.Lookup CreatedById {
     apiName = "Account.CreatedById"
     label = "Created By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -169,7 +172,7 @@ type salesforce.Account {
   salesforce.DateTime LastModifiedDate {
     apiName = "Account.LastModifiedDate"
     label = "Last Modified Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -179,8 +182,8 @@ type salesforce.Account {
   salesforce.Lookup LastModifiedById {
     apiName = "Account.LastModifiedById"
     label = "Last Modified By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -194,7 +197,7 @@ type salesforce.Account {
   salesforce.DateTime SystemModstamp {
     apiName = "Account.SystemModstamp"
     label = "System Modstamp"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -204,7 +207,7 @@ type salesforce.Account {
   salesforce.Date LastActivityDate {
     apiName = "Account.LastActivityDate"
     label = "Last Activity"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -214,7 +217,7 @@ type salesforce.Account {
   salesforce.Text Jigsaw {
     apiName = "Account.Jigsaw"
     label = "Data.com Key"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -225,7 +228,7 @@ type salesforce.Account {
   salesforce.Text JigsawCompanyId {
     apiName = "Account.JigsawCompanyId"
     label = "Jigsaw Company ID"
-    _required = false
+    
     createable = false
     updateable = false
     unique = false
@@ -236,17 +239,18 @@ type salesforce.Account {
   salesforce.Picklist AccountSource {
     apiName = "Account.AccountSource"
     label = "Account Source"
-    _required = false
+    
     restricted = false
     createable = true
     updateable = true
     queryable = true
     valueSetName = salesforce.StandardValueSet.instance.LeadSource
+    trackFeedHistory = false
   }
   salesforce.Text SicDesc {
     apiName = "Account.SicDesc"
     label = "SIC Description"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -259,53 +263,62 @@ type salesforce.Account {
     queryable = false
     updateable = false
     createable = false
+    trackFeedHistory = false
   }
   salesforce.Unknown AnnualRevenue {
     apiName = "Account.AnnualRevenue"
     queryable = false
     updateable = false
     createable = false
+    trackFeedHistory = false
   }
   salesforce.Unknown Fax {
     apiName = "Account.Fax"
     queryable = false
     updateable = false
     createable = false
+    trackFeedHistory = false
   }
   salesforce.Unknown Name {
     apiName = "Account.Name"
     queryable = false
     updateable = false
     createable = false
+    trackFeedHistory = true
   }
   salesforce.Picklist Ownership {
     apiName = "Account.Ownership"
     queryable = false
     updateable = false
     createable = false
+    trackFeedHistory = false
   }
   salesforce.Picklist Rating {
     apiName = "Account.Rating"
     queryable = false
     updateable = false
     createable = false
+    trackFeedHistory = false
   }
   salesforce.Unknown Sic {
     apiName = "Account.Sic"
     queryable = false
     updateable = false
     createable = false
+    trackFeedHistory = false
   }
   salesforce.Unknown Site {
     apiName = "Account.Site"
     queryable = false
     updateable = false
     createable = false
+    trackFeedHistory = false
   }
   salesforce.Unknown TickerSymbol {
     apiName = "Account.TickerSymbol"
     queryable = false
     updateable = false
     createable = false
+    trackFeedHistory = false
   }
 }

@@ -14,19 +14,19 @@ type salesforce.StandardValueSet {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   string groupingStringEnum {
-    _required = false
+    
   }
   boolean sorted {
-    _required = false
+    
   }
   "List<salesforce.StandardValue>" standardValue {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true

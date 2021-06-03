@@ -14,10 +14,10 @@ type salesforce.ProfileSearchLayouts {
     }
   }
   string fields {
-    _required = false
+    
   }
   string profileName {
-    _required = false
+    
   }
   metadataType = "ProfileSearchLayouts"
 }

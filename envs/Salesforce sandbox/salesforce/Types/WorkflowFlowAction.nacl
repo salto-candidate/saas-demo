@@ -14,22 +14,22 @@ type salesforce.WorkflowFlowAction {
     }
   }
   string description {
-    _required = false
+    
   }
   string flow {
-    _required = false
+    
   }
   salesforce.WorkflowFlowActionParameter flowInputs {
-    _required = false
+    
   }
   serviceid fullName {
-    _required = false
+    
   }
   string label {
-    _required = false
+    
   }
   string language {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -55,7 +55,7 @@ type salesforce.WorkflowFlowAction {
     }
   }
   boolean protected {
-    _required = false
+    
   }
   
   

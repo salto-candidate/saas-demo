@@ -14,13 +14,13 @@ type salesforce.ContentAssetVersion {
     }
   }
   string number {
-    _required = false
+    
   }
   string pathOnClient {
-    _required = false
+    
   }
   string zipEntry {
-    _required = false
+    
   }
   metadataType = "ContentAssetVersion"
 }

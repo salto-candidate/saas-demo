@@ -2,7 +2,7 @@ type salesforce.Order {
   serviceid Id {
     apiName = "Order.Id"
     label = "Order ID"
-    _required = false
+    
     queryable = true
     
     updateable = false
@@ -12,8 +12,8 @@ type salesforce.Order {
   salesforce.Lookup OwnerId {
     apiName = "Order.OwnerId"
     label = "Owner ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Group,
       salesforce.User,
@@ -24,12 +24,13 @@ type salesforce.Order {
     
     relationshipName = "Owner"
     _hidden_value = true
+    trackHistory = "false"
   }
   salesforce.Lookup ContractId {
     apiName = "Order.ContractId"
     label = "Contract ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Contract,
     ]
@@ -37,12 +38,13 @@ type salesforce.Order {
     updateable = true
     queryable = true
     relationshipName = "Contract"
+    trackHistory = "false"
   }
   salesforce.Lookup AccountId {
     apiName = "Order.AccountId"
     label = "Account ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Account,
     ]
@@ -50,12 +52,13 @@ type salesforce.Order {
     updateable = true
     queryable = true
     relationshipName = "Account"
+    trackHistory = "false"
   }
   salesforce.Lookup Pricebook2Id {
     apiName = "Order.Pricebook2Id"
     label = "Price Book ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Pricebook2,
     ]
@@ -63,12 +66,13 @@ type salesforce.Order {
     updateable = true
     queryable = true
     relationshipName = "Pricebook2"
+    trackHistory = "false"
   }
   salesforce.Lookup OriginalOrderId {
     apiName = "Order.OriginalOrderId"
     label = "Order ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Order,
     ]
@@ -88,7 +92,7 @@ type salesforce.Order {
   salesforce.Date EndDate {
     apiName = "Order.EndDate"
     label = "Order End Date"
-    _required = false
+    
     createable = true
     updateable = true
     queryable = true
@@ -110,11 +114,12 @@ type salesforce.Order {
     updateable = true
     queryable = true
     valueSetName = salesforce.StandardValueSet.instance.OrderStatus
+    trackHistory = "true"
   }
   salesforce.LongTextArea Description {
     apiName = "Order.Description"
     label = "Description"
-    _required = false
+    
     createable = true
     updateable = true
     length = 32000
@@ -123,8 +128,8 @@ type salesforce.Order {
   salesforce.Lookup CustomerAuthorizedById {
     apiName = "Order.CustomerAuthorizedById"
     label = "Customer Authorized By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Contact,
     ]
@@ -132,12 +137,13 @@ type salesforce.Order {
     updateable = true
     queryable = true
     relationshipName = "CustomerAuthorizedBy"
+    trackHistory = "true"
   }
   salesforce.Lookup CompanyAuthorizedById {
     apiName = "Order.CompanyAuthorizedById"
     label = "Company Authorized By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -145,19 +151,21 @@ type salesforce.Order {
     updateable = true
     queryable = true
     relationshipName = "CompanyAuthorizedBy"
+    trackHistory = "true"
   }
   salesforce.Picklist Type {
     apiName = "Order.Type"
     label = "Order Type"
-    _required = false
+    
     createable = true
     updateable = true
     queryable = true
+    trackHistory = "true"
   }
   salesforce.Address BillingAddress {
     apiName = "Order.BillingAddress"
     label = "Billing Address"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -165,7 +173,7 @@ type salesforce.Order {
   salesforce.Address ShippingAddress {
     apiName = "Order.ShippingAddress"
     label = "Shipping Address"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -173,7 +181,7 @@ type salesforce.Order {
   salesforce.DateTime ActivatedDate {
     apiName = "Order.ActivatedDate"
     label = "Activated Date"
-    _required = false
+    
     createable = false
     updateable = true
     queryable = true
@@ -181,8 +189,8 @@ type salesforce.Order {
   salesforce.Lookup ActivatedById {
     apiName = "Order.ActivatedById"
     label = "Activated By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -190,6 +198,7 @@ type salesforce.Order {
     updateable = true
     queryable = true
     relationshipName = "ActivatedBy"
+    trackHistory = "false"
   }
   salesforce.Picklist StatusCode {
     apiName = "Order.StatusCode"
@@ -229,7 +238,7 @@ type salesforce.Order {
   salesforce.AutoNumber OrderNumber {
     apiName = "Order.OrderNumber"
     label = "Order Number"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -249,7 +258,7 @@ type salesforce.Order {
   salesforce.DateTime CreatedDate {
     apiName = "Order.CreatedDate"
     label = "Created Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -259,8 +268,8 @@ type salesforce.Order {
   salesforce.Lookup CreatedById {
     apiName = "Order.CreatedById"
     label = "Created By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -274,7 +283,7 @@ type salesforce.Order {
   salesforce.DateTime LastModifiedDate {
     apiName = "Order.LastModifiedDate"
     label = "Last Modified Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -284,8 +293,8 @@ type salesforce.Order {
   salesforce.Lookup LastModifiedById {
     apiName = "Order.LastModifiedById"
     label = "Last Modified By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -304,13 +313,13 @@ type salesforce.Order {
     updateable = false
     queryable = true
     
-    _required = false
+    
     _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "Order.SystemModstamp"
     label = "System Modstamp"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -328,12 +337,14 @@ type salesforce.Order {
     queryable = false
     updateable = false
     createable = false
+    trackHistory = "true"
   }
   salesforce.Unknown CompanyAuthorizedDate {
     apiName = "Order.CompanyAuthorizedDate"
     queryable = false
     updateable = false
     createable = false
+    trackHistory = "true"
   }
   salesforce.Unknown ContractEndDate {
     apiName = "Order.ContractEndDate"
@@ -352,47 +363,55 @@ type salesforce.Order {
     queryable = false
     updateable = false
     createable = false
+    trackHistory = "true"
   }
   salesforce.Unknown Name {
     apiName = "Order.Name"
     queryable = false
     updateable = false
     createable = false
+    trackHistory = "true"
   }
   salesforce.Lookup OpportunityId {
     apiName = "Order.OpportunityId"
     queryable = false
     updateable = false
     createable = false
+    trackHistory = "false"
   }
   salesforce.Unknown OrderReferenceNumber {
     apiName = "Order.OrderReferenceNumber"
     queryable = false
     updateable = false
     createable = false
+    trackHistory = "true"
   }
   salesforce.Unknown PoDate {
     apiName = "Order.PoDate"
     queryable = false
     updateable = false
     createable = false
+    trackHistory = "true"
   }
   salesforce.Unknown PoNumber {
     apiName = "Order.PoNumber"
     queryable = false
     updateable = false
     createable = false
+    trackHistory = "true"
   }
   salesforce.Lookup QuoteId {
     apiName = "Order.QuoteId"
     queryable = false
     updateable = false
     createable = false
+    trackHistory = "false"
   }
   salesforce.Lookup ShipToContactId {
     apiName = "Order.ShipToContactId"
     queryable = false
     updateable = false
     createable = false
+    trackHistory = "true"
   }
 }

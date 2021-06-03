@@ -14,22 +14,22 @@ settings salesforce.PathAssistantSettings {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   boolean pathAssistantEnabled {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true
   }
   boolean canOverrideAutoPathCollapseWithUserPref {
-    _required = false
+    
   }
   boolean pathAssistantForOpportunityEnabled {
-    _required = false
+    
   }
   metadataType = "PathAssistantSettings"
   suffix = "settings"

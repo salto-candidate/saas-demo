@@ -14,55 +14,55 @@ type salesforce.FlowRecordLookup {
     }
   }
   salesforce.FlowMetadataValue processMetadataValues {
-    _required = false
+    
   }
   string description {
-    _required = false
+    
   }
   string name {
-    _required = false
+    
   }
   string label {
-    _required = false
+    
   }
   number locationX {
-    _required = false
+    
   }
   number locationY {
-    _required = false
+    
   }
   boolean assignNullValuesIfNoRecordsFound {
-    _required = false
+    
   }
   salesforce.FlowConnector connector {
-    _required = false
+    
   }
   salesforce.FlowConnector faultConnector {
-    _required = false
+    
   }
   "List<salesforce.FlowRecordFilter>" filters {
-    _required = false
+    
   }
   boolean getFirstRecordOnly {
-    _required = false
+    
   }
   string object {
-    _required = false
+    
   }
   "List<salesforce.FlowOutputFieldAssignment>" outputAssignments {
-    _required = false
+    
   }
   string outputReference {
-    _required = false
+    
   }
   "List<string>" queriedFields {
-    _required = false
+    
   }
   string sortField {
-    _required = false
+    
   }
   boolean storeOutputAutomatically {
-    _required = false
+    
   }
   string sortOrder {
     _restriction = {
@@ -72,11 +72,11 @@ type salesforce.FlowRecordLookup {
       ]
       enforce_value = false
     }
-    _required = false
+    
   }
   metadataType = "FlowRecordLookup"
   string elementSubtype {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -88,6 +88,6 @@ type salesforce.FlowRecordLookup {
     ]
   }
   string filterLogic {
-    _required = false
+    
   }
 }

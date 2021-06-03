@@ -49,7 +49,7 @@ type salesforce.PartyConsent {
   salesforce.Picklist CaptureContactPointType {
     apiName = "PartyConsent.CaptureContactPointType"
     label = "Consent Captured Contact Point Type"
-    _required = false
+    
     valueSet = [
       {
         fullName = "Email"
@@ -90,7 +90,7 @@ type salesforce.PartyConsent {
   salesforce.DateTime CaptureDate {
     apiName = "PartyConsent.CaptureDate"
     label = "Consent Captured Date Time"
-    _required = false
+    
     createable = true
     updateable = true
     queryable = true
@@ -98,7 +98,7 @@ type salesforce.PartyConsent {
   salesforce.Text CaptureSource {
     apiName = "PartyConsent.CaptureSource"
     label = "Consent Captured Source"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -111,18 +111,21 @@ type salesforce.PartyConsent {
     queryable = false
     updateable = false
     createable = false
+    trackHistory = "false"
   }
   salesforce.Unknown EffectiveFrom {
     apiName = "PartyConsent.EffectiveFrom"
     queryable = false
     updateable = false
     createable = false
+    trackHistory = "false"
   }
   salesforce.Unknown EffectiveTo {
     apiName = "PartyConsent.EffectiveTo"
     queryable = false
     updateable = false
     createable = false
+    trackHistory = "false"
   }
   salesforce.Text Name {
     apiName = "PartyConsent.Name"
@@ -138,8 +141,8 @@ type salesforce.PartyConsent {
   salesforce.Lookup OwnerId {
     apiName = "PartyConsent.OwnerId"
     label = "Owner ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Group,
       salesforce.User,
@@ -149,12 +152,13 @@ type salesforce.PartyConsent {
     relationshipName = "Owner"
     queryable = true
     _hidden_value = true
+    trackHistory = "false"
   }
   salesforce.Lookup PartyId {
     apiName = "PartyConsent.PartyId"
     label = "Individual ID"
     _required = true
-    allowLookupRecordDeletion = true
+    
     referenceTo = [
       salesforce.Individual,
     ]
@@ -162,6 +166,7 @@ type salesforce.PartyConsent {
     updateable = true
     relationshipName = "Party"
     queryable = true
+    trackHistory = "false"
   }
   salesforce.Picklist PrivacyConsentStatus {
     apiName = "PartyConsent.PrivacyConsentStatus"
@@ -201,7 +206,7 @@ type salesforce.PartyConsent {
   serviceid Id {
     apiName = "PartyConsent.Id"
     label = "PartyConsent ID"
-    _required = false
+    
     queryable = true
     _hidden_value = true
     updateable = false
@@ -215,12 +220,12 @@ type salesforce.PartyConsent {
     updateable = false
     queryable = true
     _hidden_value = true
-    _required = false
+    
   }
   salesforce.DateTime CreatedDate {
     apiName = "PartyConsent.CreatedDate"
     label = "Created Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -229,8 +234,8 @@ type salesforce.PartyConsent {
   salesforce.Lookup CreatedById {
     apiName = "PartyConsent.CreatedById"
     label = "Created By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -243,7 +248,7 @@ type salesforce.PartyConsent {
   salesforce.DateTime LastModifiedDate {
     apiName = "PartyConsent.LastModifiedDate"
     label = "Last Modified Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -252,8 +257,8 @@ type salesforce.PartyConsent {
   salesforce.Lookup LastModifiedById {
     apiName = "PartyConsent.LastModifiedById"
     label = "Last Modified By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -266,7 +271,7 @@ type salesforce.PartyConsent {
   salesforce.DateTime SystemModstamp {
     apiName = "PartyConsent.SystemModstamp"
     label = "System Modstamp"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true

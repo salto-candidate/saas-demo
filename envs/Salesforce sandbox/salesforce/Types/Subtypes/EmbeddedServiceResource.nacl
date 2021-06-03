@@ -14,13 +14,13 @@ type salesforce.EmbeddedServiceResource {
     }
   }
   string resource {
-    _required = false
+    
     foreignKeyDomain = [
       salesforce.StaticResource,
     ]
   }
   string resourceType {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [

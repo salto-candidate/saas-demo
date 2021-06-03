@@ -2,7 +2,7 @@ type salesforce.ExternalEventMapping {
   serviceid Id {
     apiName = "ExternalEventMapping.Id"
     label = "External Event Mapping ID"
-    _required = false
+    
     queryable = true
     
     updateable = false
@@ -12,8 +12,8 @@ type salesforce.ExternalEventMapping {
   salesforce.Lookup OwnerId {
     apiName = "ExternalEventMapping.OwnerId"
     label = "Owner ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Group,
       salesforce.User,
@@ -33,13 +33,13 @@ type salesforce.ExternalEventMapping {
     updateable = false
     queryable = true
     
-    _required = false
+    
     _hidden_value = true
   }
   salesforce.AutoNumber Name {
     apiName = "ExternalEventMapping.Name"
     label = "Name"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -49,7 +49,7 @@ type salesforce.ExternalEventMapping {
   salesforce.DateTime CreatedDate {
     apiName = "ExternalEventMapping.CreatedDate"
     label = "Created Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -59,8 +59,8 @@ type salesforce.ExternalEventMapping {
   salesforce.Lookup CreatedById {
     apiName = "ExternalEventMapping.CreatedById"
     label = "Created By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -74,7 +74,7 @@ type salesforce.ExternalEventMapping {
   salesforce.DateTime LastModifiedDate {
     apiName = "ExternalEventMapping.LastModifiedDate"
     label = "Last Modified Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -84,8 +84,8 @@ type salesforce.ExternalEventMapping {
   salesforce.Lookup LastModifiedById {
     apiName = "ExternalEventMapping.LastModifiedById"
     label = "Last Modified By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -99,7 +99,7 @@ type salesforce.ExternalEventMapping {
   salesforce.DateTime SystemModstamp {
     apiName = "ExternalEventMapping.SystemModstamp"
     label = "System Modstamp"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -109,7 +109,7 @@ type salesforce.ExternalEventMapping {
   salesforce.Text ExternalId {
     apiName = "ExternalEventMapping.ExternalId"
     label = "External Id"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -120,8 +120,8 @@ type salesforce.ExternalEventMapping {
   salesforce.Lookup EventId {
     apiName = "ExternalEventMapping.EventId"
     label = "Activity ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Event,
     ]
@@ -133,7 +133,7 @@ type salesforce.ExternalEventMapping {
   salesforce.Date StartDate {
     apiName = "ExternalEventMapping.StartDate"
     label = "Start Date"
-    _required = false
+    
     createable = true
     updateable = true
     queryable = true
@@ -141,7 +141,7 @@ type salesforce.ExternalEventMapping {
   salesforce.Date EndDate {
     apiName = "ExternalEventMapping.EndDate"
     label = "End Date"
-    _required = false
+    
     createable = true
     updateable = true
     queryable = true

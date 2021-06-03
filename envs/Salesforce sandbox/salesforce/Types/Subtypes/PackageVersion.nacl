@@ -14,13 +14,13 @@ type salesforce.PackageVersion {
     }
   }
   number majorNumber {
-    _required = false
+    
   }
   number minorNumber {
-    _required = false
+    
   }
   string namespace {
-    _required = false
+    
   }
   metadataType = "PackageVersion"
 }

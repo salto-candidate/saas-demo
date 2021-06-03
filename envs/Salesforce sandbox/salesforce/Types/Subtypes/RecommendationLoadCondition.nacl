@@ -14,10 +14,10 @@ type salesforce.RecommendationLoadCondition {
     }
   }
   string field {
-    _required = false
+    
   }
   salesforce.RecommendationConditionValue value {
-    _required = false
+    
   }
   metadataType = "RecommendationLoadCondition"
 }

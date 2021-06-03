@@ -14,34 +14,34 @@ type salesforce.ListView {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   string booleanFilter {
-    _required = false
+    
   }
   "List<string>" columns {
-    _required = false
+    
   }
   string division {
-    _required = false
+    
   }
   "List<salesforce.ListViewFilter>" filters {
-    _required = false
+    
   }
   string label {
-    _required = false
+    
   }
   string language {
-    _required = false
+    
   }
   string queue {
-    _required = false
+    
   }
   salesforce.SharedTo sharedTo {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true
@@ -61,7 +61,7 @@ type salesforce.ListView {
       ]
       enforce_value = false
     }
-    _required = false
+    
   }
   metadataType = "ListView"
 }

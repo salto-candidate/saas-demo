@@ -2,7 +2,7 @@ type salesforce.AccountContactRelation {
   serviceid Id {
     apiName = "AccountContactRelation.Id"
     label = "Account Contact Relationship ID"
-    _required = false
+    
     queryable = true
     
     updateable = false
@@ -13,7 +13,7 @@ type salesforce.AccountContactRelation {
     apiName = "AccountContactRelation.AccountId"
     label = "Account ID"
     _required = true
-    allowLookupRecordDeletion = true
+    
     referenceTo = [
       salesforce.Account,
     ]
@@ -26,7 +26,7 @@ type salesforce.AccountContactRelation {
     apiName = "AccountContactRelation.ContactId"
     label = "Contact ID"
     _required = true
-    allowLookupRecordDeletion = true
+    
     referenceTo = [
       salesforce.Contact,
     ]
@@ -38,7 +38,7 @@ type salesforce.AccountContactRelation {
   salesforce.MultiselectPicklist Roles {
     apiName = "AccountContactRelation.Roles"
     label = "Roles"
-    _required = false
+    
     restricted = false
     visibleLines = 0
     createable = true
@@ -65,7 +65,7 @@ type salesforce.AccountContactRelation {
   salesforce.Date StartDate {
     apiName = "AccountContactRelation.StartDate"
     label = "Start Date"
-    _required = false
+    
     createable = true
     updateable = true
     queryable = true
@@ -73,7 +73,7 @@ type salesforce.AccountContactRelation {
   salesforce.Date EndDate {
     apiName = "AccountContactRelation.EndDate"
     label = "End Date"
-    _required = false
+    
     createable = true
     updateable = true
     queryable = true
@@ -86,13 +86,13 @@ type salesforce.AccountContactRelation {
     updateable = false
     queryable = true
     
-    _required = false
+    
     _hidden_value = true
   }
   salesforce.DateTime CreatedDate {
     apiName = "AccountContactRelation.CreatedDate"
     label = "Created Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -102,8 +102,8 @@ type salesforce.AccountContactRelation {
   salesforce.Lookup CreatedById {
     apiName = "AccountContactRelation.CreatedById"
     label = "Created By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -117,7 +117,7 @@ type salesforce.AccountContactRelation {
   salesforce.DateTime LastModifiedDate {
     apiName = "AccountContactRelation.LastModifiedDate"
     label = "Last Modified Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -127,8 +127,8 @@ type salesforce.AccountContactRelation {
   salesforce.Lookup LastModifiedById {
     apiName = "AccountContactRelation.LastModifiedById"
     label = "Last Modified By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -142,7 +142,7 @@ type salesforce.AccountContactRelation {
   salesforce.DateTime SystemModstamp {
     apiName = "AccountContactRelation.SystemModstamp"
     label = "System Modstamp"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true

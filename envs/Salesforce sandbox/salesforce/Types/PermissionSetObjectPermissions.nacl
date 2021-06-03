@@ -14,25 +14,25 @@ type salesforce.PermissionSetObjectPermissions {
     }
   }
   boolean allowCreate {
-    _required = false
+    
   }
   boolean allowDelete {
-    _required = false
+    
   }
   boolean allowEdit {
-    _required = false
+    
   }
   boolean allowRead {
-    _required = false
+    
   }
   boolean modifyAllRecords {
-    _required = false
+    
   }
   string object {
-    _required = false
+    
   }
   boolean viewAllRecords {
-    _required = false
+    
   }
   
   

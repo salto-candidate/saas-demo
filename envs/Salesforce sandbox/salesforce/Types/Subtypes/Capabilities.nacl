@@ -14,7 +14,7 @@ type salesforce.Capabilities {
     }
   }
   string capability {
-    _required = false
+    
   }
   metadataType = "Capabilities"
 }

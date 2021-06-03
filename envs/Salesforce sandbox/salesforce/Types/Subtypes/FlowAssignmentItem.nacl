@@ -14,13 +14,13 @@ type salesforce.FlowAssignmentItem {
     }
   }
   salesforce.FlowMetadataValue processMetadataValues {
-    _required = false
+    
   }
   string assignToReference {
-    _required = false
+    
   }
   salesforce.FlowElementReferenceOrValue value {
-    _required = false
+    
   }
   string operator {
     _restriction = {
@@ -40,7 +40,7 @@ type salesforce.FlowAssignmentItem {
       ]
       enforce_value = false
     }
-    _required = false
+    
   }
   metadataType = "FlowAssignmentItem"
 }

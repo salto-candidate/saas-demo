@@ -14,64 +14,64 @@ type salesforce.ApprovalProcess {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   boolean active {
-    _required = false
+    
   }
   boolean allowRecall {
-    _required = false
+    
   }
   salesforce.ApprovalSubmitter allowedSubmitters {
-    _required = false
+    
   }
   salesforce.ApprovalPageField approvalPageFields {
-    _required = false
+    
   }
   "List<salesforce.ApprovalStep>" approvalStep {
-    _required = false
+    
   }
   string description {
-    _required = false
+    
   }
   string emailTemplate {
-    _required = false
+    
   }
   boolean enableMobileDeviceAccess {
-    _required = false
+    
   }
   salesforce.ApprovalEntryCriteria entryCriteria {
-    _required = false
+    
   }
   salesforce.ApprovalAction finalApprovalActions {
-    _required = false
+    
   }
   boolean finalApprovalRecordLock {
-    _required = false
+    
   }
   salesforce.ApprovalAction finalRejectionActions {
-    _required = false
+    
   }
   boolean finalRejectionRecordLock {
-    _required = false
+    
   }
   salesforce.ApprovalAction initialSubmissionActions {
-    _required = false
+    
   }
   string label {
-    _required = false
+    
   }
   salesforce.NextAutomatedApprover nextAutomatedApprover {
-    _required = false
+    
   }
   string postTemplate {
-    _required = false
+    
   }
   salesforce.ApprovalAction recallActions {
-    _required = false
+    
   }
   string recordEditability {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -81,10 +81,10 @@ type salesforce.ApprovalProcess {
     }
   }
   boolean showApprovalHistory {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true
@@ -93,6 +93,6 @@ type salesforce.ApprovalProcess {
   dirName = "approvalProcesses"
   metadataType = "ApprovalProcess"
   number processOrder {
-    _required = false
+    
   }
 }

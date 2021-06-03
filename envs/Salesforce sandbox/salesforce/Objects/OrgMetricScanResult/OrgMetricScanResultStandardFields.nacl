@@ -2,7 +2,7 @@ type salesforce.OrgMetricScanResult {
   serviceid Id {
     apiName = "OrgMetricScanResult.Id"
     label = "Org Metric Scan Result ID"
-    _required = false
+    
     queryable = true
     
     updateable = false
@@ -17,7 +17,7 @@ type salesforce.OrgMetricScanResult {
     updateable = false
     queryable = true
     
-    _required = false
+    
     _hidden_value = true
   }
   salesforce.Text Name {
@@ -34,7 +34,7 @@ type salesforce.OrgMetricScanResult {
   salesforce.DateTime CreatedDate {
     apiName = "OrgMetricScanResult.CreatedDate"
     label = "Created Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -44,8 +44,8 @@ type salesforce.OrgMetricScanResult {
   salesforce.Lookup CreatedById {
     apiName = "OrgMetricScanResult.CreatedById"
     label = "Created By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -59,7 +59,7 @@ type salesforce.OrgMetricScanResult {
   salesforce.DateTime LastModifiedDate {
     apiName = "OrgMetricScanResult.LastModifiedDate"
     label = "Last Modified Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -69,8 +69,8 @@ type salesforce.OrgMetricScanResult {
   salesforce.Lookup LastModifiedById {
     apiName = "OrgMetricScanResult.LastModifiedById"
     label = "Last Modified By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -84,7 +84,7 @@ type salesforce.OrgMetricScanResult {
   salesforce.DateTime SystemModstamp {
     apiName = "OrgMetricScanResult.SystemModstamp"
     label = "System Modstamp"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -95,7 +95,7 @@ type salesforce.OrgMetricScanResult {
     apiName = "OrgMetricScanResult.OrgMetricScanSummaryId"
     label = "Org Metric Scan ID"
     _required = true
-    allowLookupRecordDeletion = true
+    
     referenceTo = [
       salesforce.OrgMetricScanSummary,
     ]
@@ -107,7 +107,7 @@ type salesforce.OrgMetricScanResult {
   salesforce.Url Url {
     apiName = "OrgMetricScanResult.Url"
     label = "Url"
-    _required = false
+    
     createable = true
     updateable = false
     queryable = true
@@ -115,7 +115,7 @@ type salesforce.OrgMetricScanResult {
   salesforce.Text Object {
     apiName = "OrgMetricScanResult.Object"
     label = "Object"
-    _required = false
+    
     createable = true
     updateable = false
     unique = false
@@ -126,7 +126,7 @@ type salesforce.OrgMetricScanResult {
   salesforce.DateTime Date {
     apiName = "OrgMetricScanResult.Date"
     label = "Date"
-    _required = false
+    
     createable = true
     updateable = false
     queryable = true
@@ -134,7 +134,7 @@ type salesforce.OrgMetricScanResult {
   salesforce.Text Type {
     apiName = "OrgMetricScanResult.Type"
     label = "Type"
-    _required = false
+    
     createable = true
     updateable = false
     unique = false
@@ -145,7 +145,7 @@ type salesforce.OrgMetricScanResult {
   salesforce.Number Profile {
     apiName = "OrgMetricScanResult.Profile"
     label = "Profile"
-    _required = false
+    
     precision = 9
     createable = true
     updateable = false
@@ -156,7 +156,7 @@ type salesforce.OrgMetricScanResult {
   salesforce.Text User {
     apiName = "OrgMetricScanResult.User"
     label = "User"
-    _required = false
+    
     createable = true
     updateable = false
     unique = false
@@ -167,7 +167,7 @@ type salesforce.OrgMetricScanResult {
   salesforce.Number Quantity {
     apiName = "OrgMetricScanResult.Quantity"
     label = "Quantity"
-    _required = false
+    
     precision = 9
     createable = true
     updateable = false
@@ -178,7 +178,7 @@ type salesforce.OrgMetricScanResult {
   salesforce.Picklist ItemStatus {
     apiName = "OrgMetricScanResult.ItemStatus"
     label = "Status"
-    _required = false
+    
     createable = true
     updateable = false
     queryable = true
@@ -186,7 +186,7 @@ type salesforce.OrgMetricScanResult {
   salesforce.Number Flags {
     apiName = "OrgMetricScanResult.Flags"
     label = "Flags"
-    _required = false
+    
     precision = 9
     createable = true
     updateable = false

@@ -14,13 +14,13 @@ type salesforce.ConnectedAppSessionPolicy {
     }
   }
   string policyAction {
-    _required = false
+    
   }
   string sessionLevel {
-    _required = false
+    
   }
   number sessionTimeout {
-    _required = false
+    
   }
   metadataType = "ConnectedAppSessionPolicy"
 }

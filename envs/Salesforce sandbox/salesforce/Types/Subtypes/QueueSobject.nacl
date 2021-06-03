@@ -14,7 +14,7 @@ type salesforce.QueueSobject {
     }
   }
   string sobjectType {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [

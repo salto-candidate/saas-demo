@@ -14,16 +14,16 @@ type salesforce.AppProfileActionOverride {
     }
   }
   string actionName {
-    _required = false
+    
   }
   string content {
-    _required = false
+    
     foreignKeyDomain = [
       salesforce.LightningPage,
     ]
   }
   string formFactor {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -34,7 +34,7 @@ type salesforce.AppProfileActionOverride {
     }
   }
   string pageOrSobjectType {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -87,13 +87,13 @@ type salesforce.AppProfileActionOverride {
     ]
   }
   string recordType {
-    _required = false
+    
     foreignKeyDomain = [
       salesforce.RecordType,
     ]
   }
   string type {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -107,7 +107,7 @@ type salesforce.AppProfileActionOverride {
     }
   }
   string profile {
-    _required = false
+    
     foreignKeyDomain = [
       "Profile",
     ]

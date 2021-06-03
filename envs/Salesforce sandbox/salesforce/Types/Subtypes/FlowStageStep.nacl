@@ -14,19 +14,19 @@ type salesforce.FlowStageStep {
     }
   }
   salesforce.FlowMetadataValue processMetadataValues {
-    _required = false
+    
   }
   string description {
-    _required = false
+    
   }
   string name {
-    _required = false
+    
   }
   string actionName {
-    _required = false
+    
   }
   string actionType {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -205,9 +205,13 @@ type salesforce.FlowStageStep {
         "setCheckoutDeliveryMethod",
         "sfdcOutputAction",
         "skillsBasedRouting",
+        "slackArchiveChannel",
         "slackCreateChannel",
+        "slackInviteUserToWorkspace",
         "slackInviteUsersToChannel",
         "slackPostMessage",
+        "slackUserInChannel",
+        "slackUserInWorkspace",
         "storeReplyRecommendationsFeedback",
         "submit",
         "submitDigitalFormResponse",
@@ -222,16 +226,16 @@ type salesforce.FlowStageStep {
     }
   }
   salesforce.FlowStageStepEntryActionInputParameter entryActionInputParameters {
-    _required = false
+    
   }
   string entryActionName {
-    _required = false
+    
   }
   salesforce.FlowStageStepEntryActionOutputParameter entryActionOutputParameters {
-    _required = false
+    
   }
   string entryActionType {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -410,9 +414,13 @@ type salesforce.FlowStageStep {
         "setCheckoutDeliveryMethod",
         "sfdcOutputAction",
         "skillsBasedRouting",
+        "slackArchiveChannel",
         "slackCreateChannel",
+        "slackInviteUserToWorkspace",
         "slackInviteUsersToChannel",
         "slackPostMessage",
+        "slackUserInChannel",
+        "slackUserInWorkspace",
         "storeReplyRecommendationsFeedback",
         "submit",
         "submitDigitalFormResponse",
@@ -427,22 +435,22 @@ type salesforce.FlowStageStep {
     }
   }
   string entryConditionLogic {
-    _required = false
+    
   }
   salesforce.FlowCondition entryConditions {
-    _required = false
+    
   }
   salesforce.FlowStageStepExitActionInputParameter exitActionInputParameters {
-    _required = false
+    
   }
   string exitActionName {
-    _required = false
+    
   }
   salesforce.FlowStageStepExitActionOutputParameter exitActionOutputParameters {
-    _required = false
+    
   }
   string exitActionType {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -621,9 +629,13 @@ type salesforce.FlowStageStep {
         "setCheckoutDeliveryMethod",
         "sfdcOutputAction",
         "skillsBasedRouting",
+        "slackArchiveChannel",
         "slackCreateChannel",
+        "slackInviteUserToWorkspace",
         "slackInviteUsersToChannel",
         "slackPostMessage",
+        "slackUserInChannel",
+        "slackUserInWorkspace",
         "storeReplyRecommendationsFeedback",
         "submit",
         "submitDigitalFormResponse",
@@ -638,13 +650,13 @@ type salesforce.FlowStageStep {
     }
   }
   salesforce.FlowStageStepInputParameter inputParameters {
-    _required = false
+    
   }
   string label {
-    _required = false
+    
   }
   salesforce.FlowStageStepOutputParameter outputParameters {
-    _required = false
+    
   }
   metadataType = "FlowStageStep"
 }

@@ -14,13 +14,13 @@ type salesforce.RedirectWhitelistUrl {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   string url {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     _hidden_value = true
     localOnly = true
   }

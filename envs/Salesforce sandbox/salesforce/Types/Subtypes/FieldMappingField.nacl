@@ -14,20 +14,20 @@ type salesforce.FieldMappingField {
     }
   }
   string dataServiceField {
-    _required = false
+    
     foreignKeyDomain = [
       salesforce.CustomField,
       "CustomFieldDataColumn",
     ]
   }
   string dataServiceObjectName {
-    _required = false
+    
     foreignKeyDomain = [
       "CustomObject",
     ]
   }
   number priority {
-    _required = false
+    
   }
   metadataType = "FieldMappingField"
 }

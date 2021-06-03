@@ -14,7 +14,7 @@ type salesforce.ApprovalStepRejectBehavior {
     }
   }
   string type {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [

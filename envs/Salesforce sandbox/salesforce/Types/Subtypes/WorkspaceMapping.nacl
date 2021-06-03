@@ -14,10 +14,10 @@ type salesforce.WorkspaceMapping {
     }
   }
   string fieldName {
-    _required = false
+    
   }
   string tab {
-    _required = false
+    
   }
   metadataType = "WorkspaceMapping"
 }

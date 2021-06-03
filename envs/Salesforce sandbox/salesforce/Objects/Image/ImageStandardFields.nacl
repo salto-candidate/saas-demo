@@ -2,7 +2,7 @@ type salesforce.Image {
   serviceid Id {
     apiName = "Image.Id"
     label = "Image ID"
-    _required = false
+    
     queryable = true
     
     updateable = false
@@ -12,8 +12,8 @@ type salesforce.Image {
   salesforce.Lookup OwnerId {
     apiName = "Image.OwnerId"
     label = "Owner ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Group,
       salesforce.User,
@@ -33,13 +33,13 @@ type salesforce.Image {
     updateable = false
     queryable = true
     
-    _required = false
+    
     _hidden_value = true
   }
   salesforce.Text Name {
     apiName = "Image.Name"
     label = "Name"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -50,7 +50,7 @@ type salesforce.Image {
   salesforce.DateTime CreatedDate {
     apiName = "Image.CreatedDate"
     label = "Created Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -60,8 +60,8 @@ type salesforce.Image {
   salesforce.Lookup CreatedById {
     apiName = "Image.CreatedById"
     label = "Created By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -75,7 +75,7 @@ type salesforce.Image {
   salesforce.DateTime LastModifiedDate {
     apiName = "Image.LastModifiedDate"
     label = "Last Modified Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -85,8 +85,8 @@ type salesforce.Image {
   salesforce.Lookup LastModifiedById {
     apiName = "Image.LastModifiedById"
     label = "Last Modified By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -100,7 +100,7 @@ type salesforce.Image {
   salesforce.DateTime SystemModstamp {
     apiName = "Image.SystemModstamp"
     label = "System Modstamp"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -110,7 +110,7 @@ type salesforce.Image {
   salesforce.Text ImageViewType {
     apiName = "Image.ImageViewType"
     label = "Image Orientation"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -129,7 +129,7 @@ type salesforce.Image {
   salesforce.Picklist ImageClass {
     apiName = "Image.ImageClass"
     label = "Category"
-    _required = false
+    
     valueSet = [
       {
         fullName = "SCENES"
@@ -164,7 +164,7 @@ type salesforce.Image {
   salesforce.Picklist ImageClassObjectType {
     apiName = "Image.ImageClassObjectType"
     label = "Image Type"
-    _required = false
+    
     valueSet = [
       {
         fullName = "TRAINING"
@@ -193,8 +193,8 @@ type salesforce.Image {
   salesforce.Lookup ContentDocumentId {
     apiName = "Image.ContentDocumentId"
     label = "ContentDocument ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       "ContentDocument",
     ]
@@ -202,11 +202,12 @@ type salesforce.Image {
     updateable = true
     queryable = true
     relationshipName = "ContentDocument"
+    trackHistory = "false"
   }
   salesforce.Text CapturedAngle {
     apiName = "Image.CapturedAngle"
     label = "Camera Angle"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -217,7 +218,7 @@ type salesforce.Image {
   salesforce.Text Title {
     apiName = "Image.Title"
     label = "Title"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -228,7 +229,7 @@ type salesforce.Image {
   salesforce.Text AlternateText {
     apiName = "Image.AlternateText"
     label = "Accessibility Text"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -239,7 +240,7 @@ type salesforce.Image {
   salesforce.Url Url {
     apiName = "Image.Url"
     label = "URL"
-    _required = false
+    
     createable = true
     updateable = true
     queryable = true

@@ -14,7 +14,7 @@ type salesforce.FlowSchedule {
     }
   }
   string frequency {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -26,10 +26,10 @@ type salesforce.FlowSchedule {
     }
   }
   string startDate {
-    _required = false
+    
   }
   string startTime {
-    _required = false
+    
   }
   metadataType = "FlowSchedule"
 }

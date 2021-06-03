@@ -14,13 +14,13 @@ type salesforce.FlowInputFieldAssignment {
     }
   }
   string field {
-    _required = false
+    
   }
   "List<salesforce.FlowMetadataValue>" processMetadataValues {
-    _required = false
+    
   }
   salesforce.FlowElementReferenceOrValue value {
-    _required = false
+    
   }
   metadataType = "FlowInputFieldAssignment"
 }

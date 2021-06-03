@@ -14,13 +14,13 @@ type salesforce.CustomLabel {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   string categories {
-    _required = false
+    
   }
   string language {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -46,16 +46,16 @@ type salesforce.CustomLabel {
     }
   }
   boolean protected {
-    _required = false
+    
   }
   string shortDescription {
-    _required = false
+    
   }
   string value {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true

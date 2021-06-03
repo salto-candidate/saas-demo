@@ -2,7 +2,7 @@ type salesforce.Pricebook2 {
   serviceid Id {
     apiName = "Pricebook2.Id"
     label = "Price Book ID"
-    _required = false
+    
     queryable = true
     
     updateable = false
@@ -17,7 +17,7 @@ type salesforce.Pricebook2 {
     updateable = false
     queryable = true
     
-    _required = false
+    
     _hidden_value = true
   }
   salesforce.Text Name {
@@ -34,7 +34,7 @@ type salesforce.Pricebook2 {
   salesforce.DateTime CreatedDate {
     apiName = "Pricebook2.CreatedDate"
     label = "Created Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -44,8 +44,8 @@ type salesforce.Pricebook2 {
   salesforce.Lookup CreatedById {
     apiName = "Pricebook2.CreatedById"
     label = "Created By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -59,7 +59,7 @@ type salesforce.Pricebook2 {
   salesforce.DateTime LastModifiedDate {
     apiName = "Pricebook2.LastModifiedDate"
     label = "Last Modified Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -69,8 +69,8 @@ type salesforce.Pricebook2 {
   salesforce.Lookup LastModifiedById {
     apiName = "Pricebook2.LastModifiedById"
     label = "Last Modified By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -84,7 +84,7 @@ type salesforce.Pricebook2 {
   salesforce.DateTime SystemModstamp {
     apiName = "Pricebook2.SystemModstamp"
     label = "System Modstamp"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -110,7 +110,7 @@ type salesforce.Pricebook2 {
   salesforce.Text Description {
     apiName = "Pricebook2.Description"
     label = "Description"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false

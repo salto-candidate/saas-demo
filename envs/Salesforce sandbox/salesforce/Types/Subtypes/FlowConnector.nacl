@@ -14,10 +14,10 @@ type salesforce.FlowConnector {
     }
   }
   salesforce.FlowMetadataValue processMetadataValues {
-    _required = false
+    
   }
   string targetReference {
-    _required = false
+    
   }
   metadataType = "FlowConnector"
 }

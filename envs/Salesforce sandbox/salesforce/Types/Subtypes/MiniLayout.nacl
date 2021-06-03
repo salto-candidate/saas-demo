@@ -14,10 +14,10 @@ type salesforce.MiniLayout {
     }
   }
   "List<string>" fields {
-    _required = false
+    
   }
   salesforce.RelatedListItem relatedLists {
-    _required = false
+    
   }
   metadataType = "MiniLayout"
 }

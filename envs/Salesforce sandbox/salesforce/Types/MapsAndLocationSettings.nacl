@@ -14,10 +14,10 @@ settings salesforce.MapsAndLocationSettings {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true

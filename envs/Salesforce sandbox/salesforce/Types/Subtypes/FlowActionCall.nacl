@@ -14,28 +14,28 @@ type salesforce.FlowActionCall {
     }
   }
   "List<salesforce.FlowMetadataValue>" processMetadataValues {
-    _required = false
+    
   }
   string description {
-    _required = false
+    
   }
   string name {
-    _required = false
+    
   }
   string label {
-    _required = false
+    
   }
   number locationX {
-    _required = false
+    
   }
   number locationY {
-    _required = false
+    
   }
   string actionName {
-    _required = false
+    
   }
   string actionType {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -214,9 +214,13 @@ type salesforce.FlowActionCall {
         "setCheckoutDeliveryMethod",
         "sfdcOutputAction",
         "skillsBasedRouting",
+        "slackArchiveChannel",
         "slackCreateChannel",
+        "slackInviteUserToWorkspace",
         "slackInviteUsersToChannel",
         "slackPostMessage",
+        "slackUserInChannel",
+        "slackUserInWorkspace",
         "storeReplyRecommendationsFeedback",
         "submit",
         "submitDigitalFormResponse",
@@ -231,20 +235,20 @@ type salesforce.FlowActionCall {
     }
   }
   salesforce.FlowConnector connector {
-    _required = false
+    
   }
   salesforce.FlowConnector faultConnector {
-    _required = false
+    
   }
   "List<salesforce.FlowActionCallInputParameter>" inputParameters {
-    _required = false
+    
   }
   salesforce.FlowActionCallOutputParameter outputParameters {
-    _required = false
+    
   }
   metadataType = "FlowActionCall"
   string elementSubtype {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -256,9 +260,9 @@ type salesforce.FlowActionCall {
     ]
   }
   salesforce.FlowDataTypeMapping dataTypeMappings {
-    _required = false
+    
   }
   boolean storeOutputAutomatically {
-    _required = false
+    
   }
 }

@@ -14,16 +14,16 @@ type salesforce.EmailServicesFunction {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   string apexClass {
-    _required = false
+    
     foreignKeyDomain = [
       salesforce.ApexClass,
     ]
   }
   string attachmentOption {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -36,7 +36,7 @@ type salesforce.EmailServicesFunction {
     }
   }
   string authenticationFailureAction {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -48,7 +48,7 @@ type salesforce.EmailServicesFunction {
     }
   }
   string authorizationFailureAction {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -60,16 +60,16 @@ type salesforce.EmailServicesFunction {
     }
   }
   string authorizedSenders {
-    _required = false
+    
   }
   salesforce.EmailServicesAddress emailServicesAddresses {
-    _required = false
+    
   }
   string errorRoutingAddress {
-    _required = false
+    
   }
   string functionInactiveAction {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -81,25 +81,25 @@ type salesforce.EmailServicesFunction {
     }
   }
   string functionName {
-    _required = false
+    
   }
   boolean isActive {
-    _required = false
+    
   }
   boolean isAuthenticationRequired {
-    _required = false
+    
   }
   boolean isErrorRoutingEnabled {
-    _required = false
+    
   }
   boolean isTextAttachmentsAsBinary {
-    _required = false
+    
   }
   boolean isTlsRequired {
-    _required = false
+    
   }
   string overLimitAction {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -111,7 +111,7 @@ type salesforce.EmailServicesFunction {
     }
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true

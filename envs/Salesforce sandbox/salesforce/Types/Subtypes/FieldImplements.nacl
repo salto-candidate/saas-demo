@@ -14,10 +14,10 @@ type salesforce.FieldImplements {
     }
   }
   string field {
-    _required = false
+    
   }
   string interfaceField {
-    _required = false
+    
   }
   metadataType = "FieldImplements"
 }

@@ -14,7 +14,7 @@ type salesforce.ConnectedAppCanvasConfig {
     }
   }
   string accessMethod {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -24,13 +24,13 @@ type salesforce.ConnectedAppCanvasConfig {
     }
   }
   string canvasUrl {
-    _required = false
+    
   }
   string lifecycleClass {
-    _required = false
+    
   }
   "List<string>" locations {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -50,7 +50,7 @@ type salesforce.ConnectedAppCanvasConfig {
     }
   }
   string options {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -61,7 +61,7 @@ type salesforce.ConnectedAppCanvasConfig {
     }
   }
   string samlInitiationMethod {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [

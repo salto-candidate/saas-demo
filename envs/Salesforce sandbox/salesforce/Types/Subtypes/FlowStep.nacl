@@ -14,28 +14,28 @@ type salesforce.FlowStep {
     }
   }
   salesforce.FlowConnector connectors {
-    _required = false
+    
   }
   string description {
-    _required = false
+    
   }
   string label {
-    _required = false
+    
   }
   number locationX {
-    _required = false
+    
   }
   number locationY {
-    _required = false
+    
   }
   string name {
-    _required = false
+    
   }
   salesforce.FlowMetadataValue processMetadataValues {
-    _required = false
+    
   }
   metadataType = "FlowStep"
   string elementSubtype {
-    _required = false
+    
   }
 }

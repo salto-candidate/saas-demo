@@ -14,7 +14,7 @@ type salesforce.FlowCategoryItems {
     }
   }
   string flow {
-    _required = false
+    
   }
   metadataType = "FlowCategoryItems"
 }

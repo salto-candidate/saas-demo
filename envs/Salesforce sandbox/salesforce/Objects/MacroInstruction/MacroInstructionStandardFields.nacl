@@ -2,7 +2,7 @@ type salesforce.MacroInstruction {
   serviceid Id {
     apiName = "MacroInstruction.Id"
     label = "Macro Instruction ID"
-    _required = false
+    
     queryable = true
     
     updateable = false
@@ -17,13 +17,13 @@ type salesforce.MacroInstruction {
     updateable = false
     queryable = true
     
-    _required = false
+    
     _hidden_value = true
   }
   salesforce.AutoNumber Name {
     apiName = "MacroInstruction.Name"
     label = "Macro Instruction Name"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -33,7 +33,7 @@ type salesforce.MacroInstruction {
   salesforce.DateTime CreatedDate {
     apiName = "MacroInstruction.CreatedDate"
     label = "Created Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -43,8 +43,8 @@ type salesforce.MacroInstruction {
   salesforce.Lookup CreatedById {
     apiName = "MacroInstruction.CreatedById"
     label = "Created By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -58,7 +58,7 @@ type salesforce.MacroInstruction {
   salesforce.DateTime LastModifiedDate {
     apiName = "MacroInstruction.LastModifiedDate"
     label = "Last Modified Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -68,8 +68,8 @@ type salesforce.MacroInstruction {
   salesforce.Lookup LastModifiedById {
     apiName = "MacroInstruction.LastModifiedById"
     label = "Last Modified By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -83,7 +83,7 @@ type salesforce.MacroInstruction {
   salesforce.DateTime SystemModstamp {
     apiName = "MacroInstruction.SystemModstamp"
     label = "System Modstamp"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -94,7 +94,7 @@ type salesforce.MacroInstruction {
     apiName = "MacroInstruction.MacroId"
     label = "Macro ID"
     _required = true
-    allowLookupRecordDeletion = true
+    
     referenceTo = [
       salesforce.Macro,
     ]
@@ -171,7 +171,7 @@ type salesforce.MacroInstruction {
   salesforce.Picklist Target {
     apiName = "MacroInstruction.Target"
     label = "Target"
-    _required = false
+    
     valueSet = [
       {
         fullName = "Field.Account.Description"
@@ -1340,7 +1340,7 @@ type salesforce.MacroInstruction {
   salesforce.LongTextArea Value {
     apiName = "MacroInstruction.Value"
     label = "Value"
-    _required = false
+    
     createable = true
     updateable = true
     length = 4000
@@ -1349,7 +1349,7 @@ type salesforce.MacroInstruction {
   salesforce.Text ValueRecord {
     apiName = "MacroInstruction.ValueRecord"
     label = "Value Record ID"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false

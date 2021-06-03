@@ -14,67 +14,67 @@ settings salesforce.SearchSettings {
     }
   }
   boolean documentContentSearchEnabled {
-    _required = false
+    
   }
   serviceid fullName {
-    _required = false
+    
   }
   boolean optimizeSearchForCJKEnabled {
-    _required = false
+    
   }
   boolean recentlyViewedUsersForBlankLookupEnabled {
-    _required = false
+    
   }
   salesforce.SearchSettingsByObject searchSettingsByObject {
-    _required = false
+    
   }
   boolean sidebarAutoCompleteEnabled {
-    _required = false
+    
   }
   boolean sidebarDropDownListEnabled {
-    _required = false
+    
   }
   boolean sidebarLimitToItemsIOwnCheckboxEnabled {
-    _required = false
+    
   }
   boolean singleSearchResultShortcutEnabled {
-    _required = false
+    
   }
   boolean spellCorrectKnowledgeSearchEnabled {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true
   }
   boolean enableAdvancedSearchInAlohaSidebar {
-    _required = false
+    
   }
   boolean enableEinsteinSearchPersonalization {
-    _required = false
+    
   }
   boolean enablePersonalTagging {
-    _required = false
+    
   }
   boolean enablePublicTagging {
-    _required = false
+    
   }
   boolean enableSalesforceGeneratedSynonyms {
-    _required = false
+    
   }
   boolean enableSearchTermHistory {
-    _required = false
+    
   }
   boolean enableSetupSearch {
-    _required = false
+    
   }
   boolean enableSuggestArticlesLinksOnly {
-    _required = false
+    
   }
   boolean enableUseDefaultSearchEntity {
-    _required = false
+    
   }
   metadataType = "SearchSettings"
   suffix = "settings"

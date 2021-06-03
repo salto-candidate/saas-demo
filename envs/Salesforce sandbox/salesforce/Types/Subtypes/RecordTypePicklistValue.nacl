@@ -14,10 +14,10 @@ type salesforce.RecordTypePicklistValue {
     }
   }
   string picklist {
-    _required = false
+    
   }
   "List<salesforce.PicklistValue>" values {
-    _required = false
+    
   }
   metadataType = "RecordTypePicklistValue"
 }

@@ -2,7 +2,7 @@ type salesforce.ForecastingQuota {
   serviceid Id {
     apiName = "ForecastingQuota.Id"
     label = "ForecastingQuota ID"
-    _required = false
+    
     queryable = true
     
     updateable = false
@@ -12,8 +12,8 @@ type salesforce.ForecastingQuota {
   salesforce.Lookup PeriodId {
     apiName = "ForecastingQuota.PeriodId"
     label = "Period ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       "Period",
     ]
@@ -32,7 +32,7 @@ type salesforce.ForecastingQuota {
   salesforce.Picklist ProductFamily {
     apiName = "ForecastingQuota.ProductFamily"
     label = "Product Family"
-    _required = false
+    
     restricted = false
     createable = true
     updateable = true
@@ -64,7 +64,7 @@ type salesforce.ForecastingQuota {
     apiName = "ForecastingQuota.QuotaOwnerId"
     label = "Owner ID"
     _required = true
-    allowLookupRecordDeletion = true
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -92,7 +92,7 @@ type salesforce.ForecastingQuota {
   salesforce.DateTime CreatedDate {
     apiName = "ForecastingQuota.CreatedDate"
     label = "Created Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -102,8 +102,8 @@ type salesforce.ForecastingQuota {
   salesforce.Lookup CreatedById {
     apiName = "ForecastingQuota.CreatedById"
     label = "Created By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -117,7 +117,7 @@ type salesforce.ForecastingQuota {
   salesforce.DateTime LastModifiedDate {
     apiName = "ForecastingQuota.LastModifiedDate"
     label = "Last Modified Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -127,8 +127,8 @@ type salesforce.ForecastingQuota {
   salesforce.Lookup LastModifiedById {
     apiName = "ForecastingQuota.LastModifiedById"
     label = "Last Modified By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -142,7 +142,7 @@ type salesforce.ForecastingQuota {
   salesforce.DateTime SystemModstamp {
     apiName = "ForecastingQuota.SystemModstamp"
     label = "System Modstamp"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -153,7 +153,7 @@ type salesforce.ForecastingQuota {
     apiName = "ForecastingQuota.ForecastingTypeId"
     label = "Forecasting Type ID"
     _required = true
-    allowLookupRecordDeletion = true
+    
     referenceTo = [
       "ForecastingType",
     ]

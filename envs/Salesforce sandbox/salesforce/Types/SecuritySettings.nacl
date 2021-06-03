@@ -14,46 +14,46 @@ settings salesforce.SecuritySettings {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   salesforce.NetworkAccess networkAccess {
-    _required = false
+    
   }
   salesforce.PasswordPolicies passwordPolicies {
-    _required = false
+    
   }
   salesforce.SessionSettings sessionSettings {
-    _required = false
+    
   }
   salesforce.SingleSignOnSettings singleSignOnSettings {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true
   }
   boolean canUsersGrantLoginAccess {
-    _required = false
+    
   }
   boolean enableAdminLoginAsAnyUser {
-    _required = false
+    
   }
   boolean enableAuditFieldsInactiveOwner {
-    _required = false
+    
   }
   boolean enableAuraSecureEvalPref {
-    _required = false
+    
   }
   boolean enableRequireHttpsConnection {
-    _required = false
+    
   }
   boolean isTLSv12Required {
-    _required = false
+    
   }
   boolean isTLSv12RequiredCommunities {
-    _required = false
+    
   }
   metadataType = "SecuritySettings"
   suffix = "settings"

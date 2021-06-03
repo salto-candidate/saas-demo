@@ -14,13 +14,13 @@ type salesforce.PathAssistantStep {
     }
   }
   "List<string>" fieldNames {
-    _required = false
+    
   }
   string info {
-    _required = false
+    
   }
   string picklistValueName {
-    _required = false
+    
   }
   metadataType = "PathAssistantStep"
 }

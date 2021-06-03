@@ -14,19 +14,19 @@ type salesforce.ValueSet {
     }
   }
   string controllingField {
-    _required = false
+    
   }
   boolean restricted {
-    _required = false
+    
   }
   salesforce.ValueSetValuesDefinition valueSetDefinition {
-    _required = false
+    
   }
   string valueSetName {
-    _required = false
+    
   }
   salesforce.ValueSettings valueSettings {
-    _required = false
+    
   }
   metadataType = "ValueSet"
 }

@@ -14,22 +14,22 @@ type salesforce.ManagedContentNodeType {
     }
   }
   string helpText {
-    _required = false
+    
   }
   boolean isLocalizable {
-    _required = false
+    
   }
   boolean isRequired {
-    _required = false
+    
   }
   string nodeLabel {
-    _required = false
+    
   }
   string nodeName {
-    _required = false
+    
   }
   string nodeType {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -58,7 +58,7 @@ type salesforce.ManagedContentNodeType {
     }
   }
   string placeholderText {
-    _required = false
+    
   }
   metadataType = "ManagedContentNodeType"
 }

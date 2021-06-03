@@ -14,10 +14,10 @@ type salesforce.QuickActionSendEmailOptions {
     }
   }
   string defaultEmailTemplateName {
-    _required = false
+    
   }
   boolean ignoreDefaultEmailTemplateSubject {
-    _required = false
+    
   }
   metadataType = "QuickActionSendEmailOptions"
 }

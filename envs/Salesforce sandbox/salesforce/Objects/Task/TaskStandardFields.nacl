@@ -2,7 +2,7 @@ type salesforce.Task {
   serviceid Id {
     apiName = "Task.Id"
     label = "Activity ID"
-    _required = false
+    
     queryable = true
     
     updateable = false
@@ -12,8 +12,8 @@ type salesforce.Task {
   salesforce.Lookup WhoId {
     apiName = "Task.WhoId"
     label = "Name ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Contact,
       salesforce.Lead,
@@ -26,8 +26,8 @@ type salesforce.Task {
   salesforce.Lookup WhatId {
     apiName = "Task.WhatId"
     label = "Related To ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Account,
       salesforce.Asset,
@@ -53,7 +53,7 @@ type salesforce.Task {
   salesforce.Number WhoCount {
     apiName = "Task.WhoCount"
     label = "Relation Count"
-    _required = false
+    
     precision = 9
     createable = false
     updateable = false
@@ -64,7 +64,7 @@ type salesforce.Task {
   salesforce.Number WhatCount {
     apiName = "Task.WhatCount"
     label = "Related To Count"
-    _required = false
+    
     precision = 9
     createable = false
     updateable = false
@@ -75,7 +75,7 @@ type salesforce.Task {
   salesforce.Picklist Subject {
     apiName = "Task.Subject"
     label = "Subject"
-    _required = false
+    
     restricted = false
     createable = true
     updateable = true
@@ -85,7 +85,7 @@ type salesforce.Task {
   salesforce.Date ActivityDate {
     apiName = "Task.ActivityDate"
     label = "Due Date Only"
-    _required = false
+    
     createable = true
     updateable = true
     queryable = true
@@ -121,8 +121,8 @@ type salesforce.Task {
   salesforce.Lookup OwnerId {
     apiName = "Task.OwnerId"
     label = "Assigned To ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Group,
       salesforce.User,
@@ -137,7 +137,7 @@ type salesforce.Task {
   salesforce.LongTextArea Description {
     apiName = "Task.Description"
     label = "Description"
-    _required = false
+    
     createable = true
     updateable = true
     length = 32000
@@ -151,14 +151,14 @@ type salesforce.Task {
     updateable = false
     queryable = true
     
-    _required = false
+    
     _hidden_value = true
   }
   salesforce.Lookup AccountId {
     apiName = "Task.AccountId"
     label = "Account ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Account,
     ]
@@ -178,7 +178,7 @@ type salesforce.Task {
   salesforce.DateTime CreatedDate {
     apiName = "Task.CreatedDate"
     label = "Created Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -188,8 +188,8 @@ type salesforce.Task {
   salesforce.Lookup CreatedById {
     apiName = "Task.CreatedById"
     label = "Created By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -203,7 +203,7 @@ type salesforce.Task {
   salesforce.DateTime LastModifiedDate {
     apiName = "Task.LastModifiedDate"
     label = "Last Modified Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -213,8 +213,8 @@ type salesforce.Task {
   salesforce.Lookup LastModifiedById {
     apiName = "Task.LastModifiedById"
     label = "Last Modified By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -228,7 +228,7 @@ type salesforce.Task {
   salesforce.DateTime SystemModstamp {
     apiName = "Task.SystemModstamp"
     label = "System Modstamp"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -246,7 +246,7 @@ type salesforce.Task {
   salesforce.Number CallDurationInSeconds {
     apiName = "Task.CallDurationInSeconds"
     label = "Call Duration"
-    _required = false
+    
     precision = 8
     createable = true
     updateable = true
@@ -257,7 +257,7 @@ type salesforce.Task {
   salesforce.Picklist CallType {
     apiName = "Task.CallType"
     label = "Call Type"
-    _required = false
+    
     valueSet = [
       {
         fullName = "Internal"
@@ -286,7 +286,7 @@ type salesforce.Task {
   salesforce.Text CallDisposition {
     apiName = "Task.CallDisposition"
     label = "Call Result"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -297,7 +297,7 @@ type salesforce.Task {
   salesforce.Text CallObject {
     apiName = "Task.CallObject"
     label = "Call Object Identifier"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -308,7 +308,7 @@ type salesforce.Task {
   salesforce.DateTime ReminderDateTime {
     apiName = "Task.ReminderDateTime"
     label = "Reminder Date/Time"
-    _required = false
+    
     createable = true
     updateable = true
     queryable = true
@@ -324,8 +324,8 @@ type salesforce.Task {
   salesforce.Lookup RecurrenceActivityId {
     apiName = "Task.RecurrenceActivityId"
     label = "Recurrence Activity ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Task,
     ]
@@ -344,7 +344,7 @@ type salesforce.Task {
   salesforce.Date RecurrenceStartDateOnly {
     apiName = "Task.RecurrenceStartDateOnly"
     label = "Recurrence Start"
-    _required = false
+    
     createable = true
     updateable = true
     queryable = true
@@ -352,7 +352,7 @@ type salesforce.Task {
   salesforce.Date RecurrenceEndDateOnly {
     apiName = "Task.RecurrenceEndDateOnly"
     label = "Recurrence End"
-    _required = false
+    
     createable = true
     updateable = true
     queryable = true
@@ -360,7 +360,7 @@ type salesforce.Task {
   salesforce.Picklist RecurrenceTimeZoneSidKey {
     apiName = "Task.RecurrenceTimeZoneSidKey"
     label = "Recurrence Time Zone"
-    _required = false
+    
     valueSet = [
       {
         fullName = "Pacific/Kiritimati"
@@ -729,6 +729,12 @@ type salesforce.Task {
         isActive = true
       },
       {
+        fullName = "Africa/Casablanca"
+        default = false
+        label = "(GMT+01:00) Western European Summer Time (Africa/Casablanca)"
+        isActive = true
+      },
+      {
         fullName = "Europe/Dublin"
         default = false
         label = "(GMT+01:00) Irish Standard Time (Europe/Dublin)"
@@ -744,12 +750,6 @@ type salesforce.Task {
         fullName = "Europe/London"
         default = false
         label = "(GMT+01:00) British Summer Time (Europe/London)"
-        isActive = true
-      },
-      {
-        fullName = "Africa/Casablanca"
-        default = false
-        label = "(GMT+00:00) Western European Standard Time (Africa/Casablanca)"
         isActive = true
       },
       {
@@ -965,7 +965,7 @@ type salesforce.Task {
   salesforce.Picklist RecurrenceType {
     apiName = "Task.RecurrenceType"
     label = "Recurrence Type"
-    _required = false
+    
     valueSet = [
       {
         fullName = "RecursDaily"
@@ -1018,7 +1018,7 @@ type salesforce.Task {
   salesforce.Number RecurrenceInterval {
     apiName = "Task.RecurrenceInterval"
     label = "Recurrence Interval"
-    _required = false
+    
     precision = 9
     createable = true
     updateable = true
@@ -1029,7 +1029,7 @@ type salesforce.Task {
   salesforce.Number RecurrenceDayOfWeekMask {
     apiName = "Task.RecurrenceDayOfWeekMask"
     label = "Recurrence Day of Week Mask"
-    _required = false
+    
     precision = 9
     createable = true
     updateable = true
@@ -1040,7 +1040,7 @@ type salesforce.Task {
   salesforce.Number RecurrenceDayOfMonth {
     apiName = "Task.RecurrenceDayOfMonth"
     label = "Recurrence Day of Month"
-    _required = false
+    
     precision = 9
     createable = true
     updateable = true
@@ -1051,7 +1051,7 @@ type salesforce.Task {
   salesforce.Picklist RecurrenceInstance {
     apiName = "Task.RecurrenceInstance"
     label = "Recurrence Instance"
-    _required = false
+    
     valueSet = [
       {
         fullName = "First"
@@ -1092,7 +1092,7 @@ type salesforce.Task {
   salesforce.Picklist RecurrenceMonthOfYear {
     apiName = "Task.RecurrenceMonthOfYear"
     label = "Recurrence Month of Year"
-    _required = false
+    
     valueSet = [
       {
         fullName = "January"
@@ -1175,7 +1175,7 @@ type salesforce.Task {
   salesforce.Picklist RecurrenceRegeneratedType {
     apiName = "Task.RecurrenceRegeneratedType"
     label = "Repeat This Task"
-    _required = false
+    
     valueSet = [
       {
         fullName = "RecurrenceRegenerateAfterDueDate"
@@ -1204,7 +1204,7 @@ type salesforce.Task {
   salesforce.Picklist TaskSubtype {
     apiName = "Task.TaskSubtype"
     label = "Task Subtype"
-    _required = false
+    
     valueSet = [
       {
         fullName = "Task"
@@ -1245,7 +1245,7 @@ type salesforce.Task {
   salesforce.DateTime CompletedDateTime {
     apiName = "Task.CompletedDateTime"
     label = "Completed Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true

@@ -2,7 +2,7 @@ type salesforce.Idea {
   serviceid Id {
     apiName = "Idea.Id"
     label = "Idea ID"
-    _required = false
+    
     queryable = true
     
     updateable = false
@@ -17,7 +17,7 @@ type salesforce.Idea {
     updateable = false
     queryable = true
     
-    _required = false
+    
     _hidden_value = true
   }
   salesforce.Text Title {
@@ -34,8 +34,8 @@ type salesforce.Idea {
   salesforce.Lookup RecordTypeId {
     apiName = "Idea.RecordTypeId"
     label = "Record Type ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.RecordType,
     ]
@@ -49,7 +49,7 @@ type salesforce.Idea {
   salesforce.DateTime CreatedDate {
     apiName = "Idea.CreatedDate"
     label = "Created Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -59,8 +59,8 @@ type salesforce.Idea {
   salesforce.Lookup CreatedById {
     apiName = "Idea.CreatedById"
     label = "Created By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -74,7 +74,7 @@ type salesforce.Idea {
   salesforce.DateTime LastModifiedDate {
     apiName = "Idea.LastModifiedDate"
     label = "Last Modified Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -84,8 +84,8 @@ type salesforce.Idea {
   salesforce.Lookup LastModifiedById {
     apiName = "Idea.LastModifiedById"
     label = "Last Modified By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -99,7 +99,7 @@ type salesforce.Idea {
   salesforce.DateTime SystemModstamp {
     apiName = "Idea.SystemModstamp"
     label = "System Modstamp"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -110,7 +110,7 @@ type salesforce.Idea {
     apiName = "Idea.CommunityId"
     label = "Zone ID"
     _required = true
-    allowLookupRecordDeletion = true
+    
     referenceTo = [
       salesforce.Community,
     ]
@@ -122,7 +122,7 @@ type salesforce.Idea {
   salesforce.Html Body {
     apiName = "Idea.Body"
     label = "Idea Body"
-    _required = false
+    
     createable = true
     updateable = true
     length = 32000
@@ -131,7 +131,7 @@ type salesforce.Idea {
   salesforce.Summary NumComments {
     apiName = "Idea.NumComments"
     label = "Number of Comments"
-    _required = false
+    
     precision = 9
     createable = false
     updateable = false
@@ -140,7 +140,7 @@ type salesforce.Idea {
   salesforce.Number VoteScore {
     apiName = "Idea.VoteScore"
     label = "Vote Score"
-    _required = false
+    
     precision = 18
     scale = 4
     createable = false
@@ -151,7 +151,7 @@ type salesforce.Idea {
   salesforce.Number VoteTotal {
     apiName = "Idea.VoteTotal"
     label = "Vote Total"
-    _required = false
+    
     precision = 18
     scale = 0
     createable = false
@@ -162,7 +162,7 @@ type salesforce.Idea {
   salesforce.MultiselectPicklist Categories {
     apiName = "Idea.Categories"
     label = "Categories"
-    _required = false
+    
     createable = true
     updateable = true
     queryable = true
@@ -170,7 +170,7 @@ type salesforce.Idea {
   salesforce.Picklist Status {
     apiName = "Idea.Status"
     label = "Status"
-    _required = false
+    
     createable = true
     updateable = true
     queryable = true
@@ -178,7 +178,7 @@ type salesforce.Idea {
   salesforce.Summary LastCommentDate {
     apiName = "Idea.LastCommentDate"
     label = "Last Idea Comment Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -186,8 +186,8 @@ type salesforce.Idea {
   salesforce.Lookup LastCommentId {
     apiName = "Idea.LastCommentId"
     label = "Idea Comment ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       "IdeaComment",
     ]
@@ -199,8 +199,8 @@ type salesforce.Idea {
   salesforce.Lookup ParentIdeaId {
     apiName = "Idea.ParentIdeaId"
     label = "Idea ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Idea,
     ]
@@ -228,7 +228,7 @@ type salesforce.Idea {
   salesforce.Text CreatorFullPhotoUrl {
     apiName = "Idea.CreatorFullPhotoUrl"
     label = "Url of Creator's Profile Photo"
-    _required = false
+    
     createable = false
     updateable = false
     unique = false
@@ -239,7 +239,7 @@ type salesforce.Idea {
   salesforce.Text CreatorSmallPhotoUrl {
     apiName = "Idea.CreatorSmallPhotoUrl"
     label = "Url of Creator's Thumbnail Photo"
-    _required = false
+    
     createable = false
     updateable = false
     unique = false
@@ -250,7 +250,7 @@ type salesforce.Idea {
   salesforce.Text CreatorName {
     apiName = "Idea.CreatorName"
     label = "Name of Creator"
-    _required = false
+    
     createable = false
     updateable = false
     unique = false

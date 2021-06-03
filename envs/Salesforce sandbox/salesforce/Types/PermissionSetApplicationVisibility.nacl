@@ -14,10 +14,10 @@ type salesforce.PermissionSetApplicationVisibility {
     }
   }
   string application {
-    _required = false
+    
   }
   boolean visible {
-    _required = false
+    
   }
   
   

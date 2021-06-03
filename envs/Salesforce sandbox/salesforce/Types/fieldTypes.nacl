@@ -30,6 +30,14 @@ type salesforce.Geolocation {
     }
     hidden_string internalId {
     }
+    boolean externalId {
+    }
+    boolean trackTrending {
+    }
+    boolean trackFeedHistory {
+    }
+    boolean deprecated {
+    }
   }
   number latitude {
   }
@@ -41,6 +49,14 @@ type salesforce.Name {
     hidden_string internalId {
     }
     string relationshipName {
+    }
+    boolean externalId {
+    }
+    boolean trackTrending {
+    }
+    boolean trackFeedHistory {
+    }
+    boolean deprecated {
     }
   }
   string MiddleName {
@@ -76,6 +92,14 @@ type salesforce.Name2 {
     }
     hidden_string internalId {
     }
+    boolean externalId {
+    }
+    boolean trackTrending {
+    }
+    boolean trackFeedHistory {
+    }
+    boolean deprecated {
+    }
   }
   string FirstName {
   }
@@ -84,5 +108,21 @@ type salesforce.Name2 {
   string MiddleName {
   }
   string Suffix {
+  }
+}
+type salesforce.Address {
+  annotations {
+    boolean externalId {
+    }
+    boolean trackTrending {
+    }
+    boolean trackFeedHistory {
+    }
+    boolean deprecated {
+    }
+    string relationshipLabel {
+    }
+    string deleteConstraint {
+    }
   }
 }

@@ -3,7 +3,7 @@ type salesforce.CommSubscriptionTiming {
     apiName = "CommSubscriptionTiming.CommSubscriptionConsentId"
     label = "Communication Subscription Consent ID"
     _required = true
-    allowLookupRecordDeletion = true
+    
     referenceTo = [
       salesforce.CommSubscriptionConsent,
     ]
@@ -12,6 +12,7 @@ type salesforce.CommSubscriptionTiming {
     updateable = false
     relationshipName = "CommSubscriptionConsent"
     queryable = true
+    trackHistory = "false"
   }
   salesforce.Unknown Offset {
     apiName = "CommSubscriptionTiming.Offset"
@@ -19,6 +20,7 @@ type salesforce.CommSubscriptionTiming {
     queryable = false
     updateable = false
     createable = false
+    trackHistory = "false"
   }
   salesforce.Unknown PreferredTimeEnd {
     apiName = "CommSubscriptionTiming.PreferredTimeEnd"
@@ -26,6 +28,7 @@ type salesforce.CommSubscriptionTiming {
     queryable = false
     updateable = false
     createable = false
+    trackHistory = "false"
   }
   salesforce.Unknown PreferredTimeStart {
     apiName = "CommSubscriptionTiming.PreferredTimeStart"
@@ -33,6 +36,7 @@ type salesforce.CommSubscriptionTiming {
     queryable = false
     updateable = false
     createable = false
+    trackHistory = "false"
   }
   salesforce.Unknown PreferredTimeZone {
     apiName = "CommSubscriptionTiming.PreferredTimeZone"
@@ -40,6 +44,7 @@ type salesforce.CommSubscriptionTiming {
     queryable = false
     updateable = false
     createable = false
+    trackHistory = "false"
   }
   salesforce.Picklist Unit {
     apiName = "CommSubscriptionTiming.Unit"
@@ -86,7 +91,7 @@ type salesforce.CommSubscriptionTiming {
   serviceid Id {
     apiName = "CommSubscriptionTiming.Id"
     label = "Communication Subscription Timing ID"
-    _required = false
+    
     queryable = true
     _hidden_value = true
     updateable = false
@@ -100,12 +105,12 @@ type salesforce.CommSubscriptionTiming {
     updateable = false
     queryable = true
     _hidden_value = true
-    _required = false
+    
   }
   salesforce.AutoNumber Name {
     apiName = "CommSubscriptionTiming.Name"
     label = "Name"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -114,7 +119,7 @@ type salesforce.CommSubscriptionTiming {
   salesforce.DateTime CreatedDate {
     apiName = "CommSubscriptionTiming.CreatedDate"
     label = "Created Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -123,8 +128,8 @@ type salesforce.CommSubscriptionTiming {
   salesforce.Lookup CreatedById {
     apiName = "CommSubscriptionTiming.CreatedById"
     label = "Created By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -137,7 +142,7 @@ type salesforce.CommSubscriptionTiming {
   salesforce.DateTime LastModifiedDate {
     apiName = "CommSubscriptionTiming.LastModifiedDate"
     label = "Last Modified Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -146,8 +151,8 @@ type salesforce.CommSubscriptionTiming {
   salesforce.Lookup LastModifiedById {
     apiName = "CommSubscriptionTiming.LastModifiedById"
     label = "Last Modified By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -160,7 +165,7 @@ type salesforce.CommSubscriptionTiming {
   salesforce.DateTime SystemModstamp {
     apiName = "CommSubscriptionTiming.SystemModstamp"
     label = "System Modstamp"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true

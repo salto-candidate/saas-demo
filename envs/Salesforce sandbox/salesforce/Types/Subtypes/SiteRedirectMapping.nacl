@@ -14,7 +14,7 @@ type salesforce.SiteRedirectMapping {
     }
   }
   string action {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -24,13 +24,13 @@ type salesforce.SiteRedirectMapping {
     }
   }
   boolean isActive {
-    _required = false
+    
   }
   string source {
-    _required = false
+    
   }
   string target {
-    _required = false
+    
   }
   metadataType = "SiteRedirectMapping"
 }

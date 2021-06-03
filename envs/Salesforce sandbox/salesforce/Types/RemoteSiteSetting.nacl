@@ -14,22 +14,22 @@ type salesforce.RemoteSiteSetting {
     }
   }
   string description {
-    _required = false
+    
   }
   boolean disableProtocolSecurity {
-    _required = false
+    
   }
   serviceid fullName {
-    _required = false
+    
   }
   boolean isActive {
-    _required = false
+    
   }
   string url {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true

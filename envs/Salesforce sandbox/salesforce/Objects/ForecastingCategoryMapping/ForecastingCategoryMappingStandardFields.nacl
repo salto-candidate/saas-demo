@@ -2,7 +2,7 @@ type salesforce.ForecastingCategoryMapping {
   serviceid Id {
     apiName = "ForecastingCategoryMapping.Id"
     label = "Forecasting Category Mapping ID"
-    _required = false
+    
     queryable = true
     
     updateable = false
@@ -17,13 +17,13 @@ type salesforce.ForecastingCategoryMapping {
     updateable = false
     queryable = true
     
-    _required = false
+    
     _hidden_value = true
   }
   salesforce.DateTime CreatedDate {
     apiName = "ForecastingCategoryMapping.CreatedDate"
     label = "Created Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -33,8 +33,8 @@ type salesforce.ForecastingCategoryMapping {
   salesforce.Lookup CreatedById {
     apiName = "ForecastingCategoryMapping.CreatedById"
     label = "Created By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -48,7 +48,7 @@ type salesforce.ForecastingCategoryMapping {
   salesforce.DateTime LastModifiedDate {
     apiName = "ForecastingCategoryMapping.LastModifiedDate"
     label = "Last Modified Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -58,8 +58,8 @@ type salesforce.ForecastingCategoryMapping {
   salesforce.Lookup LastModifiedById {
     apiName = "ForecastingCategoryMapping.LastModifiedById"
     label = "Last Modified By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -73,7 +73,7 @@ type salesforce.ForecastingCategoryMapping {
   salesforce.DateTime SystemModstamp {
     apiName = "ForecastingCategoryMapping.SystemModstamp"
     label = "System Modstamp"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true

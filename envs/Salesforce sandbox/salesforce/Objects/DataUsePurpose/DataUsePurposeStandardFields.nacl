@@ -2,7 +2,7 @@ type salesforce.DataUsePurpose {
   serviceid Id {
     apiName = "DataUsePurpose.Id"
     label = "Data Use Purpose ID"
-    _required = false
+    
     queryable = true
     
     updateable = false
@@ -12,8 +12,8 @@ type salesforce.DataUsePurpose {
   salesforce.Lookup OwnerId {
     apiName = "DataUsePurpose.OwnerId"
     label = "Owner ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Group,
       salesforce.User,
@@ -33,7 +33,7 @@ type salesforce.DataUsePurpose {
     updateable = false
     queryable = true
     
-    _required = false
+    
     _hidden_value = true
   }
   salesforce.Text Name {
@@ -50,7 +50,7 @@ type salesforce.DataUsePurpose {
   salesforce.DateTime CreatedDate {
     apiName = "DataUsePurpose.CreatedDate"
     label = "Created Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -60,8 +60,8 @@ type salesforce.DataUsePurpose {
   salesforce.Lookup CreatedById {
     apiName = "DataUsePurpose.CreatedById"
     label = "Created By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -75,7 +75,7 @@ type salesforce.DataUsePurpose {
   salesforce.DateTime LastModifiedDate {
     apiName = "DataUsePurpose.LastModifiedDate"
     label = "Last Modified Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -85,8 +85,8 @@ type salesforce.DataUsePurpose {
   salesforce.Lookup LastModifiedById {
     apiName = "DataUsePurpose.LastModifiedById"
     label = "Last Modified By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -100,7 +100,7 @@ type salesforce.DataUsePurpose {
   salesforce.DateTime SystemModstamp {
     apiName = "DataUsePurpose.SystemModstamp"
     label = "System Modstamp"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -110,8 +110,8 @@ type salesforce.DataUsePurpose {
   salesforce.Lookup LegalBasisId {
     apiName = "DataUsePurpose.LegalBasisId"
     label = "Legal Basis ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.DataUseLegalBasis,
     ]
@@ -119,11 +119,12 @@ type salesforce.DataUsePurpose {
     updateable = true
     queryable = true
     relationshipName = "LegalBasis"
+    trackHistory = "false"
   }
   salesforce.Text Description {
     apiName = "DataUsePurpose.Description"
     label = "Description"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false

@@ -14,22 +14,22 @@ type salesforce.AppBrand {
     }
   }
   string footerColor {
-    _required = false
+    
   }
   string headerColor {
-    _required = false
+    
   }
   string logo {
-    _required = false
+    
     foreignKeyDomain = [
       salesforce.ContentAsset,
     ]
   }
   number logoVersion {
-    _required = false
+    
   }
   boolean shouldOverrideOrgTheme {
-    _required = false
+    
   }
   metadataType = "AppBrand"
 }

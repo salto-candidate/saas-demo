@@ -14,10 +14,10 @@ type salesforce.LayoutSectionTranslation {
     }
   }
   string label {
-    _required = false
+    
   }
   string section {
-    _required = false
+    
   }
   metadataType = "LayoutSectionTranslation"
 }

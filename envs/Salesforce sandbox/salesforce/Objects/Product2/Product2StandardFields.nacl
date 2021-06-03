@@ -2,7 +2,7 @@ type salesforce.Product2 {
   serviceid Id {
     apiName = "Product2.Id"
     label = "Product ID"
-    _required = false
+    
     queryable = true
     
     updateable = false
@@ -23,7 +23,7 @@ type salesforce.Product2 {
   salesforce.Text ProductCode {
     apiName = "Product2.ProductCode"
     label = "Product Code"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -34,7 +34,7 @@ type salesforce.Product2 {
   salesforce.LongTextArea Description {
     apiName = "Product2.Description"
     label = "Product Description"
-    _required = false
+    
     createable = true
     updateable = true
     length = 4000
@@ -51,7 +51,7 @@ type salesforce.Product2 {
   salesforce.DateTime CreatedDate {
     apiName = "Product2.CreatedDate"
     label = "Created Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -61,8 +61,8 @@ type salesforce.Product2 {
   salesforce.Lookup CreatedById {
     apiName = "Product2.CreatedById"
     label = "Created By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -76,7 +76,7 @@ type salesforce.Product2 {
   salesforce.DateTime LastModifiedDate {
     apiName = "Product2.LastModifiedDate"
     label = "Last Modified Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -86,8 +86,8 @@ type salesforce.Product2 {
   salesforce.Lookup LastModifiedById {
     apiName = "Product2.LastModifiedById"
     label = "Last Modified By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -101,7 +101,7 @@ type salesforce.Product2 {
   salesforce.DateTime SystemModstamp {
     apiName = "Product2.SystemModstamp"
     label = "System Modstamp"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -111,29 +111,31 @@ type salesforce.Product2 {
   salesforce.Picklist Family {
     apiName = "Product2.Family"
     label = "Product Family"
-    _required = false
+    
     restricted = false
     createable = true
     updateable = true
     queryable = true
     valueSetName = salesforce.StandardValueSet.instance.Product2Family
+    trackHistory = "false"
   }
   salesforce.Lookup ExternalDataSourceId {
     apiName = "Product2.ExternalDataSourceId"
     label = "External Data Source ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.ExternalDataSource,
     ]
     createable = true
     updateable = true
     queryable = true
+    trackHistory = "false"
   }
   salesforce.Text ExternalId {
     apiName = "Product2.ExternalId"
     label = "External ID"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -144,7 +146,7 @@ type salesforce.Product2 {
   salesforce.Url DisplayUrl {
     apiName = "Product2.DisplayUrl"
     label = "Display URL"
-    _required = false
+    
     createable = true
     updateable = true
     queryable = true
@@ -152,7 +154,7 @@ type salesforce.Product2 {
   salesforce.Picklist QuantityUnitOfMeasure {
     apiName = "Product2.QuantityUnitOfMeasure"
     label = "Quantity Unit Of Measure"
-    _required = false
+    
     valueSet = [
       {
         fullName = "Each"
@@ -165,6 +167,7 @@ type salesforce.Product2 {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = "false"
   }
   salesforce.Checkbox IsDeleted {
     apiName = "Product2.IsDeleted"
@@ -174,7 +177,7 @@ type salesforce.Product2 {
     updateable = false
     queryable = true
     
-    _required = false
+    
     _hidden_value = true
   }
   salesforce.Checkbox IsArchived {
@@ -188,7 +191,7 @@ type salesforce.Product2 {
   salesforce.Text StockKeepingUnit {
     apiName = "Product2.StockKeepingUnit"
     label = "Product SKU"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false

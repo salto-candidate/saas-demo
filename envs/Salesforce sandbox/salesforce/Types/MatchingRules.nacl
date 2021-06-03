@@ -14,13 +14,13 @@ type salesforce.MatchingRules {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   "List<salesforce.MatchingRule>" matchingRules {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true

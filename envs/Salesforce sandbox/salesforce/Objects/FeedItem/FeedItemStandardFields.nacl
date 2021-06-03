@@ -2,7 +2,7 @@ type salesforce.FeedItem {
   serviceid Id {
     apiName = "FeedItem.Id"
     label = "Feed Item ID"
-    _required = false
+    
     queryable = true
     
     updateable = false
@@ -13,7 +13,7 @@ type salesforce.FeedItem {
     apiName = "FeedItem.ParentId"
     label = "Parent ID"
     _required = true
-    allowLookupRecordDeletion = true
+    
     referenceTo = [
       salesforce.Account,
       salesforce.Asset,
@@ -63,7 +63,7 @@ type salesforce.FeedItem {
   salesforce.Picklist Type {
     apiName = "FeedItem.Type"
     label = "Feed Item Type"
-    _required = false
+    
     valueSet = [
       {
         fullName = "TrackedChange"
@@ -248,8 +248,8 @@ type salesforce.FeedItem {
   salesforce.Lookup CreatedById {
     apiName = "FeedItem.CreatedById"
     label = "Created By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -263,7 +263,7 @@ type salesforce.FeedItem {
   salesforce.DateTime CreatedDate {
     apiName = "FeedItem.CreatedDate"
     label = "Created Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -278,13 +278,13 @@ type salesforce.FeedItem {
     updateable = false
     queryable = true
     
-    _required = false
+    
     _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "FeedItem.LastModifiedDate"
     label = "Last Modified Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -294,7 +294,7 @@ type salesforce.FeedItem {
   salesforce.DateTime SystemModstamp {
     apiName = "FeedItem.SystemModstamp"
     label = "System Modstamp"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -304,7 +304,7 @@ type salesforce.FeedItem {
   salesforce.Number Revision {
     apiName = "FeedItem.Revision"
     label = "Revision"
-    _required = false
+    
     precision = 9
     createable = true
     updateable = false
@@ -315,8 +315,8 @@ type salesforce.FeedItem {
   salesforce.Lookup LastEditById {
     apiName = "FeedItem.LastEditById"
     label = "Last Edit By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -327,7 +327,7 @@ type salesforce.FeedItem {
   salesforce.DateTime LastEditDate {
     apiName = "FeedItem.LastEditDate"
     label = "Last Edit Date"
-    _required = false
+    
     createable = true
     updateable = false
     queryable = true
@@ -357,7 +357,7 @@ type salesforce.FeedItem {
   salesforce.Text Title {
     apiName = "FeedItem.Title"
     label = "Title"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -368,7 +368,7 @@ type salesforce.FeedItem {
   salesforce.LongTextArea Body {
     apiName = "FeedItem.Body"
     label = "Body"
-    _required = false
+    
     createable = true
     updateable = true
     length = 10000
@@ -377,7 +377,7 @@ type salesforce.FeedItem {
   salesforce.Url LinkUrl {
     apiName = "FeedItem.LinkUrl"
     label = "Link Url"
-    _required = false
+    
     createable = true
     updateable = false
     queryable = true
@@ -393,8 +393,8 @@ type salesforce.FeedItem {
   salesforce.Lookup RelatedRecordId {
     apiName = "FeedItem.RelatedRecordId"
     label = "Related Record ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.ContentVersion,
       salesforce.ProfileSkillUser,
@@ -408,7 +408,7 @@ type salesforce.FeedItem {
     apiName = "FeedItem.InsertedById"
     label = "InsertedBy ID"
     _required = true
-    allowLookupRecordDeletion = true
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -420,8 +420,8 @@ type salesforce.FeedItem {
   salesforce.Lookup BestCommentId {
     apiName = "FeedItem.BestCommentId"
     label = "Best Comment ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       "FeedComment",
     ]
@@ -473,7 +473,7 @@ type salesforce.FeedItem {
   salesforce.Picklist Status {
     apiName = "FeedItem.Status"
     label = "Status"
-    _required = false
+    
     valueSet = [
       {
         fullName = "Published"

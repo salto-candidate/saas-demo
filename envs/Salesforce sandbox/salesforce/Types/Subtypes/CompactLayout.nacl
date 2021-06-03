@@ -14,16 +14,16 @@ type salesforce.CompactLayout {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   "List<string>" fields {
-    _required = false
+    
   }
   string label {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true

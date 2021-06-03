@@ -2,7 +2,7 @@ type salesforce.Contact {
   serviceid Id {
     apiName = "Contact.Id"
     label = "Contact ID"
-    _required = false
+    
     queryable = true
     
     updateable = false
@@ -17,14 +17,14 @@ type salesforce.Contact {
     updateable = false
     queryable = true
     
-    _required = false
+    
     _hidden_value = true
   }
   salesforce.Lookup MasterRecordId {
     apiName = "Contact.MasterRecordId"
     label = "Master Record ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Contact,
     ]
@@ -36,8 +36,8 @@ type salesforce.Contact {
   salesforce.Lookup AccountId {
     apiName = "Contact.AccountId"
     label = "Account ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Account,
     ]
@@ -45,6 +45,7 @@ type salesforce.Contact {
     updateable = true
     queryable = true
     relationshipName = "Account"
+    trackFeedHistory = true
   }
   salesforce.Name Name {
     apiName = "Contact.Name"
@@ -57,7 +58,7 @@ type salesforce.Contact {
   salesforce.Address MailingAddress {
     apiName = "Contact.MailingAddress"
     label = "Mailing Address"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -65,7 +66,7 @@ type salesforce.Contact {
   salesforce.Phone Phone {
     apiName = "Contact.Phone"
     label = "Business Phone"
-    _required = false
+    
     createable = true
     updateable = true
     queryable = true
@@ -73,7 +74,7 @@ type salesforce.Contact {
   salesforce.Phone Fax {
     apiName = "Contact.Fax"
     label = "Business Fax"
-    _required = false
+    
     createable = true
     updateable = true
     queryable = true
@@ -81,7 +82,7 @@ type salesforce.Contact {
   salesforce.Phone MobilePhone {
     apiName = "Contact.MobilePhone"
     label = "Mobile Phone"
-    _required = false
+    
     createable = true
     updateable = true
     queryable = true
@@ -89,8 +90,8 @@ type salesforce.Contact {
   salesforce.Lookup ReportsToId {
     apiName = "Contact.ReportsToId"
     label = "Reports To ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Contact,
     ]
@@ -98,11 +99,12 @@ type salesforce.Contact {
     updateable = true
     queryable = true
     relationshipName = "ReportsTo"
+    trackFeedHistory = false
   }
   salesforce.Email Email {
     apiName = "Contact.Email"
     label = "Email"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -111,7 +113,7 @@ type salesforce.Contact {
   salesforce.Text Title {
     apiName = "Contact.Title"
     label = "Title"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -122,7 +124,7 @@ type salesforce.Contact {
   salesforce.Text Department {
     apiName = "Contact.Department"
     label = "Department"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -133,8 +135,8 @@ type salesforce.Contact {
   salesforce.Lookup OwnerId {
     apiName = "Contact.OwnerId"
     label = "Owner ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -144,11 +146,12 @@ type salesforce.Contact {
     
     relationshipName = "Owner"
     _hidden_value = true
+    trackFeedHistory = true
   }
   salesforce.DateTime CreatedDate {
     apiName = "Contact.CreatedDate"
     label = "Created Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -158,8 +161,8 @@ type salesforce.Contact {
   salesforce.Lookup CreatedById {
     apiName = "Contact.CreatedById"
     label = "Created By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -173,7 +176,7 @@ type salesforce.Contact {
   salesforce.DateTime LastModifiedDate {
     apiName = "Contact.LastModifiedDate"
     label = "Last Modified Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -183,8 +186,8 @@ type salesforce.Contact {
   salesforce.Lookup LastModifiedById {
     apiName = "Contact.LastModifiedById"
     label = "Last Modified By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -198,7 +201,7 @@ type salesforce.Contact {
   salesforce.DateTime SystemModstamp {
     apiName = "Contact.SystemModstamp"
     label = "System Modstamp"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -208,7 +211,7 @@ type salesforce.Contact {
   salesforce.Date LastActivityDate {
     apiName = "Contact.LastActivityDate"
     label = "Last Activity"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -218,7 +221,7 @@ type salesforce.Contact {
   salesforce.DateTime LastCURequestDate {
     apiName = "Contact.LastCURequestDate"
     label = "Last Stay-in-Touch Request Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -226,7 +229,7 @@ type salesforce.Contact {
   salesforce.DateTime LastCUUpdateDate {
     apiName = "Contact.LastCUUpdateDate"
     label = "Last Stay-in-Touch Save Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -234,7 +237,7 @@ type salesforce.Contact {
   salesforce.Text EmailBouncedReason {
     apiName = "Contact.EmailBouncedReason"
     label = "Email Bounced Reason"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -245,7 +248,7 @@ type salesforce.Contact {
   salesforce.DateTime EmailBouncedDate {
     apiName = "Contact.EmailBouncedDate"
     label = "Email Bounced Date"
-    _required = false
+    
     createable = true
     updateable = true
     queryable = true
@@ -261,7 +264,7 @@ type salesforce.Contact {
   salesforce.Url PhotoUrl {
     apiName = "Contact.PhotoUrl"
     label = "Photo URL"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -269,7 +272,7 @@ type salesforce.Contact {
   salesforce.Text Jigsaw {
     apiName = "Contact.Jigsaw"
     label = "Data.com Key"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -280,7 +283,7 @@ type salesforce.Contact {
   salesforce.Text JigsawContactId {
     apiName = "Contact.JigsawContactId"
     label = "Jigsaw Contact ID"
-    _required = false
+    
     createable = false
     updateable = false
     unique = false
@@ -291,8 +294,8 @@ type salesforce.Contact {
   salesforce.Lookup IndividualId {
     apiName = "Contact.IndividualId"
     label = "Individual ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Individual,
     ]
@@ -300,71 +303,83 @@ type salesforce.Contact {
     updateable = true
     queryable = true
     relationshipName = "Individual"
+    trackFeedHistory = false
   }
   salesforce.Unknown AssistantName {
     apiName = "Contact.AssistantName"
     queryable = false
     updateable = false
     createable = false
+    trackFeedHistory = false
   }
   salesforce.Unknown AssistantPhone {
     apiName = "Contact.AssistantPhone"
     queryable = false
     updateable = false
     createable = false
+    trackFeedHistory = false
   }
   salesforce.Unknown Birthdate {
     apiName = "Contact.Birthdate"
     queryable = false
     updateable = false
     createable = false
+    trackFeedHistory = false
   }
   salesforce.Unknown Description {
     apiName = "Contact.Description"
     queryable = false
     updateable = false
     createable = false
+    trackFeedHistory = false
   }
   salesforce.Unknown DoNotCall {
     apiName = "Contact.DoNotCall"
     queryable = false
     updateable = false
     createable = false
+    trackFeedHistory = false
   }
   salesforce.Unknown HasOptedOutOfEmail {
     apiName = "Contact.HasOptedOutOfEmail"
     queryable = false
     updateable = false
     createable = false
+    trackFeedHistory = false
   }
   salesforce.Unknown HasOptedOutOfFax {
     apiName = "Contact.HasOptedOutOfFax"
     queryable = false
     updateable = false
     createable = false
+    trackFeedHistory = false
   }
   salesforce.Unknown HomePhone {
     apiName = "Contact.HomePhone"
     queryable = false
     updateable = false
     createable = false
+    trackFeedHistory = false
   }
   salesforce.Picklist LeadSource {
     apiName = "Contact.LeadSource"
     queryable = false
     updateable = false
     createable = false
+    trackFeedHistory = false
   }
   salesforce.Unknown OtherAddress {
     apiName = "Contact.OtherAddress"
     queryable = false
     updateable = false
     createable = false
+    trackFeedHistory = false
   }
   salesforce.Unknown OtherPhone {
     apiName = "Contact.OtherPhone"
     queryable = false
     updateable = false
     createable = false
+    trackFeedHistory = false
   }
 }

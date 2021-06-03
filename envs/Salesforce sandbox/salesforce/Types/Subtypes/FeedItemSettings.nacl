@@ -14,10 +14,10 @@ type salesforce.FeedItemSettings {
     }
   }
   number characterLimit {
-    _required = false
+    
   }
   string displayFormat {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -27,7 +27,7 @@ type salesforce.FeedItemSettings {
     }
   }
   string feedItemType {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [

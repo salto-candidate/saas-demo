@@ -14,16 +14,16 @@ type salesforce.RecordActionDefaultItem {
     }
   }
   string action {
-    _required = false
+    
   }
   boolean isMandatory {
-    _required = false
+    
   }
   boolean isUiRemoveHidden {
-    _required = false
+    
   }
   string pinned {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -34,10 +34,10 @@ type salesforce.RecordActionDefaultItem {
     }
   }
   number position {
-    _required = false
+    
   }
   string type {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [

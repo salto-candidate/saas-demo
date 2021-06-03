@@ -14,7 +14,7 @@ type salesforce.CountriesAndStates {
     }
   }
   "List<salesforce.Country>" countries {
-    _required = false
+    
   }
   metadataType = "CountriesAndStates"
 }

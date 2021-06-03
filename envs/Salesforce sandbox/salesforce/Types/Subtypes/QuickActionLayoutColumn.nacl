@@ -14,7 +14,7 @@ type salesforce.QuickActionLayoutColumn {
     }
   }
   "List<salesforce.QuickActionLayoutItem>" quickActionLayoutItems {
-    _required = false
+    
   }
   metadataType = "QuickActionLayoutColumn"
 }

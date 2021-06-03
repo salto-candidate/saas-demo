@@ -14,10 +14,10 @@ type salesforce.ApprovalStepApprover {
     }
   }
   salesforce.Approver approver {
-    _required = false
+    
   }
   string whenMultipleApprovers {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [

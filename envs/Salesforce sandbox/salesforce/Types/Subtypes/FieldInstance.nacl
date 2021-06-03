@@ -14,13 +14,13 @@ type salesforce.FieldInstance {
     }
   }
   salesforce.FieldInstanceProperty fieldInstanceProperties {
-    _required = false
+    
   }
   string fieldItem {
-    _required = false
+    
   }
   salesforce.UiFormulaRule visibilityRule {
-    _required = false
+    
   }
   metadataType = "FieldInstance"
 }

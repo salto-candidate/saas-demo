@@ -14,67 +14,67 @@ settings salesforce.CommunitiesSettings {
     }
   }
   boolean enableGuestRecordReassignOrgPref {
-    _required = false
+    
   }
   serviceid fullName {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true
   }
   boolean canModerateAllFeedPosts {
-    _required = false
+    
   }
   boolean canModerateInternalFeedPosts {
-    _required = false
+    
   }
   boolean embeddedVisualforcePages {
-    _required = false
+    
   }
   boolean enableCommunityWorkspaces {
-    _required = false
+    
   }
   boolean enableCspContactVisibilityPref {
-    _required = false
+    
   }
   boolean enableCspNotesOnAccConPref {
-    _required = false
+    
   }
   boolean enableEnablePRM {
-    _required = false
+    
   }
   boolean enableExternalAccHierPref {
-    _required = false
+    
   }
   boolean enableInviteChatterGuestEnabled {
-    _required = false
+    
   }
   boolean enableNetPortalUserReportOpts {
-    _required = false
+    
   }
   boolean enableNetworksEnabled {
-    _required = false
+    
   }
   boolean enableOotbProfExtUserOpsEnable {
-    _required = false
+    
   }
   boolean enablePowerCustomerCaseStatus {
-    _required = false
+    
   }
   boolean enablePRMAccRelPref {
-    _required = false
+    
   }
   boolean enableRelaxPartnerAccountFieldPref {
-    _required = false
+    
   }
   boolean enableUnsupportedBrowserModalPref {
-    _required = false
+    
   }
   boolean enableUsernameUniqForOrgPref {
-    _required = false
+    
   }
   metadataType = "CommunitiesSettings"
   suffix = "settings"

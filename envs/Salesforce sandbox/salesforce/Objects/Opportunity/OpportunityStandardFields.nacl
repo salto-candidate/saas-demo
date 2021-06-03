@@ -2,7 +2,7 @@ type salesforce.Opportunity {
   serviceid Id {
     apiName = "Opportunity.Id"
     label = "Opportunity ID"
-    _required = false
+    
     queryable = true
     
     updateable = false
@@ -17,14 +17,14 @@ type salesforce.Opportunity {
     updateable = false
     queryable = true
     
-    _required = false
+    
     _hidden_value = true
   }
   salesforce.Lookup AccountId {
     apiName = "Opportunity.AccountId"
     label = "Account ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Account,
     ]
@@ -32,6 +32,8 @@ type salesforce.Opportunity {
     updateable = true
     queryable = true
     relationshipName = "Account"
+    trackFeedHistory = false
+    trackTrending = false
   }
   salesforce.Text Name {
     apiName = "Opportunity.Name"
@@ -47,7 +49,7 @@ type salesforce.Opportunity {
   salesforce.LongTextArea Description {
     apiName = "Opportunity.Description"
     label = "Description"
-    _required = false
+    
     createable = true
     updateable = true
     length = 32000
@@ -62,11 +64,13 @@ type salesforce.Opportunity {
     updateable = true
     queryable = true
     valueSetName = salesforce.StandardValueSet.instance.OpportunityStage
+    trackFeedHistory = true
+    trackTrending = false
   }
   salesforce.Currency Amount {
     apiName = "Opportunity.Amount"
     label = "Amount"
-    _required = false
+    
     createable = true
     updateable = true
     scale = 2
@@ -76,7 +80,7 @@ type salesforce.Opportunity {
   salesforce.Percent Probability {
     apiName = "Opportunity.Probability"
     label = "Probability (%)"
-    _required = false
+    
     createable = true
     updateable = true
     scale = 0
@@ -94,17 +98,19 @@ type salesforce.Opportunity {
   salesforce.Picklist Type {
     apiName = "Opportunity.Type"
     label = "Opportunity Type"
-    _required = false
+    
     restricted = false
     createable = true
     updateable = true
     queryable = true
     valueSetName = salesforce.StandardValueSet.instance.OpportunityType
+    trackFeedHistory = false
+    trackTrending = false
   }
   salesforce.Text NextStep {
     apiName = "Opportunity.NextStep"
     label = "Next Step"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -115,12 +121,14 @@ type salesforce.Opportunity {
   salesforce.Picklist LeadSource {
     apiName = "Opportunity.LeadSource"
     label = "Lead Source"
-    _required = false
+    
     restricted = false
     createable = true
     updateable = true
     queryable = true
     valueSetName = salesforce.StandardValueSet.instance.LeadSource
+    trackFeedHistory = false
+    trackTrending = false
   }
   salesforce.Checkbox IsClosed {
     apiName = "Opportunity.IsClosed"
@@ -182,7 +190,7 @@ type salesforce.Opportunity {
   salesforce.Picklist ForecastCategoryName {
     apiName = "Opportunity.ForecastCategoryName"
     label = "Forecast Category"
-    _required = false
+    
     valueSet = [
       {
         fullName = "Omitted"
@@ -223,8 +231,8 @@ type salesforce.Opportunity {
   salesforce.Lookup CampaignId {
     apiName = "Opportunity.CampaignId"
     label = "Campaign ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Campaign,
     ]
@@ -232,6 +240,8 @@ type salesforce.Opportunity {
     updateable = true
     queryable = true
     relationshipName = "Campaign"
+    trackFeedHistory = false
+    trackTrending = false
   }
   salesforce.Checkbox HasOpportunityLineItem {
     apiName = "Opportunity.HasOpportunityLineItem"
@@ -244,8 +254,8 @@ type salesforce.Opportunity {
   salesforce.Lookup Pricebook2Id {
     apiName = "Opportunity.Pricebook2Id"
     label = "Price Book ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Pricebook2,
     ]
@@ -253,12 +263,13 @@ type salesforce.Opportunity {
     updateable = true
     queryable = true
     relationshipName = "Pricebook2"
+    trackTrending = false
   }
   salesforce.Lookup OwnerId {
     apiName = "Opportunity.OwnerId"
     label = "Owner ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -268,11 +279,13 @@ type salesforce.Opportunity {
     
     relationshipName = "Owner"
     _hidden_value = true
+    trackFeedHistory = true
+    trackTrending = false
   }
   salesforce.DateTime CreatedDate {
     apiName = "Opportunity.CreatedDate"
     label = "Created Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -282,8 +295,8 @@ type salesforce.Opportunity {
   salesforce.Lookup CreatedById {
     apiName = "Opportunity.CreatedById"
     label = "Created By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -297,7 +310,7 @@ type salesforce.Opportunity {
   salesforce.DateTime LastModifiedDate {
     apiName = "Opportunity.LastModifiedDate"
     label = "Last Modified Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -307,8 +320,8 @@ type salesforce.Opportunity {
   salesforce.Lookup LastModifiedById {
     apiName = "Opportunity.LastModifiedById"
     label = "Last Modified By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -322,7 +335,7 @@ type salesforce.Opportunity {
   salesforce.DateTime SystemModstamp {
     apiName = "Opportunity.SystemModstamp"
     label = "System Modstamp"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -332,7 +345,7 @@ type salesforce.Opportunity {
   salesforce.Date LastActivityDate {
     apiName = "Opportunity.LastActivityDate"
     label = "Last Activity"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -342,7 +355,7 @@ type salesforce.Opportunity {
   salesforce.Text Fiscal {
     apiName = "Opportunity.Fiscal"
     label = "Fiscal Period"
-    _required = false
+    
     createable = false
     updateable = false
     unique = false
@@ -353,8 +366,8 @@ type salesforce.Opportunity {
   salesforce.Lookup ContactId {
     apiName = "Opportunity.ContactId"
     label = "Contact ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Contact,
     ]
@@ -365,8 +378,8 @@ type salesforce.Opportunity {
   salesforce.Lookup SyncedQuoteId {
     apiName = "Opportunity.SyncedQuoteId"
     label = "Quote ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Quote,
     ]
@@ -374,12 +387,14 @@ type salesforce.Opportunity {
     updateable = true
     queryable = true
     relationshipName = "SyncedQuote"
+    trackFeedHistory = false
+    trackTrending = false
   }
   salesforce.Lookup ContractId {
     apiName = "Opportunity.ContractId"
     label = "Contract ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Contract,
     ]
@@ -387,6 +402,8 @@ type salesforce.Opportunity {
     updateable = true
     queryable = true
     relationshipName = "Contract"
+    trackFeedHistory = false
+    trackTrending = false
   }
   salesforce.Checkbox HasOpenActivity {
     apiName = "Opportunity.HasOpenActivity"
@@ -409,6 +426,7 @@ type salesforce.Opportunity {
     queryable = false
     updateable = false
     createable = false
+    trackTrending = false
   }
   salesforce.Unknown IqScore {
     apiName = "Opportunity.IqScore"
@@ -421,18 +439,22 @@ type salesforce.Opportunity {
     queryable = false
     updateable = false
     createable = false
+    trackFeedHistory = false
+    trackTrending = false
   }
   salesforce.Unknown TotalOpportunityQuantity {
     apiName = "Opportunity.TotalOpportunityQuantity"
     queryable = false
     updateable = false
     createable = false
+    trackFeedHistory = false
+    trackTrending = false
   }
   salesforce.Lookup LastAmountChangedHistoryId {
     apiName = "Opportunity.LastAmountChangedHistoryId"
     label = "Opportunity History ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       "OpportunityHistory",
     ]
@@ -444,8 +466,8 @@ type salesforce.Opportunity {
   salesforce.Lookup LastCloseDateChangedHistoryId {
     apiName = "Opportunity.LastCloseDateChangedHistoryId"
     label = "Opportunity History ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       "OpportunityHistory",
     ]

@@ -14,7 +14,7 @@ type salesforce.FlowMetadataValue {
     }
   }
   string name {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -28,7 +28,7 @@ type salesforce.FlowMetadataValue {
     }
   }
   salesforce.FlowElementReferenceOrValue value {
-    _required = false
+    
   }
   metadataType = "FlowMetadataValue"
 }

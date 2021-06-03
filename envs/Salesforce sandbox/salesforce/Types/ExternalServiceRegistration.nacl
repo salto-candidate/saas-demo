@@ -14,22 +14,22 @@ type salesforce.ExternalServiceRegistration {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   string description {
-    _required = false
+    
   }
   string label {
-    _required = false
+    
   }
   string namedCredential {
-    _required = false
+    
   }
   string schema {
-    _required = false
+    
   }
   string schemaType {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -40,10 +40,10 @@ type salesforce.ExternalServiceRegistration {
     }
   }
   string schemaUrl {
-    _required = false
+    
   }
   string status {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -53,7 +53,7 @@ type salesforce.ExternalServiceRegistration {
     }
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true
@@ -62,6 +62,6 @@ type salesforce.ExternalServiceRegistration {
   dirName = "externalServiceRegistrations"
   metadataType = "ExternalServiceRegistration"
   salesforce.ExternalServiceOperation operations {
-    _required = false
+    
   }
 }

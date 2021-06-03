@@ -14,16 +14,16 @@ type salesforce.ContentAssetRelationships {
     }
   }
   salesforce.ContentAssetLink insightsApplication {
-    _required = false
+    
   }
   salesforce.ContentAssetLink network {
-    _required = false
+    
   }
   salesforce.ContentAssetLink organization {
-    _required = false
+    
   }
   salesforce.ContentAssetLink workspace {
-    _required = false
+    
   }
   metadataType = "ContentAssetRelationships"
 }

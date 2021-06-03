@@ -14,10 +14,10 @@ type salesforce.ApexEmailNotification {
     }
   }
   string email {
-    _required = false
+    
   }
   string user {
-    _required = false
+    
     foreignKeyDomain = [
       salesforce.User,
     ]

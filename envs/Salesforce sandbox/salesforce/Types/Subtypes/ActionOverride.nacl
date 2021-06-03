@@ -14,13 +14,13 @@ type salesforce.ActionOverride {
     }
   }
   string actionName {
-    _required = false
+    
   }
   string comment {
-    _required = false
+    
   }
   string content {
-    _required = false
+    
     foreignKeyDomain = [
       salesforce.ApexPage,
       salesforce.AuraDefinitionBundle,
@@ -29,7 +29,7 @@ type salesforce.ActionOverride {
     ]
   }
   string formFactor {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -40,10 +40,10 @@ type salesforce.ActionOverride {
     }
   }
   boolean skipRecordTypeSelect {
-    _required = false
+    
   }
   string type {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [

@@ -14,28 +14,28 @@ type salesforce.CustomApplication {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   "List<salesforce.AppActionOverride>" actionOverrides {
-    _required = false
+    
   }
   salesforce.AppBrand brand {
-    _required = false
+    
     foreignKeyDomain = [
       salesforce.AppBrand,
     ]
   }
   salesforce.ServiceCloudConsoleConfig consoleConfig {
-    _required = false
+    
   }
   string defaultLandingTab {
-    _required = false
+    
   }
   string description {
-    _required = false
+    
   }
   "List<string>" formFactors {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -46,22 +46,22 @@ type salesforce.CustomApplication {
     }
   }
   boolean isNavAutoTempTabsDisabled {
-    _required = false
+    
   }
   boolean isNavPersonalizationDisabled {
-    _required = false
+    
   }
   boolean isServiceCloudConsole {
-    _required = false
+    
   }
   string label {
-    _required = false
+    
   }
   string logo {
-    _required = false
+    
   }
   string navType {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -71,25 +71,25 @@ type salesforce.CustomApplication {
     }
   }
   salesforce.AppPreferences preferences {
-    _required = false
+    
   }
   "List<salesforce.AppProfileActionOverride>" profileActionOverrides {
-    _required = false
+    
   }
   string setupExperience {
-    _required = false
+    
     foreignKeyDomain = [
       "SetupApp",
     ]
   }
   string subscriberTabs {
-    _required = false
+    
   }
   "List<string>" tabs {
-    _required = false
+    
   }
   string uiType {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -99,16 +99,16 @@ type salesforce.CustomApplication {
     }
   }
   string utilityBar {
-    _required = false
+    
     foreignKeyDomain = [
       salesforce.LightningPage,
     ]
   }
   salesforce.AppWorkspaceConfig workspaceConfig {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true

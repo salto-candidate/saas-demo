@@ -14,28 +14,28 @@ settings salesforce.OrderSettings {
     }
   }
   boolean enableNegativeQuantity {
-    _required = false
+    
   }
   boolean enableOrders {
-    _required = false
+    
   }
   boolean enableReductionOrders {
-    _required = false
+    
   }
   boolean enableZeroQuantity {
-    _required = false
+    
   }
   serviceid fullName {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true
   }
   boolean enableEnhancedCommerceOrders {
-    _required = false
+    
   }
   metadataType = "OrderSettings"
   suffix = "settings"

@@ -14,7 +14,7 @@ type salesforce.MLField {
     }
   }
   string entity {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -523,19 +523,19 @@ type salesforce.MLField {
     ]
   }
   string field {
-    _required = false
+    
     foreignKeyDomain = [
       salesforce.CustomField,
     ]
   }
   salesforce.MLField relatedField {
-    _required = false
+    
     foreignKeyDomain = [
       salesforce.MLField,
     ]
   }
   string relationType {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -547,7 +547,7 @@ type salesforce.MLField {
     }
   }
   string type {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [

@@ -14,13 +14,13 @@ type salesforce.DefaultShortcut {
     }
   }
   string action {
-    _required = false
+    
   }
   boolean active {
-    _required = false
+    
   }
   string keyCommand {
-    _required = false
+    
   }
   metadataType = "DefaultShortcut"
 }

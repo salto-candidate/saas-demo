@@ -14,19 +14,19 @@ settings salesforce.BusinessHoursSettings {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true
   }
   "Map<salesforce.BusinessHoursEntry>" businessHours {
-    _required = false
+    
   }
   "List<salesforce.Holidays>" holidays {
-    _required = false
+    
   }
   metadataType = "BusinessHoursSettings"
   suffix = "settings"

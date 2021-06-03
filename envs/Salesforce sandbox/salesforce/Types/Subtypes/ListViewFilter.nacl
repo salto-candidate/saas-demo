@@ -14,10 +14,10 @@ type salesforce.ListViewFilter {
     }
   }
   string field {
-    _required = false
+    
   }
   string value {
-    _required = false
+    
   }
   string operation {
     _restriction = {
@@ -37,7 +37,7 @@ type salesforce.ListViewFilter {
       ]
       enforce_value = false
     }
-    _required = false
+    
   }
   metadataType = "ListViewFilter"
 }

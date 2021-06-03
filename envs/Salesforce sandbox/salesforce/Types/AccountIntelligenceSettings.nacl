@@ -14,19 +14,19 @@ settings salesforce.AccountIntelligenceSettings {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   boolean enableAccountLogos {
-    _required = false
+    
   }
   boolean enableAutomatedAccountFields {
-    _required = false
+    
   }
   boolean enableNewsStories {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     _hidden_value = true
     localOnly = true
   }

@@ -14,10 +14,10 @@ type salesforce.CustomConsoleComponents {
     }
   }
   salesforce.PrimaryTabComponents primaryTabComponents {
-    _required = false
+    
   }
   salesforce.SubtabComponents subtabComponents {
-    _required = false
+    
   }
   metadataType = "CustomConsoleComponents"
 }

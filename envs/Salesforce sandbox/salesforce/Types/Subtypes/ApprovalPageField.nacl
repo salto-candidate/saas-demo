@@ -14,7 +14,7 @@ type salesforce.ApprovalPageField {
     }
   }
   "List<string>" field {
-    _required = false
+    
   }
   metadataType = "ApprovalPageField"
 }

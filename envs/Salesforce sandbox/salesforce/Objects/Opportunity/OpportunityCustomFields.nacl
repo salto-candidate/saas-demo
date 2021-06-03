@@ -6,6 +6,9 @@ type salesforce.Opportunity {
     createable = true
     updateable = true
     queryable = true
+    externalId = false
+    trackFeedHistory = false
+    trackTrending = false
   }
   salesforce.Checkbox Discovery_Completed__c {
     apiName = "Opportunity.Discovery_Completed__c"
@@ -14,6 +17,9 @@ type salesforce.Opportunity {
     createable = true
     updateable = true
     queryable = true
+    externalId = false
+    trackFeedHistory = false
+    trackTrending = false
   }
   salesforce.Checkbox ROI_Analysis_Completed__c {
     apiName = "Opportunity.ROI_Analysis_Completed__c"
@@ -22,11 +28,14 @@ type salesforce.Opportunity {
     createable = true
     updateable = true
     queryable = true
+    externalId = false
+    trackFeedHistory = false
+    trackTrending = false
   }
   salesforce.Picklist Loss_Reason__c {
     apiName = "Opportunity.Loss_Reason__c"
     label = "Loss Reason"
-    _required = false
+    
     valueSet = [
       {
         fullName = "Lost to Competitor"
@@ -59,5 +68,8 @@ type salesforce.Opportunity {
     updateable = true
     queryable = true
     sorted = false
+    externalId = false
+    trackFeedHistory = false
+    trackTrending = false
   }
 }

@@ -14,10 +14,10 @@ type salesforce.AuraDefinition {
     }
   }
   string defType {
-    _required = false
+    
   }
   string source {
-    _required = false
+    
   }
   metadataType = "AuraDefinition"
 }

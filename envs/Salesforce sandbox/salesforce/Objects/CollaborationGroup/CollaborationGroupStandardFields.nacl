@@ -2,7 +2,7 @@ type salesforce.CollaborationGroup {
   serviceid Id {
     apiName = "CollaborationGroup.Id"
     label = "Group Id"
-    _required = false
+    
     queryable = true
     
     updateable = false
@@ -23,7 +23,7 @@ type salesforce.CollaborationGroup {
   salesforce.Number MemberCount {
     apiName = "CollaborationGroup.MemberCount"
     label = "Member Count"
-    _required = false
+    
     precision = 9
     createable = false
     updateable = false
@@ -34,8 +34,8 @@ type salesforce.CollaborationGroup {
   salesforce.Lookup OwnerId {
     apiName = "CollaborationGroup.OwnerId"
     label = "Owner ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -78,7 +78,7 @@ type salesforce.CollaborationGroup {
   salesforce.LongTextArea Description {
     apiName = "CollaborationGroup.Description"
     label = "Description"
-    _required = false
+    
     createable = true
     updateable = true
     length = 1000
@@ -87,7 +87,7 @@ type salesforce.CollaborationGroup {
   salesforce.DateTime CreatedDate {
     apiName = "CollaborationGroup.CreatedDate"
     label = "Created Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -97,8 +97,8 @@ type salesforce.CollaborationGroup {
   salesforce.Lookup CreatedById {
     apiName = "CollaborationGroup.CreatedById"
     label = "Created By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -112,7 +112,7 @@ type salesforce.CollaborationGroup {
   salesforce.DateTime LastModifiedDate {
     apiName = "CollaborationGroup.LastModifiedDate"
     label = "Last Modified Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -122,8 +122,8 @@ type salesforce.CollaborationGroup {
   salesforce.Lookup LastModifiedById {
     apiName = "CollaborationGroup.LastModifiedById"
     label = "Last Modified By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -137,7 +137,7 @@ type salesforce.CollaborationGroup {
   salesforce.DateTime SystemModstamp {
     apiName = "CollaborationGroup.SystemModstamp"
     label = "System Modstamp"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -147,7 +147,7 @@ type salesforce.CollaborationGroup {
   salesforce.Url FullPhotoUrl {
     apiName = "CollaborationGroup.FullPhotoUrl"
     label = "Url for full-sized Photo"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -155,7 +155,7 @@ type salesforce.CollaborationGroup {
   salesforce.Url MediumPhotoUrl {
     apiName = "CollaborationGroup.MediumPhotoUrl"
     label = "Url for medium profile photo"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -163,7 +163,7 @@ type salesforce.CollaborationGroup {
   salesforce.Url SmallPhotoUrl {
     apiName = "CollaborationGroup.SmallPhotoUrl"
     label = "Photo"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -179,7 +179,7 @@ type salesforce.CollaborationGroup {
   salesforce.Text InformationTitle {
     apiName = "CollaborationGroup.InformationTitle"
     label = "Information Title"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -190,7 +190,7 @@ type salesforce.CollaborationGroup {
   salesforce.Html InformationBody {
     apiName = "CollaborationGroup.InformationBody"
     label = "Information"
-    _required = false
+    
     createable = true
     updateable = true
     length = 4000
@@ -231,8 +231,8 @@ type salesforce.CollaborationGroup {
   salesforce.Lookup AnnouncementId {
     apiName = "CollaborationGroup.AnnouncementId"
     label = "Announcement ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       "Announcement",
     ]
@@ -244,7 +244,7 @@ type salesforce.CollaborationGroup {
   salesforce.Email GroupEmail {
     apiName = "CollaborationGroup.GroupEmail"
     label = "Group Email"
-    _required = false
+    
     createable = false
     updateable = false
     unique = false
@@ -253,7 +253,7 @@ type salesforce.CollaborationGroup {
   salesforce.Url BannerPhotoUrl {
     apiName = "CollaborationGroup.BannerPhotoUrl"
     label = "Banner Photo Url"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true

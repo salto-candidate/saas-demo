@@ -14,25 +14,25 @@ type salesforce.CampaignInfluenceModel {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   boolean isActive {
-    _required = false
+    
   }
   boolean isDefaultModel {
-    _required = false
+    
   }
   boolean isModelLocked {
-    _required = false
+    
   }
   string modelDescription {
-    _required = false
+    
   }
   string name {
-    _required = false
+    
   }
   string recordPreference {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -42,7 +42,7 @@ type salesforce.CampaignInfluenceModel {
     }
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true

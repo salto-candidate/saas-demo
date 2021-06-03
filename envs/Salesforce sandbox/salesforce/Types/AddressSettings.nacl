@@ -14,13 +14,13 @@ settings salesforce.AddressSettings {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   salesforce.CountriesAndStates countriesAndStates {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true

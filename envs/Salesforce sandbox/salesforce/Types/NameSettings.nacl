@@ -14,26 +14,26 @@ settings salesforce.NameSettings {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   boolean enableMiddleName {
-    _required = false
+    
   }
   boolean enableNameSuffix {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true
   }
   boolean enableFormalName {
-    _required = false
+    
   }
   metadataType = "NameSettings"
   boolean enableInformalName {
-    _required = false
+    
   }
   suffix = "settings"
   dirName = "settings"

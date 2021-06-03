@@ -2,7 +2,7 @@ type salesforce.ForecastingTypeToCategory {
   serviceid Id {
     apiName = "ForecastingTypeToCategory.Id"
     label = "Forecasting Type To Category Mapping ID"
-    _required = false
+    
     queryable = true
     
     updateable = false
@@ -17,13 +17,13 @@ type salesforce.ForecastingTypeToCategory {
     updateable = false
     queryable = true
     
-    _required = false
+    
     _hidden_value = true
   }
   salesforce.DateTime CreatedDate {
     apiName = "ForecastingTypeToCategory.CreatedDate"
     label = "Created Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -33,8 +33,8 @@ type salesforce.ForecastingTypeToCategory {
   salesforce.Lookup CreatedById {
     apiName = "ForecastingTypeToCategory.CreatedById"
     label = "Created By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -48,7 +48,7 @@ type salesforce.ForecastingTypeToCategory {
   salesforce.DateTime LastModifiedDate {
     apiName = "ForecastingTypeToCategory.LastModifiedDate"
     label = "Last Modified Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -58,8 +58,8 @@ type salesforce.ForecastingTypeToCategory {
   salesforce.Lookup LastModifiedById {
     apiName = "ForecastingTypeToCategory.LastModifiedById"
     label = "Last Modified By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -73,7 +73,7 @@ type salesforce.ForecastingTypeToCategory {
   salesforce.DateTime SystemModstamp {
     apiName = "ForecastingTypeToCategory.SystemModstamp"
     label = "System Modstamp"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -84,7 +84,7 @@ type salesforce.ForecastingTypeToCategory {
     apiName = "ForecastingTypeToCategory.ForecastingTypeId"
     label = "Forecasting Type ID"
     _required = true
-    allowLookupRecordDeletion = true
+    
     referenceTo = [
       "ForecastingType",
     ]
@@ -155,7 +155,7 @@ type salesforce.ForecastingTypeToCategory {
   salesforce.Number DisplayPosition {
     apiName = "ForecastingTypeToCategory.DisplayPosition"
     label = "Display Position"
-    _required = false
+    
     precision = 9
     createable = false
     updateable = false

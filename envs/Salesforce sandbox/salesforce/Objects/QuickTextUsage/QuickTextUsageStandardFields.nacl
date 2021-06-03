@@ -2,7 +2,7 @@ type salesforce.QuickTextUsage {
   serviceid Id {
     apiName = "QuickTextUsage.Id"
     label = "Quick Text Usage ID"
-    _required = false
+    
     queryable = true
     
     updateable = false
@@ -12,8 +12,8 @@ type salesforce.QuickTextUsage {
   salesforce.Lookup OwnerId {
     apiName = "QuickTextUsage.OwnerId"
     label = "Owner ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Group,
       salesforce.User,
@@ -33,7 +33,7 @@ type salesforce.QuickTextUsage {
     updateable = false
     queryable = true
     
-    _required = false
+    
     _hidden_value = true
   }
   salesforce.Text Name {
@@ -50,7 +50,7 @@ type salesforce.QuickTextUsage {
   salesforce.DateTime CreatedDate {
     apiName = "QuickTextUsage.CreatedDate"
     label = "Created Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -60,8 +60,8 @@ type salesforce.QuickTextUsage {
   salesforce.Lookup CreatedById {
     apiName = "QuickTextUsage.CreatedById"
     label = "Created By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -75,7 +75,7 @@ type salesforce.QuickTextUsage {
   salesforce.DateTime LastModifiedDate {
     apiName = "QuickTextUsage.LastModifiedDate"
     label = "Last Modified Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -85,8 +85,8 @@ type salesforce.QuickTextUsage {
   salesforce.Lookup LastModifiedById {
     apiName = "QuickTextUsage.LastModifiedById"
     label = "Last Modified By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -100,7 +100,7 @@ type salesforce.QuickTextUsage {
   salesforce.DateTime SystemModstamp {
     apiName = "QuickTextUsage.SystemModstamp"
     label = "System Modstamp"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -111,7 +111,7 @@ type salesforce.QuickTextUsage {
     apiName = "QuickTextUsage.QuickTextId"
     label = "Quick Text ID"
     _required = true
-    allowLookupRecordDeletion = true
+    
     referenceTo = [
       salesforce.QuickText,
     ]
@@ -123,7 +123,7 @@ type salesforce.QuickTextUsage {
   salesforce.Picklist Channel {
     apiName = "QuickTextUsage.Channel"
     label = "Channel"
-    _required = false
+    
     valueSet = [
       {
         fullName = "Generic"
@@ -200,7 +200,7 @@ type salesforce.QuickTextUsage {
   salesforce.Picklist LaunchSource {
     apiName = "QuickTextUsage.LaunchSource"
     label = "Launch Source"
-    _required = false
+    
     valueSet = [
       {
         fullName = "Keyboard shortcut"
@@ -235,7 +235,7 @@ type salesforce.QuickTextUsage {
   salesforce.DateTime LoggedTime {
     apiName = "QuickTextUsage.LoggedTime"
     label = "Logged Time"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -243,8 +243,8 @@ type salesforce.QuickTextUsage {
   salesforce.Lookup UserId {
     apiName = "QuickTextUsage.UserId"
     label = "User ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -256,7 +256,7 @@ type salesforce.QuickTextUsage {
   salesforce.Picklist AppContext {
     apiName = "QuickTextUsage.AppContext"
     label = "App Context"
-    _required = false
+    
     valueSet = [
       {
         fullName = "Aloha"

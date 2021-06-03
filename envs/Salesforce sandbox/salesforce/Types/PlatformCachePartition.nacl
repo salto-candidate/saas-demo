@@ -14,22 +14,22 @@ type salesforce.PlatformCachePartition {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   string description {
-    _required = false
+    
   }
   boolean isDefaultPartition {
-    _required = false
+    
   }
   string masterLabel {
-    _required = false
+    
   }
   salesforce.PlatformCachePartitionType platformCachePartitionTypes {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true

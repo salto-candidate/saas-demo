@@ -14,10 +14,10 @@ type salesforce.WorkflowTask {
     }
   }
   string assignedTo {
-    _required = false
+    
   }
   string assignedToType {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -35,22 +35,22 @@ type salesforce.WorkflowTask {
     }
   }
   string description {
-    _required = false
+    
   }
   number dueDateOffset {
-    _required = false
+    
   }
   serviceid fullName {
-    _required = false
+    
   }
   boolean notifyAssignee {
-    _required = false
+    
   }
   string offsetFromField {
-    _required = false
+    
   }
   string priority {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -60,10 +60,10 @@ type salesforce.WorkflowTask {
     }
   }
   boolean protected {
-    _required = false
+    
   }
   string status {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -73,10 +73,10 @@ type salesforce.WorkflowTask {
     }
   }
   string subject {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true

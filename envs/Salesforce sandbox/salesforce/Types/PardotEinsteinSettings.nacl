@@ -14,19 +14,19 @@ settings salesforce.PardotEinsteinSettings {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true
   }
   boolean enableCampaignInsight {
-    _required = false
+    
   }
   boolean enableEngagementScore {
-    _required = false
+    
   }
   metadataType = "PardotEinsteinSettings"
   suffix = "settings"

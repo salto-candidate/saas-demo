@@ -14,10 +14,10 @@ type salesforce.AnimationRule {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   string animationFrequency {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -29,16 +29,16 @@ type salesforce.AnimationRule {
     }
   }
   string developerName {
-    _required = false
+    
   }
   boolean isActive {
-    _required = false
+    
   }
   string masterLabel {
-    _required = false
+    
   }
   string recordTypeContext {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -49,10 +49,10 @@ type salesforce.AnimationRule {
     }
   }
   string recordTypeName {
-    _required = false
+    
   }
   string sobjectType {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -74,7 +74,7 @@ type salesforce.AnimationRule {
     ]
   }
   string targetField {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -101,10 +101,10 @@ type salesforce.AnimationRule {
     ]
   }
   string targetFieldChangeToValues {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true

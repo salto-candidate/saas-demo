@@ -14,7 +14,7 @@ type salesforce.MktDataModelFieldAttributes {
     }
   }
   string definitionCreationType {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -28,7 +28,7 @@ type salesforce.MktDataModelFieldAttributes {
     }
   }
   string invalidMergeActionType {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -39,13 +39,13 @@ type salesforce.MktDataModelFieldAttributes {
     }
   }
   boolean isDynamicLookup {
-    _required = false
+    
   }
   number primaryIndexOrder {
-    _required = false
+    
   }
   string refAttrDeveloperName {
-    _required = false
+    
   }
   metadataType = "MktDataModelFieldAttributes"
 }

@@ -14,25 +14,25 @@ settings salesforce.SchemaSettings {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true
   }
   boolean enableAdvancedCMTSecurity {
-    _required = false
+    
   }
   boolean enableAdvancedCSSecurity {
-    _required = false
+    
   }
   boolean enableListCustomSettingCreation {
-    _required = false
+    
   }
   boolean enableSOSLOnCustomSettings {
-    _required = false
+    
   }
   metadataType = "SchemaSettings"
   suffix = "settings"

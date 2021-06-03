@@ -2,7 +2,7 @@ type salesforce.PricebookEntry {
   serviceid Id {
     apiName = "PricebookEntry.Id"
     label = "Price Book Entry ID"
-    _required = false
+    
     queryable = true
     
     updateable = false
@@ -12,7 +12,7 @@ type salesforce.PricebookEntry {
   salesforce.Text Name {
     apiName = "PricebookEntry.Name"
     label = "Product Name"
-    _required = false
+    
     createable = false
     updateable = false
     unique = false
@@ -24,7 +24,7 @@ type salesforce.PricebookEntry {
     apiName = "PricebookEntry.Pricebook2Id"
     label = "Price Book ID"
     _required = true
-    allowLookupRecordDeletion = true
+    
     referenceTo = [
       salesforce.Pricebook2,
     ]
@@ -37,7 +37,7 @@ type salesforce.PricebookEntry {
     apiName = "PricebookEntry.Product2Id"
     label = "Product ID"
     _required = true
-    allowLookupRecordDeletion = true
+    
     referenceTo = [
       salesforce.Product2,
     ]
@@ -75,7 +75,7 @@ type salesforce.PricebookEntry {
   salesforce.DateTime CreatedDate {
     apiName = "PricebookEntry.CreatedDate"
     label = "Created Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -85,8 +85,8 @@ type salesforce.PricebookEntry {
   salesforce.Lookup CreatedById {
     apiName = "PricebookEntry.CreatedById"
     label = "Created By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -100,7 +100,7 @@ type salesforce.PricebookEntry {
   salesforce.DateTime LastModifiedDate {
     apiName = "PricebookEntry.LastModifiedDate"
     label = "Last Modified Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -110,8 +110,8 @@ type salesforce.PricebookEntry {
   salesforce.Lookup LastModifiedById {
     apiName = "PricebookEntry.LastModifiedById"
     label = "Last Modified By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -125,7 +125,7 @@ type salesforce.PricebookEntry {
   salesforce.DateTime SystemModstamp {
     apiName = "PricebookEntry.SystemModstamp"
     label = "System Modstamp"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -135,7 +135,7 @@ type salesforce.PricebookEntry {
   salesforce.Text ProductCode {
     apiName = "PricebookEntry.ProductCode"
     label = "Product Code"
-    _required = false
+    
     createable = false
     updateable = false
     unique = false
@@ -151,7 +151,7 @@ type salesforce.PricebookEntry {
     updateable = false
     queryable = true
     
-    _required = false
+    
     _hidden_value = true
   }
   salesforce.Checkbox IsArchived {

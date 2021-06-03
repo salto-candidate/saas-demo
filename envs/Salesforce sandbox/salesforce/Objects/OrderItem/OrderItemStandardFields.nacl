@@ -2,7 +2,7 @@ type salesforce.OrderItem {
   serviceid Id {
     apiName = "OrderItem.Id"
     label = "Order Product ID"
-    _required = false
+    
     queryable = true
     
     updateable = false
@@ -12,8 +12,8 @@ type salesforce.OrderItem {
   salesforce.Lookup Product2Id {
     apiName = "OrderItem.Product2Id"
     label = "Product ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Product2,
     ]
@@ -30,14 +30,14 @@ type salesforce.OrderItem {
     updateable = false
     queryable = true
     
-    _required = false
+    
     _hidden_value = true
   }
   salesforce.Lookup OrderId {
     apiName = "OrderItem.OrderId"
     label = "Order ID"
     _required = true
-    allowLookupRecordDeletion = true
+    
     referenceTo = [
       salesforce.Order,
     ]
@@ -50,7 +50,7 @@ type salesforce.OrderItem {
     apiName = "OrderItem.PricebookEntryId"
     label = "Price Book Entry ID"
     _required = true
-    allowLookupRecordDeletion = true
+    
     referenceTo = [
       salesforce.PricebookEntry,
     ]
@@ -62,8 +62,8 @@ type salesforce.OrderItem {
   salesforce.Lookup OriginalOrderItemId {
     apiName = "OrderItem.OriginalOrderItemId"
     label = "Original Order Item ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.OrderItem,
     ]
@@ -75,7 +75,7 @@ type salesforce.OrderItem {
   salesforce.Number AvailableQuantity {
     apiName = "OrderItem.AvailableQuantity"
     label = "Available Quantity"
-    _required = false
+    
     precision = 18
     scale = 2
     createable = false
@@ -97,7 +97,7 @@ type salesforce.OrderItem {
   salesforce.Currency UnitPrice {
     apiName = "OrderItem.UnitPrice"
     label = "Unit Price"
-    _required = false
+    
     createable = true
     updateable = true
     scale = 2
@@ -107,7 +107,7 @@ type salesforce.OrderItem {
   salesforce.Currency ListPrice {
     apiName = "OrderItem.ListPrice"
     label = "List Price"
-    _required = false
+    
     createable = true
     updateable = false
     scale = 2
@@ -117,7 +117,7 @@ type salesforce.OrderItem {
   salesforce.Currency TotalPrice {
     apiName = "OrderItem.TotalPrice"
     label = "Total Price"
-    _required = false
+    
     createable = false
     updateable = false
     scale = 2
@@ -127,7 +127,7 @@ type salesforce.OrderItem {
   salesforce.Date ServiceDate {
     apiName = "OrderItem.ServiceDate"
     label = "Start Date"
-    _required = false
+    
     createable = true
     updateable = true
     queryable = true
@@ -135,7 +135,7 @@ type salesforce.OrderItem {
   salesforce.Date EndDate {
     apiName = "OrderItem.EndDate"
     label = "End Date"
-    _required = false
+    
     createable = true
     updateable = true
     queryable = true
@@ -143,7 +143,7 @@ type salesforce.OrderItem {
   salesforce.Text Description {
     apiName = "OrderItem.Description"
     label = "Line Description"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -154,7 +154,7 @@ type salesforce.OrderItem {
   salesforce.DateTime CreatedDate {
     apiName = "OrderItem.CreatedDate"
     label = "Created Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -164,8 +164,8 @@ type salesforce.OrderItem {
   salesforce.Lookup CreatedById {
     apiName = "OrderItem.CreatedById"
     label = "Created By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -179,7 +179,7 @@ type salesforce.OrderItem {
   salesforce.DateTime LastModifiedDate {
     apiName = "OrderItem.LastModifiedDate"
     label = "Last Modified Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -189,8 +189,8 @@ type salesforce.OrderItem {
   salesforce.Lookup LastModifiedById {
     apiName = "OrderItem.LastModifiedById"
     label = "Last Modified By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -204,7 +204,7 @@ type salesforce.OrderItem {
   salesforce.DateTime SystemModstamp {
     apiName = "OrderItem.SystemModstamp"
     label = "System Modstamp"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -214,7 +214,7 @@ type salesforce.OrderItem {
   salesforce.AutoNumber OrderItemNumber {
     apiName = "OrderItem.OrderItemNumber"
     label = "Order Product Number"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -232,5 +232,6 @@ type salesforce.OrderItem {
     queryable = false
     updateable = false
     createable = false
+    trackHistory = "false"
   }
 }

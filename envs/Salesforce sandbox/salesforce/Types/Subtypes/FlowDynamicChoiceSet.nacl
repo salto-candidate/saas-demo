@@ -14,43 +14,43 @@ type salesforce.FlowDynamicChoiceSet {
     }
   }
   string description {
-    _required = false
+    
   }
   string displayField {
-    _required = false
+    
   }
   salesforce.FlowRecordFilter filters {
-    _required = false
+    
   }
   number limit {
-    _required = false
+    
   }
   string name {
-    _required = false
+    
   }
   string object {
-    _required = false
+    
   }
   salesforce.FlowOutputFieldAssignment outputAssignments {
-    _required = false
+    
   }
   string picklistField {
-    _required = false
+    
   }
   string picklistObject {
-    _required = false
+    
     foreignKeyDomain = [
       "CustomObject",
     ]
   }
   salesforce.FlowMetadataValue processMetadataValues {
-    _required = false
+    
   }
   string sortField {
-    _required = false
+    
   }
   string valueField {
-    _required = false
+    
   }
   string dataType {
     _restriction = {
@@ -65,10 +65,10 @@ type salesforce.FlowDynamicChoiceSet {
       ]
       enforce_value = false
     }
-    _required = false
+    
   }
   metadataType = "FlowDynamicChoiceSet"
   string filterLogic {
-    _required = false
+    
   }
 }

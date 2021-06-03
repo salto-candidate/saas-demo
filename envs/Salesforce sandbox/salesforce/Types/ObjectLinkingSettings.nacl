@@ -14,16 +14,16 @@ settings salesforce.ObjectLinkingSettings {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true
   }
   boolean enableObjectLinking {
-    _required = false
+    
   }
   metadataType = "ObjectLinkingSettings"
   suffix = "settings"

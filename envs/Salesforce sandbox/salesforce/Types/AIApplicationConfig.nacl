@@ -14,25 +14,25 @@ type salesforce.AIApplicationConfig {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   string applicationId {
-    _required = false
+    
   }
   string developerName {
-    _required = false
+    
   }
   boolean insightReasonEnabled {
-    _required = false
+    
   }
   string masterLabel {
-    _required = false
+    
   }
   number rank {
-    _required = false
+    
   }
   string scoringMode {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -43,7 +43,7 @@ type salesforce.AIApplicationConfig {
     }
   }
   string internalId {
-    _required = false
+    
     _hidden_value = true
     localOnly = true
   }

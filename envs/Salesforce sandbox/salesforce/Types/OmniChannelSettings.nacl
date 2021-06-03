@@ -14,25 +14,25 @@ settings salesforce.OmniChannelSettings {
     }
   }
   boolean enableOmniChannel {
-    _required = false
+    
   }
   boolean enableOmniSkillsRouting {
-    _required = false
+    
   }
   serviceid fullName {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true
   }
   boolean enableOmniAutoLoginPrompt {
-    _required = false
+    
   }
   boolean enableOmniSecondaryRoutingPriority {
-    _required = false
+    
   }
   metadataType = "OmniChannelSettings"
   suffix = "settings"

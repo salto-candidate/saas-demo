@@ -14,28 +14,28 @@ settings salesforce.PardotSettings {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true
   }
   boolean enableB2bmaAppEnabled {
-    _required = false
+    
   }
   boolean enableEngagementHistoryDashboards {
-    _required = false
+    
   }
   boolean enablePardotAppV1Enabled {
-    _required = false
+    
   }
   boolean enablePardotEnabled {
-    _required = false
+    
   }
   boolean enableProspectActivityDataset {
-    _required = false
+    
   }
   metadataType = "PardotSettings"
   suffix = "settings"

@@ -14,7 +14,7 @@ type salesforce.FileTypeDispositionAssignmentBean {
     }
   }
   boolean securityRiskFileType {
-    _required = false
+    
   }
   metadataType = "FileTypeDispositionAssignmentBean"
 }

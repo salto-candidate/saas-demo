@@ -2,7 +2,7 @@ type salesforce.UserProvisioningRequest {
   serviceid Id {
     apiName = "UserProvisioningRequest.Id"
     label = "UserProvisioningRequest ID"
-    _required = false
+    
     queryable = true
     
     updateable = false
@@ -12,8 +12,8 @@ type salesforce.UserProvisioningRequest {
   salesforce.Lookup OwnerId {
     apiName = "UserProvisioningRequest.OwnerId"
     label = "Owner ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Group,
       salesforce.User,
@@ -33,13 +33,13 @@ type salesforce.UserProvisioningRequest {
     updateable = false
     queryable = true
     
-    _required = false
+    
     _hidden_value = true
   }
   salesforce.AutoNumber Name {
     apiName = "UserProvisioningRequest.Name"
     label = "Name"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -49,7 +49,7 @@ type salesforce.UserProvisioningRequest {
   salesforce.DateTime CreatedDate {
     apiName = "UserProvisioningRequest.CreatedDate"
     label = "Created Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -59,8 +59,8 @@ type salesforce.UserProvisioningRequest {
   salesforce.Lookup CreatedById {
     apiName = "UserProvisioningRequest.CreatedById"
     label = "Created By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -74,7 +74,7 @@ type salesforce.UserProvisioningRequest {
   salesforce.DateTime LastModifiedDate {
     apiName = "UserProvisioningRequest.LastModifiedDate"
     label = "Last Modified Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -84,8 +84,8 @@ type salesforce.UserProvisioningRequest {
   salesforce.Lookup LastModifiedById {
     apiName = "UserProvisioningRequest.LastModifiedById"
     label = "Last Modified By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -99,7 +99,7 @@ type salesforce.UserProvisioningRequest {
   salesforce.DateTime SystemModstamp {
     apiName = "UserProvisioningRequest.SystemModstamp"
     label = "System Modstamp"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -109,8 +109,8 @@ type salesforce.UserProvisioningRequest {
   salesforce.Lookup SalesforceUserId {
     apiName = "UserProvisioningRequest.SalesforceUserId"
     label = "User ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -122,7 +122,7 @@ type salesforce.UserProvisioningRequest {
   salesforce.Text ExternalUserId {
     apiName = "UserProvisioningRequest.ExternalUserId"
     label = "External User Id"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -133,7 +133,7 @@ type salesforce.UserProvisioningRequest {
   salesforce.Text AppName {
     apiName = "UserProvisioningRequest.AppName"
     label = "App Name"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -286,7 +286,7 @@ type salesforce.UserProvisioningRequest {
   salesforce.DateTime ScheduleDate {
     apiName = "UserProvisioningRequest.ScheduleDate"
     label = "Scheduled Provisioning Time"
-    _required = false
+    
     createable = true
     updateable = true
     queryable = true
@@ -294,8 +294,8 @@ type salesforce.UserProvisioningRequest {
   salesforce.Lookup ConnectedAppId {
     apiName = "UserProvisioningRequest.ConnectedAppId"
     label = "Connected App ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       "ConnectedApplication",
     ]
@@ -307,8 +307,8 @@ type salesforce.UserProvisioningRequest {
   salesforce.Lookup UserProvConfigId {
     apiName = "UserProvisioningRequest.UserProvConfigId"
     label = "UserProvisioningConfig ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.UserProvisioningConfig,
     ]
@@ -320,8 +320,8 @@ type salesforce.UserProvisioningRequest {
   salesforce.Lookup UserProvAccountId {
     apiName = "UserProvisioningRequest.UserProvAccountId"
     label = "User Provisioning Account ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       "UserProvAccount",
     ]
@@ -368,8 +368,8 @@ type salesforce.UserProvisioningRequest {
   salesforce.Lookup ManagerId {
     apiName = "UserProvisioningRequest.ManagerId"
     label = "User ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -381,7 +381,7 @@ type salesforce.UserProvisioningRequest {
   salesforce.Number RetryCount {
     apiName = "UserProvisioningRequest.RetryCount"
     label = "Retry Count"
-    _required = false
+    
     precision = 9
     createable = true
     updateable = true
@@ -392,8 +392,8 @@ type salesforce.UserProvisioningRequest {
   salesforce.Lookup ParentId {
     apiName = "UserProvisioningRequest.ParentId"
     label = "UserProvisioningRequest ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.UserProvisioningRequest,
     ]

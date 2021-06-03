@@ -14,13 +14,13 @@ type salesforce.HistoryRetentionPolicy {
     }
   }
   number archiveAfterMonths {
-    _required = false
+    
   }
   number archiveRetentionYears {
-    _required = false
+    
   }
   string description {
-    _required = false
+    
   }
   metadataType = "HistoryRetentionPolicy"
 }

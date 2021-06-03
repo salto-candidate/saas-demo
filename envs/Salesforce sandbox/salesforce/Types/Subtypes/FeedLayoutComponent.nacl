@@ -14,7 +14,7 @@ type salesforce.FeedLayoutComponent {
     }
   }
   string componentType {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -33,10 +33,10 @@ type salesforce.FeedLayoutComponent {
     }
   }
   number height {
-    _required = false
+    
   }
   string page {
-    _required = false
+    
   }
   metadataType = "FeedLayoutComponent"
 }

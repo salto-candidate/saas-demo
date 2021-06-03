@@ -14,13 +14,13 @@ type salesforce.IframeWhiteListUrlSettings {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   salesforce.IframeWhiteListUrl iframeWhiteListUrls {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     _hidden_value = true
     localOnly = true
   }

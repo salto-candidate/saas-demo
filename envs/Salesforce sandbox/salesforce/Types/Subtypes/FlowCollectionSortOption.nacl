@@ -14,10 +14,10 @@ type salesforce.FlowCollectionSortOption {
     }
   }
   salesforce.FlowMetadataValue processMetadataValues {
-    _required = false
+    
   }
   string sortField {
-    _required = false
+    
   }
   metadataType = "FlowCollectionSortOption"
 }

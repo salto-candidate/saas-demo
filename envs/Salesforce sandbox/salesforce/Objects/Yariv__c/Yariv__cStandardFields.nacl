@@ -2,7 +2,7 @@ type salesforce.Yariv__c {
   serviceid Id {
     apiName = "Yariv__c.Id"
     label = "Record ID"
-    _required = false
+    
     queryable = true
     
     updateable = false
@@ -12,8 +12,8 @@ type salesforce.Yariv__c {
   salesforce.Lookup OwnerId {
     apiName = "Yariv__c.OwnerId"
     label = "Owner ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Group,
       salesforce.User,
@@ -33,13 +33,13 @@ type salesforce.Yariv__c {
     updateable = false
     queryable = true
     
-    _required = false
+    
     _hidden_value = true
   }
   salesforce.Text Name {
     apiName = "Yariv__c.Name"
     label = "Yariv Name"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -50,7 +50,7 @@ type salesforce.Yariv__c {
   salesforce.DateTime CreatedDate {
     apiName = "Yariv__c.CreatedDate"
     label = "Created Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -60,8 +60,8 @@ type salesforce.Yariv__c {
   salesforce.Lookup CreatedById {
     apiName = "Yariv__c.CreatedById"
     label = "Created By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -75,7 +75,7 @@ type salesforce.Yariv__c {
   salesforce.DateTime LastModifiedDate {
     apiName = "Yariv__c.LastModifiedDate"
     label = "Last Modified Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -85,8 +85,8 @@ type salesforce.Yariv__c {
   salesforce.Lookup LastModifiedById {
     apiName = "Yariv__c.LastModifiedById"
     label = "Last Modified By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -100,7 +100,7 @@ type salesforce.Yariv__c {
   salesforce.DateTime SystemModstamp {
     apiName = "Yariv__c.SystemModstamp"
     label = "System Modstamp"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true

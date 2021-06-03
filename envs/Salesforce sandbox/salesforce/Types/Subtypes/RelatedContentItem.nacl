@@ -14,7 +14,7 @@ type salesforce.RelatedContentItem {
     }
   }
   salesforce.LayoutItem layoutItem {
-    _required = false
+    
   }
   metadataType = "RelatedContentItem"
 }

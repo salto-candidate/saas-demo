@@ -14,34 +14,34 @@ type salesforce.DelegateGroup {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   string label {
-    _required = false
+    
   }
   boolean loginAccess {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true
   }
   "List<string>" customObjects {
-    _required = false
+    
   }
   "List<string>" groups {
-    _required = false
+    
   }
   "List<string>" permissionSets {
-    _required = false
+    
   }
   "List<string>" profiles {
-    _required = false
+    
   }
   "List<string>" roles {
-    _required = false
+    
   }
   suffix = "delegateGroup"
   dirName = "delegateGroups"

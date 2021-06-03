@@ -14,10 +14,10 @@ type salesforce.LookupFilterTranslation {
     }
   }
   string errorMessage {
-    _required = false
+    
   }
   string informationalMessage {
-    _required = false
+    
   }
   metadataType = "LookupFilterTranslation"
 }

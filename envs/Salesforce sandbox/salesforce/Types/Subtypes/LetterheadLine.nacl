@@ -14,10 +14,10 @@ type salesforce.LetterheadLine {
     }
   }
   string color {
-    _required = false
+    
   }
   number height {
-    _required = false
+    
   }
   metadataType = "LetterheadLine"
 }

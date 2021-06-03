@@ -2,7 +2,7 @@ type salesforce.TopicAssignment {
   serviceid Id {
     apiName = "TopicAssignment.Id"
     label = "Topic Assignment ID"
-    _required = false
+    
     queryable = true
     
     updateable = false
@@ -13,7 +13,7 @@ type salesforce.TopicAssignment {
     apiName = "TopicAssignment.TopicId"
     label = "Topic ID"
     _required = true
-    allowLookupRecordDeletion = true
+    
     referenceTo = [
       salesforce.Topic,
     ]
@@ -26,7 +26,7 @@ type salesforce.TopicAssignment {
     apiName = "TopicAssignment.EntityId"
     label = "Entity ID"
     _required = true
-    allowLookupRecordDeletion = true
+    
     referenceTo = [
       salesforce.Account,
       salesforce.Asset,
@@ -63,7 +63,7 @@ type salesforce.TopicAssignment {
   salesforce.Text EntityType {
     apiName = "TopicAssignment.EntityType"
     label = "Object Type"
-    _required = false
+    
     createable = false
     updateable = false
     unique = false
@@ -74,7 +74,7 @@ type salesforce.TopicAssignment {
   salesforce.DateTime CreatedDate {
     apiName = "TopicAssignment.CreatedDate"
     label = "Created Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -84,8 +84,8 @@ type salesforce.TopicAssignment {
   salesforce.Lookup CreatedById {
     apiName = "TopicAssignment.CreatedById"
     label = "Created By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -104,13 +104,13 @@ type salesforce.TopicAssignment {
     updateable = false
     queryable = true
     
-    _required = false
+    
     _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "TopicAssignment.SystemModstamp"
     label = "System Modstamp"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true

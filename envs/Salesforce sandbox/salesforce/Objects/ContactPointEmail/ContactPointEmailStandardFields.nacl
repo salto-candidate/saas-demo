@@ -2,7 +2,7 @@ type salesforce.ContactPointEmail {
   serviceid Id {
     apiName = "ContactPointEmail.Id"
     label = "Contact Point Email ID"
-    _required = false
+    
     queryable = true
     
     updateable = false
@@ -12,8 +12,8 @@ type salesforce.ContactPointEmail {
   salesforce.Lookup OwnerId {
     apiName = "ContactPointEmail.OwnerId"
     label = "Owner ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Group,
       salesforce.User,
@@ -33,13 +33,13 @@ type salesforce.ContactPointEmail {
     updateable = false
     queryable = true
     
-    _required = false
+    
     _hidden_value = true
   }
   salesforce.Text Name {
     apiName = "ContactPointEmail.Name"
     label = "Name"
-    _required = false
+    
     createable = false
     updateable = false
     unique = false
@@ -50,7 +50,7 @@ type salesforce.ContactPointEmail {
   salesforce.DateTime CreatedDate {
     apiName = "ContactPointEmail.CreatedDate"
     label = "Created Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -60,8 +60,8 @@ type salesforce.ContactPointEmail {
   salesforce.Lookup CreatedById {
     apiName = "ContactPointEmail.CreatedById"
     label = "Created By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -75,7 +75,7 @@ type salesforce.ContactPointEmail {
   salesforce.DateTime LastModifiedDate {
     apiName = "ContactPointEmail.LastModifiedDate"
     label = "Last Modified Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -85,8 +85,8 @@ type salesforce.ContactPointEmail {
   salesforce.Lookup LastModifiedById {
     apiName = "ContactPointEmail.LastModifiedById"
     label = "Last Modified By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -100,7 +100,7 @@ type salesforce.ContactPointEmail {
   salesforce.DateTime SystemModstamp {
     apiName = "ContactPointEmail.SystemModstamp"
     label = "System Modstamp"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -110,8 +110,8 @@ type salesforce.ContactPointEmail {
   salesforce.Lookup ParentId {
     apiName = "ContactPointEmail.ParentId"
     label = "Parent ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Account,
       salesforce.Individual,
@@ -120,11 +120,12 @@ type salesforce.ContactPointEmail {
     updateable = true
     queryable = true
     relationshipName = "Parent"
+    trackHistory = "false"
   }
   salesforce.Date ActiveFromDate {
     apiName = "ContactPointEmail.ActiveFromDate"
     label = "Active from Date"
-    _required = false
+    
     createable = true
     updateable = true
     queryable = true
@@ -132,7 +133,7 @@ type salesforce.ContactPointEmail {
   salesforce.Date ActiveToDate {
     apiName = "ContactPointEmail.ActiveToDate"
     label = "Active to Date"
-    _required = false
+    
     createable = true
     updateable = true
     queryable = true
@@ -140,7 +141,7 @@ type salesforce.ContactPointEmail {
   salesforce.Time BestTimeToContactEndTime {
     apiName = "ContactPointEmail.BestTimeToContactEndTime"
     label = "Best time to contact end time"
-    _required = false
+    
     createable = true
     updateable = true
     queryable = true
@@ -148,7 +149,7 @@ type salesforce.ContactPointEmail {
   salesforce.Time BestTimeToContactStartTime {
     apiName = "ContactPointEmail.BestTimeToContactStartTime"
     label = "Best time to contact start time"
-    _required = false
+    
     createable = true
     updateable = true
     queryable = true
@@ -156,7 +157,7 @@ type salesforce.ContactPointEmail {
   salesforce.Picklist BestTimeToContactTimezone {
     apiName = "ContactPointEmail.BestTimeToContactTimezone"
     label = "Best time to contact time zone"
-    _required = false
+    
     valueSet = [
       {
         fullName = "Pacific/Kiritimati"
@@ -525,6 +526,12 @@ type salesforce.ContactPointEmail {
         isActive = true
       },
       {
+        fullName = "Africa/Casablanca"
+        default = false
+        label = "(GMT+01:00) Western European Summer Time (Africa/Casablanca)"
+        isActive = true
+      },
+      {
         fullName = "Europe/Dublin"
         default = false
         label = "(GMT+01:00) Irish Standard Time (Europe/Dublin)"
@@ -540,12 +547,6 @@ type salesforce.ContactPointEmail {
         fullName = "Europe/London"
         default = false
         label = "(GMT+01:00) British Summer Time (Europe/London)"
-        isActive = true
-      },
-      {
-        fullName = "Africa/Casablanca"
-        default = false
-        label = "(GMT+00:00) Western European Standard Time (Africa/Casablanca)"
         isActive = true
       },
       {
@@ -778,7 +779,7 @@ type salesforce.ContactPointEmail {
   salesforce.Text EmailMailBox {
     apiName = "ContactPointEmail.EmailMailBox"
     label = "Email mail box"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -789,7 +790,7 @@ type salesforce.ContactPointEmail {
   salesforce.Text EmailDomain {
     apiName = "ContactPointEmail.EmailDomain"
     label = "Email domain"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -800,7 +801,7 @@ type salesforce.ContactPointEmail {
   salesforce.DateTime EmailLatestBounceDateTime {
     apiName = "ContactPointEmail.EmailLatestBounceDateTime"
     label = "Email latest bounce date time"
-    _required = false
+    
     createable = true
     updateable = true
     queryable = true
@@ -808,7 +809,7 @@ type salesforce.ContactPointEmail {
   salesforce.Text EmailLatestBounceReasonText {
     apiName = "ContactPointEmail.EmailLatestBounceReasonText"
     label = "Email latest bounce reason text"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -821,11 +822,13 @@ type salesforce.ContactPointEmail {
     queryable = false
     updateable = false
     createable = false
+    trackHistory = "false"
   }
   salesforce.Picklist UsageType {
     apiName = "ContactPointEmail.UsageType"
     queryable = false
     updateable = false
     createable = false
+    trackHistory = "false"
   }
 }

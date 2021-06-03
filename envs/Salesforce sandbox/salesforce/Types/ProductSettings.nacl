@@ -14,29 +14,29 @@ settings salesforce.ProductSettings {
     }
   }
   boolean enableCascadeActivateToRelatedPrices {
-    _required = false
+    
   }
   boolean enableQuantitySchedule {
-    _required = false
+    
   }
   boolean enableRevenueSchedule {
-    _required = false
+    
   }
   serviceid fullName {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true
   }
   boolean enableMySettings {
-    _required = false
+    
   }
   metadataType = "ProductSettings"
   boolean enableSecureGuestUserRecordAccess {
-    _required = false
+    
   }
   suffix = "settings"
   dirName = "settings"

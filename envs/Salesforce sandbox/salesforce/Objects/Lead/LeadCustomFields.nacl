@@ -2,7 +2,7 @@ type salesforce.Lead {
   salesforce.Picklist Role__c {
     apiName = "Lead.Role__c"
     label = "Role"
-    _required = false
+    
     valueSet = [
       {
         fullName = "IT"
@@ -30,5 +30,7 @@ type salesforce.Lead {
     updateable = true
     queryable = true
     sorted = false
+    externalId = false
+    trackFeedHistory = false
   }
 }

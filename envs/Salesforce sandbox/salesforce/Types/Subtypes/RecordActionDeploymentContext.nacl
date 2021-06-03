@@ -14,13 +14,13 @@ type salesforce.RecordActionDeploymentContext {
     }
   }
   string entityName {
-    _required = false
+    
     foreignKeyDomain = [
       "EntityDefinition",
     ]
   }
   string recommendationStrategy {
-    _required = false
+    
     foreignKeyDomain = [
       salesforce.RecommendationStrategy,
     ]

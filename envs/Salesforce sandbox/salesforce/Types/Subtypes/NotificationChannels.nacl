@@ -14,10 +14,10 @@ type salesforce.NotificationChannels {
     }
   }
   boolean desktopEnabled {
-    _required = false
+    
   }
   boolean mobileEnabled {
-    _required = false
+    
   }
   metadataType = "NotificationChannels"
 }

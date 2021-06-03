@@ -14,7 +14,7 @@ type salesforce.ObjectUsage {
     }
   }
   string object {
-    _required = false
+    
   }
   metadataType = "ObjectUsage"
 }

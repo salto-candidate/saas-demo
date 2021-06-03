@@ -14,10 +14,10 @@ type salesforce.StrategyActionArg {
     }
   }
   string name {
-    _required = false
+    
   }
   string value {
-    _required = false
+    
   }
   metadataType = "StrategyActionArg"
 }

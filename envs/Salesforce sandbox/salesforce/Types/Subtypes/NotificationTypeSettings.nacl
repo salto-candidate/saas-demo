@@ -14,13 +14,13 @@ type salesforce.NotificationTypeSettings {
     }
   }
   salesforce.AppSettings appSettings {
-    _required = false
+    
   }
   salesforce.NotificationChannels notificationChannels {
-    _required = false
+    
   }
   string notificationType {
-    _required = false
+    
   }
   metadataType = "NotificationTypeSettings"
 }

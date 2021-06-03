@@ -14,22 +14,22 @@ type salesforce.ManagedContentType {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   string description {
-    _required = false
+    
   }
   string developerName {
-    _required = false
+    
   }
   "List<salesforce.ManagedContentNodeType>" managedContentNodeTypes {
-    _required = false
+    
   }
   string masterLabel {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true

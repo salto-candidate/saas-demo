@@ -14,7 +14,7 @@ type salesforce.AnalyticSnapshotMapping {
     }
   }
   string aggregateType {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -28,10 +28,10 @@ type salesforce.AnalyticSnapshotMapping {
     }
   }
   string sourceField {
-    _required = false
+    
   }
   string sourceType {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -42,7 +42,7 @@ type salesforce.AnalyticSnapshotMapping {
     }
   }
   string targetField {
-    _required = false
+    
   }
   metadataType = "AnalyticSnapshotMapping"
 }

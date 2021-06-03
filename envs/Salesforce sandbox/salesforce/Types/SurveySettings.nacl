@@ -14,19 +14,19 @@ settings salesforce.SurveySettings {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true
   }
   boolean enableSurveys {
-    _required = false
+    
   }
   boolean enableSurveyOwnerCanManageResponse {
-    _required = false
+    
   }
   metadataType = "SurveySettings"
   suffix = "settings"

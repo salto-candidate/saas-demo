@@ -14,34 +14,34 @@ settings salesforce.AccountSettings {
     }
   }
   boolean enableAccountOwnerReport {
-    _required = false
+    
   }
   boolean enableAccountTeams {
-    _required = false
+    
   }
   serviceid fullName {
-    _required = false
+    
   }
   boolean showViewHierarchyLink {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true
   }
   boolean enableAccountHistoryTracking {
-    _required = false
+    
   }
   boolean enableAccountInsightsInMobile {
-    _required = false
+    
   }
   boolean enableContactHistoryTracking {
-    _required = false
+    
   }
   boolean enableRelateContactToMultipleAccounts {
-    _required = false
+    
   }
   metadataType = "AccountSettings"
   suffix = "settings"

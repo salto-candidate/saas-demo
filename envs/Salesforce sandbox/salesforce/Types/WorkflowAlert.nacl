@@ -14,25 +14,25 @@ type salesforce.WorkflowAlert {
     }
   }
   "List<string>" ccEmails {
-    _required = false
+    
   }
   string description {
-    _required = false
+    
   }
   serviceid fullName {
-    _required = false
+    
   }
   boolean protected {
-    _required = false
+    
   }
   "List<salesforce.WorkflowEmailRecipient>" recipients {
-    _required = false
+    
   }
   string senderAddress {
-    _required = false
+    
   }
   string senderType {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -43,13 +43,13 @@ type salesforce.WorkflowAlert {
     }
   }
   string template {
-    _required = false
+    
     foreignKeyDomain = [
       salesforce.EmailTemplate,
     ]
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true

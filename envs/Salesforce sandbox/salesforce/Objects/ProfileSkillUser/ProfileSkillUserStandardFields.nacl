@@ -2,7 +2,7 @@ type salesforce.ProfileSkillUser {
   serviceid Id {
     apiName = "ProfileSkillUser.Id"
     label = "Skill User ID"
-    _required = false
+    
     queryable = true
     
     updateable = false
@@ -17,13 +17,13 @@ type salesforce.ProfileSkillUser {
     updateable = false
     queryable = true
     
-    _required = false
+    
     _hidden_value = true
   }
   salesforce.AutoNumber Name {
     apiName = "ProfileSkillUser.Name"
     label = "Skill User Name"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -33,7 +33,7 @@ type salesforce.ProfileSkillUser {
   salesforce.DateTime CreatedDate {
     apiName = "ProfileSkillUser.CreatedDate"
     label = "Added Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -43,8 +43,8 @@ type salesforce.ProfileSkillUser {
   salesforce.Lookup CreatedById {
     apiName = "ProfileSkillUser.CreatedById"
     label = "Created By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -58,7 +58,7 @@ type salesforce.ProfileSkillUser {
   salesforce.DateTime LastModifiedDate {
     apiName = "ProfileSkillUser.LastModifiedDate"
     label = "Last Modified Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -68,8 +68,8 @@ type salesforce.ProfileSkillUser {
   salesforce.Lookup LastModifiedById {
     apiName = "ProfileSkillUser.LastModifiedById"
     label = "Last Modified By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -83,7 +83,7 @@ type salesforce.ProfileSkillUser {
   salesforce.DateTime SystemModstamp {
     apiName = "ProfileSkillUser.SystemModstamp"
     label = "System Modstamp"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -94,7 +94,7 @@ type salesforce.ProfileSkillUser {
     apiName = "ProfileSkillUser.ProfileSkillId"
     label = "Skill ID"
     _required = true
-    allowLookupRecordDeletion = true
+    
     referenceTo = [
       salesforce.ProfileSkill,
     ]
@@ -102,12 +102,14 @@ type salesforce.ProfileSkillUser {
     updateable = false
     queryable = true
     relationshipName = "ProfileSkill"
+    trackFeedHistory = true
+    trackHistory = "false"
   }
   salesforce.Lookup UserId {
     apiName = "ProfileSkillUser.UserId"
     label = "User ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -115,11 +117,13 @@ type salesforce.ProfileSkillUser {
     updateable = false
     queryable = true
     relationshipName = "User"
+    trackFeedHistory = true
+    trackHistory = "false"
   }
   salesforce.Summary EndorsementCount {
     apiName = "ProfileSkillUser.EndorsementCount"
     label = "Endorsements"
-    _required = false
+    
     precision = 9
     createable = false
     updateable = false

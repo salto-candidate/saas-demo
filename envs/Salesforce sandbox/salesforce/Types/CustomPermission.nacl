@@ -14,22 +14,22 @@ type salesforce.CustomPermission {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   string connectedApp {
-    _required = false
+    
     foreignKeyDomain = [
       salesforce.ConnectedApp,
     ]
   }
   string description {
-    _required = false
+    
   }
   string label {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true
@@ -38,6 +38,6 @@ type salesforce.CustomPermission {
   dirName = "customPermissions"
   metadataType = "CustomPermission"
   boolean isLicensed {
-    _required = false
+    
   }
 }

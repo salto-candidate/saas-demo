@@ -14,55 +14,55 @@ type salesforce.FlowScreenField {
     }
   }
   string choiceReferences {
-    _required = false
+    
   }
   string defaultSelectedChoiceReference {
-    _required = false
+    
   }
   salesforce.FlowElementReferenceOrValue defaultValue {
-    _required = false
+    
   }
   string description {
-    _required = false
+    
   }
   string extensionName {
-    _required = false
+    
   }
   string fieldText {
-    _required = false
+    
   }
   string helpText {
-    _required = false
+    
   }
   salesforce.FlowScreenFieldInputParameter inputParameters {
-    _required = false
+    
   }
   boolean isRequired {
-    _required = false
+    
   }
   boolean isVisible {
-    _required = false
+    
   }
   string name {
-    _required = false
+    
   }
   salesforce.FlowScreenFieldOutputParameter outputParameters {
-    _required = false
+    
   }
   salesforce.FlowMetadataValue processMetadataValues {
-    _required = false
+    
   }
   number scale {
-    _required = false
+    
   }
   boolean storeOutputAutomatically {
-    _required = false
+    
   }
   salesforce.FlowInputValidationRule validationRule {
-    _required = false
+    
   }
   salesforce.FlowVisibilityRule visibilityRule {
-    _required = false
+    
   }
   string dataType {
     _restriction = {
@@ -76,7 +76,7 @@ type salesforce.FlowScreenField {
       ]
       enforce_value = false
     }
-    _required = false
+    
   }
   string fieldType {
     _restriction = {
@@ -95,16 +95,16 @@ type salesforce.FlowScreenField {
       ]
       enforce_value = false
     }
-    _required = false
+    
   }
   metadataType = "FlowScreenField"
   salesforce.FlowDataTypeMapping dataTypeMappings {
-    _required = false
+    
   }
   salesforce.FlowScreenField fields {
-    _required = false
+    
   }
   string objectFieldReference {
-    _required = false
+    
   }
 }

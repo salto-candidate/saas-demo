@@ -14,7 +14,7 @@ type salesforce.Targets {
     }
   }
   string target {
-    _required = false
+    
   }
   metadataType = "Targets"
 }

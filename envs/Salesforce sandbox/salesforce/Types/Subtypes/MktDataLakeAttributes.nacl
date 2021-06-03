@@ -14,7 +14,7 @@ type salesforce.MktDataLakeAttributes {
     }
   }
   string creationType {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -28,16 +28,16 @@ type salesforce.MktDataLakeAttributes {
     }
   }
   string dataSource {
-    _required = false
+    
   }
   string externalName {
-    _required = false
+    
   }
   boolean isEnabled {
-    _required = false
+    
   }
   string objectCategory {
-    _required = false
+    
   }
   metadataType = "MktDataLakeAttributes"
 }

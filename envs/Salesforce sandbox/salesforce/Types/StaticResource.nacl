@@ -14,7 +14,7 @@ type salesforce.StaticResource {
     }
   }
   string cacheControl {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -24,19 +24,19 @@ type salesforce.StaticResource {
     }
   }
   string content {
-    _required = false
+    
   }
   string contentType {
-    _required = false
+    
   }
   string description {
-    _required = false
+    
   }
   serviceid fullName {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true

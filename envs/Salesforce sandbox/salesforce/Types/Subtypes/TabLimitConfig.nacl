@@ -14,10 +14,10 @@ type salesforce.TabLimitConfig {
     }
   }
   string maxNumberOfPrimaryTabs {
-    _required = false
+    
   }
   string maxNumberOfSubTabs {
-    _required = false
+    
   }
   metadataType = "TabLimitConfig"
 }

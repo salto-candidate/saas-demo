@@ -14,19 +14,19 @@ type salesforce.BusinessProcess {
     }
   }
   string description {
-    _required = false
+    
   }
   serviceid fullName {
-    _required = false
+    
   }
   boolean isActive {
-    _required = false
+    
   }
   "List<salesforce.PicklistValue>" values {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true

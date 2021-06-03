@@ -14,7 +14,7 @@ type salesforce.RelatedContent {
     }
   }
   "List<salesforce.RelatedContentItem>" relatedContentItems {
-    _required = false
+    
   }
   metadataType = "RelatedContent"
 }

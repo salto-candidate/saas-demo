@@ -14,13 +14,13 @@ type salesforce.LightningBoltImages {
     }
   }
   string image {
-    _required = false
+    
     foreignKeyDomain = [
       salesforce.ContentAsset,
     ]
   }
   number order {
-    _required = false
+    
   }
   metadataType = "LightningBoltImages"
 }

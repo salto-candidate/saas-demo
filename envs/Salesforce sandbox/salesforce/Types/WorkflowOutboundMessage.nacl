@@ -14,40 +14,40 @@ type salesforce.WorkflowOutboundMessage {
     }
   }
   number apiVersion {
-    _required = false
+    
   }
   string description {
-    _required = false
+    
   }
   string endpointUrl {
-    _required = false
+    
   }
   "List<string>" fields {
-    _required = false
+    
   }
   serviceid fullName {
-    _required = false
+    
   }
   boolean includeSessionId {
-    _required = false
+    
   }
   string integrationUser {
-    _required = false
+    
     foreignKeyDomain = [
       salesforce.User,
     ]
   }
   string name {
-    _required = false
+    
   }
   boolean protected {
-    _required = false
+    
   }
   boolean useDeadLetterQueue {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true

@@ -14,22 +14,22 @@ type salesforce.SharingRules {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   "List<salesforce.SharingCriteriaRule>" sharingCriteriaRules {
-    _required = false
+    
   }
   "List<salesforce.SharingGuestRule>" sharingGuestRules {
-    _required = false
+    
   }
   "List<salesforce.SharingOwnerRule>" sharingOwnerRules {
-    _required = false
+    
   }
   "List<salesforce.SharingTerritoryRule>" sharingTerritoryRules {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true

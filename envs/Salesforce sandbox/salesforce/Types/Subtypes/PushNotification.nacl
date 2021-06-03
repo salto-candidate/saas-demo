@@ -14,10 +14,10 @@ type salesforce.PushNotification {
     }
   }
   string fieldNames {
-    _required = false
+    
   }
   string objectName {
-    _required = false
+    
   }
   metadataType = "PushNotification"
 }

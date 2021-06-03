@@ -14,7 +14,7 @@ type salesforce.ComponentInstancePropertyList {
     }
   }
   salesforce.ComponentInstancePropertyListItem valueListItems {
-    _required = false
+    
   }
   metadataType = "ComponentInstancePropertyList"
 }

@@ -14,22 +14,22 @@ type salesforce.WorkflowFieldUpdate {
     }
   }
   string description {
-    _required = false
+    
   }
   string field {
-    _required = false
+    
   }
   string formula {
-    _required = false
+    
   }
   serviceid fullName {
-    _required = false
+    
   }
   string literalValue {
-    _required = false
+    
   }
   string lookupValue {
-    _required = false
+    
     foreignKeyDomain = [
       salesforce.Queue,
       salesforce.RecordType,
@@ -37,13 +37,13 @@ type salesforce.WorkflowFieldUpdate {
     ]
   }
   string name {
-    _required = false
+    
   }
   boolean notifyAssignee {
-    _required = false
+    
   }
   string operation {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -57,16 +57,16 @@ type salesforce.WorkflowFieldUpdate {
     }
   }
   boolean protected {
-    _required = false
+    
   }
   boolean reevaluateOnChange {
-    _required = false
+    
   }
   string targetObject {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true

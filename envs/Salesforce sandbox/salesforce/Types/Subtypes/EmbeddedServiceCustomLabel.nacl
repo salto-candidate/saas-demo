@@ -14,13 +14,13 @@ type salesforce.EmbeddedServiceCustomLabel {
     }
   }
   string customLabel {
-    _required = false
+    
     foreignKeyDomain = [
       salesforce.CustomLabel,
     ]
   }
   string feature {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -35,7 +35,7 @@ type salesforce.EmbeddedServiceCustomLabel {
     }
   }
   string labelKey {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [

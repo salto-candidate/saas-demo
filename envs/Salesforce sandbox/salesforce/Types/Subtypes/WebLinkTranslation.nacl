@@ -14,10 +14,10 @@ type salesforce.WebLinkTranslation {
     }
   }
   string label {
-    _required = false
+    
   }
   string name {
-    _required = false
+    
   }
   metadataType = "WebLinkTranslation"
 }

@@ -14,10 +14,10 @@ type salesforce.FieldInstanceProperty {
     }
   }
   string name {
-    _required = false
+    
   }
   string value {
-    _required = false
+    
   }
   metadataType = "FieldInstanceProperty"
 }

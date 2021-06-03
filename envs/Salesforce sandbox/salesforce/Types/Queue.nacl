@@ -14,31 +14,31 @@ type salesforce.Queue {
     }
   }
   boolean doesSendEmailToMembers {
-    _required = false
+    
   }
   string email {
-    _required = false
+    
   }
   serviceid fullName {
-    _required = false
+    
   }
   string name {
-    _required = false
+    
   }
   salesforce.QueueMembers queueMembers {
-    _required = false
+    
   }
   string queueRoutingConfig {
-    _required = false
+    
     foreignKeyDomain = [
       "QueueRoutingConfig",
     ]
   }
   salesforce.QueueSobject queueSobject {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true

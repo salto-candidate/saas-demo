@@ -14,16 +14,16 @@ type salesforce.Group {
     }
   }
   boolean doesIncludeBosses {
-    _required = false
+    
   }
   serviceid fullName {
-    _required = false
+    
   }
   string name {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true

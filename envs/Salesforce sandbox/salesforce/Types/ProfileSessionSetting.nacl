@@ -14,22 +14,22 @@ type salesforce.ProfileSessionSetting {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   boolean externalCommunityUserIdentityVerif {
-    _required = false
+    
   }
   boolean forceLogout {
-    _required = false
+    
   }
   string profile {
-    _required = false
+    
     foreignKeyDomain = [
       "Profile",
     ]
   }
   string requiredSessionLevel {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -40,16 +40,16 @@ type salesforce.ProfileSessionSetting {
     }
   }
   boolean sessionPersistence {
-    _required = false
+    
   }
   number sessionTimeout {
-    _required = false
+    
   }
   boolean sessionTimeoutWarning {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true

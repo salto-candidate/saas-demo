@@ -14,22 +14,22 @@ type salesforce.SummaryLayout {
     }
   }
   string masterLabel {
-    _required = false
+    
   }
   number sizeX {
-    _required = false
+    
   }
   number sizeY {
-    _required = false
+    
   }
   number sizeZ {
-    _required = false
+    
   }
   "List<salesforce.SummaryLayoutItem>" summaryLayoutItems {
-    _required = false
+    
   }
   string summaryLayoutStyle {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [

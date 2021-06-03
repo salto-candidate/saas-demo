@@ -14,7 +14,7 @@ type salesforce.ChannelLayoutItem {
     }
   }
   string field {
-    _required = false
+    
     foreignKeyDomain = [
       salesforce.CustomField,
     ]

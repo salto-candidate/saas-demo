@@ -14,10 +14,10 @@ type salesforce.ComponentInstanceProperty {
     }
   }
   string name {
-    _required = false
+    
   }
   string type {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -26,10 +26,10 @@ type salesforce.ComponentInstanceProperty {
     }
   }
   string value {
-    _required = false
+    
   }
   salesforce.ComponentInstancePropertyList valueList {
-    _required = false
+    
   }
   metadataType = "ComponentInstanceProperty"
 }

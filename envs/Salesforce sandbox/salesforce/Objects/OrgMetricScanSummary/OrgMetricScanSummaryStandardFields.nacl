@@ -2,7 +2,7 @@ type salesforce.OrgMetricScanSummary {
   serviceid Id {
     apiName = "OrgMetricScanSummary.Id"
     label = "Org Metric Scan ID"
-    _required = false
+    
     queryable = true
     
     updateable = false
@@ -17,7 +17,7 @@ type salesforce.OrgMetricScanSummary {
     updateable = false
     queryable = true
     
-    _required = false
+    
     _hidden_value = true
   }
   salesforce.Text Name {
@@ -34,7 +34,7 @@ type salesforce.OrgMetricScanSummary {
   salesforce.DateTime CreatedDate {
     apiName = "OrgMetricScanSummary.CreatedDate"
     label = "Created Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -44,8 +44,8 @@ type salesforce.OrgMetricScanSummary {
   salesforce.Lookup CreatedById {
     apiName = "OrgMetricScanSummary.CreatedById"
     label = "Created By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -59,7 +59,7 @@ type salesforce.OrgMetricScanSummary {
   salesforce.DateTime LastModifiedDate {
     apiName = "OrgMetricScanSummary.LastModifiedDate"
     label = "Last Modified Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -69,8 +69,8 @@ type salesforce.OrgMetricScanSummary {
   salesforce.Lookup LastModifiedById {
     apiName = "OrgMetricScanSummary.LastModifiedById"
     label = "Last Modified By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -84,7 +84,7 @@ type salesforce.OrgMetricScanSummary {
   salesforce.DateTime SystemModstamp {
     apiName = "OrgMetricScanSummary.SystemModstamp"
     label = "System Modstamp"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -95,7 +95,7 @@ type salesforce.OrgMetricScanSummary {
     apiName = "OrgMetricScanSummary.OrgMetricId"
     label = "Org Metric ID"
     _required = true
-    allowLookupRecordDeletion = true
+    
     referenceTo = [
       "OrgMetric",
     ]
@@ -107,7 +107,7 @@ type salesforce.OrgMetricScanSummary {
   salesforce.Picklist Status {
     apiName = "OrgMetricScanSummary.Status"
     label = "Status"
-    _required = false
+    
     createable = true
     updateable = false
     queryable = true
@@ -115,7 +115,7 @@ type salesforce.OrgMetricScanSummary {
   salesforce.Picklist ImplementationEffort {
     apiName = "OrgMetricScanSummary.ImplementationEffort"
     label = "Implementation Effort"
-    _required = false
+    
     createable = true
     updateable = false
     queryable = true
@@ -123,7 +123,7 @@ type salesforce.OrgMetricScanSummary {
   salesforce.Picklist ErrorMessage {
     apiName = "OrgMetricScanSummary.ErrorMessage"
     label = "Error Message"
-    _required = false
+    
     createable = true
     updateable = false
     queryable = true
@@ -131,7 +131,7 @@ type salesforce.OrgMetricScanSummary {
   salesforce.Number ItemCount {
     apiName = "OrgMetricScanSummary.ItemCount"
     label = "Count"
-    _required = false
+    
     precision = 9
     createable = true
     updateable = false
@@ -142,7 +142,7 @@ type salesforce.OrgMetricScanSummary {
   salesforce.Number FeatureLimit {
     apiName = "OrgMetricScanSummary.FeatureLimit"
     label = "Limit"
-    _required = false
+    
     precision = 9
     createable = true
     updateable = false
@@ -153,7 +153,7 @@ type salesforce.OrgMetricScanSummary {
   salesforce.Text Unit {
     apiName = "OrgMetricScanSummary.Unit"
     label = "Unit"
-    _required = false
+    
     createable = true
     updateable = false
     unique = false
@@ -164,7 +164,7 @@ type salesforce.OrgMetricScanSummary {
   salesforce.Percent PercentUsage {
     apiName = "OrgMetricScanSummary.PercentUsage"
     label = "Percent Usage"
-    _required = false
+    
     createable = true
     updateable = false
     scale = 0
@@ -174,7 +174,7 @@ type salesforce.OrgMetricScanSummary {
   salesforce.DateTime ScanDate {
     apiName = "OrgMetricScanSummary.ScanDate"
     label = "Scan Date"
-    _required = false
+    
     createable = true
     updateable = false
     queryable = true

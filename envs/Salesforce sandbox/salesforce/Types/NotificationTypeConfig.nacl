@@ -14,13 +14,13 @@ type salesforce.NotificationTypeConfig {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   "List<salesforce.NotificationTypeSettings>" notificationTypeSettings {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     _hidden_value = true
     localOnly = true
   }

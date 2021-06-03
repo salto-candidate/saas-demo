@@ -14,10 +14,10 @@ type salesforce.FiscalYearSettings {
     }
   }
   string fiscalYearNameBasedOn {
-    _required = false
+    
   }
   string startMonth {
-    _required = false
+    
   }
   metadataType = "FiscalYearSettings"
 }

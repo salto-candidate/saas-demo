@@ -14,10 +14,10 @@ type salesforce.CanvasMetadata {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   string accessMethod {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -27,19 +27,19 @@ type salesforce.CanvasMetadata {
     }
   }
   string canvasOptions {
-    _required = false
+    
   }
   string canvasUrl {
-    _required = false
+    
   }
   string lifecycleClass {
-    _required = false
+    
   }
   string locationOptions {
-    _required = false
+    
   }
   string samlInitiationMethod {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -50,7 +50,7 @@ type salesforce.CanvasMetadata {
     }
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true

@@ -14,10 +14,10 @@ type salesforce.Attachment {
     }
   }
   string content {
-    _required = false
+    
   }
   string name {
-    _required = false
+    
   }
   metadataType = "Attachment"
 }

@@ -14,13 +14,13 @@ type salesforce.GlobalValueSetTranslation {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   salesforce.ValueTranslation valueTranslation {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true

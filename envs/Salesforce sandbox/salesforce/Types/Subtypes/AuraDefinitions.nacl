@@ -14,7 +14,7 @@ type salesforce.AuraDefinitions {
     }
   }
   salesforce.AuraDefinition auraDefinition {
-    _required = false
+    
   }
   metadataType = "AuraDefinitions"
 }

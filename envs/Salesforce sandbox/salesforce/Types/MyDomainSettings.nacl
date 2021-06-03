@@ -14,31 +14,31 @@ settings salesforce.MyDomainSettings {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true
   }
   boolean canOnlyLoginWithMyDomainUrl {
-    _required = false
+    
   }
   boolean doesApiLoginRequireOrgDomain {
-    _required = false
+    
   }
   boolean enableNativeBrowserForAuthOnAndroid {
-    _required = false
+    
   }
   boolean enableNativeBrowserForAuthOnIos {
-    _required = false
+    
   }
   boolean useStabilizedMyDomainHostnames {
-    _required = false
+    
   }
   boolean useStabilizedSandboxMyDomainHostnames {
-    _required = false
+    
   }
   metadataType = "MyDomainSettings"
   suffix = "settings"

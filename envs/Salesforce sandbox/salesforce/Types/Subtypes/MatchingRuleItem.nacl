@@ -14,7 +14,7 @@ type salesforce.MatchingRuleItem {
     }
   }
   string blankValueBehavior {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -24,10 +24,10 @@ type salesforce.MatchingRuleItem {
     }
   }
   string fieldName {
-    _required = false
+    
   }
   string matchingMethod {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [

@@ -14,7 +14,7 @@ type salesforce.RecordActionDeploymentChannel {
     }
   }
   string channel {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -25,10 +25,10 @@ type salesforce.RecordActionDeploymentChannel {
     }
   }
   salesforce.RecordActionDefaultItem channelItems {
-    _required = false
+    
   }
   boolean isAutopopEnabled {
-    _required = false
+    
   }
   metadataType = "RecordActionDeploymentChannel"
 }

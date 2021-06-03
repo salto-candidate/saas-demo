@@ -14,55 +14,55 @@ type salesforce.Flow {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   salesforce.FlowActionCall actionCalls {
-    _required = false
+    
   }
   salesforce.FlowApexPluginCall apexPluginCalls {
-    _required = false
+    
   }
   "List<salesforce.FlowAssignment>" assignments {
-    _required = false
+    
   }
   salesforce.FlowChoice choices {
-    _required = false
+    
   }
   "List<salesforce.FlowConstant>" constants {
-    _required = false
+    
   }
   "List<salesforce.FlowDecision>" decisions {
-    _required = false
+    
   }
   string description {
-    _required = false
+    
   }
   salesforce.FlowDynamicChoiceSet dynamicChoiceSets {
-    _required = false
+    
   }
   "List<salesforce.FlowFormula>" formulas {
-    _required = false
+    
   }
   string interviewLabel {
-    _required = false
+    
   }
   boolean isAdditionalPermissionRequiredToRun {
-    _required = false
+    
   }
   boolean isTemplate {
-    _required = false
+    
   }
   string label {
-    _required = false
+    
   }
   "List<salesforce.FlowLoop>" loops {
-    _required = false
+    
   }
   "List<salesforce.FlowMetadataValue>" processMetadataValues {
-    _required = false
+    
   }
   string processType {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -100,31 +100,31 @@ type salesforce.Flow {
     }
   }
   "List<salesforce.FlowRecordCreate>" recordCreates {
-    _required = false
+    
   }
   salesforce.FlowRecordDelete recordDeletes {
-    _required = false
+    
   }
   "List<salesforce.FlowRecordLookup>" recordLookups {
-    _required = false
+    
   }
   "List<salesforce.FlowRecordUpdate>" recordUpdates {
-    _required = false
+    
   }
   salesforce.FlowScreen screens {
-    _required = false
+    
   }
   salesforce.FlowStage stages {
-    _required = false
+    
   }
   salesforce.FlowStart start {
-    _required = false
+    
   }
   string startElementReference {
-    _required = false
+    
   }
   string status {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -136,22 +136,22 @@ type salesforce.Flow {
     }
   }
   salesforce.FlowStep steps {
-    _required = false
+    
   }
   salesforce.FlowSubflow subflows {
-    _required = false
+    
   }
   salesforce.FlowTextTemplate textTemplates {
-    _required = false
+    
   }
   "List<salesforce.FlowVariable>" variables {
-    _required = false
+    
   }
   salesforce.FlowWait waits {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true
@@ -160,13 +160,13 @@ type salesforce.Flow {
   dirName = "flows"
   metadataType = "Flow"
   number apiVersion {
-    _required = false
+    
   }
   salesforce.FlowCollectionProcessor collectionProcessors {
-    _required = false
+    
   }
   string runInMode {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -178,6 +178,6 @@ type salesforce.Flow {
   }
   
   salesforce.FlowOrchestratedStage orchestratedStages {
-    _required = false
+    
   }
 }

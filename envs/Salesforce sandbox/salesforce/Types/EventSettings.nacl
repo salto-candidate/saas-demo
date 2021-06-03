@@ -14,37 +14,37 @@ settings salesforce.EventSettings {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true
   }
   boolean enableDeleteMonitoringData {
-    _required = false
+    
   }
   boolean enableDynamicStreamingChannel {
-    _required = false
+    
   }
   boolean enableEventLogWaveIntegration {
-    _required = false
+    
   }
   boolean enableLoginForensics {
-    _required = false
+    
   }
   boolean enableStreamingApi {
-    _required = false
+    
   }
   boolean enableTerminateOldestSession {
-    _required = false
+    
   }
   boolean enableTransactionSecurityPolicies {
-    _required = false
+    
   }
   boolean enableApexLimitEvents {
-    _required = false
+    
   }
   metadataType = "EventSettings"
   suffix = "settings"

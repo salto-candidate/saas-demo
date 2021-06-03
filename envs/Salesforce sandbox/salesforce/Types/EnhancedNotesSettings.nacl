@@ -14,19 +14,19 @@ settings salesforce.EnhancedNotesSettings {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true
   }
   boolean enableEnhancedNotes {
-    _required = false
+    
   }
   boolean enableTasksOnEnhancedNotes {
-    _required = false
+    
   }
   metadataType = "EnhancedNotesSettings"
   suffix = "settings"

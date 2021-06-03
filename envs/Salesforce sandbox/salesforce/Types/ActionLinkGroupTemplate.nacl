@@ -14,13 +14,13 @@ type salesforce.ActionLinkGroupTemplate {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   salesforce.ActionLinkTemplate actionLinkTemplates {
-    _required = false
+    
   }
   string category {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -30,7 +30,7 @@ type salesforce.ActionLinkGroupTemplate {
     }
   }
   string executionsAllowed {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -41,16 +41,16 @@ type salesforce.ActionLinkGroupTemplate {
     }
   }
   number hoursUntilExpiration {
-    _required = false
+    
   }
   boolean isPublished {
-    _required = false
+    
   }
   string name {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true

@@ -14,31 +14,31 @@ type salesforce.StrategyNodeRecommendationLoad {
     }
   }
   string childNode {
-    _required = false
+    
   }
   string description {
-    _required = false
+    
   }
   string label {
-    _required = false
+    
   }
   string name {
-    _required = false
+    
   }
   number limit {
-    _required = false
+    
   }
   salesforce.RecommendationLoadCondition condition {
-    _required = false
+    
   }
   string conditionLogic {
-    _required = false
+    
   }
   metadataType = "StrategyNodeRecommendationLoad"
   string object {
-    _required = false
+    
   }
   salesforce.StrategyNodeSortField sortField {
-    _required = false
+    
   }
 }

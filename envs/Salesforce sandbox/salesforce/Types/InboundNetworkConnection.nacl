@@ -14,7 +14,7 @@ type salesforce.InboundNetworkConnection {
     }
   }
   string connectionType {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -23,22 +23,22 @@ type salesforce.InboundNetworkConnection {
     }
   }
   string description {
-    _required = false
+    
   }
   serviceid fullName {
-    _required = false
+    
   }
   salesforce.InboundNetworkConnProperty inboundNetworkConnProperties {
-    _required = false
+    
   }
   boolean isActive {
-    _required = false
+    
   }
   string label {
-    _required = false
+    
   }
   string status {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -54,7 +54,7 @@ type salesforce.InboundNetworkConnection {
     }
   }
   string internalId {
-    _required = false
+    
     _hidden_value = true
     localOnly = true
   }

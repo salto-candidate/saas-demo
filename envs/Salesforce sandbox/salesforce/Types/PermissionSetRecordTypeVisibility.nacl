@@ -14,10 +14,10 @@ type salesforce.PermissionSetRecordTypeVisibility {
     }
   }
   string recordType {
-    _required = false
+    
   }
   boolean visible {
-    _required = false
+    
   }
   
   

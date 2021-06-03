@@ -14,13 +14,13 @@ type salesforce.FieldOverride {
     }
   }
   string field {
-    _required = false
+    
   }
   string formula {
-    _required = false
+    
   }
   string literalValue {
-    _required = false
+    
   }
   metadataType = "FieldOverride"
 }

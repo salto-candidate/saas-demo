@@ -14,16 +14,16 @@ type salesforce.FlowChoiceUserInput {
     }
   }
   salesforce.FlowMetadataValue processMetadataValues {
-    _required = false
+    
   }
   boolean isRequired {
-    _required = false
+    
   }
   string promptText {
-    _required = false
+    
   }
   salesforce.FlowInputValidationRule validationRule {
-    _required = false
+    
   }
   metadataType = "FlowChoiceUserInput"
 }

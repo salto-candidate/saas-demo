@@ -14,13 +14,13 @@ type salesforce.FlowCondition {
     }
   }
   "List<salesforce.FlowMetadataValue>" processMetadataValues {
-    _required = false
+    
   }
   string leftValueReference {
-    _required = false
+    
   }
   salesforce.FlowElementReferenceOrValue rightValue {
-    _required = false
+    
   }
   string operator {
     _restriction = {
@@ -41,7 +41,7 @@ type salesforce.FlowCondition {
       ]
       enforce_value = false
     }
-    _required = false
+    
   }
   metadataType = "FlowCondition"
 }

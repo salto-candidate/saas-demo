@@ -14,52 +14,52 @@ type salesforce.UserProvisioningConfig {
     }
   }
   string approvalRequired {
-    _required = false
+    
   }
   string connectedApp {
-    _required = false
+    
     foreignKeyDomain = [
       "ConnectedApplication",
     ]
   }
   boolean enabled {
-    _required = false
+    
   }
   string enabledOperations {
-    _required = false
+    
   }
   string flow {
-    _required = false
+    
     foreignKeyDomain = [
       "FlowDefinition",
     ]
   }
   serviceid fullName {
-    _required = false
+    
   }
   string masterLabel {
-    _required = false
+    
   }
   string namedCredential {
-    _required = false
+    
     foreignKeyDomain = [
       salesforce.NamedCredential,
     ]
   }
   string notes {
-    _required = false
+    
   }
   string onUpdateAttributes {
-    _required = false
+    
   }
   string reconFilter {
-    _required = false
+    
   }
   string userAccountMapping {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     _hidden_value = true
     localOnly = true
   }

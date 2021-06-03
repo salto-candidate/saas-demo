@@ -2,7 +2,7 @@ type salesforce.AssetRelationship {
   serviceid Id {
     apiName = "AssetRelationship.Id"
     label = "Asset Relationship ID"
-    _required = false
+    
     queryable = true
     
     updateable = false
@@ -17,13 +17,13 @@ type salesforce.AssetRelationship {
     updateable = false
     queryable = true
     
-    _required = false
+    
     _hidden_value = true
   }
   salesforce.AutoNumber AssetRelationshipNumber {
     apiName = "AssetRelationship.AssetRelationshipNumber"
     label = "Asset Relationship Number"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -33,7 +33,7 @@ type salesforce.AssetRelationship {
   salesforce.DateTime CreatedDate {
     apiName = "AssetRelationship.CreatedDate"
     label = "Created Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -43,8 +43,8 @@ type salesforce.AssetRelationship {
   salesforce.Lookup CreatedById {
     apiName = "AssetRelationship.CreatedById"
     label = "Created By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -58,7 +58,7 @@ type salesforce.AssetRelationship {
   salesforce.DateTime LastModifiedDate {
     apiName = "AssetRelationship.LastModifiedDate"
     label = "Last Modified Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -68,8 +68,8 @@ type salesforce.AssetRelationship {
   salesforce.Lookup LastModifiedById {
     apiName = "AssetRelationship.LastModifiedById"
     label = "Last Modified By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -83,7 +83,7 @@ type salesforce.AssetRelationship {
   salesforce.DateTime SystemModstamp {
     apiName = "AssetRelationship.SystemModstamp"
     label = "System Modstamp"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -94,7 +94,7 @@ type salesforce.AssetRelationship {
     apiName = "AssetRelationship.AssetId"
     label = "Asset ID"
     _required = true
-    allowLookupRecordDeletion = true
+    
     referenceTo = [
       salesforce.Asset,
     ]
@@ -102,12 +102,13 @@ type salesforce.AssetRelationship {
     updateable = false
     queryable = true
     relationshipName = "Asset"
+    trackHistory = "false"
   }
   salesforce.Lookup RelatedAssetId {
     apiName = "AssetRelationship.RelatedAssetId"
     label = "Asset ID"
     _required = true
-    allowLookupRecordDeletion = true
+    
     referenceTo = [
       salesforce.Asset,
     ]
@@ -115,11 +116,12 @@ type salesforce.AssetRelationship {
     updateable = true
     queryable = true
     relationshipName = "RelatedAsset"
+    trackHistory = "false"
   }
   salesforce.DateTime FromDate {
     apiName = "AssetRelationship.FromDate"
     label = "From Date"
-    _required = false
+    
     createable = true
     updateable = true
     queryable = true
@@ -127,7 +129,7 @@ type salesforce.AssetRelationship {
   salesforce.DateTime ToDate {
     apiName = "AssetRelationship.ToDate"
     label = "To Date"
-    _required = false
+    
     createable = true
     updateable = true
     queryable = true
@@ -135,7 +137,7 @@ type salesforce.AssetRelationship {
   salesforce.Picklist RelationshipType {
     apiName = "AssetRelationship.RelationshipType"
     label = "Relationship Type"
-    _required = false
+    
     valueSet = [
       {
         fullName = "Replacement"
@@ -160,5 +162,6 @@ type salesforce.AssetRelationship {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = "false"
   }
 }

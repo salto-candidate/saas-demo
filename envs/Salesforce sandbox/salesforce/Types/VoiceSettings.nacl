@@ -14,37 +14,37 @@ settings salesforce.VoiceSettings {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true
   }
   boolean enableCallDisposition {
-    _required = false
+    
   }
   boolean enableVoiceCallList {
-    _required = false
+    
   }
   boolean enableVoiceCallRecording {
-    _required = false
+    
   }
   boolean enableVoiceCoaching {
-    _required = false
+    
   }
   boolean enableVoiceConferencing {
-    _required = false
+    
   }
   boolean enableVoiceLocalPresence {
-    _required = false
+    
   }
   boolean enableVoiceMail {
-    _required = false
+    
   }
   boolean enableVoiceMailDrop {
-    _required = false
+    
   }
   metadataType = "VoiceSettings"
   suffix = "settings"

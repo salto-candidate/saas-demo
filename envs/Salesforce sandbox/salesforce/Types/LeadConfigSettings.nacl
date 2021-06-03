@@ -14,37 +14,37 @@ settings salesforce.LeadConfigSettings {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true
   }
   boolean doesEnableLeadConvertDefaultSubjectBlankTaskCreation {
-    _required = false
+    
   }
   boolean doesHideOpportunityInConvertLeadWindow {
-    _required = false
+    
   }
   boolean doesPreserveLeadStatus {
-    _required = false
+    
   }
   boolean doesSelectNoOpportunityOnConvertLead {
-    _required = false
+    
   }
   boolean doesTrackHistory {
-    _required = false
+    
   }
   boolean enableConversionsOnMobile {
-    _required = false
+    
   }
   boolean enableOrgWideMergeAndDelete {
-    _required = false
+    
   }
   boolean shouldLeadConvertRequireValidation {
-    _required = false
+    
   }
   metadataType = "LeadConfigSettings"
   suffix = "settings"

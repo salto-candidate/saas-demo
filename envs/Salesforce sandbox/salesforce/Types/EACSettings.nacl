@@ -14,37 +14,37 @@ settings salesforce.EACSettings {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true
   }
   boolean enableActivityCapture {
-    _required = false
+    
   }
   boolean enableActivityMetrics {
-    _required = false
+    
   }
   boolean enableActivitySyncEngine {
-    _required = false
+    
   }
   boolean enableEACForEveryonePref {
-    _required = false
+    
   }
   boolean enableInboxActivitySharing {
-    _required = false
+    
   }
   boolean enableInsightsInTimeline {
-    _required = false
+    
   }
   boolean enableInsightsInTimelineEacStd {
-    _required = false
+    
   }
   boolean provisionProductivityFeatures {
-    _required = false
+    
   }
   metadataType = "EACSettings"
   suffix = "settings"

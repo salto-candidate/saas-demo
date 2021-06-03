@@ -14,10 +14,10 @@ type salesforce.FeedLayoutFilter {
     }
   }
   string feedFilterName {
-    _required = false
+    
   }
   string feedFilterType {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -28,7 +28,7 @@ type salesforce.FeedLayoutFilter {
     }
   }
   string feedItemType {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [

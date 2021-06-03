@@ -14,31 +14,31 @@ type salesforce.StrategyNodeInvocableAction {
     }
   }
   string childNode {
-    _required = false
+    
   }
   string description {
-    _required = false
+    
   }
   string label {
-    _required = false
+    
   }
   string name {
-    _required = false
+    
   }
   number limit {
-    _required = false
+    
   }
   string action {
-    _required = false
+    
   }
   salesforce.StrategyNodeInvocableActionArg argument {
-    _required = false
+    
   }
   boolean isGenerator {
-    _required = false
+    
   }
   string type {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -217,9 +217,13 @@ type salesforce.StrategyNodeInvocableAction {
         "setCheckoutDeliveryMethod",
         "sfdcOutputAction",
         "skillsBasedRouting",
+        "slackArchiveChannel",
         "slackCreateChannel",
+        "slackInviteUserToWorkspace",
         "slackInviteUsersToChannel",
         "slackPostMessage",
+        "slackUserInChannel",
+        "slackUserInWorkspace",
         "storeReplyRecommendationsFeedback",
         "submit",
         "submitDigitalFormResponse",

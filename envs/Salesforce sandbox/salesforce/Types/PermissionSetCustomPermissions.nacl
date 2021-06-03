@@ -14,10 +14,10 @@ type salesforce.PermissionSetCustomPermissions {
     }
   }
   boolean enabled {
-    _required = false
+    
   }
   string name {
-    _required = false
+    
   }
   
   

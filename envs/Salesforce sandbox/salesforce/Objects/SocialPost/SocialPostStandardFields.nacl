@@ -2,7 +2,7 @@ type salesforce.SocialPost {
   serviceid Id {
     apiName = "SocialPost.Id"
     label = "Social Post ID"
-    _required = false
+    
     queryable = true
     
     updateable = false
@@ -12,8 +12,8 @@ type salesforce.SocialPost {
   salesforce.Lookup OwnerId {
     apiName = "SocialPost.OwnerId"
     label = "Owner ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Group,
       salesforce.User,
@@ -33,7 +33,7 @@ type salesforce.SocialPost {
     updateable = false
     queryable = true
     
-    _required = false
+    
     _hidden_value = true
   }
   salesforce.Text Name {
@@ -50,7 +50,7 @@ type salesforce.SocialPost {
   salesforce.DateTime CreatedDate {
     apiName = "SocialPost.CreatedDate"
     label = "Created Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -60,8 +60,8 @@ type salesforce.SocialPost {
   salesforce.Lookup CreatedById {
     apiName = "SocialPost.CreatedById"
     label = "Created By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -75,7 +75,7 @@ type salesforce.SocialPost {
   salesforce.DateTime LastModifiedDate {
     apiName = "SocialPost.LastModifiedDate"
     label = "Last Modified Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -85,8 +85,8 @@ type salesforce.SocialPost {
   salesforce.Lookup LastModifiedById {
     apiName = "SocialPost.LastModifiedById"
     label = "Last Modified By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -100,7 +100,7 @@ type salesforce.SocialPost {
   salesforce.DateTime SystemModstamp {
     apiName = "SocialPost.SystemModstamp"
     label = "System Modstamp"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -110,8 +110,8 @@ type salesforce.SocialPost {
   salesforce.Lookup ParentId {
     apiName = "SocialPost.ParentId"
     label = "Parent ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Case,
     ]
@@ -123,8 +123,8 @@ type salesforce.SocialPost {
   salesforce.Lookup PersonaId {
     apiName = "SocialPost.PersonaId"
     label = "Social Persona ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.SocialPersona,
     ]
@@ -136,8 +136,8 @@ type salesforce.SocialPost {
   salesforce.Lookup WhoId {
     apiName = "SocialPost.WhoId"
     label = "Who ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Account,
       salesforce.Contact,
@@ -151,8 +151,8 @@ type salesforce.SocialPost {
   salesforce.Lookup ReplyToId {
     apiName = "SocialPost.ReplyToId"
     label = "In Reply To ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.SocialPost,
     ]
@@ -164,7 +164,7 @@ type salesforce.SocialPost {
   salesforce.Text Headline {
     apiName = "SocialPost.Headline"
     label = "Headline"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -175,7 +175,7 @@ type salesforce.SocialPost {
   salesforce.LongTextArea Content {
     apiName = "SocialPost.Content"
     label = "Message"
-    _required = false
+    
     createable = true
     updateable = true
     length = 32000
@@ -192,7 +192,7 @@ type salesforce.SocialPost {
   salesforce.Url PostUrl {
     apiName = "SocialPost.PostUrl"
     label = "Post URL"
-    _required = false
+    
     createable = true
     updateable = true
     queryable = true
@@ -200,7 +200,7 @@ type salesforce.SocialPost {
   salesforce.Picklist Provider {
     apiName = "SocialPost.Provider"
     label = "Social Network"
-    _required = false
+    
     valueSet = [
       {
         fullName = "Twitter"
@@ -373,7 +373,7 @@ type salesforce.SocialPost {
   salesforce.Text Handle {
     apiName = "SocialPost.Handle"
     label = "Social Handle"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -384,7 +384,7 @@ type salesforce.SocialPost {
   salesforce.Picklist SpamRating {
     apiName = "SocialPost.SpamRating"
     label = "Spam Rating"
-    _required = false
+    
     valueSet = [
       {
         fullName = "NotSpam"
@@ -407,7 +407,7 @@ type salesforce.SocialPost {
   salesforce.Text MediaType {
     apiName = "SocialPost.MediaType"
     label = "Social Studio Media Type"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -418,7 +418,7 @@ type salesforce.SocialPost {
   salesforce.Text MediaProvider {
     apiName = "SocialPost.MediaProvider"
     label = "Social Studio Media Provider"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -429,7 +429,7 @@ type salesforce.SocialPost {
   salesforce.Picklist Sentiment {
     apiName = "SocialPost.Sentiment"
     label = "Sentiment"
-    _required = false
+    
     valueSet = [
       {
         fullName = "Negative"
@@ -470,7 +470,7 @@ type salesforce.SocialPost {
   salesforce.Text PostPriority {
     apiName = "SocialPost.PostPriority"
     label = "Post Priority"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -481,7 +481,7 @@ type salesforce.SocialPost {
   salesforce.Picklist Status {
     apiName = "SocialPost.Status"
     label = "Status"
-    _required = false
+    
     valueSet = [
       {
         fullName = "SENT"
@@ -552,7 +552,7 @@ type salesforce.SocialPost {
   salesforce.TextArea StatusMessage {
     apiName = "SocialPost.StatusMessage"
     label = "Status Message"
-    _required = false
+    
     createable = true
     updateable = true
     queryable = true
@@ -560,7 +560,7 @@ type salesforce.SocialPost {
   salesforce.Text Recipient {
     apiName = "SocialPost.Recipient"
     label = "Recipient"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -571,7 +571,7 @@ type salesforce.SocialPost {
   salesforce.Text RecipientType {
     apiName = "SocialPost.RecipientType"
     label = "Recipient Type"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -582,7 +582,7 @@ type salesforce.SocialPost {
   salesforce.Picklist MessageType {
     apiName = "SocialPost.MessageType"
     label = "Message Type"
-    _required = false
+    
     valueSet = [
       {
         fullName = "Post"
@@ -635,7 +635,7 @@ type salesforce.SocialPost {
   salesforce.Text R6PostId {
     apiName = "SocialPost.R6PostId"
     label = "Social Studio Post Id"
-    _required = false
+    
     createable = true
     updateable = true
     unique = true
@@ -646,7 +646,7 @@ type salesforce.SocialPost {
   salesforce.Text R6TopicId {
     apiName = "SocialPost.R6TopicId"
     label = "Social Studio Topic Id"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -657,7 +657,7 @@ type salesforce.SocialPost {
   salesforce.Text R6SourceId {
     apiName = "SocialPost.R6SourceId"
     label = "Social Studio Source Id"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -668,7 +668,7 @@ type salesforce.SocialPost {
   salesforce.Picklist TopicType {
     apiName = "SocialPost.TopicType"
     label = "Topic Type"
-    _required = false
+    
     valueSet = [
       {
         fullName = "Keyword"
@@ -691,7 +691,7 @@ type salesforce.SocialPost {
   salesforce.Text ExternalPostId {
     apiName = "SocialPost.ExternalPostId"
     label = "External Post Id"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -702,7 +702,7 @@ type salesforce.SocialPost {
   salesforce.DateTime HarvestDate {
     apiName = "SocialPost.HarvestDate"
     label = "Harvest Date"
-    _required = false
+    
     createable = true
     updateable = true
     queryable = true
@@ -718,7 +718,7 @@ type salesforce.SocialPost {
   salesforce.LongTextArea PostTags {
     apiName = "SocialPost.PostTags"
     label = "Post Tags"
-    _required = false
+    
     createable = true
     updateable = true
     length = 32000
@@ -727,7 +727,7 @@ type salesforce.SocialPost {
   salesforce.LongTextArea SourceTags {
     apiName = "SocialPost.SourceTags"
     label = "Source Tags"
-    _required = false
+    
     createable = true
     updateable = true
     length = 32000
@@ -736,7 +736,7 @@ type salesforce.SocialPost {
   salesforce.Picklist Classification {
     apiName = "SocialPost.Classification"
     label = "Classification"
-    _required = false
+    
     restricted = false
     createable = true
     updateable = true
@@ -746,7 +746,7 @@ type salesforce.SocialPost {
   salesforce.Number ThreadSize {
     apiName = "SocialPost.ThreadSize"
     label = "Thread Size"
-    _required = false
+    
     precision = 9
     createable = true
     updateable = true
@@ -757,7 +757,7 @@ type salesforce.SocialPost {
   salesforce.Number CommentCount {
     apiName = "SocialPost.CommentCount"
     label = "Comment Count"
-    _required = false
+    
     precision = 9
     createable = true
     updateable = true
@@ -768,7 +768,7 @@ type salesforce.SocialPost {
   salesforce.Number Shares {
     apiName = "SocialPost.Shares"
     label = "Shares"
-    _required = false
+    
     precision = 9
     createable = true
     updateable = true
@@ -779,7 +779,7 @@ type salesforce.SocialPost {
   salesforce.Number ViewCount {
     apiName = "SocialPost.ViewCount"
     label = "View Count"
-    _required = false
+    
     precision = 9
     createable = true
     updateable = true
@@ -790,7 +790,7 @@ type salesforce.SocialPost {
   salesforce.Number InboundLinkCount {
     apiName = "SocialPost.InboundLinkCount"
     label = "Inbound Link Count"
-    _required = false
+    
     precision = 9
     createable = true
     updateable = true
@@ -801,7 +801,7 @@ type salesforce.SocialPost {
   salesforce.Number UniqueCommentors {
     apiName = "SocialPost.UniqueCommentors"
     label = "Unique Commentors"
-    _required = false
+    
     precision = 9
     createable = true
     updateable = true
@@ -812,7 +812,7 @@ type salesforce.SocialPost {
   salesforce.Number LikesAndVotes {
     apiName = "SocialPost.LikesAndVotes"
     label = "Likes and Votes"
-    _required = false
+    
     precision = 9
     createable = true
     updateable = true
@@ -823,7 +823,7 @@ type salesforce.SocialPost {
   salesforce.Text TopicProfileName {
     apiName = "SocialPost.TopicProfileName"
     label = "Topic Profile Name"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -834,7 +834,7 @@ type salesforce.SocialPost {
   salesforce.Text KeywordGroupName {
     apiName = "SocialPost.KeywordGroupName"
     label = "Keyword Group Name"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -845,7 +845,7 @@ type salesforce.SocialPost {
   salesforce.Picklist EngagementLevel {
     apiName = "SocialPost.EngagementLevel"
     label = "Engagement Level"
-    _required = false
+    
     restricted = false
     createable = true
     updateable = true
@@ -855,7 +855,7 @@ type salesforce.SocialPost {
   salesforce.Text AssignedTo {
     apiName = "SocialPost.AssignedTo"
     label = "Assigned To"
-    _required = false
+    
     createable = true
     updateable = false
     unique = false
@@ -866,8 +866,8 @@ type salesforce.SocialPost {
   salesforce.Lookup OutboundSocialAccountId {
     apiName = "SocialPost.OutboundSocialAccountId"
     label = "Managed Social Account ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       "ExternalSocialAccount",
     ]
@@ -879,7 +879,7 @@ type salesforce.SocialPost {
   salesforce.Picklist ReviewedStatus {
     apiName = "SocialPost.ReviewedStatus"
     label = "Reviewed Status"
-    _required = false
+    
     createable = true
     updateable = true
     queryable = true
@@ -887,7 +887,7 @@ type salesforce.SocialPost {
   salesforce.Url AttachmentUrl {
     apiName = "SocialPost.AttachmentUrl"
     label = "Attachment URL"
-    _required = false
+    
     createable = true
     updateable = true
     queryable = true
@@ -895,7 +895,7 @@ type salesforce.SocialPost {
   salesforce.Picklist AttachmentType {
     apiName = "SocialPost.AttachmentType"
     label = "Attachment Type"
-    _required = false
+    
     valueSet = [
       {
         fullName = "UNKNOWN"
@@ -948,8 +948,8 @@ type salesforce.SocialPost {
   salesforce.Lookup DeletedById {
     apiName = "SocialPost.DeletedById"
     label = "Deleted By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -961,7 +961,7 @@ type salesforce.SocialPost {
   salesforce.Text ResponseContextExternalId {
     apiName = "SocialPost.ResponseContextExternalId"
     label = "Response Context"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -972,7 +972,7 @@ type salesforce.SocialPost {
   salesforce.Text LikedBy {
     apiName = "SocialPost.LikedBy"
     label = "Liked By"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -983,7 +983,7 @@ type salesforce.SocialPost {
   salesforce.Number AnalyzerScore {
     apiName = "SocialPost.AnalyzerScore"
     label = "Analyzer Score"
-    _required = false
+    
     precision = 18
     scale = 3
     createable = true
@@ -994,7 +994,7 @@ type salesforce.SocialPost {
   salesforce.Text Language {
     apiName = "SocialPost.Language"
     label = "Language"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -1005,7 +1005,7 @@ type salesforce.SocialPost {
   salesforce.Number ReviewScore {
     apiName = "SocialPost.ReviewScore"
     label = "Review Score"
-    _required = false
+    
     precision = 18
     scale = 2
     createable = true
@@ -1016,7 +1016,7 @@ type salesforce.SocialPost {
   salesforce.Number ReviewScale {
     apiName = "SocialPost.ReviewScale"
     label = "Review Scale"
-    _required = false
+    
     precision = 18
     scale = 2
     createable = true
@@ -1027,8 +1027,8 @@ type salesforce.SocialPost {
   salesforce.Lookup HiddenById {
     apiName = "SocialPost.HiddenById"
     label = "Hidden By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -1040,7 +1040,7 @@ type salesforce.SocialPost {
   salesforce.LongTextArea Notes {
     apiName = "SocialPost.Notes"
     label = "Notes"
-    _required = false
+    
     createable = true
     updateable = true
     length = 32000
@@ -1049,7 +1049,7 @@ type salesforce.SocialPost {
   salesforce.Text TruncatedContent {
     apiName = "SocialPost.TruncatedContent"
     label = "Message Clipping"
-    _required = false
+    
     createable = false
     updateable = false
     unique = false

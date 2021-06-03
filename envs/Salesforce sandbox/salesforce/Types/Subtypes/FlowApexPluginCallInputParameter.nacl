@@ -14,13 +14,13 @@ type salesforce.FlowApexPluginCallInputParameter {
     }
   }
   salesforce.FlowMetadataValue processMetadataValues {
-    _required = false
+    
   }
   string name {
-    _required = false
+    
   }
   salesforce.FlowElementReferenceOrValue value {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [

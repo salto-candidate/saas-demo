@@ -14,14 +14,14 @@ type salesforce.EmbeddedServiceMenuItem {
     }
   }
   string channel {
-    _required = false
+    
     foreignKeyDomain = [
       salesforce.EmbeddedServiceConfig,
       "MessagingChannel",
     ]
   }
   string channelType {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -33,43 +33,43 @@ type salesforce.EmbeddedServiceMenuItem {
     }
   }
   number displayOrder {
-    _required = false
+    
   }
   string phoneNumber {
-    _required = false
+    
   }
   metadataType = "EmbeddedServiceMenuItem"
   string customUrl {
-    _required = false
+    
   }
   salesforce.EmbeddedServiceCustomLabel embeddedServiceCustomLabels {
-    _required = false
+    
   }
   string iconUrl {
-    _required = false
+    
   }
   boolean isDisplayedOnPageLoad {
-    _required = false
+    
   }
   string itemName {
-    _required = false
+    
   }
   boolean osOptionsHideInIOS {
-    _required = false
+    
   }
   boolean osOptionsHideInLinuxOS {
-    _required = false
+    
   }
   boolean osOptionsHideInMacOS {
-    _required = false
+    
   }
   boolean osOptionsHideInOtherOS {
-    _required = false
+    
   }
   boolean osOptionsHideInWindowsOS {
-    _required = false
+    
   }
   boolean shouldOpenUrlInSameTab {
-    _required = false
+    
   }
 }

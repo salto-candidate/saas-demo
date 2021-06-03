@@ -14,7 +14,7 @@ type salesforce.SubtabComponents {
     }
   }
   salesforce.Container containers {
-    _required = false
+    
   }
   metadataType = "SubtabComponents"
 }

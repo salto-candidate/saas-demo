@@ -14,10 +14,10 @@ type salesforce.LwcResource {
     }
   }
   string filePath {
-    _required = false
+    
   }
   string source {
-    _required = false
+    
   }
   metadataType = "LwcResource"
 }

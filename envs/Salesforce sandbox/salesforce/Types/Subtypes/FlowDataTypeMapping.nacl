@@ -14,13 +14,13 @@ type salesforce.FlowDataTypeMapping {
     }
   }
   salesforce.FlowMetadataValue processMetadataValues {
-    _required = false
+    
   }
   string typeName {
-    _required = false
+    
   }
   string typeValue {
-    _required = false
+    
   }
   metadataType = "FlowDataTypeMapping"
 }

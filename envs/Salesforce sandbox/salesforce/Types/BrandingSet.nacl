@@ -14,19 +14,19 @@ type salesforce.BrandingSet {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   salesforce.BrandingSetProperty brandingSetProperty {
-    _required = false
+    
   }
   string description {
-    _required = false
+    
   }
   string masterLabel {
-    _required = false
+    
   }
   string type {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -69,7 +69,7 @@ type salesforce.BrandingSet {
     ]
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true

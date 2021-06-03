@@ -14,16 +14,16 @@ type salesforce.CaseSubjectParticle {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   number index {
-    _required = false
+    
   }
   string textField {
-    _required = false
+    
   }
   string type {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -42,7 +42,7 @@ type salesforce.CaseSubjectParticle {
     }
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true

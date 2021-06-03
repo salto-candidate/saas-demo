@@ -2,7 +2,7 @@ type salesforce.QuoteLineItem {
   serviceid Id {
     apiName = "QuoteLineItem.Id"
     label = "Quote Line Item ID"
-    _required = false
+    
     queryable = true
     
     updateable = false
@@ -17,13 +17,13 @@ type salesforce.QuoteLineItem {
     updateable = false
     queryable = true
     
-    _required = false
+    
     _hidden_value = true
   }
   salesforce.AutoNumber LineNumber {
     apiName = "QuoteLineItem.LineNumber"
     label = "Line Item Number"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -33,7 +33,7 @@ type salesforce.QuoteLineItem {
   salesforce.DateTime CreatedDate {
     apiName = "QuoteLineItem.CreatedDate"
     label = "Created Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -43,8 +43,8 @@ type salesforce.QuoteLineItem {
   salesforce.Lookup CreatedById {
     apiName = "QuoteLineItem.CreatedById"
     label = "Created By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -58,7 +58,7 @@ type salesforce.QuoteLineItem {
   salesforce.DateTime LastModifiedDate {
     apiName = "QuoteLineItem.LastModifiedDate"
     label = "Last Modified Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -68,8 +68,8 @@ type salesforce.QuoteLineItem {
   salesforce.Lookup LastModifiedById {
     apiName = "QuoteLineItem.LastModifiedById"
     label = "Last Modified By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -83,7 +83,7 @@ type salesforce.QuoteLineItem {
   salesforce.DateTime SystemModstamp {
     apiName = "QuoteLineItem.SystemModstamp"
     label = "System Modstamp"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -94,7 +94,7 @@ type salesforce.QuoteLineItem {
     apiName = "QuoteLineItem.QuoteId"
     label = "Quote ID"
     _required = true
-    allowLookupRecordDeletion = true
+    
     referenceTo = [
       salesforce.Quote,
     ]
@@ -107,7 +107,7 @@ type salesforce.QuoteLineItem {
     apiName = "QuoteLineItem.PricebookEntryId"
     label = "Price Book Entry ID"
     _required = true
-    allowLookupRecordDeletion = true
+    
     referenceTo = [
       salesforce.PricebookEntry,
     ]
@@ -119,8 +119,8 @@ type salesforce.QuoteLineItem {
   salesforce.Lookup OpportunityLineItemId {
     apiName = "QuoteLineItem.OpportunityLineItemId"
     label = "Line Item ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.OpportunityLineItem,
     ]
@@ -153,7 +153,7 @@ type salesforce.QuoteLineItem {
   salesforce.Percent Discount {
     apiName = "QuoteLineItem.Discount"
     label = "Discount"
-    _required = false
+    
     createable = true
     updateable = true
     scale = 2
@@ -163,7 +163,7 @@ type salesforce.QuoteLineItem {
   salesforce.Text Description {
     apiName = "QuoteLineItem.Description"
     label = "Line Item Description"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -174,7 +174,7 @@ type salesforce.QuoteLineItem {
   salesforce.Date ServiceDate {
     apiName = "QuoteLineItem.ServiceDate"
     label = "Date"
-    _required = false
+    
     createable = true
     updateable = true
     queryable = true
@@ -183,7 +183,7 @@ type salesforce.QuoteLineItem {
     apiName = "QuoteLineItem.Product2Id"
     label = "Product ID"
     _required = true
-    allowLookupRecordDeletion = true
+    
     referenceTo = [
       salesforce.Product2,
     ]
@@ -195,7 +195,7 @@ type salesforce.QuoteLineItem {
   salesforce.Number SortOrder {
     apiName = "QuoteLineItem.SortOrder"
     label = "Sort Order"
-    _required = false
+    
     precision = 9
     createable = true
     updateable = true
@@ -206,7 +206,7 @@ type salesforce.QuoteLineItem {
   salesforce.Currency ListPrice {
     apiName = "QuoteLineItem.ListPrice"
     label = "List Price"
-    _required = false
+    
     createable = false
     updateable = false
     scale = 2
@@ -216,7 +216,7 @@ type salesforce.QuoteLineItem {
   salesforce.Currency Subtotal {
     apiName = "QuoteLineItem.Subtotal"
     label = "Subtotal "
-    _required = false
+    
     createable = false
     updateable = false
     scale = 2
@@ -226,7 +226,7 @@ type salesforce.QuoteLineItem {
   salesforce.Currency TotalPrice {
     apiName = "QuoteLineItem.TotalPrice"
     label = "Total Price"
-    _required = false
+    
     createable = false
     updateable = false
     scale = 2

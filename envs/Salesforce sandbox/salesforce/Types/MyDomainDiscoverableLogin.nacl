@@ -14,25 +14,25 @@ type salesforce.MyDomainDiscoverableLogin {
     }
   }
   string apexHandler {
-    _required = false
+    
     foreignKeyDomain = [
       salesforce.ApexClass,
     ]
   }
   string executeApexHandlerAs {
-    _required = false
+    
     foreignKeyDomain = [
       salesforce.User,
     ]
   }
   serviceid fullName {
-    _required = false
+    
   }
   string usernameLabel {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     _hidden_value = true
     localOnly = true
   }

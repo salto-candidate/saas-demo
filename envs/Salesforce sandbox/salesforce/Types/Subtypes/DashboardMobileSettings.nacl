@@ -14,7 +14,7 @@ type salesforce.DashboardMobileSettings {
     }
   }
   boolean enableDashboardIPadApp {
-    _required = false
+    
   }
   metadataType = "DashboardMobileSettings"
 }

@@ -14,7 +14,7 @@ type salesforce.AppWorkspaceConfig {
     }
   }
   "List<salesforce.WorkspaceMapping>" mappings {
-    _required = false
+    
   }
   metadataType = "AppWorkspaceConfig"
 }

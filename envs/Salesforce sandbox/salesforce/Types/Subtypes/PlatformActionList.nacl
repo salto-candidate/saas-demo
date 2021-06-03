@@ -15,7 +15,7 @@ type salesforce.PlatformActionList {
   }
   
   string actionListContext {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -43,10 +43,10 @@ type salesforce.PlatformActionList {
     }
   }
   "List<salesforce.PlatformActionListItem>" platformActionListItems {
-    _required = false
+    
   }
   string relatedSourceEntity {
-    _required = false
+    
   }
   metadataType = "PlatformActionList"
 }

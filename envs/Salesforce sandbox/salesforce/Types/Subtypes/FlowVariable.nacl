@@ -14,34 +14,34 @@ type salesforce.FlowVariable {
     }
   }
   string apexClass {
-    _required = false
+    
   }
   string description {
-    _required = false
+    
   }
   boolean isCollection {
-    _required = false
+    
   }
   boolean isInput {
-    _required = false
+    
   }
   boolean isOutput {
-    _required = false
+    
   }
   string name {
-    _required = false
+    
   }
   string objectType {
-    _required = false
+    
   }
   salesforce.FlowMetadataValue processMetadataValues {
-    _required = false
+    
   }
   number scale {
-    _required = false
+    
   }
   salesforce.FlowElementReferenceOrValue value {
-    _required = false
+    
   }
   string dataType {
     _restriction = {
@@ -59,7 +59,7 @@ type salesforce.FlowVariable {
       ]
       enforce_value = false
     }
-    _required = false
+    
   }
   metadataType = "FlowVariable"
 }

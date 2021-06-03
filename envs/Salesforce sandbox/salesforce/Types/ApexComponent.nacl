@@ -14,25 +14,25 @@ type salesforce.ApexComponent {
     }
   }
   number apiVersion {
-    _required = false
+    
   }
   string content {
-    _required = false
+    
   }
   string description {
-    _required = false
+    
   }
   serviceid fullName {
-    _required = false
+    
   }
   string label {
-    _required = false
+    
   }
   "List<salesforce.PackageVersion>" packageVersions {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true

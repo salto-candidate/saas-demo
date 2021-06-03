@@ -2,7 +2,7 @@ type salesforce.AuthorizationFormConsent {
   serviceid Id {
     apiName = "AuthorizationFormConsent.Id"
     label = "Authorization Form Consent ID"
-    _required = false
+    
     queryable = true
     
     updateable = false
@@ -12,8 +12,8 @@ type salesforce.AuthorizationFormConsent {
   salesforce.Lookup OwnerId {
     apiName = "AuthorizationFormConsent.OwnerId"
     label = "Owner ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Group,
       salesforce.User,
@@ -33,7 +33,7 @@ type salesforce.AuthorizationFormConsent {
     updateable = false
     queryable = true
     
-    _required = false
+    
     _hidden_value = true
   }
   salesforce.Text Name {
@@ -50,7 +50,7 @@ type salesforce.AuthorizationFormConsent {
   salesforce.DateTime CreatedDate {
     apiName = "AuthorizationFormConsent.CreatedDate"
     label = "Created Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -60,8 +60,8 @@ type salesforce.AuthorizationFormConsent {
   salesforce.Lookup CreatedById {
     apiName = "AuthorizationFormConsent.CreatedById"
     label = "Created By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -75,7 +75,7 @@ type salesforce.AuthorizationFormConsent {
   salesforce.DateTime LastModifiedDate {
     apiName = "AuthorizationFormConsent.LastModifiedDate"
     label = "Last Modified Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -85,8 +85,8 @@ type salesforce.AuthorizationFormConsent {
   salesforce.Lookup LastModifiedById {
     apiName = "AuthorizationFormConsent.LastModifiedById"
     label = "Last Modified By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -100,7 +100,7 @@ type salesforce.AuthorizationFormConsent {
   salesforce.DateTime SystemModstamp {
     apiName = "AuthorizationFormConsent.SystemModstamp"
     label = "System Modstamp"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -111,7 +111,7 @@ type salesforce.AuthorizationFormConsent {
     apiName = "AuthorizationFormConsent.ConsentGiverId"
     label = "Consent Giver ID"
     _required = true
-    allowLookupRecordDeletion = true
+    
     referenceTo = [
       salesforce.Account,
       salesforce.Contact,
@@ -122,12 +122,13 @@ type salesforce.AuthorizationFormConsent {
     updateable = true
     queryable = true
     relationshipName = "ConsentGiver"
+    trackHistory = "false"
   }
   salesforce.Lookup AuthorizationFormTextId {
     apiName = "AuthorizationFormConsent.AuthorizationFormTextId"
     label = "Authorization Form Text ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.AuthorizationFormText,
     ]
@@ -135,11 +136,12 @@ type salesforce.AuthorizationFormConsent {
     updateable = true
     queryable = true
     relationshipName = "AuthorizationFormText"
+    trackHistory = "false"
   }
   salesforce.Text ConsentCapturedSource {
     apiName = "AuthorizationFormConsent.ConsentCapturedSource"
     label = "Consent Captured Source"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -150,7 +152,7 @@ type salesforce.AuthorizationFormConsent {
   salesforce.Picklist ConsentCapturedSourceType {
     apiName = "AuthorizationFormConsent.ConsentCapturedSourceType"
     label = "Consent Captured Source Type"
-    _required = false
+    
     valueSet = [
       {
         fullName = "Email"
@@ -191,7 +193,7 @@ type salesforce.AuthorizationFormConsent {
   salesforce.DateTime ConsentCapturedDateTime {
     apiName = "AuthorizationFormConsent.ConsentCapturedDateTime"
     label = "Consent Captured Date Time"
-    _required = false
+    
     createable = true
     updateable = true
     queryable = true
@@ -199,7 +201,7 @@ type salesforce.AuthorizationFormConsent {
   salesforce.Picklist Status {
     apiName = "AuthorizationFormConsent.Status"
     label = "Status"
-    _required = false
+    
     valueSet = [
       {
         fullName = "Seen"
@@ -228,8 +230,8 @@ type salesforce.AuthorizationFormConsent {
   salesforce.Lookup DocumentVersionId {
     apiName = "AuthorizationFormConsent.DocumentVersionId"
     label = "ContentVersion ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.ContentVersion,
     ]
@@ -237,6 +239,7 @@ type salesforce.AuthorizationFormConsent {
     updateable = true
     queryable = true
     relationshipName = "DocumentVersion"
+    trackHistory = "false"
   }
   salesforce.Lookup RelatedRecordId {
     apiName = "AuthorizationFormConsent.RelatedRecordId"
@@ -244,11 +247,12 @@ type salesforce.AuthorizationFormConsent {
     updateable = true
     createable = true
     label = "Related Record ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Account,
     ]
     relationshipName = "RelatedRecord"
+    trackHistory = "false"
   }
 }

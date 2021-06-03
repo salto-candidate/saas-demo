@@ -14,19 +14,19 @@ type salesforce.CallCoachingMediaProvider {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   boolean isActive {
-    _required = false
+    
   }
   string providerDescription {
-    _required = false
+    
   }
   string providerName {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     _hidden_value = true
     localOnly = true
   }

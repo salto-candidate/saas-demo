@@ -2,7 +2,7 @@ type salesforce.WorkBadge {
   serviceid Id {
     apiName = "WorkBadge.Id"
     label = "Badge Received ID"
-    _required = false
+    
     queryable = true
     
     updateable = false
@@ -17,13 +17,13 @@ type salesforce.WorkBadge {
     updateable = false
     queryable = true
     
-    _required = false
+    
     _hidden_value = true
   }
   salesforce.DateTime CreatedDate {
     apiName = "WorkBadge.CreatedDate"
     label = "Created Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -33,8 +33,8 @@ type salesforce.WorkBadge {
   salesforce.Lookup CreatedById {
     apiName = "WorkBadge.CreatedById"
     label = "Created By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -48,7 +48,7 @@ type salesforce.WorkBadge {
   salesforce.DateTime LastModifiedDate {
     apiName = "WorkBadge.LastModifiedDate"
     label = "Last Modified Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -58,8 +58,8 @@ type salesforce.WorkBadge {
   salesforce.Lookup LastModifiedById {
     apiName = "WorkBadge.LastModifiedById"
     label = "Last Modified By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -73,7 +73,7 @@ type salesforce.WorkBadge {
   salesforce.DateTime SystemModstamp {
     apiName = "WorkBadge.SystemModstamp"
     label = "System Modstamp"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -84,7 +84,7 @@ type salesforce.WorkBadge {
     apiName = "WorkBadge.SourceId"
     label = "Thanks ID"
     _required = true
-    allowLookupRecordDeletion = true
+    
     referenceTo = [
       salesforce.WorkThanks,
     ]
@@ -97,7 +97,7 @@ type salesforce.WorkBadge {
     apiName = "WorkBadge.DefinitionId"
     label = "Badge ID"
     _required = true
-    allowLookupRecordDeletion = true
+    
     referenceTo = [
       salesforce.WorkBadgeDefinition,
     ]
@@ -110,7 +110,7 @@ type salesforce.WorkBadge {
     apiName = "WorkBadge.RecipientId"
     label = "User ID"
     _required = true
-    allowLookupRecordDeletion = true
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -122,8 +122,8 @@ type salesforce.WorkBadge {
   salesforce.Lookup GiverId {
     apiName = "WorkBadge.GiverId"
     label = "User ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -135,7 +135,7 @@ type salesforce.WorkBadge {
   salesforce.Url ImageUrl {
     apiName = "WorkBadge.ImageUrl"
     label = "Image"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -143,7 +143,7 @@ type salesforce.WorkBadge {
   salesforce.LongTextArea Description {
     apiName = "WorkBadge.Description"
     label = "Description"
-    _required = false
+    
     createable = false
     updateable = false
     length = 4000
@@ -152,7 +152,7 @@ type salesforce.WorkBadge {
   salesforce.LongTextArea Message {
     apiName = "WorkBadge.Message"
     label = "Message"
-    _required = false
+    
     createable = false
     updateable = false
     length = 4000

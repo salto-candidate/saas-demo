@@ -14,22 +14,22 @@ settings salesforce.EmployeeUserSettings {
     }
   }
   string emailEncoding {
-    _required = false
+    
   }
   serviceid fullName {
-    _required = false
+    
   }
   string permset {
-    _required = false
+    
   }
   string profile {
-    _required = false
+    
   }
   string usernameSuffix {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     _hidden_value = true
     localOnly = true
   }

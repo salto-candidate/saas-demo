@@ -14,46 +14,46 @@ settings salesforce.OpportunitySettings {
     }
   }
   boolean autoActivateNewReminders {
-    _required = false
+    
   }
   boolean doesEnforceStandardOpportunitySaveLogic {
-    _required = false
+    
   }
   boolean enableFindSimilarOpportunities {
-    _required = false
+    
   }
   boolean enableOpportunityTeam {
-    _required = false
+    
   }
   boolean enableUpdateReminders {
-    _required = false
+    
   }
   salesforce.FindSimilarOppFilter findSimilarOppFilter {
-    _required = false
+    
   }
   serviceid fullName {
-    _required = false
+    
   }
   boolean promptToAddProducts {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true
   }
   boolean customizableProductSchedulesEnabled {
-    _required = false
+    
   }
   boolean doesAutoAddSplitOwnerAsOpportunityTeamMember {
-    _required = false
+    
   }
   boolean enableOpportunityFieldHistoryTracking {
-    _required = false
+    
   }
   boolean enableOpportunityInsightsInMobile {
-    _required = false
+    
   }
   metadataType = "OpportunitySettings"
   suffix = "settings"

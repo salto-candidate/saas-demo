@@ -14,22 +14,22 @@ type salesforce.CustomValue {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   string color {
-    _required = false
+    
   }
   boolean default {
-    _required = false
+    
   }
   string description {
-    _required = false
+    
   }
   boolean isActive {
-    _required = false
+    
   }
   string label {
-    _required = false
+    
   }
   metadataType = "CustomValue"
 }

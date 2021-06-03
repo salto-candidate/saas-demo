@@ -14,10 +14,10 @@ type salesforce.UiFormulaRule {
     }
   }
   string booleanFilter {
-    _required = false
+    
   }
   "List<salesforce.UiFormulaCriterion>" criteria {
-    _required = false
+    
   }
   metadataType = "UiFormulaRule"
 }

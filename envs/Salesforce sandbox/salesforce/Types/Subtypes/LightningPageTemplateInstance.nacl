@@ -14,10 +14,10 @@ type salesforce.LightningPageTemplateInstance {
     }
   }
   string name {
-    _required = false
+    
   }
   salesforce.ComponentInstanceProperty properties {
-    _required = false
+    
   }
   metadataType = "FlexiPageTemplateInstance"
 }

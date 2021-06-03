@@ -14,16 +14,16 @@ settings salesforce.ExperienceBundleSettings {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true
   }
   boolean enableExperienceBundleMetadata {
-    _required = false
+    
   }
   metadataType = "ExperienceBundleSettings"
   suffix = "settings"

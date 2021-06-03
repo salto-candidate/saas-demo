@@ -2,7 +2,7 @@ type salesforce.Event {
   serviceid Id {
     apiName = "Event.Id"
     label = "Activity ID"
-    _required = false
+    
     queryable = true
     
     updateable = false
@@ -12,8 +12,8 @@ type salesforce.Event {
   salesforce.Lookup WhoId {
     apiName = "Event.WhoId"
     label = "Name ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Contact,
       salesforce.Lead,
@@ -26,8 +26,8 @@ type salesforce.Event {
   salesforce.Lookup WhatId {
     apiName = "Event.WhatId"
     label = "Related To ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Account,
       salesforce.Asset,
@@ -53,7 +53,7 @@ type salesforce.Event {
   salesforce.Number WhoCount {
     apiName = "Event.WhoCount"
     label = "Relation Count"
-    _required = false
+    
     precision = 9
     createable = false
     updateable = false
@@ -64,7 +64,7 @@ type salesforce.Event {
   salesforce.Number WhatCount {
     apiName = "Event.WhatCount"
     label = "Related To Count"
-    _required = false
+    
     precision = 9
     createable = false
     updateable = false
@@ -75,17 +75,18 @@ type salesforce.Event {
   salesforce.Picklist Subject {
     apiName = "Event.Subject"
     label = "Subject"
-    _required = false
+    
     restricted = false
     createable = true
     updateable = true
     queryable = true
     valueSetName = salesforce.StandardValueSet.instance.EventSubject
+    trackFeedHistory = false
   }
   salesforce.Text Location {
     apiName = "Event.Location"
     label = "Location"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -104,7 +105,7 @@ type salesforce.Event {
   salesforce.DateTime ActivityDateTime {
     apiName = "Event.ActivityDateTime"
     label = "Due Date Time"
-    _required = false
+    
     createable = true
     updateable = true
     queryable = true
@@ -112,7 +113,7 @@ type salesforce.Event {
   salesforce.Date ActivityDate {
     apiName = "Event.ActivityDate"
     label = "Due Date Only"
-    _required = false
+    
     createable = true
     updateable = true
     queryable = true
@@ -120,7 +121,7 @@ type salesforce.Event {
   salesforce.Number DurationInMinutes {
     apiName = "Event.DurationInMinutes"
     label = "Duration"
-    _required = false
+    
     precision = 8
     createable = true
     updateable = true
@@ -131,7 +132,7 @@ type salesforce.Event {
   salesforce.DateTime StartDateTime {
     apiName = "Event.StartDateTime"
     label = "Start Date Time"
-    _required = false
+    
     createable = true
     updateable = true
     queryable = true
@@ -139,7 +140,7 @@ type salesforce.Event {
   salesforce.DateTime EndDateTime {
     apiName = "Event.EndDateTime"
     label = "End Date Time"
-    _required = false
+    
     createable = true
     updateable = true
     queryable = true
@@ -147,7 +148,7 @@ type salesforce.Event {
   salesforce.Date EndDate {
     apiName = "Event.EndDate"
     label = "End Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -155,7 +156,7 @@ type salesforce.Event {
   salesforce.LongTextArea Description {
     apiName = "Event.Description"
     label = "Description"
-    _required = false
+    
     createable = true
     updateable = true
     length = 32000
@@ -164,8 +165,8 @@ type salesforce.Event {
   salesforce.Lookup AccountId {
     apiName = "Event.AccountId"
     label = "Account ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Account,
     ]
@@ -177,8 +178,8 @@ type salesforce.Event {
   salesforce.Lookup OwnerId {
     apiName = "Event.OwnerId"
     label = "Assigned To ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       "Calendar",
       salesforce.User,
@@ -189,16 +190,18 @@ type salesforce.Event {
     
     relationshipName = "Owner"
     _hidden_value = true
+    trackFeedHistory = false
   }
   salesforce.Picklist Type {
     apiName = "Event.Type"
     label = "Type"
-    _required = false
+    
     restricted = false
     createable = true
     updateable = true
     queryable = true
     valueSetName = salesforce.StandardValueSet.instance.EventType
+    trackFeedHistory = false
   }
   salesforce.Checkbox IsPrivate {
     apiName = "Event.IsPrivate"
@@ -211,7 +214,7 @@ type salesforce.Event {
   salesforce.Picklist ShowAs {
     apiName = "Event.ShowAs"
     label = "Show Time As"
-    _required = false
+    
     valueSet = [
       {
         fullName = "Busy"
@@ -245,7 +248,7 @@ type salesforce.Event {
     updateable = false
     queryable = true
     
-    _required = false
+    
     _hidden_value = true
   }
   salesforce.Checkbox IsChild {
@@ -267,7 +270,7 @@ type salesforce.Event {
   salesforce.Picklist GroupEventType {
     apiName = "Event.GroupEventType"
     label = "Group Event Type"
-    _required = false
+    
     valueSet = [
       {
         fullName = "0"
@@ -302,7 +305,7 @@ type salesforce.Event {
   salesforce.DateTime CreatedDate {
     apiName = "Event.CreatedDate"
     label = "Created Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -312,8 +315,8 @@ type salesforce.Event {
   salesforce.Lookup CreatedById {
     apiName = "Event.CreatedById"
     label = "Created By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -327,7 +330,7 @@ type salesforce.Event {
   salesforce.DateTime LastModifiedDate {
     apiName = "Event.LastModifiedDate"
     label = "Last Modified Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -337,8 +340,8 @@ type salesforce.Event {
   salesforce.Lookup LastModifiedById {
     apiName = "Event.LastModifiedById"
     label = "Last Modified By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -352,7 +355,7 @@ type salesforce.Event {
   salesforce.DateTime SystemModstamp {
     apiName = "Event.SystemModstamp"
     label = "System Modstamp"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -370,8 +373,8 @@ type salesforce.Event {
   salesforce.Lookup RecurrenceActivityId {
     apiName = "Event.RecurrenceActivityId"
     label = "Recurrence Activity ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Event,
     ]
@@ -390,7 +393,7 @@ type salesforce.Event {
   salesforce.DateTime RecurrenceStartDateTime {
     apiName = "Event.RecurrenceStartDateTime"
     label = "Recurrence Start"
-    _required = false
+    
     createable = true
     updateable = true
     queryable = true
@@ -398,7 +401,7 @@ type salesforce.Event {
   salesforce.Date RecurrenceEndDateOnly {
     apiName = "Event.RecurrenceEndDateOnly"
     label = "Recurrence End"
-    _required = false
+    
     createable = true
     updateable = true
     queryable = true
@@ -406,7 +409,7 @@ type salesforce.Event {
   salesforce.Picklist RecurrenceTimeZoneSidKey {
     apiName = "Event.RecurrenceTimeZoneSidKey"
     label = "Recurrence Time Zone"
-    _required = false
+    
     valueSet = [
       {
         fullName = "Pacific/Kiritimati"
@@ -775,6 +778,12 @@ type salesforce.Event {
         isActive = true
       },
       {
+        fullName = "Africa/Casablanca"
+        default = false
+        label = "(GMT+01:00) Western European Summer Time (Africa/Casablanca)"
+        isActive = true
+      },
+      {
         fullName = "Europe/Dublin"
         default = false
         label = "(GMT+01:00) Irish Standard Time (Europe/Dublin)"
@@ -790,12 +799,6 @@ type salesforce.Event {
         fullName = "Europe/London"
         default = false
         label = "(GMT+01:00) British Summer Time (Europe/London)"
-        isActive = true
-      },
-      {
-        fullName = "Africa/Casablanca"
-        default = false
-        label = "(GMT+00:00) Western European Standard Time (Africa/Casablanca)"
         isActive = true
       },
       {
@@ -1011,7 +1014,7 @@ type salesforce.Event {
   salesforce.Picklist RecurrenceType {
     apiName = "Event.RecurrenceType"
     label = "Recurrence Type"
-    _required = false
+    
     valueSet = [
       {
         fullName = "RecursDaily"
@@ -1064,7 +1067,7 @@ type salesforce.Event {
   salesforce.Number RecurrenceInterval {
     apiName = "Event.RecurrenceInterval"
     label = "Recurrence Interval"
-    _required = false
+    
     precision = 9
     createable = true
     updateable = true
@@ -1075,7 +1078,7 @@ type salesforce.Event {
   salesforce.Number RecurrenceDayOfWeekMask {
     apiName = "Event.RecurrenceDayOfWeekMask"
     label = "Recurrence Day of Week Mask"
-    _required = false
+    
     precision = 9
     createable = true
     updateable = true
@@ -1086,7 +1089,7 @@ type salesforce.Event {
   salesforce.Number RecurrenceDayOfMonth {
     apiName = "Event.RecurrenceDayOfMonth"
     label = "Recurrence Day of Month"
-    _required = false
+    
     precision = 9
     createable = true
     updateable = true
@@ -1097,7 +1100,7 @@ type salesforce.Event {
   salesforce.Picklist RecurrenceInstance {
     apiName = "Event.RecurrenceInstance"
     label = "Recurrence Instance"
-    _required = false
+    
     valueSet = [
       {
         fullName = "First"
@@ -1138,7 +1141,7 @@ type salesforce.Event {
   salesforce.Picklist RecurrenceMonthOfYear {
     apiName = "Event.RecurrenceMonthOfYear"
     label = "Recurrence Month of Year"
-    _required = false
+    
     valueSet = [
       {
         fullName = "January"
@@ -1221,7 +1224,7 @@ type salesforce.Event {
   salesforce.DateTime ReminderDateTime {
     apiName = "Event.ReminderDateTime"
     label = "Reminder Date/Time"
-    _required = false
+    
     createable = true
     updateable = true
     queryable = true
@@ -1237,7 +1240,7 @@ type salesforce.Event {
   salesforce.Picklist EventSubtype {
     apiName = "Event.EventSubtype"
     label = "Event Subtype"
-    _required = false
+    
     valueSet = [
       {
         fullName = "Event"
@@ -1262,7 +1265,7 @@ type salesforce.Event {
   salesforce.LongTextArea Recurrence2PatternText {
     apiName = "Event.Recurrence2PatternText"
     label = "Recurrence Pattern"
-    _required = false
+    
     createable = true
     updateable = false
     length = 512
@@ -1271,7 +1274,7 @@ type salesforce.Event {
   salesforce.Picklist Recurrence2PatternVersion {
     apiName = "Event.Recurrence2PatternVersion"
     label = "Pattern Version"
-    _required = false
+    
     valueSet = [
       {
         fullName = "1"
@@ -1304,7 +1307,7 @@ type salesforce.Event {
   salesforce.DateTime Recurrence2PatternStartDate {
     apiName = "Event.Recurrence2PatternStartDate"
     label = "Recurrence Pattern Start Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -1312,7 +1315,7 @@ type salesforce.Event {
   salesforce.Text Recurrence2PatternTimeZone {
     apiName = "Event.Recurrence2PatternTimeZone"
     label = "Recurrence Pattern Time Zone Reference"
-    _required = false
+    
     createable = false
     updateable = false
     unique = false

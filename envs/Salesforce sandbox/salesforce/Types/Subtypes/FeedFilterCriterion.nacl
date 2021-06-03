@@ -14,7 +14,7 @@ type salesforce.FeedFilterCriterion {
     }
   }
   string feedItemType {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -55,7 +55,7 @@ type salesforce.FeedFilterCriterion {
     }
   }
   string feedItemVisibility {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -65,7 +65,7 @@ type salesforce.FeedFilterCriterion {
     }
   }
   string relatedSObjectType {
-    _required = false
+    
   }
   metadataType = "FeedFilterCriterion"
 }

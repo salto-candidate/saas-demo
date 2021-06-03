@@ -2,7 +2,7 @@ type salesforce.Macro {
   serviceid Id {
     apiName = "Macro.Id"
     label = "Macro ID"
-    _required = false
+    
     queryable = true
     
     updateable = false
@@ -12,8 +12,8 @@ type salesforce.Macro {
   salesforce.Lookup OwnerId {
     apiName = "Macro.OwnerId"
     label = "Owner ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Group,
       salesforce.User,
@@ -24,6 +24,7 @@ type salesforce.Macro {
     
     relationshipName = "Owner"
     _hidden_value = true
+    trackHistory = "false"
   }
   salesforce.Checkbox IsDeleted {
     apiName = "Macro.IsDeleted"
@@ -33,7 +34,7 @@ type salesforce.Macro {
     updateable = false
     queryable = true
     
-    _required = false
+    
     _hidden_value = true
   }
   salesforce.Text Name {
@@ -50,7 +51,7 @@ type salesforce.Macro {
   salesforce.DateTime CreatedDate {
     apiName = "Macro.CreatedDate"
     label = "Created Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -60,8 +61,8 @@ type salesforce.Macro {
   salesforce.Lookup CreatedById {
     apiName = "Macro.CreatedById"
     label = "Created By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -75,7 +76,7 @@ type salesforce.Macro {
   salesforce.DateTime LastModifiedDate {
     apiName = "Macro.LastModifiedDate"
     label = "Last Modified Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -85,8 +86,8 @@ type salesforce.Macro {
   salesforce.Lookup LastModifiedById {
     apiName = "Macro.LastModifiedById"
     label = "Last Modified By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -100,7 +101,7 @@ type salesforce.Macro {
   salesforce.DateTime SystemModstamp {
     apiName = "Macro.SystemModstamp"
     label = "System Modstamp"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -110,7 +111,7 @@ type salesforce.Macro {
   salesforce.Html Description {
     apiName = "Macro.Description"
     label = "Description"
-    _required = false
+    
     createable = true
     updateable = true
     length = 4096
@@ -135,7 +136,7 @@ type salesforce.Macro {
   salesforce.Picklist StartingContext {
     apiName = "Macro.StartingContext"
     label = "Apply To"
-    _required = false
+    
     valueSet = [
       {
         fullName = "Account"

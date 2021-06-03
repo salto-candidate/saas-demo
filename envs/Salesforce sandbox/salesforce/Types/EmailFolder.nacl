@@ -14,10 +14,10 @@ type salesforce.EmailFolder {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   string accessType {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -29,13 +29,13 @@ type salesforce.EmailFolder {
     }
   }
   string name {
-    _required = false
+    
   }
   salesforce.SharedTo sharedTo {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true

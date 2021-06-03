@@ -14,28 +14,28 @@ type salesforce.FlowRule {
     }
   }
   string conditionLogic {
-    _required = false
+    
   }
   "List<salesforce.FlowCondition>" conditions {
-    _required = false
+    
   }
   salesforce.FlowConnector connector {
-    _required = false
+    
   }
   string description {
-    _required = false
+    
   }
   string label {
-    _required = false
+    
   }
   string name {
-    _required = false
+    
   }
   salesforce.FlowMetadataValue processMetadataValues {
-    _required = false
+    
   }
   metadataType = "FlowRule"
   boolean doesRequireRecordChangedToMeetCriteria {
-    _required = false
+    
   }
 }

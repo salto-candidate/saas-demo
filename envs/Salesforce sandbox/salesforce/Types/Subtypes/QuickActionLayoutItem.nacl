@@ -14,10 +14,10 @@ type salesforce.QuickActionLayoutItem {
     }
   }
   boolean emptySpace {
-    _required = false
+    
   }
   string field {
-    _required = false
+    
   }
   metadataType = "QuickActionLayoutItem"
 }

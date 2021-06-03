@@ -14,16 +14,16 @@ type salesforce.WorkflowTimeTrigger {
     }
   }
   "List<salesforce.WorkflowActionReference>" actions {
-    _required = false
+    
   }
   string offsetFromField {
-    _required = false
+    
   }
   string timeLength {
-    _required = false
+    
   }
   string workflowTimeTriggerUnit {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [

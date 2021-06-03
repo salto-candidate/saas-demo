@@ -2,7 +2,7 @@ type salesforce.User {
   serviceid Id {
     apiName = "User.Id"
     label = "User ID"
-    _required = false
+    
     queryable = true
     
     updateable = false
@@ -31,7 +31,7 @@ type salesforce.User {
   salesforce.Text CompanyName {
     apiName = "User.CompanyName"
     label = "Company Name"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -42,7 +42,7 @@ type salesforce.User {
   salesforce.Text Division {
     apiName = "User.Division"
     label = "Division"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -53,7 +53,7 @@ type salesforce.User {
   salesforce.Text Department {
     apiName = "User.Department"
     label = "Department"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -64,7 +64,7 @@ type salesforce.User {
   salesforce.Text Title {
     apiName = "User.Title"
     label = "Title"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -75,7 +75,7 @@ type salesforce.User {
   salesforce.Address Address {
     apiName = "User.Address"
     label = "Address"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -113,7 +113,7 @@ type salesforce.User {
   salesforce.Email SenderEmail {
     apiName = "User.SenderEmail"
     label = "Email Sender Address"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -122,7 +122,7 @@ type salesforce.User {
   salesforce.Text SenderName {
     apiName = "User.SenderName"
     label = "Email Sender Name"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -133,7 +133,7 @@ type salesforce.User {
   salesforce.LongTextArea Signature {
     apiName = "User.Signature"
     label = "Email Signature"
-    _required = false
+    
     createable = true
     updateable = true
     length = 1333
@@ -142,7 +142,7 @@ type salesforce.User {
   salesforce.Text StayInTouchSubject {
     apiName = "User.StayInTouchSubject"
     label = "Stay-in-Touch Email Subject"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -153,7 +153,7 @@ type salesforce.User {
   salesforce.LongTextArea StayInTouchSignature {
     apiName = "User.StayInTouchSignature"
     label = "Stay-in-Touch Email Signature"
-    _required = false
+    
     createable = true
     updateable = true
     length = 512
@@ -162,7 +162,7 @@ type salesforce.User {
   salesforce.Text StayInTouchNote {
     apiName = "User.StayInTouchNote"
     label = "Stay-in-Touch Email Note"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -173,7 +173,7 @@ type salesforce.User {
   salesforce.Phone Phone {
     apiName = "User.Phone"
     label = "Phone"
-    _required = false
+    
     createable = true
     updateable = true
     queryable = true
@@ -181,7 +181,7 @@ type salesforce.User {
   salesforce.Phone Fax {
     apiName = "User.Fax"
     label = "Fax"
-    _required = false
+    
     createable = true
     updateable = true
     queryable = true
@@ -189,7 +189,7 @@ type salesforce.User {
   salesforce.Phone MobilePhone {
     apiName = "User.MobilePhone"
     label = "Mobile"
-    _required = false
+    
     createable = true
     updateable = true
     queryable = true
@@ -219,7 +219,7 @@ type salesforce.User {
   salesforce.Text BadgeText {
     apiName = "User.BadgeText"
     label = "User Photo badge text overlay"
-    _required = false
+    
     createable = false
     updateable = false
     unique = false
@@ -607,6 +607,12 @@ type salesforce.User {
         isActive = true
       },
       {
+        fullName = "Africa/Casablanca"
+        default = false
+        label = "(GMT+01:00) Western European Summer Time (Africa/Casablanca)"
+        isActive = true
+      },
+      {
         fullName = "Europe/Dublin"
         default = false
         label = "(GMT+01:00) Irish Standard Time (Europe/Dublin)"
@@ -622,12 +628,6 @@ type salesforce.User {
         fullName = "Europe/London"
         default = false
         label = "(GMT+01:00) British Summer Time (Europe/London)"
-        isActive = true
-      },
-      {
-        fullName = "Africa/Casablanca"
-        default = false
-        label = "(GMT+00:00) Western European Standard Time (Africa/Casablanca)"
         isActive = true
       },
       {
@@ -843,8 +843,8 @@ type salesforce.User {
   salesforce.Lookup UserRoleId {
     apiName = "User.UserRoleId"
     label = "Role ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       "UserRole",
     ]
@@ -2227,7 +2227,7 @@ type salesforce.User {
     apiName = "User.ProfileId"
     label = "Profile ID"
     _required = true
-    allowLookupRecordDeletion = true
+    
     referenceTo = [
       "Profile",
     ]
@@ -2239,7 +2239,7 @@ type salesforce.User {
   salesforce.Picklist UserType {
     apiName = "User.UserType"
     label = "User Type"
-    _required = false
+    
     valueSet = [
       {
         fullName = "Standard"
@@ -2417,7 +2417,7 @@ type salesforce.User {
   salesforce.Text EmployeeNumber {
     apiName = "User.EmployeeNumber"
     label = "Employee Number"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -2428,8 +2428,8 @@ type salesforce.User {
   salesforce.Lookup DelegatedApproverId {
     apiName = "User.DelegatedApproverId"
     label = "Delegated Approver ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Group,
       salesforce.User,
@@ -2441,8 +2441,8 @@ type salesforce.User {
   salesforce.Lookup ManagerId {
     apiName = "User.ManagerId"
     label = "Manager ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -2454,7 +2454,7 @@ type salesforce.User {
   salesforce.DateTime LastLoginDate {
     apiName = "User.LastLoginDate"
     label = "Last Login"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -2462,7 +2462,7 @@ type salesforce.User {
   salesforce.DateTime LastPasswordChangeDate {
     apiName = "User.LastPasswordChangeDate"
     label = "Last Password Change or Reset"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -2470,7 +2470,7 @@ type salesforce.User {
   salesforce.DateTime CreatedDate {
     apiName = "User.CreatedDate"
     label = "Created Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -2480,8 +2480,8 @@ type salesforce.User {
   salesforce.Lookup CreatedById {
     apiName = "User.CreatedById"
     label = "Created By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -2495,7 +2495,7 @@ type salesforce.User {
   salesforce.DateTime LastModifiedDate {
     apiName = "User.LastModifiedDate"
     label = "Last Modified Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -2505,8 +2505,8 @@ type salesforce.User {
   salesforce.Lookup LastModifiedById {
     apiName = "User.LastModifiedById"
     label = "Last Modified By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -2520,7 +2520,7 @@ type salesforce.User {
   salesforce.DateTime SystemModstamp {
     apiName = "User.SystemModstamp"
     label = "System Modstamp"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -2530,7 +2530,7 @@ type salesforce.User {
   salesforce.Number NumberOfFailedLogins {
     apiName = "User.NumberOfFailedLogins"
     label = "Failed Login Attempts"
-    _required = false
+    
     precision = 9
     createable = false
     updateable = false
@@ -2541,7 +2541,7 @@ type salesforce.User {
   salesforce.DateTime OfflineTrialExpirationDate {
     apiName = "User.OfflineTrialExpirationDate"
     label = "Offline Edition Trial Expiration Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -2549,7 +2549,7 @@ type salesforce.User {
   salesforce.DateTime OfflinePdaTrialExpirationDate {
     apiName = "User.OfflinePdaTrialExpirationDate"
     label = "Sales Anywhere Trial Expiration Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -3141,8 +3141,8 @@ type salesforce.User {
   salesforce.Lookup ContactId {
     apiName = "User.ContactId"
     label = "Contact ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Contact,
     ]
@@ -3154,8 +3154,8 @@ type salesforce.User {
   salesforce.Lookup AccountId {
     apiName = "User.AccountId"
     label = "Account ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Account,
     ]
@@ -3167,8 +3167,8 @@ type salesforce.User {
   salesforce.Lookup CallCenterId {
     apiName = "User.CallCenterId"
     label = "Call Center ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.CallCenter,
     ]
@@ -3179,7 +3179,7 @@ type salesforce.User {
   salesforce.Phone Extension {
     apiName = "User.Extension"
     label = "Extension"
-    _required = false
+    
     createable = true
     updateable = true
     queryable = true
@@ -3187,7 +3187,7 @@ type salesforce.User {
   salesforce.Text FederationIdentifier {
     apiName = "User.FederationIdentifier"
     label = "SAML Federation ID"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -3198,7 +3198,7 @@ type salesforce.User {
   salesforce.LongTextArea AboutMe {
     apiName = "User.AboutMe"
     label = "About Me"
-    _required = false
+    
     createable = true
     updateable = true
     length = 1000
@@ -3207,7 +3207,7 @@ type salesforce.User {
   salesforce.Url FullPhotoUrl {
     apiName = "User.FullPhotoUrl"
     label = "Url for full-sized Photo"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -3215,7 +3215,7 @@ type salesforce.User {
   salesforce.Url SmallPhotoUrl {
     apiName = "User.SmallPhotoUrl"
     label = "Photo"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -3231,7 +3231,7 @@ type salesforce.User {
   salesforce.Text OutOfOfficeMessage {
     apiName = "User.OutOfOfficeMessage"
     label = "Out of office message"
-    _required = false
+    
     createable = false
     updateable = false
     unique = false
@@ -3242,7 +3242,7 @@ type salesforce.User {
   salesforce.Url MediumPhotoUrl {
     apiName = "User.MediumPhotoUrl"
     label = "Url for medium profile photo"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -3314,7 +3314,7 @@ type salesforce.User {
   salesforce.Url BannerPhotoUrl {
     apiName = "User.BannerPhotoUrl"
     label = "Url for banner photo"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -3322,7 +3322,7 @@ type salesforce.User {
   salesforce.Url SmallBannerPhotoUrl {
     apiName = "User.SmallBannerPhotoUrl"
     label = "Url for IOS banner photo"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -3330,7 +3330,7 @@ type salesforce.User {
   salesforce.Url MediumBannerPhotoUrl {
     apiName = "User.MediumBannerPhotoUrl"
     label = "Url for Android banner photo"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -3346,8 +3346,8 @@ type salesforce.User {
   salesforce.Lookup IndividualId {
     apiName = "User.IndividualId"
     label = "Individual ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Individual,
     ]

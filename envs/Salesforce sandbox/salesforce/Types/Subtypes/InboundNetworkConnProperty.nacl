@@ -14,7 +14,7 @@ type salesforce.InboundNetworkConnProperty {
     }
   }
   string propertyName {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -26,7 +26,7 @@ type salesforce.InboundNetworkConnProperty {
     }
   }
   string propertyValue {
-    _required = false
+    
   }
   metadataType = "InboundNetworkConnProperty"
 }

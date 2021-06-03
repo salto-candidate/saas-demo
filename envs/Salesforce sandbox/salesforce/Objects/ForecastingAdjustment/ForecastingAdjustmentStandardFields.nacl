@@ -2,7 +2,7 @@ type salesforce.ForecastingAdjustment {
   serviceid Id {
     apiName = "ForecastingAdjustment.Id"
     label = "ForecastingAdjustment ID"
-    _required = false
+    
     queryable = true
     
     updateable = false
@@ -13,7 +13,7 @@ type salesforce.ForecastingAdjustment {
     apiName = "ForecastingAdjustment.ForecastingItemId"
     label = "Forecasting Item ID"
     _required = true
-    allowLookupRecordDeletion = true
+    
     referenceTo = [
       "ForecastingItem",
     ]
@@ -24,8 +24,8 @@ type salesforce.ForecastingAdjustment {
   salesforce.Lookup PeriodId {
     apiName = "ForecastingAdjustment.PeriodId"
     label = "Period ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       "Period",
     ]
@@ -44,7 +44,7 @@ type salesforce.ForecastingAdjustment {
   salesforce.Picklist ProductFamily {
     apiName = "ForecastingAdjustment.ProductFamily"
     label = "Product Family"
-    _required = false
+    
     restricted = false
     createable = true
     updateable = false
@@ -113,7 +113,7 @@ type salesforce.ForecastingAdjustment {
   salesforce.Picklist ForecastCategoryName {
     apiName = "ForecastingAdjustment.ForecastCategoryName"
     label = "Forecast Category"
-    _required = false
+    
     valueSet = [
       {
         fullName = "Omitted"
@@ -175,8 +175,8 @@ type salesforce.ForecastingAdjustment {
   salesforce.Lookup OwnerId {
     apiName = "ForecastingAdjustment.OwnerId"
     label = "Owner ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -206,7 +206,7 @@ type salesforce.ForecastingAdjustment {
   salesforce.DateTime CreatedDate {
     apiName = "ForecastingAdjustment.CreatedDate"
     label = "Created Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -216,8 +216,8 @@ type salesforce.ForecastingAdjustment {
   salesforce.Lookup CreatedById {
     apiName = "ForecastingAdjustment.CreatedById"
     label = "Created By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -231,7 +231,7 @@ type salesforce.ForecastingAdjustment {
   salesforce.DateTime LastModifiedDate {
     apiName = "ForecastingAdjustment.LastModifiedDate"
     label = "Last Modified Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -241,8 +241,8 @@ type salesforce.ForecastingAdjustment {
   salesforce.Lookup LastModifiedById {
     apiName = "ForecastingAdjustment.LastModifiedById"
     label = "Last Modified By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -256,7 +256,7 @@ type salesforce.ForecastingAdjustment {
   salesforce.DateTime SystemModstamp {
     apiName = "ForecastingAdjustment.SystemModstamp"
     label = "System Modstamp"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -267,7 +267,7 @@ type salesforce.ForecastingAdjustment {
     apiName = "ForecastingAdjustment.ForecastingTypeId"
     label = "Forecasting Type ID"
     _required = true
-    allowLookupRecordDeletion = true
+    
     referenceTo = [
       "ForecastingType",
     ]
@@ -279,7 +279,7 @@ type salesforce.ForecastingAdjustment {
   salesforce.TextArea AdjustmentNote {
     apiName = "ForecastingAdjustment.AdjustmentNote"
     label = "Adjustment Note"
-    _required = false
+    
     createable = true
     updateable = true
     queryable = true

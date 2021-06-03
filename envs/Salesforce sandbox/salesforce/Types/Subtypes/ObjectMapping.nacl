@@ -14,16 +14,16 @@ type salesforce.ObjectMapping {
     }
   }
   string inputObject {
-    _required = false
+    
     foreignKeyDomain = [
       "CustomObject",
     ]
   }
   "List<salesforce.ObjectMappingField>" mappingFields {
-    _required = false
+    
   }
   string outputObject {
-    _required = false
+    
     foreignKeyDomain = [
       "CustomObject",
     ]

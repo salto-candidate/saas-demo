@@ -14,7 +14,7 @@ type salesforce.EmbeddedServiceFlow {
     }
   }
   string flow {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -32,7 +32,7 @@ type salesforce.EmbeddedServiceFlow {
     ]
   }
   string flowType {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -45,7 +45,7 @@ type salesforce.EmbeddedServiceFlow {
     }
   }
   boolean isAuthenticationRequired {
-    _required = false
+    
   }
   metadataType = "EmbeddedServiceFlow"
 }

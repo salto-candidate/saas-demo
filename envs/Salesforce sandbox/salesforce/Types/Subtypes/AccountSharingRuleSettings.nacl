@@ -14,13 +14,13 @@ type salesforce.AccountSharingRuleSettings {
     }
   }
   string caseAccessLevel {
-    _required = false
+    
   }
   string contactAccessLevel {
-    _required = false
+    
   }
   string opportunityAccessLevel {
-    _required = false
+    
   }
   metadataType = "AccountSharingRuleSettings"
 }

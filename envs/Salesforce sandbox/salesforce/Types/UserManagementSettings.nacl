@@ -14,31 +14,31 @@ settings salesforce.UserManagementSettings {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true
   }
   boolean enableContactlessExternalIdentityUsers {
-    _required = false
+    
   }
   boolean enableEnhancedPermsetMgmt {
-    _required = false
+    
   }
   boolean enableEnhancedProfileMgmt {
-    _required = false
+    
   }
   boolean enableNewProfileUI {
-    _required = false
+    
   }
   boolean enableUserSelfDeactivate {
-    _required = false
+    
   }
   boolean enableScrambleUserData {
-    _required = false
+    
   }
   metadataType = "UserManagementSettings"
   suffix = "settings"

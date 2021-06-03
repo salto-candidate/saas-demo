@@ -14,25 +14,25 @@ type salesforce.OauthCustomScope {
     }
   }
   string description {
-    _required = false
+    
   }
   string developerName {
-    _required = false
+    
   }
   serviceid fullName {
-    _required = false
+    
   }
   boolean isProtected {
-    _required = false
+    
   }
   boolean isPublic {
-    _required = false
+    
   }
   string masterLabel {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true
@@ -41,6 +41,6 @@ type salesforce.OauthCustomScope {
   dirName = "oauthcustomscopes"
   metadataType = "OauthCustomScope"
   salesforce.OauthCustomScopeApp assignedTo {
-    _required = false
+    
   }
 }

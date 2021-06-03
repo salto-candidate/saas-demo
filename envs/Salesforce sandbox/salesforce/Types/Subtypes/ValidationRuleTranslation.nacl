@@ -14,10 +14,10 @@ type salesforce.ValidationRuleTranslation {
     }
   }
   string errorMessage {
-    _required = false
+    
   }
   string name {
-    _required = false
+    
   }
   metadataType = "ValidationRuleTranslation"
 }

@@ -14,16 +14,16 @@ type salesforce.FlowCollectionProcessor {
     }
   }
   salesforce.FlowMetadataValue processMetadataValues {
-    _required = false
+    
   }
   string description {
-    _required = false
+    
   }
   string name {
-    _required = false
+    
   }
   string elementSubtype {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -35,16 +35,16 @@ type salesforce.FlowCollectionProcessor {
     ]
   }
   string label {
-    _required = false
+    
   }
   number locationX {
-    _required = false
+    
   }
   number locationY {
-    _required = false
+    
   }
   string collectionProcessorType {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -53,16 +53,16 @@ type salesforce.FlowCollectionProcessor {
     }
   }
   string collectionReference {
-    _required = false
+    
   }
   salesforce.FlowConnector connector {
-    _required = false
+    
   }
   number limit {
-    _required = false
+    
   }
   salesforce.FlowCollectionSortOption sortOptions {
-    _required = false
+    
   }
   metadataType = "FlowCollectionProcessor"
 }

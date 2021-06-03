@@ -2,7 +2,7 @@ type salesforce.AuthorizationForm {
   serviceid Id {
     apiName = "AuthorizationForm.Id"
     label = "Authorization Form ID"
-    _required = false
+    
     queryable = true
     
     updateable = false
@@ -12,8 +12,8 @@ type salesforce.AuthorizationForm {
   salesforce.Lookup OwnerId {
     apiName = "AuthorizationForm.OwnerId"
     label = "Owner ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.Group,
       salesforce.User,
@@ -33,7 +33,7 @@ type salesforce.AuthorizationForm {
     updateable = false
     queryable = true
     
-    _required = false
+    
     _hidden_value = true
   }
   salesforce.Text Name {
@@ -50,7 +50,7 @@ type salesforce.AuthorizationForm {
   salesforce.DateTime CreatedDate {
     apiName = "AuthorizationForm.CreatedDate"
     label = "Created Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -60,8 +60,8 @@ type salesforce.AuthorizationForm {
   salesforce.Lookup CreatedById {
     apiName = "AuthorizationForm.CreatedById"
     label = "Created By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -75,7 +75,7 @@ type salesforce.AuthorizationForm {
   salesforce.DateTime LastModifiedDate {
     apiName = "AuthorizationForm.LastModifiedDate"
     label = "Last Modified Date"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -85,8 +85,8 @@ type salesforce.AuthorizationForm {
   salesforce.Lookup LastModifiedById {
     apiName = "AuthorizationForm.LastModifiedById"
     label = "Last Modified By ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.User,
     ]
@@ -100,7 +100,7 @@ type salesforce.AuthorizationForm {
   salesforce.DateTime SystemModstamp {
     apiName = "AuthorizationForm.SystemModstamp"
     label = "System Modstamp"
-    _required = false
+    
     createable = false
     updateable = false
     queryable = true
@@ -110,7 +110,7 @@ type salesforce.AuthorizationForm {
   salesforce.Text RevisionNumber {
     apiName = "AuthorizationForm.RevisionNumber"
     label = "Revision Number"
-    _required = false
+    
     createable = true
     updateable = true
     unique = false
@@ -121,7 +121,7 @@ type salesforce.AuthorizationForm {
   salesforce.Date EffectiveFromDate {
     apiName = "AuthorizationForm.EffectiveFromDate"
     label = "Effective From Date"
-    _required = false
+    
     createable = true
     updateable = true
     queryable = true
@@ -129,7 +129,7 @@ type salesforce.AuthorizationForm {
   salesforce.Date EffectiveToDate {
     apiName = "AuthorizationForm.EffectiveToDate"
     label = "Effective To Date"
-    _required = false
+    
     createable = true
     updateable = true
     queryable = true
@@ -137,8 +137,8 @@ type salesforce.AuthorizationForm {
   salesforce.Lookup DefaultAuthFormTextId {
     apiName = "AuthorizationForm.DefaultAuthFormTextId"
     label = "Default Authorization Form Text ID"
-    _required = false
-    allowLookupRecordDeletion = true
+    
+    
     referenceTo = [
       salesforce.AuthorizationFormText,
     ]
@@ -146,6 +146,7 @@ type salesforce.AuthorizationForm {
     updateable = true
     queryable = true
     relationshipName = "DefaultAuthFormText"
+    trackHistory = "false"
   }
   salesforce.Checkbox IsSignatureRequired {
     apiName = "AuthorizationForm.IsSignatureRequired"

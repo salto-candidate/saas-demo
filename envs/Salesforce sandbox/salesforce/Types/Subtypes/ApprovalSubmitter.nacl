@@ -14,7 +14,7 @@ type salesforce.ApprovalSubmitter {
     }
   }
   string submitter {
-    _required = false
+    
     foreignKeyDomain = [
       salesforce.Queue,
       salesforce.Role,
@@ -22,7 +22,7 @@ type salesforce.ApprovalSubmitter {
     ]
   }
   string type {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [

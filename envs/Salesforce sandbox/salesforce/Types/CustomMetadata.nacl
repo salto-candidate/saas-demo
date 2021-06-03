@@ -14,22 +14,22 @@ type salesforce.CustomMetadata {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   string description {
-    _required = false
+    
   }
   string label {
-    _required = false
+    
   }
   boolean protected {
-    _required = false
+    
   }
   salesforce.CustomMetadataValue values {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true

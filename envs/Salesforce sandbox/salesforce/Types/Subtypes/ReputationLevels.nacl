@@ -14,10 +14,10 @@ type salesforce.ReputationLevels {
     }
   }
   salesforce.ChatterAnswersReputationLevel chatterAnswersReputationLevels {
-    _required = false
+    
   }
   salesforce.IdeaReputationLevel ideaReputationLevels {
-    _required = false
+    
   }
   metadataType = "ReputationLevels"
 }

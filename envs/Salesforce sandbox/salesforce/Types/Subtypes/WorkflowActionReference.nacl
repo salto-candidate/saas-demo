@@ -14,10 +14,10 @@ type salesforce.WorkflowActionReference {
     }
   }
   string name {
-    _required = false
+    
   }
   string type {
-    _required = false
+    
   }
   metadataType = "WorkflowActionReference"
 }

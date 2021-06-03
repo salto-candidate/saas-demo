@@ -14,25 +14,25 @@ settings salesforce.OrgSettings {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true
   }
   boolean enableCustomerSuccessPortal {
-    _required = false
+    
   }
   boolean enableExtendedMailMerge {
-    _required = false
+    
   }
   boolean enableManageSelfServiceUsers {
-    _required = false
+    
   }
   boolean saveMailMergeDocsAsSalesforceDocs {
-    _required = false
+    
   }
   metadataType = "OrgSettings"
   suffix = "settings"

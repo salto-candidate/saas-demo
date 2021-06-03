@@ -14,7 +14,7 @@ type salesforce.SearchSettingsByObject {
     }
   }
   "List<salesforce.ObjectSearchSetting>" searchSettingsByObject {
-    _required = false
+    
   }
   metadataType = "SearchSettingsByObject"
 }

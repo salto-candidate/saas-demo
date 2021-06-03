@@ -14,13 +14,13 @@ type salesforce.EmbeddedServiceCustomization {
     }
   }
   string customizationName {
-    _required = false
+    
   }
   string description {
-    _required = false
+    
   }
   salesforce.EmbeddedServiceResource embeddedServiceResources {
-    _required = false
+    
   }
   metadataType = "EmbeddedServiceCustomization"
 }

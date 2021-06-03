@@ -14,19 +14,19 @@ type salesforce.LayoutSection {
     }
   }
   boolean customLabel {
-    _required = false
+    
   }
   boolean detailHeading {
-    _required = false
+    
   }
   boolean editHeading {
-    _required = false
+    
   }
   string label {
-    _required = false
+    
   }
   "List<salesforce.LayoutColumn>" layoutColumns {
-    _required = false
+    
   }
   string style {
     _restriction = {
@@ -38,7 +38,7 @@ type salesforce.LayoutSection {
       ]
       enforce_value = false
     }
-    _required = false
+    
   }
   metadataType = "LayoutSection"
 }

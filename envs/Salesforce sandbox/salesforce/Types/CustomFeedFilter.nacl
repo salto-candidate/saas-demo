@@ -14,22 +14,22 @@ type salesforce.CustomFeedFilter {
     }
   }
   salesforce.FeedFilterCriterion criteria {
-    _required = false
+    
   }
   string description {
-    _required = false
+    
   }
   serviceid fullName {
-    _required = false
+    
   }
   boolean isProtected {
-    _required = false
+    
   }
   string label {
-    _required = false
+    
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true

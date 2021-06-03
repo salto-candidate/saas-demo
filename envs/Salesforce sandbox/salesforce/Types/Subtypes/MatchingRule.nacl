@@ -14,22 +14,22 @@ type salesforce.MatchingRule {
     }
   }
   serviceid fullName {
-    _required = false
+    
   }
   string booleanFilter {
-    _required = false
+    
   }
   string description {
-    _required = false
+    
   }
   string label {
-    _required = false
+    
   }
   salesforce.MatchingRuleItem matchingRuleItems {
-    _required = false
+    
   }
   string ruleStatus {
-    _required = false
+    
     _restriction = {
       enforce_value = false
       values = [
@@ -43,7 +43,7 @@ type salesforce.MatchingRule {
     }
   }
   string internalId {
-    _required = false
+    
     
     localOnly = true
     _hidden_value = true
